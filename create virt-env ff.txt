@@ -1,0 +1,13 @@
+# create environment
+conda create -n ff python=3.7 -y
+
+# activate environment
+conda activate ff
+
+# install libraries
+conda install beautifulsoup4 -y
+conda install pandas -y
+conda install spyder -y
+
+# Export dependencies (first activate the environment)
+pip freeze > requirements.txt
