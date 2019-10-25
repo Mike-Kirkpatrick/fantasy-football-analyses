@@ -7,11 +7,12 @@ Created on Sun Oct 13 19:24:06 2019
 """
 
 leagueId = '392495'
-seasons = ['2011','2012','2013','2014','2015','2016','2017','2018']
-season = '2017'
+seasons = [2011,2012,2013,2014,2015,2016,2017,2018]
+season = 2017
 
 from bs4 import BeautifulSoup
 import requests
+import pandas as pd
 
 def getWebpageData(url):
     r = requests.get(url)
@@ -22,76 +23,143 @@ def getWebpageData(url):
 #~~~~~~~~~~~~~~~~~~~~~#
 #     Team Owners     #
 #~~~~~~~~~~~~~~~~~~~~~#
-url = 'https://fantasy.nfl.com/league/{}/history/{}/owners'.format(leagueId,season)
-soup = getWebpageData(url)
+def getTeamOwners(seasons):
+    teamOwnersDf = pd.DataFrame()
+    for season in seasons:
+        url = 'https://fantasy.nfl.com/league/{}/history/{}/owners'.format(leagueId,season)
+        soup = getWebpageData(url)
+        
+        teamOwners = []
+        data = soup.find_all('td', class_ = 'teamOwnerName')
+        for datum in data:
+            teamOwners.append(datum.text)
+        
+        teamNames = []
+        data = soup.find_all('td', class_ = 'teamImageAndName')
+        for datum in data:
+            teamNames.append(datum.text[1:]) #remove leading blank character
+        
+        teamTransactions = []
+        data = soup.find_all('td', class_ = 'teamTransactionCount numeric')
+        for datum in data:
+            teamTransactions.append(int(datum.text))
+        
+        teamTrades = []
+        data = soup.find_all('td', class_ = 'teamTradeCount numeric')
+        for datum in data:
+            teamTrades.append(int(datum.text))
+        
+        ownersList =  list(zip(teamOwners, teamNames, teamTransactions, teamTrades))
+        ownersDfSeason = pd.DataFrame(ownersList, columns = ['teamOwner', 'teamName', 'teamTransactions', 'teamTrades']) 
+        ownersDfSeason['season'] = season
+        teamOwnersDf = pd.concat([teamOwnersDf, ownersDfSeason], axis=0)
+    return teamOwnersDf
 
-teamOwners = []
-data = soup.find_all('td', class_ = 'teamOwnerName')
-for datum in data:
-    teamOwners.append(datum.text)
-
-teamNames = []
-data = soup.find_all('td', class_ = 'teamImageAndName')
-for datum in data:
-    teamNames.append(datum.text[1:]) #remove leading blank character
-
-teamTransactions = []
-data = soup.find_all('td', class_ = 'teamTransactionCount numeric')
-for datum in data:
-    teamTransactions.append(int(datum.text))
-
-teamTrades = []
-data = soup.find_all('td', class_ = 'teamTradeCount numeric')
-for datum in data:
-    teamTrades.append(int(datum.text))
-
-
+teamOwners = getTeamOwners(seasons)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #     Team Standings - Regular Season     #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-url = 'https://fantasy.nfl.com/league/{}/history/{}/standings?historyStandingsType=regular'.format(leagueId,season)
-soup = getWebpageData(url)
+def regularSeason(seasons):
+    df = pd.DataFrame()
+    for season in seasons:
+        url = 'https://fantasy.nfl.com/league/{}/history/{}/standings?historyStandingsType=regular'.format(leagueId,season)
+        soup = getWebpageData(url)
+        
+        teamNames = []
+        data = soup.find_all('td', class_ = 'teamImageAndName')
+        for datum in data:
+            teamNames.append(datum.text[1:]) #remove leading blank character
+        
+        teamRank = []
+        data = soup.find_all('td', class_ = 'teamRank first')
+        rank = 0
+        for datum in data:
+            # for some reason NFL returns rank values like '6-2'
+            rank = rank + 1
+            teamRank.append(rank)
+        
+        teamRecord = []
+        data = soup.find_all('td', class_ = 'teamRecord numeric')
+        for datum in data:
+            teamRecord.append(datum.text)
+        
+        teamWinPct = []
+        data = soup.find_all('td', class_ = 'teamWinPct numeric')
+        for datum in data:
+            teamWinPct.append(float(datum.text))
+        
+        teamPointsFor = []
+        data = soup.find_all('td', class_ = 'teamPts stat numeric')
+        for datum in data:
+            teamPointsFor.append(float(datum.text.replace(',','')))
+        
+        teamPointsAgainst = []
+        data = soup.find_all('td', class_ = 'teamPts stat numeric last')
+        for datum in data:
+            teamPointsAgainst.append(float(datum.text.replace(',','')))
+        
+        List =  list(zip(teamNames, teamRank, teamRecord, teamWinPct, teamPointsFor, teamPointsAgainst))
+        seasonDf = pd.DataFrame(List, columns = ['teamName', 'teamRank', 'teamRecord', 'teamWinPct', 'teamPointsFor', 'teamPointsAgainst']) 
+        seasonDf['season'] = season
+        df = pd.concat([df, seasonDf], axis=0)
+    return df
 
-standingsTeamRank = []
-data = soup.find_all('td', class_ = 'teamRank first')
-rank = 0
-for datum in data:
-    # for some reason NFL returns rank values like '6-2'
-    rank = rank + 1
-    standingsTeamRank.append(rank)
-
-standingsTeamNames = []
-data = soup.find_all('td', class_ = 'teamImageAndName')
-for datum in data:
-    standingsTeamNames.append(datum.text[1:]) #remove leading blank character
-
-standingsTeamRecord = []
-data = soup.find_all('td', class_ = 'teamRecord numeric')
-for datum in data:
-    standingsTeamRecord.append(datum.text)
-
-standingsTeamWinPct = []
-data = soup.find_all('td', class_ = 'teamWinPct numeric')
-for datum in data:
-    standingsTeamWinPct.append(float(datum.text))
-
-standingsTeamPointsFor = []
-data = soup.find_all('td', class_ = 'teamPts stat numeric')
-for datum in data:
-    standingsTeamPointsFor.append(float(datum.text.replace(',','')))
-
-standingsTeamPointsAgainst = []
-data = soup.find_all('td', class_ = 'teamPts stat numeric last')
-for datum in data:
-    standingsTeamPointsAgainst.append(float(datum.text.replace(',','')))
-
+regularSeason = regularSeason(seasons)
 
 #~~~~~~~~~~~~~~~~~~#
-#     SCHEDULE     #
+#     MATCHUPS     #
 #~~~~~~~~~~~~~~~~~~#
 # FIRST GET THE SCHEDULE - THEN ITERATE THRU EACH 12 OF THE PRIMARY teadId of the gameCenter
-url = 'https://fantasy.nfl.com/league/392495/history/2018/schedule'
+def getMatchups(season, week):
+    url = 'https://fantasy.nfl.com/league/{l}/history/{s}/schedule?gameSeason={s}&leagueId={l}&scheduleDetail={w}&scheduleType=week&standingsTab=schedule'.format_map({'l':leagueId, 's':season, 'w':week})
+    soup = getWebpageData(url)
+    
+    teamOwner = []
+    data = soup.find_all('li', class_ = 'name')
+    for datum in data:
+        teamOwner.append(datum.text)
+    
+    teamName = []
+    data = soup.find_all('a', class_ = 'teamName')
+    for datum in data:
+        teamName.append(datum.text)
+    
+    teamTotal = []
+    data = soup.find_all('div', class_ = 'teamTotal')
+    for datum in data:
+        teamTotal.append(float(datum.text))
+    
+    teamRecord = []
+    data = soup.find_all('span', class_ = 'teamRecord')
+    for datum in data:
+        teamRecord.append(datum.text)
+    
+    teamOwner1 = teamOwner[0::2]
+    teamOwner2 = teamOwner[1::2]
+    teamName1 = teamName[0::2]
+    teamName2 = teamName[1::2]
+    teamTotal1 = teamTotal[0::2]
+    teamTotal2 = teamTotal[1::2]
+    teamRecord1 = teamRecord[0::2]
+    teamRecord2 = teamRecord[1::2]
+    
+    matchupsList =  list(zip(teamOwner1, teamName1, teamTotal1, teamRecord1, teamOwner2, teamName2, teamTotal2, teamRecord2))
+    matchupsDf = pd.DataFrame(matchupsList, columns = ['teamOwner1', 'teamName1', 'teamTotal1', 'teamRecord1', 'teamOwner2', 'teamName2', 'teamTotal2', 'teamRecord2']) 
+    matchupsDf['season'] = season
+    matchupsDf['week'] = week
+    return matchupsDf
+
+matchups = pd.DataFrame()
+for season in seasons:
+    if season == 2011:
+        weeks = range(1,18)
+    else:
+        weeks = range(1,17)
+    for week in weeks:
+        matchupsWeek = getMatchups(season, week)
+        matchups = pd.concat([matchups, matchupsWeek], axis=0)
+        
 
 
 #~~~~~~~~~~~~~~~~~~~~~#
