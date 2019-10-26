@@ -6,9 +6,18 @@ Created on Sun Oct 13 19:24:06 2019
 @author: mike
 """
 
+# Set the working directory to wherever the repository was cloned to
+from os import chdir
+chdir('/home/mike/fantasy-football-analyses')
+
+
+# Enter leagueId.
+# To get your leagueId, go to https://fantasy.nfl.com
+# Login to your league
+# Your leagueId is not in the url as such https://fantasy.nfl.com/league/392495
 leagueId = '392495'
 seasons = [2011,2012,2013,2014,2015,2016,2017,2018]
-season = 2017
+
 
 from bs4 import BeautifulSoup
 import requests
@@ -107,11 +116,29 @@ def regularSeason(seasons):
 
 regularSeason = regularSeason(seasons)
 
+
+
+#~~~~~~~~~~~~~~~~~~~~~~#
+#     OWNER-SEASON     #
+#~~~~~~~~~~~~~~~~~~~~~~#
+ownerSeason = pd.merge(teamOwners, regularSeason, on=['teamName', 'season'])
+
+ownerSeason.to_csv('data_owner_season.csv', index=False)
+
 #~~~~~~~~~~~~~~~~~~#
 #     MATCHUPS     #
 #~~~~~~~~~~~~~~~~~~#
 # FIRST GET THE SCHEDULE - THEN ITERATE THRU EACH 12 OF THE PRIMARY teadId of the gameCenter
-def getMatchups(season, week):
+def winLoss(row):
+    if row['teamWeekTotal'] > row['teamWeekTotalOpponent']:
+        result = 'Win'
+    elif row['teamWeekTotal'] < row['teamWeekTotalOpponent']:
+        result = 'Loss'
+    elif row['teamWeekTotal'] == row['teamWeekTotalOpponent']:
+        result = 'Tie'
+    return result
+
+def getMatchupsWeek(season, week):
     url = 'https://fantasy.nfl.com/league/{l}/history/{s}/schedule?gameSeason={s}&leagueId={l}&scheduleDetail={w}&scheduleType=week&standingsTab=schedule'.format_map({'l':leagueId, 's':season, 'w':week})
     soup = getWebpageData(url)
     
@@ -144,22 +171,43 @@ def getMatchups(season, week):
     teamRecord1 = teamRecord[0::2]
     teamRecord2 = teamRecord[1::2]
     
-    matchupsList =  list(zip(teamOwner1, teamName1, teamTotal1, teamRecord1, teamOwner2, teamName2, teamTotal2, teamRecord2))
-    matchupsDf = pd.DataFrame(matchupsList, columns = ['teamOwner1', 'teamName1', 'teamTotal1', 'teamRecord1', 'teamOwner2', 'teamName2', 'teamTotal2', 'teamRecord2']) 
+    matchupsList1 =  list(zip(teamOwner1, teamName1, teamTotal1, teamRecord1, teamOwner2, teamName2, teamTotal2, teamRecord2))
+    matchupsDf1 = pd.DataFrame(matchupsList1, columns = ['teamOwner', 'teamName', 'teamWeekTotal', 'teamRecordPost', 'teamOwnerOpponent', 'teamNameOpponent', 'teamWeekTotalOpponent', 'teamRecordPostOpponent']) 
+    matchupsList2 =  list(zip(teamOwner2, teamName2, teamTotal2, teamRecord2, teamOwner1, teamName1, teamTotal1, teamRecord1))
+    matchupsDf2 = pd.DataFrame(matchupsList2, columns = ['teamOwner', 'teamName', 'teamWeekTotal', 'teamRecordPost', 'teamOwnerOpponent', 'teamNameOpponent', 'teamWeekTotalOpponent', 'teamRecordPostOpponent']) 
+    matchupsDf = pd.concat([matchupsDf1, matchupsDf2], axis=0)
     matchupsDf['season'] = season
     matchupsDf['week'] = week
+    matchupsDf['teamMatchupResult'] = matchupsDf.apply(winLoss, axis=1)
     return matchupsDf
 
-matchups = pd.DataFrame()
-for season in seasons:
-    if season == 2011:
-        weeks = range(1,18)
-    else:
-        weeks = range(1,17)
-    for week in weeks:
-        matchupsWeek = getMatchups(season, week)
-        matchups = pd.concat([matchups, matchupsWeek], axis=0)
-        
+def getMatchups(seasons):
+    matchups = pd.DataFrame()
+    for season in seasons:
+        if season == 2011:
+            weeks = range(1,18)
+        else:
+            weeks = range(1,17)
+        for week in weeks:
+            matchupsWeek = getMatchupsWeek(season, week)
+            matchups = pd.concat([matchups, matchupsWeek], axis=0)
+    matchups['teamRecordPre'] = matchups.groupby(['teamOwner', 'teamName', 'season'])['teamRecordPost'].shift(1)
+    matchups.teamRecordPre.loc[matchups['week'] == 1] = '0-0-0'
+    matchups['teamRecordPreOpponent'] = matchups.groupby(['teamOwnerOpponent', 'teamNameOpponent', 'season'])['teamRecordPostOpponent'].shift(1)
+    matchups.teamRecordPreOpponent.loc[matchups['week'] == 1] = '0-0-0'
+    # reorder columns
+    matchups = matchups[['season', 'week', 'teamOwner', 'teamName', 'teamWeekTotal', 'teamRecordPre', 'teamMatchupResult', 'teamRecordPost', 'teamOwnerOpponent', 'teamNameOpponent', 'teamWeekTotalOpponent', 'teamRecordPreOpponent', 'teamRecordPostOpponent']]
+    return matchups
+
+matchups = getMatchups(seasons)
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#     OWNER-SEASON-WEEK     #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+matchups.to_csv('data_owner_season_week.csv', index=False)
+
+
 
 
 #~~~~~~~~~~~~~~~~~~~~~#
