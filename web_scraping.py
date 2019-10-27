@@ -213,50 +213,93 @@ matchups.to_csv('data_owner_season_week.csv', index=False)
 #~~~~~~~~~~~~~~~~~~~~~#
 #     Game Center     #
 #~~~~~~~~~~~~~~~~~~~~~#
+
+# NEED TO APPEND NULL VALUES FOR EXAMPLES LIKE THIS
 season = 2011
-teamId = 1
-week = 13
+teamId = 5
+week = 1
 
-url = 'https://fantasy.nfl.com/league/392495/history/{}/teamgamecenter?teamId={}&week={}'.format(season,teamId,week)
-soup = getWebpageData(url)
 
-playerPosition = []
-data = soup.find_all('td', class_ = 'teamPosition')
-for datum in data:
-    playerPosition.append(datum.text)
-
-playerNameAndInfo = []
-data = soup.find_all('td', class_ = 'playerNameAndInfo')
-for datum in data:
-    playerNameAndInfo.append(datum.text)
-
-playerOpponent = []
-data = soup.find_all('td', class_ = 'playerOpponent')
-for datum in data:
-    playerOpponent.append(datum.text)
-
-playerGameStatus = []
-data = soup.find_all('td', class_ = 'playerGameStatus')
-for datum in data:
-    playerGameStatus.append(datum.text)
-
-playerPoints = []
-data = soup.find_all('span', class_ = 'playerTotal')
-for datum in data:
-    playerPoints.append(datum.text)
-
-# Don't really need. Can sum points for non "BN" positions
-teamPoints = []
-data = soup.find_all('span', class_ = 'teamTotal teamId-1')
-for datum in data:
-    teamPoints.append(datum.text)
-
-teamName = []
-data = soup.find_all('span', class_ = 'teamTotal teamId-1')
-data = soup.find_all('span', class_ = 'teamTotal')
-for datum in data:
-    teamPoints.append(datum.text)
-
+def gameCenter(seasons):
+    '''This page gives us data for both teams.
+        We only want team 1, so we cut the data in half everywhere
+        This one takes a little while to finish'''
+    nTeams = 12 #number of teams in our league each season
+    finalDf = pd.DataFrame()
+    for season in seasons:
+        if season == 2011:
+            weeks = range(1,18)
+        else:
+            weeks = range(1,17)
+        for week in weeks:
+            for teamId in range(1, nTeams+1):
+                url = 'https://fantasy.nfl.com/league/392495/history/{}/teamgamecenter?teamId={}&week={}'.format(season,teamId,week)
+                soup = getWebpageData(url)
+                
+                teamOwner = []
+                data = soup.find_all('a', class_ = 'userName')
+                for datum in data:
+                    teamOwner.append(datum.text)
+                teamOwner = teamOwner[0]
+                
+                teamName = []
+                data = soup.find_all('a', class_ = 'teamName')
+                for datum in data:
+                    teamName.append(datum.text)
+                teamName = teamName[0]
+                
+                teamPoints = []
+                data = soup.find_all('span', class_ = 'teamTotal teamId-1')
+                for datum in data:
+                    #teamPoints.append(float(datum.text))
+                    teamPoints.append(datum.text)
+                teamPoints = teamPoints[0]
+                
+                playerPosition = []
+                data = soup.find_all('td', class_ = 'teamPosition')
+                for datum in data:
+                    playerPosition.append(datum.text)
+                playerPosition = playerPosition[0:16]
+                
+                playerName = []
+                data = soup.find_all('a', class_ = 'playerCard')
+                for datum in data:
+                    playerName.append(datum.text)
+                playerName = playerName[0:16]
+                
+                playerNameAndInfo = []
+                data = soup.find_all('td', class_ = 'playerNameAndInfo')
+                for datum in data:
+                    playerNameAndInfo.append(datum.text)
+                playerNameAndInfo = playerNameAndInfo[0:16]
+                    
+                playerOpponent = []
+                data = soup.find_all('td', class_ = 'playerOpponent')
+                for datum in data:
+                    playerOpponent.append(datum.text)
+                playerOpponent = playerOpponent[0:16]
+                
+                playerGameStatus = []
+                data = soup.find_all('td', class_ = 'playerGameStatus')
+                for datum in data:
+                    playerGameStatus.append(datum.text)
+                playerGameStatus = playerGameStatus[0:16]
+                
+                playerPoints = []
+                data = soup.find_all('span', class_ = 'playerTotal')
+                for datum in data:
+                    playerPoints.append(datum.text)
+                playerPoints = playerPoints[0:16]
+                
+                ls =  list(zip(playerPosition, playerName, playerPoints, playerNameAndInfo, playerOpponent, playerGameStatus))
+                df = pd.DataFrame(ls, columns = ['playerPosition', 'playerName', 'playerPoints', 'playerNameAndInfo', 'playerOpponent', 'playerGameStatus'])
+                df.insert(0, 'teamPoints', teamPoints)
+                df.insert(0, 'teamName', teamName)
+                df.insert(0, 'teamOwner', teamOwner)
+                df.insert(0, 'week', week)
+                df.insert(0, 'season', season)
+                finalDf = pd.concat([finalDf, df], axis=0)
+    return finalDf
 
 
 #~~~~~~~~~~~~~~~~~#
