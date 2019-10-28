@@ -10,18 +10,17 @@ Created on Sun Oct 13 19:24:06 2019
 from os import chdir
 chdir('/home/mike/fantasy-football-analyses')
 
-
-# Enter leagueId.
-# To get your leagueId, go to https://fantasy.nfl.com
-# Login to your league
+# Get leagueId
+# Login to your league via https://fantasy.nfl.com
 # Your leagueId is not in the url as such https://fantasy.nfl.com/league/392495
 leagueId = '392495'
-seasons = [2011,2012,2013,2014,2015,2016,2017,2018]
 
 
 from bs4 import BeautifulSoup
 import requests
 import pandas as pd
+import datetime as dt
+import time
 
 def getWebpageData(url):
     r = requests.get(url)
@@ -29,12 +28,61 @@ def getWebpageData(url):
     return soup
 
 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#     Seasons-Weeks-TeamIds Dictionary     #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+# We create a dictionary with all the season, weeks and teamIds.
+# Our weeks and teamIds have changed over the seasons.
+# In season 2011, we had 17 weeks.
+# Starting in season 2017, we swapped out teamId=10 for teamId=13
+
+standardWeeks = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+standardTeamIds = [1,2,3,4,5,6,7,8,9,10,11,12]
+teamIdsNo10 = [1,2,3,4,5,6,7,8,9,11,12,13]
+
+seasonsWeeksTeamIds = {
+	2011:{
+       'Weeks': [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],
+       'TeamIds': standardTeamIds
+	},
+	2012:{
+       'Weeks': standardWeeks,
+       'TeamIds': standardTeamIds
+	},
+	2013:{
+       'Weeks': standardWeeks,
+       'TeamIds': standardTeamIds
+	},
+	2014:{
+       'Weeks': standardWeeks,
+       'TeamIds': standardTeamIds
+	},
+	2015:{
+       'Weeks': standardWeeks,
+       'TeamIds': standardTeamIds
+	},
+	2016:{
+       'Weeks': standardWeeks,
+       'TeamIds': standardTeamIds
+	},
+	2017:{
+       'Weeks': standardWeeks,
+       'TeamIds': teamIdsNo10
+	},
+	2018:{
+       'Weeks': standardWeeks,
+       'TeamIds': teamIdsNo10
+	}
+}
+
+del standardWeeks, standardTeamIds, teamIdsNo10
+
 #~~~~~~~~~~~~~~~~~~~~~#
 #     Team Owners     #
 #~~~~~~~~~~~~~~~~~~~~~#
-def getTeamOwners(seasons):
+def getTeamOwners():
     teamOwnersDf = pd.DataFrame()
-    for season in seasons:
+    for season in seasonsWeeksTeamIds:
         url = 'https://fantasy.nfl.com/league/{}/history/{}/owners'.format(leagueId,season)
         soup = getWebpageData(url)
         
@@ -64,14 +112,14 @@ def getTeamOwners(seasons):
         teamOwnersDf = pd.concat([teamOwnersDf, ownersDfSeason], axis=0)
     return teamOwnersDf
 
-teamOwners = getTeamOwners(seasons)
+teamOwners = getTeamOwners()
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #     Team Standings - Regular Season     #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-def regularSeason(seasons):
+def regularSeason():
     df = pd.DataFrame()
-    for season in seasons:
+    for season in seasonsWeeksTeamIds:
         url = 'https://fantasy.nfl.com/league/{}/history/{}/standings?historyStandingsType=regular'.format(leagueId,season)
         soup = getWebpageData(url)
         
@@ -109,12 +157,12 @@ def regularSeason(seasons):
             teamPointsAgainst.append(float(datum.text.replace(',','')))
         
         List =  list(zip(teamNames, teamRank, teamRecord, teamWinPct, teamPointsFor, teamPointsAgainst))
-        seasonDf = pd.DataFrame(List, columns = ['teamName', 'teamRank', 'teamRecord', 'teamWinPct', 'teamPointsFor', 'teamPointsAgainst']) 
+        seasonDf = pd.DataFrame(List, columns = ['teamName', 'teamRankRegSeason', 'teamRecordRegSeason', 'teamWinPctRegSeason', 'teamPointsForRegSeason', 'teamPointsAgainstRegSeason']) 
         seasonDf['season'] = season
         df = pd.concat([df, seasonDf], axis=0)
     return df
 
-regularSeason = regularSeason(seasons)
+regularSeason = regularSeason()
 
 
 
@@ -128,7 +176,6 @@ ownerSeason.to_csv('data_owner_season.csv', index=False)
 #~~~~~~~~~~~~~~~~~~#
 #     MATCHUPS     #
 #~~~~~~~~~~~~~~~~~~#
-# FIRST GET THE SCHEDULE - THEN ITERATE THRU EACH 12 OF THE PRIMARY teadId of the gameCenter
 def winLoss(row):
     if row['teamWeekTotal'] > row['teamWeekTotalOpponent']:
         result = 'Win'
@@ -181,14 +228,10 @@ def getMatchupsWeek(season, week):
     matchupsDf['teamMatchupResult'] = matchupsDf.apply(winLoss, axis=1)
     return matchupsDf
 
-def getMatchups(seasons):
+def getMatchups():
     matchups = pd.DataFrame()
-    for season in seasons:
-        if season == 2011:
-            weeks = range(1,18)
-        else:
-            weeks = range(1,17)
-        for week in weeks:
+    for season in seasonsWeeksTeamIds:
+        for week in seasonsWeeksTeamIds[season]['Weeks']:
             matchupsWeek = getMatchupsWeek(season, week)
             matchups = pd.concat([matchups, matchupsWeek], axis=0)
     matchups['teamRecordPre'] = matchups.groupby(['teamOwner', 'teamName', 'season'])['teamRecordPost'].shift(1)
@@ -199,7 +242,7 @@ def getMatchups(seasons):
     matchups = matchups[['season', 'week', 'teamOwner', 'teamName', 'teamWeekTotal', 'teamRecordPre', 'teamMatchupResult', 'teamRecordPost', 'teamOwnerOpponent', 'teamNameOpponent', 'teamWeekTotalOpponent', 'teamRecordPreOpponent', 'teamRecordPostOpponent']]
     return matchups
 
-matchups = getMatchups(seasons)
+matchups = getMatchups()
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~#
@@ -209,30 +252,21 @@ matchups.to_csv('data_owner_season_week.csv', index=False)
 
 
 
-
 #~~~~~~~~~~~~~~~~~~~~~#
 #     Game Center     #
 #~~~~~~~~~~~~~~~~~~~~~#
-
-# NEED TO APPEND NULL VALUES FOR EXAMPLES LIKE THIS
-season = 2011
-teamId = 5
-week = 1
-
-
-def gameCenter(seasons):
-    '''This page gives us data for both teams.
-        We only want team 1, so we cut the data in half everywhere
-        This one takes a little while to finish'''
-    nTeams = 12 #number of teams in our league each season
+def gameCenter():
+    '''
+    This page gives us data for both teams.
+    We only want team 1, so we cut the data in half for each iteration
+    This one takes a little while to finish - Almost 2 mins per season
+    '''
+    start_time = time.time()
     finalDf = pd.DataFrame()
-    for season in seasons:
-        if season == 2011:
-            weeks = range(1,18)
-        else:
-            weeks = range(1,17)
-        for week in weeks:
-            for teamId in range(1, nTeams+1):
+    for season in seasonsWeeksTeamIds:
+        for week in seasonsWeeksTeamIds[season]['Weeks']:
+            for teamId in seasonsWeeksTeamIds[season]['TeamIds']:
+                #print('Season:', season, 'Week:', week, 'TeamId:', teamId)
                 url = 'https://fantasy.nfl.com/league/392495/history/{}/teamgamecenter?teamId={}&week={}'.format(season,teamId,week)
                 soup = getWebpageData(url)
                 
@@ -249,7 +283,7 @@ def gameCenter(seasons):
                 teamName = teamName[0]
                 
                 teamPoints = []
-                data = soup.find_all('span', class_ = 'teamTotal teamId-1')
+                data = soup.find_all('span', class_ = 'teamTotal teamId-{}'.format(teamId))
                 for datum in data:
                     #teamPoints.append(float(datum.text))
                     teamPoints.append(datum.text)
@@ -259,13 +293,7 @@ def gameCenter(seasons):
                 data = soup.find_all('td', class_ = 'teamPosition')
                 for datum in data:
                     playerPosition.append(datum.text)
-                playerPosition = playerPosition[0:16]
-                
-                playerName = []
-                data = soup.find_all('a', class_ = 'playerCard')
-                for datum in data:
-                    playerName.append(datum.text)
-                playerName = playerName[0:16]
+                playerPosition = playerPosition[0:16]                
                 
                 playerNameAndInfo = []
                 data = soup.find_all('td', class_ = 'playerNameAndInfo')
@@ -286,133 +314,32 @@ def gameCenter(seasons):
                 playerGameStatus = playerGameStatus[0:16]
                 
                 playerPoints = []
-                data = soup.find_all('span', class_ = 'playerTotal')
+                data = soup.find_all('td', class_ = 'statTotal')
                 for datum in data:
                     playerPoints.append(datum.text)
                 playerPoints = playerPoints[0:16]
                 
-                ls =  list(zip(playerPosition, playerName, playerPoints, playerNameAndInfo, playerOpponent, playerGameStatus))
-                df = pd.DataFrame(ls, columns = ['playerPosition', 'playerName', 'playerPoints', 'playerNameAndInfo', 'playerOpponent', 'playerGameStatus'])
+                ls =  list(zip(playerPosition, playerNameAndInfo, playerPoints, playerOpponent, playerGameStatus))
+                df = pd.DataFrame(ls, columns = ['playerPosition', 'playerNameAndInfo', 'playerPoints', 'playerOpponent', 'playerGameStatus'])
                 df.insert(0, 'teamPoints', teamPoints)
                 df.insert(0, 'teamName', teamName)
                 df.insert(0, 'teamOwner', teamOwner)
                 df.insert(0, 'week', week)
                 df.insert(0, 'season', season)
                 finalDf = pd.concat([finalDf, df], axis=0)
+    print('--- TOTAL RUN TIME = ' + str(dt.timedelta(seconds= round(time.time() - start_time,0))))
     return finalDf
 
+gameCenterDf = gameCenter()
 
-#~~~~~~~~~~~~~~~~~#
-url = 'https://fantasy.nfl.com/league/392495/history/2017/teamgamecenter?teamId=5&week=8'
-
-
-url = 'https://fantasy.nfl.com/league/392495/history/2017/teamhome?teamId=11'
-soup = getWebpageData(url)
-
-owner_name = soup.find_all('ul', class_ = 'owners')[0].text
-owner_name = soup.find_all('ul', class_ = 'owners')[0].text
-
-teamStats = owner_name = soup.find_all('ul', class_ = 'teamStats')
-place = teamStats[1].text.replace('Season Result ','').replace(' Place','').replace('st','').replace('nd', '').replace('rd', '').replace('th', '')
-
-teamStats[1].text.replace('Rank ','')
-
-Rank 1Record 10-3-0Streak W1
-
-teamStats[1].text.replace('Season Result ', '').replace(' Place', '')
-t.text.replace('Season Result ', '').replace(' Place', '')
-
-owner_info = []
-owner_info_data = soup.find_all('ul', class_ = 'owners')
-owner_info_data = soup.find_all('ul', class_ = 'owners')[0].text
-for owner in owner_info_data:
-    owner_info.append(owner.text)
-print(owner_info_data)
-print(owner_info)
-
-# Get each individual teams data. Team name, teamId, and owner name
-# Get final standing, total points, regular season record
-https://fantasy.nfl.com/league/392495/history/2017/teamhome?teamId=5
+# Clean up numeric columns - teams on bye have points with '-'
+gameCenterDf['playerPoints'] = gameCenterDf['playerPoints'].replace('-','0.0')
+gameCenterDf['playerPoints'] = pd.to_numeric(gameCenterDf.playerPoints)
+gameCenterDf['teamPoints'] = pd.to_numeric(gameCenterDf.teamPoints)
 
 
-player_info = []
-player_info_data = soup.find_all('td', class_ = 'playerNameAndInfo')
-for player_inf in player_info_data:
-    player_info.append(player_inf.text)
-
-# 0-15 are team 1, 16-31 are team 2
-player_points = []
-points_data = soup.find_all('td', class_ = 'stat statTotal numeric last')
-for point in points_data:
-    player_points.append(point.text.strip())
-
-player_opponents = []
-player_opponents_data = soup.find_all('td', class_ = 'playerOpponent')
-for player_opponent in player_opponents_data:
-    player_opponents.append(player_opponent.text)
-
-
-divs = soup.find_all('td', class_ = 'playerOpponent')
-for div in divs:
-    print(div.text.strip())
-    print(div.text)
-print(soup.prettify())
-
-#tableWrapBN-1
-
-#teamMatchupSecondary
-.teamWrap-1
-.last
-
-.playerId-2555259
-
-adjustedPts
-
-divs = soup.find_all('div', class_ = 'lister-item mode-advanced')
-divs = soup.find_all('div')
-divs = soup.find_all('table')
-divs = soup.find_all('td', class_ = 'playerNameAndInfo')
-divs = soup.find_all('td')
-print(len(divs))
-print(divs)
-
-for div in divs:
-    print(div)
-
-<td class="playerNameAndInfo" id="yui_3_15_0_1_1571020570002_714"><div class="c c-phi" id="yui_3_15_0_1_1571020570002_715"><b></b><a onclick="s_objectID=&quot;https://fantasy.nfl.com/players/cardhistory?gameSeason=2017&amp;leagueId=392495&amp;playerId=2555259_1&quot;;return this.s_oc?this.s_oc(e):true" href="/players/cardhistory?gameSeason=2017&amp;leagueId=392495&amp;playerId=2555259" class="playerCard playerName playerNameFirstInitialLastName playerNameId-2555259 what-playerCard" id="yui_3_15_0_1_1571020570002_805">C. Wentz</a> <em id="yui_3_15_0_1_1571020570002_716">QB - PHI</em>    </div></td>
-
-#yui_3_15_0_1_1571020570002_598
-
-
-#yui_3_15_0_1_1571020570002_598
-
-#yui_3_15_0_1_1571020570002_597
-print(soup.yui_3_15_0_1_1571020570002_597)
-
-soup.findChildren
-
-//*[@id="yui_3_15_0_1_1571020570002_597"]
-
-soup.cdata_list_attributes
-soup.name
-print(soup.body.div)
-print(soup.children)
-
-for c in soup.children:
-    print(c)
-
-
-print(soup.doc)
-soup.text
-print(soup.html.body)
-print(soup)
-print(soup.attrs)
-print(soup.body.div.div.div.div)
-
-soup.select('#yui_3_15_0_1_1571020570002_598')
-
-/html/body/div[2]/div[3]/div/div[1]/div/div[5]/div[2]/div[1]/div/div/div[2]/div/div/div[2]/div/div/div/div[1]/div[1]/table/tbody/tr[1]/td[7]/span
-
-
-
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#     OWNER-SEASON-WEEK-PLAYER     #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+gameCenterDf.to_csv('data_owner_season_week_player.csv', index=False)
 

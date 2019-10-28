@@ -1,4 +1,4 @@
-teamOwner,teamName,teamTransactions,teamTrades,season,teamRank,teamRecord,teamWinPct,teamPointsFor,teamPointsAgainst
+teamOwner,teamName,teamTransactions,teamTrades,season,teamRankRegSeason,teamRecordRegSeason,teamWinPctRegSeason,teamPointsForRegSeason,teamPointsAgainstRegSeason
 AJ ,Winning,23,0,2011,12,3-11-0,0.214,1464.54,1604.04
 Rob,Mansleezy,18,2,2011,8,7-7-0,0.5,1398.45,1430.05
 nathan,ol-erth panda slayers,25,0,2011,2,9-5-0,0.643,1474.95,1308.82
