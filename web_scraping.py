@@ -238,10 +238,18 @@ def getMatchups():
     matchups.teamRecordPre.loc[matchups['week'] == 1] = '0-0-0'
     matchups['teamRecordPreOpponent'] = matchups.groupby(['teamOwnerOpponent', 'teamNameOpponent', 'season'])['teamRecordPostOpponent'].shift(1)
     matchups.teamRecordPreOpponent.loc[matchups['week'] == 1] = '0-0-0'
+    matchups = matchups.reset_index()
+    matchups['teamWeekRank'] = matchups.sort_values(['season','week','teamWeekTotal'], ascending=[True, True,False]) \
+        .groupby(['season','week']) \
+        .cumcount() + 1
+    matchups['teamWeekRankOpponent'] = matchups.sort_values(['season','week','teamWeekTotalOpponent'], ascending=[True, True,False]) \
+        .groupby(['season','week']) \
+        .cumcount() + 1
     # reorder columns
-    matchups = matchups[['season', 'week', 'teamOwner', 'teamName', 'teamWeekTotal', 'teamRecordPre', 'teamMatchupResult', 'teamRecordPost', 'teamOwnerOpponent', 'teamNameOpponent', 'teamWeekTotalOpponent', 'teamRecordPreOpponent', 'teamRecordPostOpponent']]
+    matchups = matchups[['season', 'week', 'teamOwner', 'teamName', 'teamWeekTotal', 'teamWeekRank', 'teamRecordPre', 'teamMatchupResult', 'teamRecordPost', 'teamOwnerOpponent', 'teamNameOpponent', 'teamWeekTotalOpponent', 'teamWeekRankOpponent', 'teamRecordPreOpponent', 'teamRecordPostOpponent']]
     return matchups
 
+             
 matchups = getMatchups()
 
 
