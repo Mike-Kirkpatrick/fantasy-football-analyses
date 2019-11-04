@@ -95,14 +95,17 @@ temp = temp.sort_values(by=['bullshitWin'])
 
 labels = list(temp.index.values) 
 y_pos = np.arange(len(temp))
+newLabels = []
+for label in labels:
+    newLabel = label +' '+ str(int(temp['bullshitWin'][label])) + '%'
+    newLabels.append(newLabel)
+    
 plt.barh(y_pos, temp['bullshitWin'])
-plt.yticks(y_pos, labels)
+plt.yticks(y_pos, newLabels)
 plt.title('Bullshit Wins')
 plt.xlabel('Percent of wins that are bullshit')
-plt.savefig('plots/bullshit_wins.png', dpi=300, bbox_inches='tight')
-#plt.savefig('plots/bullshit_wins.jpeg', bbox_inches='tight')
-#plt.savefig('plots/bullshit_wins.jpg', format, bbox_inches='tight')
-#plt.show()
+plt.savefig('plots/bullshit_wins.png', dpi=200, bbox_inches='tight')
+
 
 
 
