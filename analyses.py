@@ -99,7 +99,9 @@ plt.barh(y_pos, temp['bullshitWin'])
 plt.yticks(y_pos, labels)
 plt.title('Bullshit Wins')
 plt.xlabel('Percent of wins that are bullshit')
-plt.savefig('plots/bullshit_wins.png', bbox_inches='tight')
+plt.savefig('plots/bullshit_wins.png', dpi=300, bbox_inches='tight')
+#plt.savefig('plots/bullshit_wins.jpeg', bbox_inches='tight')
+#plt.savefig('plots/bullshit_wins.jpg', format, bbox_inches='tight')
 #plt.show()
 
 
