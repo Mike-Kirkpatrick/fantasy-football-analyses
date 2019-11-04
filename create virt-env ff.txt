@@ -8,6 +8,7 @@ conda activate ff
 conda install beautifulsoup4 -y
 conda install pandas -y
 conda install spyder -y
+conda install matplotlib -y
 
 # Export dependencies (first activate the environment)
 pip freeze > requirements.txt
