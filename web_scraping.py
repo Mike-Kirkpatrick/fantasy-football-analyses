@@ -297,11 +297,11 @@ def gameCenter():
                     teamPoints.append(datum.text)
                 teamPoints = teamPoints[0]
                 
-                playerPosition = []
+                playerRosterPosition = []
                 data = soup.find_all('td', class_ = 'teamPosition')
                 for datum in data:
-                    playerPosition.append(datum.text)
-                playerPosition = playerPosition[0:16]                
+                    playerRosterPosition.append(datum.text)
+                playerRosterPosition = playerRosterPosition[0:16]                
                 
                 playerNameAndInfo = []
                 data = soup.find_all('td', class_ = 'playerNameAndInfo')
@@ -327,8 +327,8 @@ def gameCenter():
                     playerPoints.append(datum.text)
                 playerPoints = playerPoints[0:16]
                 
-                ls =  list(zip(playerPosition, playerNameAndInfo, playerPoints, playerOpponent, playerGameStatus))
-                df = pd.DataFrame(ls, columns = ['playerPosition', 'playerNameAndInfo', 'playerPoints', 'playerOpponent', 'playerGameStatus'])
+                ls =  list(zip(playerRosterPosition, playerNameAndInfo, playerPoints, playerOpponent, playerGameStatus))
+                df = pd.DataFrame(ls, columns = ['playerRosterPosition', 'playerNameAndInfo', 'playerPoints', 'playerOpponent', 'playerGameStatus'])
                 df.insert(0, 'teamPoints', teamPoints)
                 df.insert(0, 'teamName', teamName)
                 df.insert(0, 'teamOwner', teamOwner)

@@ -8,17 +8,22 @@ Created on Sat Oct 26 22:30:03 2019
 
 Ideas:
     Regular season:
+        -Win percentage
+        -Average rank
+        Average points for
+        Average points against
         -Bullshit wins
         -Shitty losses
         highest score ever
         Lowest score ever
-        -Win percentage
-        -Average rank
         Bench composition
         -Poor Coaching (players with 0 points not on bench)
-    Playoffs
+        Transactions
+    Playoffs:
         Most appearances
         Most wins
+    General Trends:
+        Average points per week
     See if players that win during the week actually influence the fantasy outcome
 
 
@@ -35,6 +40,7 @@ oswpDf = pd.read_csv('data_owner_season_week_player.csv')
 def assignCoach(row):
     '''Aj has a space after is name like an ass'''
     teamOwner = row['teamOwner']
+    teamName = row['teamName']
     coach = ''
     if teamOwner == 'AJ ':
         coach = 'Aj Crane'
@@ -57,9 +63,9 @@ def assignCoach(row):
     if teamOwner == 'Matthew':
         coach = 'Matt Cisneros'
     if teamOwner == 'Mike':
-        if teamOwner == 'Mr Pig Skinner':
+        if teamName == 'Mr Pig Skinner':
             coach = 'Mike Thomas'
-        elif teamOwner == 'MrPigSkinner':
+        elif teamName == 'MrPigSkinner':
             coach = 'Mike Thomas'
         else:
             coach = 'Mike Kirkpatrick'
@@ -107,6 +113,32 @@ seasonWeek = getSeasonWeekDict(osDf)
 oswDf['isRegSeason'] = oswDf.apply(isRegSeasonWeek, axis=1)
 oswpDf['isRegSeason'] = oswpDf.apply(isRegSeasonWeek, axis=1)
 del seasonWeek
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#     ADD PLAYER POSITION     #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+def playerPosition(row):
+    player = row['playerNameAndInfo']
+    playerPosition = None
+    DPs = [' LB ', ' DB ', ' DL ']
+    positions = ['QB', 'RB', 'WR', 'TE', 'K']
+    if player == '--empty--':
+        playerPosition = 'Empty'
+    elif ' DEF' in player:
+        playerPosition = 'DEF'
+    elif any(DP in player for DP in DPs):
+        playerPosition = 'DP'
+    else:
+        for pos in positions:
+            if ' {} '.format(pos) in player:
+                playerPosition = pos
+    return playerPosition
+
+oswpDf['playerPosition'] = oswpDf.apply(playerPosition, axis=1)
+
+
+
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
@@ -279,9 +311,44 @@ plotPoorCoaching(oswpDf)
 
 
 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#     Bench Composition     #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+def plotBenchComposition(df):
+    df = df[df.playerRosterPosition == 'BN']
+    measureLabel = 'playerPosition'
+    numerator = pd.DataFrame(df.groupby(['coach', measureLabel]).size(), columns=['numerator']).reset_index()
+    denominator = pd.DataFrame(df.groupby(['coach']).size(), columns=['denominator'])
+    df = pd.merge(numerator, denominator, on=['coach'])
+    df['percent'] = df['numerator']/df['denominator']*100
+    
+    pivot_df = df.pivot(index='coach', columns=measureLabel, values='percent')
+    pivot_df = pivot_df.fillna(0)
+    pivot_df = pivot_df[['QB','RB','WR','TE','K','DEF','DP']]
+    
+    pivot_df.plot.bar(stacked=True)
+    
+    
+    
+    
+    
+    labels = list(temp.index.values)
+    y_pos = np.arange(len(temp))
+    newLabels = []
+    for label in labels:
+        newLabel = label +' '+ str(int(temp[measureLabel][label])) + '%'
+        newLabels.append(newLabel)
+        
+    plt.barh(y_pos, temp[measureLabel])
+    plt.yticks(y_pos, newLabels)
+    plt.title('Regular Season Poor Coaching Percentage')
+    plt.xlabel('Percent of regular season players played that got less than 0 points')
+    plt.savefig('plots/reg_season_poor_coaching.png', dpi=200, bbox_inches='tight')
+
+plotPoorCoaching(oswpDf)
 
 
 
-
+df = oswpDf
 
 

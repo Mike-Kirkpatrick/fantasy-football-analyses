@@ -1,4 +1,4 @@
-season,week,teamOwner,teamName,teamPoints,playerPosition,playerNameAndInfo,playerPoints,playerOpponent,playerGameStatus
+season,week,teamOwner,teamName,teamPoints,playerRosterPosition,playerNameAndInfo,playerPoints,playerOpponent,playerGameStatus
 2011,1,AJ,Winning,92.28,QB,T. Romo QB - DAL ,20.58,@NYJ,"Loss, 24-27"
 2011,1,AJ,Winning,92.28,RB,A. Foster RB - HOU ,0.0,IND,"Win, 34-7"
 2011,1,AJ,Winning,92.28,RB,D. Williams RB - CAR ,3.6,@ARI,"Loss, 21-28"
