@@ -166,12 +166,42 @@ regularSeason = regularSeason()
 
 
 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#     Team Standings - Final     #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+def finalStandings():
+    df = pd.DataFrame()
+    for season in seasonsWeeksTeamIds:
+        url = 'https://fantasy.nfl.com/league/{}/history/{}/standings'.format(leagueId,season)
+        soup = getWebpageData(url)
+        
+        teamNames = []
+        data = soup.find_all('a', class_ = 'teamName')
+        for datum in data:
+            teamNames.append(datum.text)
+        teamNames = teamNames[1:] #it lists the champion twice
+        
+        teamFinalStandings = []
+        data = soup.find_all('div', class_ = 'place')
+        for datum in data:
+            teamFinalStandings.append(int(datum.text.replace(' Place','').replace('st','').replace('nd','').replace('rd','').replace('th','')))
+        
+        
+        List =  list(zip(teamNames, teamFinalStandings))
+        seasonDf = pd.DataFrame(List, columns = ['teamName', 'teamFinalStanding']) 
+        seasonDf['season'] = season
+        df = pd.concat([df, seasonDf], axis=0)
+    return df
+
+finalStandings = finalStandings()
+
 #~~~~~~~~~~~~~~~~~~~~~~#
 #     OWNER-SEASON     #
 #~~~~~~~~~~~~~~~~~~~~~~#
 ownerSeason = pd.merge(teamOwners, regularSeason, on=['teamName', 'season'])
+ownerSeason = pd.merge(ownerSeason, finalStandings, on=['teamName', 'season'])
 
-ownerSeason.to_csv('data_owner_season.csv', index=False)
+ownerSeason.to_csv('data/raw_data_owner_season.csv', index=False)
 
 #~~~~~~~~~~~~~~~~~~#
 #     MATCHUPS     #
@@ -256,7 +286,7 @@ matchups = getMatchups()
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #     OWNER-SEASON-WEEK     #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-matchups.to_csv('data_owner_season_week.csv', index=False)
+matchups.to_csv('data/raw_data_owner_season_week.csv', index=False)
 
 
 
@@ -349,5 +379,5 @@ gameCenterDf['teamPoints'] = pd.to_numeric(gameCenterDf.teamPoints)
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #     OWNER-SEASON-WEEK-PLAYER     #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-gameCenterDf.to_csv('data_owner_season_week_player.csv', index=False)
+gameCenterDf.to_csv('data/raw_data_owner_season_week_player.csv', index=False)
 

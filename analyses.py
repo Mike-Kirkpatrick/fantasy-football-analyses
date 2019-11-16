@@ -16,13 +16,14 @@ Ideas:
         -Shitty losses
         -Highest score ever
         -Lowest score ever
-        --Bench composition
+        -Bench composition
         -Poor Coaching (players with 0 points not on bench)
         -Transactions
         -Trades
     Playoffs:
-        Most appearances
-        Most wins
+        -Appearances
+        -Wins
+        -Medalists
     General Trends:
         Average points per week
     See if players that win during the week actually influence the fantasy outcome
@@ -34,9 +35,9 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-osDf = pd.read_csv('data_owner_season.csv')
-oswDf = pd.read_csv('data_owner_season_week.csv')
-oswpDf = pd.read_csv('data_owner_season_week_player.csv')
+osDf = pd.read_csv('data/raw_data_owner_season.csv')
+oswDf = pd.read_csv('data/raw_data_owner_season_week.csv')
+oswpDf = pd.read_csv('data/raw_data_owner_season_week_player.csv')
 
 def assignCoach(row):
     '''Aj has a space after is name like an ass'''
@@ -139,6 +140,118 @@ def playerPosition(row):
 oswpDf['playerPosition'] = oswpDf.apply(playerPosition, axis=1)
 
 
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#     Seasons Participated     #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+def plotSeasonsParticipated(df):
+    measureLabel = 'Coach'
+    df[measureLabel] = df.coach
+    temp = pd.DataFrame(df.groupby('coach')[measureLabel].count())
+    temp = temp.sort_values(by=[measureLabel])
+    labels = list(temp.index.values)
+    newLabels = []
+    for label in labels: 
+    y_pos = np.arange(len(temp))
+        newLabel = label +' '+ str(int(temp[measureLabel][label]))
+        newLabels.append(newLabel) 
+    plt.barh(y_pos, temp[measureLabel])
+    plt.yticks(y_pos, newLabels    plt.title('Seasons Participated')
+    plt.xlabel('Number of seasons participated')
+    plt.savefig('plots/seasons_participated.png', dpi=200, bbox_inches='tight')
+
+plotSeasonsParticipated(osDf)
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+)
+#     Playoff Appearances     #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+def plotPlayoffAppearances(df):
+    def playoffAppearance(row):
+        rank = row['teamRankRegSeason']
+        if rank <= 6:
+            playoff = 1
+        elif rank > 6:
+            playoff = 0
+        return playoff
+    measureLabel = 'playoffAppearance'
+    df[measureLabel] = df.apply(playoffAppearance, axis=1)
+    temp = pd.DataFrame(df.groupby('coach')[measureLabel].mean())
+    temp = temp.sort_values(by=[measureLabel])
+    labels = list(temp.index.values) 
+    y_pos = np.arange(len(temp))
+    newLabels = []
+    for label in labels:
+        newLabel = label +' '+ str(int(temp[measureLabel][label]*1000)/10) + '%'
+        newLabels.append(newLabel) 
+    plt.barh(y_pos, temp[measureLabel])
+    plt.yticks(y_pos, newLabels)
+    plt.title('Playoff Appearances')
+    plt.xlabel('Percent of seasons in which you made it to the playoffs')
+    plt.savefig('plots/playoff_appearances.png', dpi=200, bbox_inches='tight')
+
+plotPlayoffAppearances(osDf)
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#     Playoff Champions     #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+def plotPlayoffChampions(df):
+    def playoffChampion(row):
+        rank = row['teamFinalStanding']
+        if rank == 1:
+            champion = 1
+        else:
+            champion = 0
+        return champion
+    measureLabel = 'playoffChampion'
+    df[measureLabel] = df.apply(playoffChampion, axis=1)
+    temp = pd.DataFrame(df.groupby('coach')[measureLabel].mean())
+    temp = temp.sort_values(by=[measureLabel])
+    labels = list(temp.index.values) 
+    y_pos = np.arange(len(temp))
+    newLabels = []
+    for label in labels:
+        newLabel = label +' '+ str(int(temp[measureLabel][label]*1000)/10) + '%'
+        newLabels.append(newLabel) 
+    plt.barh(y_pos, temp[measureLabel])
+    plt.yticks(y_pos, newLabels)
+    plt.title('Playoff Champion')
+    plt.xlabel('Percent of seasons in which you were the Champion')
+    plt.savefig('plots/playoff_champion.png', dpi=200, bbox_inches='tight')
+
+plotPlayoffChampions(osDf)
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#     Playoff Medalist     #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~#
+def plotPlayoffMedalist(df):
+    def fn(row):
+        rank = row['teamFinalStanding']
+        if rank <= 3:
+            medalist = 1
+        else:
+            medalist = 0
+        return medalist
+    measureLabel = 'playoffMedalist'
+    df[measureLabel] = df.apply(fn, axis=1)
+    temp = pd.DataFrame(df.groupby('coach')[measureLabel].mean())
+    temp = temp.sort_values(by=[measureLabel])
+    labels = list(temp.index.values) 
+    y_pos = np.arange(len(temp))
+    newLabels = []
+    for label in labels:
+        newLabel = label +' '+ str(int(temp[measureLabel][label]*1000)/10) + '%'
+        newLabels.append(newLabel) 
+    plt.barh(y_pos, temp[measureLabel])
+    plt.yticks(y_pos, newLabels)
+    plt.title('Playoff Medalist')
+    plt.xlabel('Percent of seasons in which you got 3rd place or better')
+    plt.savefig('plots/playoff_medalist.png', dpi=200, bbox_inches='tight')
+
+plotPlayoffMedalist(osDf)
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
