@@ -1,24 +1,24 @@
-# fantasy-football-analyses
+# Fantasy Football Analyses
 Web scrape our NFL Fantasy Football league and analyze multiple seasons of data.
 
-### Regular Season
+## Regular Season
 
-##### Bullshit Wins
+### Bullshit Wins
 Blah blah blah
 ![Alt text](./plots/reg_season_bullshit_wins.png?raw=true)
 
-### Playoffs
+## Playoffs
 This are things that happen after the regular season, hence why this section is after the regular season section.
 
-##### Playoff Appearances
+### Playoff Appearances
 Blah blah blah
 ![Alt text](./plots/playoff_appearances.png?raw=true)
 
-##### Playoff Champions
+### Playoff Champions
 Blah blah blah
 ![Alt text](./plots/playoff_champion.png?raw=true)
 
-##### Playoff Medalists.
+### Playoff Medalists.
 Blah blah blah
 ![Alt text](./plots/playoff_medalist.png?raw=true)
 
