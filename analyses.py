@@ -9,10 +9,10 @@ Created on Sat Oct 26 22:30:03 2019
 Ideas:
     Regular season:
         -Win percentage
-        -Average rank
-        -Average points for
-        -Average points against
-        -Average Weekly Rank
+        -Average reg season rank
+        -Average reg season points for
+        -Average reg season points against
+        Average Weekly Rank
         -Bullshit wins
         -Shitty losses
         -Highest score ever
@@ -498,6 +498,35 @@ plotRegSeasonAvgPointsAgainst(oswDf, False)
 plotRegSeasonAvgPointsAgainst(oswDf, True)
 
 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#     Regular Season Avg Weekly Rank     #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+def plotRegSeasonAvgWeeklyRank(df, isLastFiveSeasons):
+    pltTitle = 'Regular Season Average Weekly Rank'
+    pltXLabel = 'Average weekly points rank in regular season matchups'
+    pltFile = 'plots/reg_season_avg_weekly_rank.png'
+    if isLastFiveSeasons == True:
+        df, pltTitle, pltXLabel, pltFile = ifIsLastFiveSeasons(df, pltTitle, pltXLabel, pltFile)
+    measureLabel = 'teamWeekRank'
+    temp = pd.DataFrame(df.groupby('coach')[measureLabel].mean())
+    temp = temp.sort_values(by=[measureLabel], ascending=False)
+    labels = list(temp.index.values) 
+    y_pos = np.arange(len(temp))
+    newLabels = []
+    for label in labels:
+        newLabel = label +' '+ str(int(temp[measureLabel][label]*10)/10)
+        newLabels.append(newLabel)
+        
+    plt.barh(y_pos, temp[measureLabel])
+    plt.yticks(y_pos, newLabels)
+    plt.title(pltTitle)
+    plt.xlabel(pltXLabel)
+    plt.savefig(pltFile, dpi=200, bbox_inches='tight')
+
+plotRegSeasonAvgWeeklyRank(oswDf, False)
+plotRegSeasonAvgWeeklyRank(oswDf, True)
+
+
 #~~~~~~~~~~~~~~~~~~~~~~~#
 #     Highest Score     #
 #~~~~~~~~~~~~~~~~~~~~~~~#
@@ -628,9 +657,6 @@ plotRegSeasonShittyLosses(oswDf, False)
 plotRegSeasonShittyLosses(oswDf, True)
 
 
-
-
-
 #~~~~~~~~~~~~~~~~~~~~~~~#
 #     Poor Coaching     #
 #~~~~~~~~~~~~~~~~~~~~~~~#
@@ -658,10 +684,6 @@ def plotRegSeasonPoorCoaching(df, isLastFiveSeasons):
 
 plotRegSeasonPoorCoaching(oswpDf, False)
 plotRegSeasonPoorCoaching(oswpDf, True)
-
-
-
-
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~#
