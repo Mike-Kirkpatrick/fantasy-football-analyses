@@ -1,9 +1,12 @@
-# Fantasy Football Analyses
+# Fantasy Football Analyses 2018
+
 Web scrape our NFL Fantasy Football league and analyze multiple seasons of data.
 
 # TO DO
-- Make gant chart for seasons participated
+- Make gantt chart for seasons participated
 - Save final data sets
+- Scatterplot of points for and points against
+- For every plot, state which direction they want to see their name (top or bottom)
 
 ### Brief Introduction
 - Time Period
@@ -20,7 +23,51 @@ NFL Fantasy Football, Webscraping, python.
 `Blah blah blah`
 ![Alt text](./plots/seasons_participated.png?raw=true)
 
+
+## Playoffs and Regular Season
+Statistics for stuff that happens during the playoffs and the regular season.
+
+### Max Points
+Aaron has the highest score of all time. Fun fact is that he got this score during the championship game in our first season.
+![Alt text](./plots/reg_season_max_points.png?raw=true)
+
+
+### Min Points
+Points are good, so having few points is bad. This plot is the lowest score you've ever scored. Hopefully your name is towards the top of this chart.
+![Alt text](./plots/reg_season_min_points.png?raw=true)
+
+
+### Trades
+Yeah, we don't trade...ever. Most people have never traded. We should become more trusting of each other.
+![Alt text](./plots/reg_season_trades.png?raw=true)
+
+
+### Transactions
+Some of you are extremely loyal to your draft picks and some of you have an entirely new team by the end of the season. Alex basically has a new team every week. Given that there are 16 weeks in the regular season, Aaron changes out roughly one player per week.
+![Alt text](./plots/reg_season_transactions.png?raw=true)
+
+The last 5 seasons look very similar to all seasons. It appears that we have our own strategy and we stick to it.
+![Alt text](./plots/reg_season_transactions_last5seasons.png?raw=true)
+
+
+## Playoffs
+Statistics for stuff that happens during the playoffs.
+
+### Playoff Appearances
+Alex and Nathan have made it to the playoffs 2 out of 2 times, which is impressive. However, Mike Thomas has made it to the playoffs 6 out of 7 times which is very impressive.
+![Alt text](./plots/playoff_appearances.png?raw=true)
+
+### Playoff Champions
+AJ and Kameron have won twice. Brian, Sam, Aaron and myself have won once.
+![Alt text](./plots/playoff_champion.png?raw=true)
+
+### Playoff Medalists
+Most people have gotten 3rd or better at some point.
+![Alt text](./plots/playoff_medalist.png?raw=true)
+
+
 ## Regular Season
+Statistics for stuff that happens during the regular season.
 
 ### Average Points Against
 `Blah blah blah`
@@ -62,16 +109,6 @@ NFL Fantasy Football, Webscraping, python.
 ![Alt text](./plots/reg_season_bullshit_wins_last5seasons.png?raw=true)
 
 
-### Max Points
-`Blah blah blah`
-![Alt text](./plots/reg_season_max_points.png?raw=true)
-
-
-### Min Points
-`Blah blah blah`
-![Alt text](./plots/reg_season_min_points.png?raw=true)
-
-
 ### Poor Coaching
 `Blah blah blah`
 ![Alt text](./plots/reg_season_poor_coaching.png?raw=true)
@@ -96,19 +133,6 @@ NFL Fantasy Football, Webscraping, python.
 ![Alt text](./plots/reg_season_shitty_losses_last5seasons.png?raw=true)
 
 
-### Trades
-`Blah blah blah`
-![Alt text](./plots/reg_season_trades.png?raw=true)
-
-
-### Transactions
-`Blah blah blah`
-![Alt text](./plots/reg_season_transactions.png?raw=true)
-
-`Blah blah blah`
-![Alt text](./plots/reg_season_transactions_last5seasons.png?raw=true)
-
-
 ### Win Percentage
 `Blah blah blah`
 ![Alt text](./plots/reg_season_win_pct.png?raw=true)
@@ -117,20 +141,4 @@ NFL Fantasy Football, Webscraping, python.
 ![Alt text](./plots/reg_season_win_pct_last5seasons.png?raw=true)
 
 
-
-
-## Playoffs
-This are things that happen after the regular season, hence why this section is after the regular season section.
-
-### Playoff Appearances
-`Blah blah blah`
-![Alt text](./plots/playoff_appearances.png?raw=true)
-
-### Playoff Champions
-`Blah blah blah`
-![Alt text](./plots/playoff_champion.png?raw=true)
-
-### Playoff Medalists.
-`Blah blah blah`
-![Alt text](./plots/playoff_medalist.png?raw=true)
 
