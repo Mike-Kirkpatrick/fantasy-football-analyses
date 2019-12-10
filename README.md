@@ -9,6 +9,7 @@ Web scrape our NFL Fantasy Football league and analyze multiple seasons of data.
 - For every plot, state which direction they want to see their name (top or bottom)
 
 ### Brief Introduction
+- Reading is hard so I've used as few words as possible. 
 - Time Period
 - Rational for comparing last 5 years
 - Welcome ideas for things to look at in the future
@@ -70,35 +71,27 @@ Most people have gotten 3rd or better at some point.
 Statistics for stuff that happens during the regular season.
 
 ### Average Points Against
-`Blah blah blah`
+These are the points that are scored against you. Looking at all seasons, it's pretty consistent for each coach.
 ![Alt text](./plots/reg_season_avg_points_against.png?raw=true)
 
-`Blah blah blah`
+However, looking at the last 5 seasons, it's rather suspicious that our commisioner is at the bottom of this list...
 ![Alt text](./plots/reg_season_avg_points_against_last5seasons.png?raw=true)
 
 
 ### Average Points For
-`Blah blah blah`
+These are the points that you score each week. The distribution is a little more spread out than Points Against. Kameron proudly sits atop the list.
 ![Alt text](./plots/reg_season_avg_points_for.png?raw=true)
 
-`Blah blah blah`
+Looking at the last 5 seasons, it appears that the wealth-gap has widened. The rich have gotten richer and the poor have gotten poorer #Trump2020
 ![Alt text](./plots/reg_season_avg_points_for_last5seasons.png?raw=true)
 
 
 ### Average Weekly Rank
-`Blah blah blah`
+Each week, there are 12 teams that play in 6 matchups. Instead of looking at the results of the matchups, this is a ranking of all 12 teams from highest score (#1) to lowest score (#12) for the given week. I then took the average across all weeks/seasons. It's similar to Average Points For, except that this measure is robust to bye weeks. Hopefully you find your name towards the top of this list.
 ![Alt text](./plots/reg_season_avg_weekly_rank.png?raw=true)
 
-`Blah blah blah`
+Looking at the last 5 seasons, we see a similar trend: certain players are trending upwards while others are slowly sinking.
 ![Alt text](./plots/reg_season_avg_weekly_rank_last5seasons.png?raw=true)
-
-
-### Bench Composition
-`Blah blah blah`
-![Alt text](./plots/reg_season_bench_composition.png?raw=true)
-
-`Blah blah blah`
-![Alt text](./plots/reg_season_bench_composition_last5seasons.png?raw=true)
 
 
 ### Bullshit Wins
@@ -107,6 +100,22 @@ Statistics for stuff that happens during the regular season.
 
 `Blah blah blah`
 ![Alt text](./plots/reg_season_bullshit_wins_last5seasons.png?raw=true)
+
+
+### Shitty Losses
+`Blah blah blah`
+![Alt text](./plots/reg_season_shitty_losses.png?raw=true)
+
+`Blah blah blah`
+![Alt text](./plots/reg_season_shitty_losses_last5seasons.png?raw=true)
+
+
+### Bench Composition
+`Blah blah blah`
+![Alt text](./plots/reg_season_bench_composition.png?raw=true)
+
+`Blah blah blah`
+![Alt text](./plots/reg_season_bench_composition_last5seasons.png?raw=true)
 
 
 ### Poor Coaching
@@ -123,14 +132,6 @@ Statistics for stuff that happens during the regular season.
 
 `Blah blah blah`
 ![Alt text](./plots/reg_season_rank_last5seasons.png?raw=true)
-
-
-### Shitty Losses
-`Blah blah blah`
-![Alt text](./plots/reg_season_shitty_losses.png?raw=true)
-
-`Blah blah blah`
-![Alt text](./plots/reg_season_shitty_losses_last5seasons.png?raw=true)
 
 
 ### Win Percentage
