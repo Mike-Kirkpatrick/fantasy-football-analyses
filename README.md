@@ -21,7 +21,7 @@ NFL Fantasy Football, Webscraping, python.
 ## Coaches
 
 ### Seasons Participated
-`Blah blah blah`
+Every season we've had 12 coaches. You get a dot per season you participated.
 ![Alt text](./plots/seasons_participated.png?raw=true)
 
 

@@ -6,31 +6,6 @@ Created on Sat Oct 26 22:30:03 2019
 @author: mike
 """
 
-Ideas:
-    Regular season:
-        -Win percentage
-        -Average reg season rank
-        -Average reg season points for
-        -Average reg season points against
-        Average Weekly Rank
-        -Bullshit wins
-        -Shitty losses
-        -Highest score ever
-        -Lowest score ever
-        -Bench composition
-        -Poor Coaching (players with 0 points not on bench)
-        -Transactions
-        -Trades
-    Playoffs:
-        -Appearances
-        -Wins
-        -Medalists
-    General Trends:
-        Average points per week
-    See if players that win during the week actually influence the fantasy outcome
-
-
-
 from os import chdir
 chdir('/home/mike/fantasy-football-analyses')
 import numpy as np
@@ -245,27 +220,16 @@ oswpDf['poorCoaching'] = oswpDf.apply(poorCoaching, axis=1)
 #~~~~~~~~~~                         ~~~~~~~~~~#
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
-
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #     Seasons Participated     #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 def plotSeasonsParticipated(df):
-    measureLabel = 'Coach'
-    df[measureLabel] = df.coach
-    temp = pd.DataFrame(df.groupby('coach')[measureLabel].count())
-    temp = temp.sort_values(by=[measureLabel])
-    labels = list(temp.index.values)
-    newLabels = []
-    for label in labels: 
-        y_pos = np.arange(len(temp))
-        newLabel = label +' '+ str(int(temp[measureLabel][label]))
-        newLabels.append(newLabel) 
-    plt.barh(y_pos, temp[measureLabel])
-    plt.yticks(y_pos, newLabels)
+    df = df.sort_values(by=['coach'], ascending=False)
+    plt.scatter(df.season, df.coach)
     plt.title('Seasons Participated')
-    plt.xlabel('Number of seasons participated')
+    plt.xlabel('One dot per season participated')
     plt.savefig('plots/seasons_participated.png', dpi=200, bbox_inches='tight')
-
+    
 plotSeasonsParticipated(osDf)
 
 
