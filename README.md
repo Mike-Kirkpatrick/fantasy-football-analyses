@@ -1,8 +1,5 @@
 # Fantasy Football Analyses 2011-2018
 
-# TO DO
-- Save final data sets
-
 ### Brief Introduction
 We've been playing fantasy football together for a while so it's time to examine our data longitudinally. I used python to web-scrape all of the data from our league's history. If you'd like to recreate these analyses for another NFL Fantasy Football league, you could recycle my code easily. Now, I know that words are hard, so I've used as few as possible. Charts, charts and more charts. I consider this report as the first of many. I have a bunch of ideas to dig into our gameplay (or lack thereof) that I didn't have time to include this time around. If you have any ideas, let me know! 
 
@@ -10,7 +7,7 @@ We've been playing fantasy football together for a while so it's time to examine
 ## Coaches
 
 ### Seasons Participated
-Every season we've had 12 coaches. You get a dot for season you've participated.
+Every season we've had 12 coaches. You get a dot for each season you've participated.
 ![Alt text](./plots/seasons_participated.png?raw=true)
 
 
