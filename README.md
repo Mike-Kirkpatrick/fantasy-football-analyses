@@ -1,27 +1,16 @@
-# Fantasy Football Analyses 2018
-
-Web scrape our NFL Fantasy Football league and analyze multiple seasons of data.
+# Fantasy Football Analyses 2011-2018
 
 # TO DO
-- Make gantt chart for seasons participated
 - Save final data sets
-- Scatterplot of points for and points against
-- For every plot, state which direction they want to see their name (top or bottom)
 
 ### Brief Introduction
-- Reading is hard so I've used as few words as possible. 
-- Time Period
-- Rational for comparing last 5 years
-- Welcome ideas for things to look at in the future
-- This is the foundation for future reports - excitited to dig into our gameplay (or lack thereof)
+We've been playing fantasy football together for a while so it's time to examine our data longitudinally. I used python to web-scrape all of the data from our league's history. If you'd like to recreate these analyses for another NFL Fantasy Football league, you could recycle my code easily. Now, I know that words are hard, so I've used as few as possible. Charts, charts and more charts. I consider this report as the first of many. I have a bunch of ideas to dig into our gameplay (or lack thereof) that I didn't have time to include this time around. If you have any ideas, let me know! 
 
-### Where The Hell Did These Numbers Come From?
-NFL Fantasy Football, Webscraping, python.
 
 ## Coaches
 
 ### Seasons Participated
-Every season we've had 12 coaches. You get a dot per season you participated.
+Every season we've had 12 coaches. You get a dot for season you've participated.
 ![Alt text](./plots/seasons_participated.png?raw=true)
 
 
@@ -70,6 +59,23 @@ Most people have gotten 3rd or better at some point.
 ## Regular Season
 Statistics for stuff that happens during the regular season.
 
+
+### Win Percentage
+This one is as straightforward as it gets. How often do you win? Hopefully you find your name at the top of this chart. Or, at the very least, have a winning record overall (i.e., > 50%).
+![Alt text](./plots/reg_season_win_pct.png?raw=true)
+
+Looking at the last 5 seasons, there is a little shift in the order. A few people jumped up and a few dropped.
+![Alt text](./plots/reg_season_win_pct_last5seasons.png?raw=true)
+
+
+### End of Season Rank
+For these charts, you want to see low numbers next to your name. There's a pretty wide spread across all coaches. 
+![Alt text](./plots/reg_season_rank.png?raw=true)
+
+Looking at the last 5 seasons, there's definitely a contraction at the top. There's a few people that consistently rank high at the end of the season and everyone else is 7 or higher. You can see some movement, but since there are so few data points being, one bad season can ruin your average.
+![Alt text](./plots/reg_season_rank_last5seasons.png?raw=true)
+
+
 ### Average Points Against
 These are the points that are scored against you. Looking at all seasons, it's pretty consistent for each coach.
 ![Alt text](./plots/reg_season_avg_points_against.png?raw=true)
@@ -82,7 +88,7 @@ However, looking at the last 5 seasons, it's rather suspicious that our commisio
 These are the points that you score each week. The distribution is a little more spread out than Points Against. Kameron proudly sits atop the list.
 ![Alt text](./plots/reg_season_avg_points_for.png?raw=true)
 
-Looking at the last 5 seasons, it appears that the wealth-gap has widened. The rich have gotten richer and the poor have gotten poorer #Trump2020
+Looking at the last 5 seasons, it appears that the wealth-gap has widened. The rich have gotten richer and the poor have gotten poorer.
 ![Alt text](./plots/reg_season_avg_points_for_last5seasons.png?raw=true)
 
 
@@ -95,51 +101,30 @@ Looking at the last 5 seasons, we see a similar trend: certain players are trend
 
 
 ### Bullshit Wins
-`Blah blah blah`
+Bullshit wins are an extension of weekly rank. A bullshit win occurs when someone wins their weekly matchup but their weekly score was rank 7 or worse. That means that the person won despite have a lower score than half of the league. This is considered bullshit because, had you played almost anyone else that week, you would have lost. The percentage of bullshit wins is calculated by taking the number of wins that are bullshit divided by your total number of wins. Danny tops the chart with 40% of his wins being bullshit.
 ![Alt text](./plots/reg_season_bullshit_wins.png?raw=true)
 
-`Blah blah blah`
+Looking at the last 5 seasons, the bullshit is getting more and more polarized. Half of the time that Danny wins, it's bullshit.
 ![Alt text](./plots/reg_season_bullshit_wins_last5seasons.png?raw=true)
 
 
 ### Shitty Losses
-`Blah blah blah`
+Shitty losses are the exact opposite of bullshit wins. A shitty loss occurs when you lose but had a weekly rank of 6 or better. For example, you got the 3rd highest points this week but you played the person who got the 2nd highest points. Had you played almost anyone else, you would have won. It's a shitty loss. To calculate this, I took the number of losses divided by your total number of losses. Rob tops the chart with over a third of his losses being shitty.
 ![Alt text](./plots/reg_season_shitty_losses.png?raw=true)
 
-`Blah blah blah`
+Looking at the last 5 seasons, AJ leaps ahead while others drop lower.
 ![Alt text](./plots/reg_season_shitty_losses_last5seasons.png?raw=true)
 
 
-### Bench Composition
-`Blah blah blah`
-![Alt text](./plots/reg_season_bench_composition.png?raw=true)
-
-`Blah blah blah`
-![Alt text](./plots/reg_season_bench_composition_last5seasons.png?raw=true)
-
-
 ### Poor Coaching
-`Blah blah blah`
+I wanted to get a measure of coaches giving up, being lazy and basically just not caring. Think of starting someone on IR, starting someone that's on bye or forgetting to roster a position entirely. Unfortunately, NFL FF doesn't save all of the player history. So, I had to settle for analyzing how often you rostered a position that got 0 or fewer points. Matt Smith tops the charts across all seasons and for the last 5 seasons. Matt Cicneros is also consistenly high. On the other end of the spectrum, Alex and Rob do a consistently good job at setting their lineup.
 ![Alt text](./plots/reg_season_poor_coaching.png?raw=true)
 
-`Blah blah blah`
 ![Alt text](./plots/reg_season_poor_coaching_last5seasons.png?raw=true)
 
 
-### End of Season Rank
-`Blah blah blah`
-![Alt text](./plots/reg_season_rank.png?raw=true)
+### Bench Composition
+I think there is a lot to unpack out of these last two plots, so I'll leave that to you.
+![Alt text](./plots/reg_season_bench_composition.png?raw=true)
 
-`Blah blah blah`
-![Alt text](./plots/reg_season_rank_last5seasons.png?raw=true)
-
-
-### Win Percentage
-`Blah blah blah`
-![Alt text](./plots/reg_season_win_pct.png?raw=true)
-
-`Blah blah blah`
-![Alt text](./plots/reg_season_win_pct_last5seasons.png?raw=true)
-
-
-
+![Alt text](./plots/reg_season_bench_composition_last5seasons.png?raw=true)
