@@ -1,0 +1,1485 @@
+season,week,teamOwner,teamName,teamWeekTotal,teamWeekRank,teamRecordPre,teamMatchupResult,teamRecordPost,teamOwnerOpponent,teamNameOpponent,teamWeekTotalOpponent,teamWeekRankOpponent,teamRecordPreOpponent,teamRecordPostOpponent
+2011,1,AJ,Winning,92.28,9,0-0-0,Loss,0-1-0,dan,DR Philthy,133.4,1,0-0-0,1-0-0
+2011,1,Kameron,Drunken Monkeys,132.9,2,0-0-0,Win,1-0-0,Aaron,I Cursed AJ Crane,112.0,5,0-0-0,0-1-0
+2011,1,Matthew,Turf Muncher,126.66,3,0-0-0,Win,1-0-0,Mike,Mr Pig Skinner,90.4,10,0-0-0,0-1-0
+2011,1,Mike,CoachSezItNorml2BleedOutYaEars,106.88,8,0-0-0,Loss,0-1-0,Matt,Mongorians,122.16,4,0-0-0,1-0-0
+2011,1,Rob,Mansleezy,68.03,12,0-0-0,Loss,0-1-0,Jason,Clickety Clow,107.08,6,0-0-0,1-0-0
+2011,1,Colin,Im a scientist,88.0,11,0-0-0,Loss,0-1-0,nathan,ol-erth panda slayers,107.08,7,0-0-0,1-0-0
+2011,1,dan,DR Philthy,133.4,1,0-0-0,Win,1-0-0,AJ,Winning,92.28,9,0-0-0,0-1-0
+2011,1,Aaron,I Cursed AJ Crane,112.0,5,0-0-0,Loss,0-1-0,Kameron,Drunken Monkeys,132.9,2,0-0-0,1-0-0
+2011,1,Mike,Mr Pig Skinner,90.4,10,0-0-0,Loss,0-1-0,Matthew,Turf Muncher,126.66,3,0-0-0,1-0-0
+2011,1,Matt,Mongorians,122.16,4,0-0-0,Win,1-0-0,Mike,CoachSezItNorml2BleedOutYaEars,106.88,8,0-0-0,0-1-0
+2011,1,Jason,Clickety Clow,107.08,6,0-0-0,Win,1-0-0,Rob,Mansleezy,68.03,12,0-0-0,0-1-0
+2011,1,nathan,ol-erth panda slayers,107.08,7,0-0-0,Win,1-0-0,Colin,Im a scientist,88.0,11,0-0-0,0-1-0
+2011,2,Kameron,Drunken Monkeys,97.3,9,1-0-0,Win,2-0-0,AJ,Winning,95.7,11,0-1-0,0-2-0
+2011,2,dan,DR Philthy,103.65,7,1-0-0,Win,2-0-0,Matthew,Turf Muncher,97.92,8,1-0-0,1-1-0
+2011,2,Aaron,I Cursed AJ Crane,111.56,5,0-1-0,Loss,0-2-0,Mike,CoachSezItNorml2BleedOutYaEars,177.62,1,0-1-0,1-1-0
+2011,2,Mike,Mr Pig Skinner,96.12,10,0-1-0,Loss,0-2-0,Rob,Mansleezy,121.25,3,0-1-0,1-1-0
+2011,2,Matt,Mongorians,138.5,2,1-0-0,Win,2-0-0,Colin,Im a scientist,117.12,4,0-1-0,0-2-0
+2011,2,Jason,Clickety Clow,82.88,12,1-0-0,Loss,1-1-0,nathan,ol-erth panda slayers,110.32,6,1-0-0,2-0-0
+2011,2,AJ,Winning,95.7,11,0-1-0,Loss,0-2-0,Kameron,Drunken Monkeys,97.3,9,1-0-0,2-0-0
+2011,2,Matthew,Turf Muncher,97.92,8,1-0-0,Loss,1-1-0,dan,DR Philthy,103.65,7,1-0-0,2-0-0
+2011,2,Mike,CoachSezItNorml2BleedOutYaEars,177.62,1,0-1-0,Win,1-1-0,Aaron,I Cursed AJ Crane,111.56,5,0-1-0,0-2-0
+2011,2,Rob,Mansleezy,121.25,3,0-1-0,Win,1-1-0,Mike,Mr Pig Skinner,96.12,10,0-1-0,0-2-0
+2011,2,Colin,Im a scientist,117.12,4,0-1-0,Loss,0-2-0,Matt,Mongorians,138.5,2,1-0-0,2-0-0
+2011,2,nathan,ol-erth panda slayers,110.32,6,1-0-0,Win,2-0-0,Jason,Clickety Clow,82.88,12,1-0-0,1-1-0
+2011,3,AJ,Winning,74.4,10,0-2-0,Loss,0-3-0,Matthew,Turf Muncher,99.1,8,1-1-0,2-1-0
+2011,3,Mike,CoachSezItNorml2BleedOutYaEars,112.88,4,1-1-0,Loss,1-2-0,Kameron,Drunken Monkeys,118.29,3,2-0-0,3-0-0
+2011,3,Rob,Mansleezy,71.02,11,1-1-0,Loss,1-2-0,dan,DR Philthy,126.26,2,2-0-0,3-0-0
+2011,3,Colin,Im a scientist,102.06,7,0-2-0,Loss,0-3-0,Aaron,I Cursed AJ Crane,112.32,5,0-2-0,1-2-0
+2011,3,nathan,ol-erth panda slayers,104.38,6,2-0-0,Win,3-0-0,Mike,Mr Pig Skinner,56.24,12,0-2-0,0-3-0
+2011,3,Jason,Clickety Clow,94.67,9,1-1-0,Loss,1-2-0,Matt,Mongorians,130.7,1,2-0-0,3-0-0
+2011,3,Matthew,Turf Muncher,99.1,8,1-1-0,Win,2-1-0,AJ,Winning,74.4,10,0-2-0,0-3-0
+2011,3,Kameron,Drunken Monkeys,118.29,3,2-0-0,Win,3-0-0,Mike,CoachSezItNorml2BleedOutYaEars,112.88,4,1-1-0,1-2-0
+2011,3,dan,DR Philthy,126.26,2,2-0-0,Win,3-0-0,Rob,Mansleezy,71.02,11,1-1-0,1-2-0
+2011,3,Aaron,I Cursed AJ Crane,112.32,5,0-2-0,Win,1-2-0,Colin,Im a scientist,102.06,7,0-2-0,0-3-0
+2011,3,Mike,Mr Pig Skinner,56.24,12,0-2-0,Loss,0-3-0,nathan,ol-erth panda slayers,104.38,6,2-0-0,3-0-0
+2011,3,Matt,Mongorians,130.7,1,2-0-0,Win,3-0-0,Jason,Clickety Clow,94.67,9,1-1-0,1-2-0
+2011,4,Mike,CoachSezItNorml2BleedOutYaEars,118.04,3,1-2-0,Win,2-2-0,AJ,Winning,101.17,10,0-3-0,0-4-0
+2011,4,Matthew,Turf Muncher,104.18,8,2-1-0,Loss,2-2-0,Rob,Mansleezy,112.71,5,1-2-0,2-2-0
+2011,4,Kameron,Drunken Monkeys,108.85,6,3-0-0,Win,4-0-0,Colin,Im a scientist,86.96,12,0-3-0,0-4-0
+2011,4,dan,DR Philthy,100.53,11,3-0-0,Loss,3-1-0,nathan,ol-erth panda slayers,120.92,2,3-0-0,4-0-0
+2011,4,Aaron,I Cursed AJ Crane,115.1,4,1-2-0,Win,2-2-0,Jason,Clickety Clow,102.41,9,1-2-0,1-3-0
+2011,4,Mike,Mr Pig Skinner,123.78,1,0-3-0,Win,1-3-0,Matt,Mongorians,106.94,7,3-0-0,3-1-0
+2011,4,AJ,Winning,101.17,10,0-3-0,Loss,0-4-0,Mike,CoachSezItNorml2BleedOutYaEars,118.04,3,1-2-0,2-2-0
+2011,4,Rob,Mansleezy,112.71,5,1-2-0,Win,2-2-0,Matthew,Turf Muncher,104.18,8,2-1-0,2-2-0
+2011,4,Colin,Im a scientist,86.96,12,0-3-0,Loss,0-4-0,Kameron,Drunken Monkeys,108.85,6,3-0-0,4-0-0
+2011,4,nathan,ol-erth panda slayers,120.92,2,3-0-0,Win,4-0-0,dan,DR Philthy,100.53,11,3-0-0,3-1-0
+2011,4,Jason,Clickety Clow,102.41,9,1-2-0,Loss,1-3-0,Aaron,I Cursed AJ Crane,115.1,4,1-2-0,2-2-0
+2011,4,Matt,Mongorians,106.94,7,3-0-0,Loss,3-1-0,Mike,Mr Pig Skinner,123.78,1,0-3-0,1-3-0
+2011,5,AJ,Winning,103.61,6,0-4-0,Loss,0-5-0,Rob,Mansleezy,120.43,2,2-2-0,3-2-0
+2011,5,Colin,Im a scientist,112.02,3,0-4-0,Win,1-4-0,Mike,CoachSezItNorml2BleedOutYaEars,101.04,7,2-2-0,2-3-0
+2011,5,nathan,ol-erth panda slayers,132.84,1,4-0-0,Win,5-0-0,Matthew,Turf Muncher,76.68,12,2-2-0,2-3-0
+2011,5,Jason,Clickety Clow,83.4,11,1-3-0,Loss,1-4-0,Kameron,Drunken Monkeys,95.51,8,4-0-0,5-0-0
+2011,5,Matt,Mongorians,108.89,4,3-1-0,Win,4-1-0,dan,DR Philthy,94.64,9,3-1-0,3-2-0
+2011,5,Mike,Mr Pig Skinner,108.5,5,1-3-0,Win,2-3-0,Aaron,I Cursed AJ Crane,92.76,10,2-2-0,2-3-0
+2011,5,Rob,Mansleezy,120.43,2,2-2-0,Win,3-2-0,AJ,Winning,103.61,6,0-4-0,0-5-0
+2011,5,Mike,CoachSezItNorml2BleedOutYaEars,101.04,7,2-2-0,Loss,2-3-0,Colin,Im a scientist,112.02,3,0-4-0,1-4-0
+2011,5,Matthew,Turf Muncher,76.68,12,2-2-0,Loss,2-3-0,nathan,ol-erth panda slayers,132.84,1,4-0-0,5-0-0
+2011,5,Kameron,Drunken Monkeys,95.51,8,4-0-0,Win,5-0-0,Jason,Clickety Clow,83.4,11,1-3-0,1-4-0
+2011,5,dan,DR Philthy,94.64,9,3-1-0,Loss,3-2-0,Matt,Mongorians,108.89,4,3-1-0,4-1-0
+2011,5,Aaron,I Cursed AJ Crane,92.76,10,2-2-0,Loss,2-3-0,Mike,Mr Pig Skinner,108.5,5,1-3-0,2-3-0
+2011,6,Colin,Im a scientist,118.36,1,1-4-0,Win,2-4-0,AJ,Winning,95.28,7,0-5-0,0-6-0
+2011,6,Rob,Mansleezy,111.91,2,3-2-0,Win,4-2-0,nathan,ol-erth panda slayers,90.44,9,5-0-0,5-1-0
+2011,6,Mike,CoachSezItNorml2BleedOutYaEars,91.96,8,2-3-0,Win,3-3-0,Jason,Clickety Clow,87.28,10,1-4-0,1-5-0
+2011,6,Matthew,Turf Muncher,78.35,12,2-3-0,Loss,2-4-0,Matt,Mongorians,111.79,3,4-1-0,5-1-0
+2011,6,Kameron,Drunken Monkeys,78.97,11,5-0-0,Loss,5-1-0,Mike,Mr Pig Skinner,108.61,4,2-3-0,3-3-0
+2011,6,dan,DR Philthy,104.6,6,3-2-0,Loss,3-3-0,Aaron,I Cursed AJ Crane,107.32,5,2-3-0,3-3-0
+2011,6,AJ,Winning,95.28,7,0-5-0,Loss,0-6-0,Colin,Im a scientist,118.36,1,1-4-0,2-4-0
+2011,6,nathan,ol-erth panda slayers,90.44,9,5-0-0,Loss,5-1-0,Rob,Mansleezy,111.91,2,3-2-0,4-2-0
+2011,6,Jason,Clickety Clow,87.28,10,1-4-0,Loss,1-5-0,Mike,CoachSezItNorml2BleedOutYaEars,91.96,8,2-3-0,3-3-0
+2011,6,Matt,Mongorians,111.79,3,4-1-0,Win,5-1-0,Matthew,Turf Muncher,78.35,12,2-3-0,2-4-0
+2011,6,Mike,Mr Pig Skinner,108.61,4,2-3-0,Win,3-3-0,Kameron,Drunken Monkeys,78.97,11,5-0-0,5-1-0
+2011,6,Aaron,I Cursed AJ Crane,107.32,5,2-3-0,Win,3-3-0,dan,DR Philthy,104.6,6,3-2-0,3-3-0
+2011,7,AJ,Winning,138.24,1,0-6-0,Win,1-6-0,nathan,ol-erth panda slayers,100.6,3,5-1-0,5-2-0
+2011,7,Jason,Clickety Clow,75.05,12,1-5-0,Loss,1-6-0,Colin,Im a scientist,77.64,10,2-4-0,3-4-0
+2011,7,Matt,Mongorians,94.63,7,5-1-0,Loss,5-2-0,Rob,Mansleezy,98.87,4,4-2-0,5-2-0
+2011,7,Mike,Mr Pig Skinner,85.63,9,3-3-0,Loss,3-4-0,Mike,CoachSezItNorml2BleedOutYaEars,92.46,8,3-3-0,4-3-0
+2011,7,Aaron,I Cursed AJ Crane,97.72,6,3-3-0,Win,4-3-0,Matthew,Turf Muncher,77.33,11,2-4-0,2-5-0
+2011,7,dan,DR Philthy,123.92,2,3-3-0,Win,4-3-0,Kameron,Drunken Monkeys,98.27,5,5-1-0,5-2-0
+2011,7,nathan,ol-erth panda slayers,100.6,3,5-1-0,Loss,5-2-0,AJ,Winning,138.24,1,0-6-0,1-6-0
+2011,7,Colin,Im a scientist,77.64,10,2-4-0,Win,3-4-0,Jason,Clickety Clow,75.05,12,1-5-0,1-6-0
+2011,7,Rob,Mansleezy,98.87,4,4-2-0,Win,5-2-0,Matt,Mongorians,94.63,7,5-1-0,5-2-0
+2011,7,Mike,CoachSezItNorml2BleedOutYaEars,92.46,8,3-3-0,Win,4-3-0,Mike,Mr Pig Skinner,85.63,9,3-3-0,3-4-0
+2011,7,Matthew,Turf Muncher,77.33,11,2-4-0,Loss,2-5-0,Aaron,I Cursed AJ Crane,97.72,6,3-3-0,4-3-0
+2011,7,Kameron,Drunken Monkeys,98.27,5,5-1-0,Loss,5-2-0,dan,DR Philthy,123.92,2,3-3-0,4-3-0
+2011,8,Jason,Clickety Clow,122.76,1,1-6-0,Win,2-6-0,AJ,Winning,105.22,7,1-6-0,1-7-0
+2011,8,nathan,ol-erth panda slayers,109.88,5,5-2-0,Win,6-2-0,Matt,Mongorians,72.13,11,5-2-0,5-3-0
+2011,8,Colin,Im a scientist,110.83,4,3-4-0,Win,4-4-0,Mike,Mr Pig Skinner,79.56,10,3-4-0,3-5-0
+2011,8,Rob,Mansleezy,115.03,3,5-2-0,Loss,5-3-0,Aaron,I Cursed AJ Crane,115.65,2,4-3-0,5-3-0
+2011,8,Mike,CoachSezItNorml2BleedOutYaEars,63.72,12,4-3-0,Loss,4-4-0,dan,DR Philthy,99.11,8,4-3-0,5-3-0
+2011,8,Matthew,Turf Muncher,107.26,6,2-5-0,Win,3-5-0,Kameron,Drunken Monkeys,97.07,9,5-2-0,5-3-0
+2011,8,AJ,Winning,105.22,7,1-6-0,Loss,1-7-0,Jason,Clickety Clow,122.76,1,1-6-0,2-6-0
+2011,8,Matt,Mongorians,72.13,11,5-2-0,Loss,5-3-0,nathan,ol-erth panda slayers,109.88,5,5-2-0,6-2-0
+2011,8,Mike,Mr Pig Skinner,79.56,10,3-4-0,Loss,3-5-0,Colin,Im a scientist,110.83,4,3-4-0,4-4-0
+2011,8,Aaron,I Cursed AJ Crane,115.65,2,4-3-0,Win,5-3-0,Rob,Mansleezy,115.03,3,5-2-0,5-3-0
+2011,8,dan,DR Philthy,99.11,8,4-3-0,Win,5-3-0,Mike,CoachSezItNorml2BleedOutYaEars,63.72,12,4-3-0,4-4-0
+2011,8,Kameron,Drunken Monkeys,97.07,9,5-2-0,Loss,5-3-0,Matthew,Turf Muncher,107.26,6,2-5-0,3-5-0
+2011,9,AJ,Winning,130.06,2,1-7-0,Loss,1-8-0,Matt,Mongorians,137.79,1,5-3-0,6-3-0
+2011,9,Mike,Mr Pig Skinner,109.37,4,3-5-0,Win,4-5-0,Jason,Clickety Clow,72.65,11,2-6-0,2-7-0
+2011,9,Aaron,I Cursed AJ Crane,71.14,12,5-3-0,Loss,5-4-0,nathan,ol-erth panda slayers,105.45,6,6-2-0,7-2-0
+2011,9,dan,DR Philthy,119.97,3,5-3-0,Win,6-3-0,Colin,Im a scientist,105.5,5,4-4-0,4-5-0
+2011,9,Kameron,Drunken Monkeys,77.73,10,5-3-0,Loss,5-4-0,Rob,Mansleezy,95.77,7,5-3-0,6-3-0
+2011,9,Matthew,Turf Muncher,81.14,9,3-5-0,Loss,3-6-0,Mike,CoachSezItNorml2BleedOutYaEars,86.68,8,4-4-0,5-4-0
+2011,9,Matt,Mongorians,137.79,1,5-3-0,Win,6-3-0,AJ,Winning,130.06,2,1-7-0,1-8-0
+2011,9,Jason,Clickety Clow,72.65,11,2-6-0,Loss,2-7-0,Mike,Mr Pig Skinner,109.37,4,3-5-0,4-5-0
+2011,9,nathan,ol-erth panda slayers,105.45,6,6-2-0,Win,7-2-0,Aaron,I Cursed AJ Crane,71.14,12,5-3-0,5-4-0
+2011,9,Colin,Im a scientist,105.5,5,4-4-0,Loss,4-5-0,dan,DR Philthy,119.97,3,5-3-0,6-3-0
+2011,9,Rob,Mansleezy,95.77,7,5-3-0,Win,6-3-0,Kameron,Drunken Monkeys,77.73,10,5-3-0,5-4-0
+2011,9,Mike,CoachSezItNorml2BleedOutYaEars,86.68,8,4-4-0,Win,5-4-0,Matthew,Turf Muncher,81.14,9,3-5-0,3-6-0
+2011,10,Mike,Mr Pig Skinner,69.26,11,4-5-0,Loss,4-6-0,AJ,Winning,143.46,1,1-8-0,2-8-0
+2011,10,Matt,Mongorians,115.98,2,6-3-0,Win,7-3-0,Aaron,I Cursed AJ Crane,74.3,9,5-4-0,5-5-0
+2011,10,Jason,Clickety Clow,48.52,12,2-7-0,Loss,2-8-0,dan,DR Philthy,73.9,10,6-3-0,7-3-0
+2011,10,nathan,ol-erth panda slayers,114.2,3,7-2-0,Win,8-2-0,Kameron,Drunken Monkeys,85.08,5,5-4-0,5-5-0
+2011,10,Colin,Im a scientist,76.94,7,4-5-0,Loss,4-6-0,Matthew,Turf Muncher,78.37,6,3-6-0,4-6-0
+2011,10,Rob,Mansleezy,74.91,8,6-3-0,Loss,6-4-0,Mike,CoachSezItNorml2BleedOutYaEars,105.16,4,5-4-0,6-4-0
+2011,10,AJ,Winning,143.46,1,1-8-0,Win,2-8-0,Mike,Mr Pig Skinner,69.26,11,4-5-0,4-6-0
+2011,10,Aaron,I Cursed AJ Crane,74.3,9,5-4-0,Loss,5-5-0,Matt,Mongorians,115.98,2,6-3-0,7-3-0
+2011,10,dan,DR Philthy,73.9,10,6-3-0,Win,7-3-0,Jason,Clickety Clow,48.52,12,2-7-0,2-8-0
+2011,10,Kameron,Drunken Monkeys,85.08,5,5-4-0,Loss,5-5-0,nathan,ol-erth panda slayers,114.2,3,7-2-0,8-2-0
+2011,10,Matthew,Turf Muncher,78.37,6,3-6-0,Win,4-6-0,Colin,Im a scientist,76.94,7,4-5-0,4-6-0
+2011,10,Mike,CoachSezItNorml2BleedOutYaEars,105.16,4,5-4-0,Win,6-4-0,Rob,Mansleezy,74.91,8,6-3-0,6-4-0
+2011,11,AJ,Winning,87.08,7,2-8-0,Loss,2-9-0,Aaron,I Cursed AJ Crane,160.6,1,5-5-0,6-5-0
+2011,11,dan,DR Philthy,67.5,11,7-3-0,Loss,7-4-0,Mike,Mr Pig Skinner,89.97,6,4-6-0,5-6-0
+2011,11,Kameron,Drunken Monkeys,101.46,4,5-5-0,Loss,5-6-0,Matt,Mongorians,105.36,3,7-3-0,8-3-0
+2011,11,Matthew,Turf Muncher,81.68,8,4-6-0,Win,5-6-0,Jason,Clickety Clow,61.57,12,2-8-0,2-9-0
+2011,11,Mike,CoachSezItNorml2BleedOutYaEars,72.29,10,6-4-0,Loss,6-5-0,nathan,ol-erth panda slayers,94.26,5,8-2-0,9-2-0
+2011,11,Rob,Mansleezy,112.33,2,6-4-0,Win,7-4-0,Colin,Im a scientist,76.29,9,4-6-0,4-7-0
+2011,11,Aaron,I Cursed AJ Crane,160.6,1,5-5-0,Win,6-5-0,AJ,Winning,87.08,7,2-8-0,2-9-0
+2011,11,Mike,Mr Pig Skinner,89.97,6,4-6-0,Win,5-6-0,dan,DR Philthy,67.5,11,7-3-0,7-4-0
+2011,11,Matt,Mongorians,105.36,3,7-3-0,Win,8-3-0,Kameron,Drunken Monkeys,101.46,4,5-5-0,5-6-0
+2011,11,Jason,Clickety Clow,61.57,12,2-8-0,Loss,2-9-0,Matthew,Turf Muncher,81.68,8,4-6-0,5-6-0
+2011,11,nathan,ol-erth panda slayers,94.26,5,8-2-0,Win,9-2-0,Mike,CoachSezItNorml2BleedOutYaEars,72.29,10,6-4-0,6-5-0
+2011,11,Colin,Im a scientist,76.29,9,4-6-0,Loss,4-7-0,Rob,Mansleezy,112.33,2,6-4-0,7-4-0
+2011,12,dan,DR Philthy,119.84,3,7-4-0,Win,8-4-0,AJ,Winning,99.74,7,2-9-0,2-10-0
+2011,12,Aaron,I Cursed AJ Crane,89.34,10,6-5-0,Loss,6-6-0,Kameron,Drunken Monkeys,139.5,1,5-6-0,6-6-0
+2011,12,Mike,Mr Pig Skinner,88.85,11,5-6-0,Win,6-6-0,Matthew,Turf Muncher,84.06,12,5-6-0,5-7-0
+2011,12,Matt,Mongorians,114.95,4,8-3-0,Loss,8-4-0,Mike,CoachSezItNorml2BleedOutYaEars,129.87,2,6-5-0,7-5-0
+2011,12,Jason,Clickety Clow,103.02,6,2-9-0,Win,3-9-0,Rob,Mansleezy,96.29,8,7-4-0,7-5-0
+2011,12,nathan,ol-erth panda slayers,93.48,9,9-2-0,Loss,9-3-0,Colin,Im a scientist,105.19,5,4-7-0,5-7-0
+2011,12,AJ,Winning,99.74,7,2-9-0,Loss,2-10-0,dan,DR Philthy,119.84,3,7-4-0,8-4-0
+2011,12,Kameron,Drunken Monkeys,139.5,1,5-6-0,Win,6-6-0,Aaron,I Cursed AJ Crane,89.34,10,6-5-0,6-6-0
+2011,12,Matthew,Turf Muncher,84.06,12,5-6-0,Loss,5-7-0,Mike,Mr Pig Skinner,88.85,11,5-6-0,6-6-0
+2011,12,Mike,CoachSezItNorml2BleedOutYaEars,129.87,2,6-5-0,Win,7-5-0,Matt,Mongorians,114.95,4,8-3-0,8-4-0
+2011,12,Rob,Mansleezy,96.29,8,7-4-0,Loss,7-5-0,Jason,Clickety Clow,103.02,6,2-9-0,3-9-0
+2011,12,Colin,Im a scientist,105.19,5,4-7-0,Win,5-7-0,nathan,ol-erth panda slayers,93.48,9,9-2-0,9-3-0
+2011,13,AJ,Winning,117.66,3,2-10-0,Win,3-10-0,Kameron,Drunken Monkeys,107.62,7,6-6-0,6-7-0
+2011,13,Matthew,Turf Muncher,98.4,8,5-7-0,Win,6-7-0,dan,DR Philthy,91.42,9,8-4-0,8-5-0
+2011,13,Mike,CoachSezItNorml2BleedOutYaEars,112.66,5,7-5-0,Loss,7-6-0,Aaron,I Cursed AJ Crane,131.02,1,6-6-0,7-6-0
+2011,13,Rob,Mansleezy,116.49,4,7-5-0,Loss,7-6-0,Mike,Mr Pig Skinner,124.03,2,6-6-0,7-6-0
+2011,13,Colin,Im a scientist,76.81,12,5-7-0,Loss,5-8-0,Matt,Mongorians,78.25,11,8-4-0,9-4-0
+2011,13,nathan,ol-erth panda slayers,90.46,10,9-3-0,Loss,9-4-0,Jason,Clickety Clow,110.08,6,3-9-0,4-9-0
+2011,13,Kameron,Drunken Monkeys,107.62,7,6-6-0,Loss,6-7-0,AJ,Winning,117.66,3,2-10-0,3-10-0
+2011,13,dan,DR Philthy,91.42,9,8-4-0,Loss,8-5-0,Matthew,Turf Muncher,98.4,8,5-7-0,6-7-0
+2011,13,Aaron,I Cursed AJ Crane,131.02,1,6-6-0,Win,7-6-0,Mike,CoachSezItNorml2BleedOutYaEars,112.66,5,7-5-0,7-6-0
+2011,13,Mike,Mr Pig Skinner,124.03,2,6-6-0,Win,7-6-0,Rob,Mansleezy,116.49,4,7-5-0,7-6-0
+2011,13,Matt,Mongorians,78.25,11,8-4-0,Win,9-4-0,Colin,Im a scientist,76.81,12,5-7-0,5-8-0
+2011,13,Jason,Clickety Clow,110.08,6,3-9-0,Win,4-9-0,nathan,ol-erth panda slayers,90.46,10,9-3-0,9-4-0
+2011,14,Matthew,Turf Muncher,98.94,10,6-7-0,Win,7-7-0,AJ,Winning,80.64,12,3-10-0,3-11-0
+2011,14,Kameron,Drunken Monkeys,121.71,3,6-7-0,Win,7-7-0,Mike,CoachSezItNorml2BleedOutYaEars,115.68,6,7-6-0,7-7-0
+2011,14,dan,DR Philthy,105.85,7,8-5-0,Win,9-5-0,Rob,Mansleezy,83.41,11,7-6-0,7-7-0
+2011,14,Aaron,I Cursed AJ Crane,140.88,1,7-6-0,Win,8-6-0,Colin,Im a scientist,102.4,8,5-8-0,5-9-0
+2011,14,Mike,Mr Pig Skinner,138.43,2,7-6-0,Win,8-6-0,nathan,ol-erth panda slayers,100.64,9,9-4-0,9-5-0
+2011,14,Matt,Mongorians,119.68,4,9-4-0,Win,10-4-0,Jason,Clickety Clow,119.35,5,4-9-0,4-10-0
+2011,14,AJ,Winning,80.64,12,3-10-0,Loss,3-11-0,Matthew,Turf Muncher,98.94,10,6-7-0,7-7-0
+2011,14,Mike,CoachSezItNorml2BleedOutYaEars,115.68,6,7-6-0,Loss,7-7-0,Kameron,Drunken Monkeys,121.71,3,6-7-0,7-7-0
+2011,14,Rob,Mansleezy,83.41,11,7-6-0,Loss,7-7-0,dan,DR Philthy,105.85,7,8-5-0,9-5-0
+2011,14,Colin,Im a scientist,102.4,8,5-8-0,Loss,5-9-0,Aaron,I Cursed AJ Crane,140.88,1,7-6-0,8-6-0
+2011,14,nathan,ol-erth panda slayers,100.64,9,9-4-0,Loss,9-5-0,Mike,Mr Pig Skinner,138.43,2,7-6-0,8-6-0
+2011,14,Jason,Clickety Clow,119.35,5,4-9-0,Loss,4-10-0,Matt,Mongorians,119.68,4,9-4-0,10-4-0
+2011,15,Matthew,Turf Muncher,108.72,3,7-7-0,Loss,7-7-0,AJ,Winning,110.46,2,3-11-0,3-11-0
+2011,15,Mike,CoachSezItNorml2BleedOutYaEars,75.58,7,7-7-0,Loss,7-7-0,dan,DR Philthy,101.54,5,9-5-0,9-5-0
+2011,15,Jason,Clickety Clow,102.06,4,4-10-0,Win,4-10-0,Colin,Im a scientist,70.8,8,5-9-0,5-9-0
+2011,15,Aaron,I Cursed AJ Crane,125.34,1,8-6-0,Win,8-6-0,Mike,Mr Pig Skinner,91.56,6,8-6-0,8-6-0
+2011,15,AJ,Winning,110.46,2,3-11-0,Win,3-11-0,Matthew,Turf Muncher,108.72,3,7-7-0,7-7-0
+2011,15,dan,DR Philthy,101.54,5,9-5-0,Win,9-5-0,Mike,CoachSezItNorml2BleedOutYaEars,75.58,7,7-7-0,7-7-0
+2011,15,Colin,Im a scientist,70.8,8,5-9-0,Loss,5-9-0,Jason,Clickety Clow,102.06,4,4-10-0,4-10-0
+2011,15,Mike,Mr Pig Skinner,91.56,6,8-6-0,Loss,8-6-0,Aaron,I Cursed AJ Crane,125.34,1,8-6-0,8-6-0
+2011,16,Rob,Mansleezy,122.51,2,7-7-0,Loss,7-7-0,AJ,Winning,122.7,1,3-11-0,3-11-0
+2011,16,nathan,ol-erth panda slayers,115.52,5,9-5-0,Win,9-5-0,dan,DR Philthy,109.38,7,9-5-0,9-5-0
+2011,16,Jason,Clickety Clow,120.65,3,4-10-0,Win,4-10-0,Kameron,Drunken Monkeys,109.51,6,7-7-0,7-7-0
+2011,16,Aaron,I Cursed AJ Crane,119.82,4,8-6-0,Win,8-6-0,Matt,Mongorians,92.28,8,10-4-0,10-4-0
+2011,16,AJ,Winning,122.7,1,3-11-0,Win,3-11-0,Rob,Mansleezy,122.51,2,7-7-0,7-7-0
+2011,16,dan,DR Philthy,109.38,7,9-5-0,Loss,9-5-0,nathan,ol-erth panda slayers,115.52,5,9-5-0,9-5-0
+2011,16,Kameron,Drunken Monkeys,109.51,6,7-7-0,Loss,7-7-0,Jason,Clickety Clow,120.65,3,4-10-0,4-10-0
+2011,16,Matt,Mongorians,92.28,8,10-4-0,Loss,10-4-0,Aaron,I Cursed AJ Crane,119.82,4,8-6-0,8-6-0
+2011,17,Jason,Clickety Clow,113.1,5,4-10-0,Win,4-10-0,AJ,Winning,93.86,8,3-11-0,3-11-0
+2011,17,Matt,Mongorians,120.36,4,10-4-0,Loss,10-4-0,dan,DR Philthy,137.0,3,9-5-0,9-5-0
+2011,17,Rob,Mansleezy,78.45,10,7-7-0,Loss,7-7-0,Kameron,Drunken Monkeys,141.75,2,7-7-0,7-7-0
+2011,17,Colin,Im a scientist,62.54,12,5-9-0,Loss,5-9-0,Matthew,Turf Muncher,67.66,11,7-7-0,7-7-0
+2011,17,Mike,Mr Pig Skinner,84.63,9,8-6-0,Loss,8-6-0,Mike,CoachSezItNorml2BleedOutYaEars,101.42,7,7-7-0,7-7-0
+2011,17,Aaron,I Cursed AJ Crane,207.4,1,8-6-0,Win,8-6-0,nathan,ol-erth panda slayers,102.72,6,9-5-0,9-5-0
+2011,17,AJ,Winning,93.86,8,3-11-0,Loss,3-11-0,Jason,Clickety Clow,113.1,5,4-10-0,4-10-0
+2011,17,dan,DR Philthy,137.0,3,9-5-0,Win,9-5-0,Matt,Mongorians,120.36,4,10-4-0,10-4-0
+2011,17,Kameron,Drunken Monkeys,141.75,2,7-7-0,Win,7-7-0,Rob,Mansleezy,78.45,10,7-7-0,7-7-0
+2011,17,Matthew,Turf Muncher,67.66,11,7-7-0,Win,7-7-0,Colin,Im a scientist,62.54,12,5-9-0,5-9-0
+2011,17,Mike,CoachSezItNorml2BleedOutYaEars,101.42,7,7-7-0,Win,7-7-0,Mike,Mr Pig Skinner,84.63,9,8-6-0,8-6-0
+2011,17,nathan,ol-erth panda slayers,102.72,6,9-5-0,Loss,9-5-0,Aaron,I Cursed AJ Crane,207.4,1,8-6-0,8-6-0
+2012,1,AJ,Hunting Horwitz,94.3,10,0-0-0,Loss,0-1-0,dan,DR Philthy,105.32,5,0-0-0,1-0-0
+2012,1,Kameron,Drunken Monkeys,102.01,8,0-0-0,Loss,0-1-0,Aaron,I Cursed AJ Crane,129.72,1,0-0-0,1-0-0
+2012,1,Sam,Enemy at the Gates,119.76,2,0-0-0,Win,1-0-0,Matthew,Turf Muncher,104.24,6,0-0-0,0-1-0
+2012,1,Mike,hahBEEEEEEHHbut,103.59,7,0-0-0,Loss,0-1-0,Matt,Mongorians,116.48,3,0-0-0,1-0-0
+2012,1,Rob,Senor Manberto,77.39,12,0-0-0,Loss,0-1-0,Jason,Clickety Clow,99.97,9,0-0-0,1-0-0
+2012,1,Colin,Im a scientist,81.86,11,0-0-0,Loss,0-1-0,nathan,ol-erth murph slayers,114.04,4,0-0-0,1-0-0
+2012,1,dan,DR Philthy,105.32,5,0-0-0,Win,1-0-0,AJ,Hunting Horwitz,94.3,10,0-0-0,0-1-0
+2012,1,Aaron,I Cursed AJ Crane,129.72,1,0-0-0,Win,1-0-0,Kameron,Drunken Monkeys,102.01,8,0-0-0,0-1-0
+2012,1,Matthew,Turf Muncher,104.24,6,0-0-0,Loss,0-1-0,Sam,Enemy at the Gates,119.76,2,0-0-0,1-0-0
+2012,1,Matt,Mongorians,116.48,3,0-0-0,Win,1-0-0,Mike,hahBEEEEEEHHbut,103.59,7,0-0-0,0-1-0
+2012,1,Jason,Clickety Clow,99.97,9,0-0-0,Win,1-0-0,Rob,Senor Manberto,77.39,12,0-0-0,0-1-0
+2012,1,nathan,ol-erth murph slayers,114.04,4,0-0-0,Win,1-0-0,Colin,Im a scientist,81.86,11,0-0-0,0-1-0
+2012,2,Kameron,Drunken Monkeys,86.61,9,0-1-0,Loss,0-2-0,AJ,Hunting Horwitz,92.9,8,0-1-0,1-1-0
+2012,2,dan,DR Philthy,81.51,10,1-0-0,Loss,1-1-0,Sam,Enemy at the Gates,102.86,5,1-0-0,2-0-0
+2012,2,Aaron,I Cursed AJ Crane,96.0,7,1-0-0,Win,2-0-0,Mike,hahBEEEEEEHHbut,74.36,12,0-1-0,0-2-0
+2012,2,Matthew,Turf Muncher,160.94,1,0-1-0,Win,1-1-0,Rob,Senor Manberto,124.42,3,0-1-0,0-2-0
+2012,2,Matt,Mongorians,134.34,2,1-0-0,Win,2-0-0,Colin,Im a scientist,100.3,6,0-1-0,0-2-0
+2012,2,Jason,Clickety Clow,80.43,11,1-0-0,Loss,1-1-0,nathan,ol-erth murph slayers,111.34,4,1-0-0,2-0-0
+2012,2,AJ,Hunting Horwitz,92.9,8,0-1-0,Win,1-1-0,Kameron,Drunken Monkeys,86.61,9,0-1-0,0-2-0
+2012,2,Sam,Enemy at the Gates,102.86,5,1-0-0,Win,2-0-0,dan,DR Philthy,81.51,10,1-0-0,1-1-0
+2012,2,Mike,hahBEEEEEEHHbut,74.36,12,0-1-0,Loss,0-2-0,Aaron,I Cursed AJ Crane,96.0,7,1-0-0,2-0-0
+2012,2,Rob,Senor Manberto,124.42,3,0-1-0,Loss,0-2-0,Matthew,Turf Muncher,160.94,1,0-1-0,1-1-0
+2012,2,Colin,Im a scientist,100.3,6,0-1-0,Loss,0-2-0,Matt,Mongorians,134.34,2,1-0-0,2-0-0
+2012,2,nathan,ol-erth murph slayers,111.34,4,1-0-0,Win,2-0-0,Jason,Clickety Clow,80.43,11,1-0-0,1-1-0
+2012,3,AJ,Hunting Horwitz,93.02,8,1-1-0,Win,2-1-0,Sam,Enemy at the Gates,78.7,10,2-0-0,2-1-0
+2012,3,Mike,hahBEEEEEEHHbut,84.76,9,0-2-0,Loss,0-3-0,Kameron,Drunken Monkeys,139.29,1,0-2-0,1-2-0
+2012,3,Rob,Senor Manberto,104.48,5,0-2-0,Win,1-2-0,dan,DR Philthy,96.43,7,1-1-0,1-2-0
+2012,3,Colin,Im a scientist,76.3,11,0-2-0,Loss,0-3-0,Aaron,I Cursed AJ Crane,101.92,6,2-0-0,3-0-0
+2012,3,nathan,ol-erth murph slayers,128.32,2,2-0-0,Win,3-0-0,Matthew,Turf Muncher,114.04,4,1-1-0,1-2-0
+2012,3,Jason,Clickety Clow,121.96,3,1-1-0,Win,2-1-0,Matt,Mongorians,74.98,12,2-0-0,2-1-0
+2012,3,Sam,Enemy at the Gates,78.7,10,2-0-0,Loss,2-1-0,AJ,Hunting Horwitz,93.02,8,1-1-0,2-1-0
+2012,3,Kameron,Drunken Monkeys,139.29,1,0-2-0,Win,1-2-0,Mike,hahBEEEEEEHHbut,84.76,9,0-2-0,0-3-0
+2012,3,dan,DR Philthy,96.43,7,1-1-0,Loss,1-2-0,Rob,Senor Manberto,104.48,5,0-2-0,1-2-0
+2012,3,Aaron,I Cursed AJ Crane,101.92,6,2-0-0,Win,3-0-0,Colin,Im a scientist,76.3,11,0-2-0,0-3-0
+2012,3,Matthew,Turf Muncher,114.04,4,1-1-0,Loss,1-2-0,nathan,ol-erth murph slayers,128.32,2,2-0-0,3-0-0
+2012,3,Matt,Mongorians,74.98,12,2-0-0,Loss,2-1-0,Jason,Clickety Clow,121.96,3,1-1-0,2-1-0
+2012,4,Mike,hahBEEEEEEHHbut,116.66,6,0-3-0,Win,1-3-0,AJ,Hunting Horwitz,91.56,9,2-1-0,2-2-0
+2012,4,Sam,Enemy at the Gates,131.63,1,2-1-0,Win,3-1-0,Rob,Senor Manberto,120.83,4,1-2-0,1-3-0
+2012,4,Kameron,Drunken Monkeys,87.44,11,1-2-0,Loss,1-3-0,Colin,Im a scientist,112.94,7,0-3-0,1-3-0
+2012,4,dan,DR Philthy,125.95,3,1-2-0,Loss,1-3-0,nathan,ol-erth murph slayers,126.7,2,3-0-0,4-0-0
+2012,4,Aaron,I Cursed AJ Crane,89.76,10,3-0-0,Win,4-0-0,Jason,Clickety Clow,80.1,12,2-1-0,2-2-0
+2012,4,Matthew,Turf Muncher,112.42,8,1-2-0,Loss,1-3-0,Matt,Mongorians,117.0,5,2-1-0,3-1-0
+2012,4,AJ,Hunting Horwitz,91.56,9,2-1-0,Loss,2-2-0,Mike,hahBEEEEEEHHbut,116.66,6,0-3-0,1-3-0
+2012,4,Rob,Senor Manberto,120.83,4,1-2-0,Loss,1-3-0,Sam,Enemy at the Gates,131.63,1,2-1-0,3-1-0
+2012,4,Colin,Im a scientist,112.94,7,0-3-0,Win,1-3-0,Kameron,Drunken Monkeys,87.44,11,1-2-0,1-3-0
+2012,4,nathan,ol-erth murph slayers,126.7,2,3-0-0,Win,4-0-0,dan,DR Philthy,125.95,3,1-2-0,1-3-0
+2012,4,Jason,Clickety Clow,80.1,12,2-1-0,Loss,2-2-0,Aaron,I Cursed AJ Crane,89.76,10,3-0-0,4-0-0
+2012,4,Matt,Mongorians,117.0,5,2-1-0,Win,3-1-0,Matthew,Turf Muncher,112.42,8,1-2-0,1-3-0
+2012,5,AJ,Hunting Horwitz,106.18,5,2-2-0,Loss,2-3-0,Rob,Senor Manberto,114.07,4,1-3-0,2-3-0
+2012,5,Colin,Im a scientist,91.0,10,1-3-0,Win,2-3-0,Mike,hahBEEEEEEHHbut,88.07,11,1-3-0,1-4-0
+2012,5,nathan,ol-erth murph slayers,93.52,9,4-0-0,Loss,4-1-0,Sam,Enemy at the Gates,116.8,3,3-1-0,4-1-0
+2012,5,Jason,Clickety Clow,101.6,7,2-2-0,Win,3-2-0,Kameron,Drunken Monkeys,84.96,12,1-3-0,1-4-0
+2012,5,Matt,Mongorians,123.16,2,3-1-0,Win,4-1-0,dan,DR Philthy,104.48,6,1-3-0,1-4-0
+2012,5,Matthew,Turf Muncher,98.56,8,1-3-0,Loss,1-4-0,Aaron,I Cursed AJ Crane,127.36,1,4-0-0,5-0-0
+2012,5,Rob,Senor Manberto,114.07,4,1-3-0,Win,2-3-0,AJ,Hunting Horwitz,106.18,5,2-2-0,2-3-0
+2012,5,Mike,hahBEEEEEEHHbut,88.07,11,1-3-0,Loss,1-4-0,Colin,Im a scientist,91.0,10,1-3-0,2-3-0
+2012,5,Sam,Enemy at the Gates,116.8,3,3-1-0,Win,4-1-0,nathan,ol-erth murph slayers,93.52,9,4-0-0,4-1-0
+2012,5,Kameron,Drunken Monkeys,84.96,12,1-3-0,Loss,1-4-0,Jason,Clickety Clow,101.6,7,2-2-0,3-2-0
+2012,5,dan,DR Philthy,104.48,6,1-3-0,Loss,1-4-0,Matt,Mongorians,123.16,2,3-1-0,4-1-0
+2012,5,Aaron,I Cursed AJ Crane,127.36,1,4-0-0,Win,5-0-0,Matthew,Turf Muncher,98.56,8,1-3-0,1-4-0
+2012,6,Colin,Im a scientist,108.08,5,2-3-0,Win,3-3-0,AJ,Hunting Horwitz,92.34,8,2-3-0,2-4-0
+2012,6,Rob,Senor Manberto,94.35,7,2-3-0,Win,3-3-0,nathan,ol-erth murph slayers,88.8,10,4-1-0,4-2-0
+2012,6,Mike,hahBEEEEEEHHbut,106.92,6,1-4-0,Loss,1-5-0,Jason,Clickety Clow,120.79,2,3-2-0,4-2-0
+2012,6,Sam,Enemy at the Gates,130.03,1,4-1-0,Win,5-1-0,Matt,Mongorians,114.94,4,4-1-0,4-2-0
+2012,6,Kameron,Drunken Monkeys,89.19,9,1-4-0,Win,2-4-0,Matthew,Turf Muncher,73.71,12,1-4-0,1-5-0
+2012,6,dan,DR Philthy,120.53,3,1-4-0,Win,2-4-0,Aaron,I Cursed AJ Crane,79.92,11,5-0-0,5-1-0
+2012,6,AJ,Hunting Horwitz,92.34,8,2-3-0,Loss,2-4-0,Colin,Im a scientist,108.08,5,2-3-0,3-3-0
+2012,6,nathan,ol-erth murph slayers,88.8,10,4-1-0,Loss,4-2-0,Rob,Senor Manberto,94.35,7,2-3-0,3-3-0
+2012,6,Jason,Clickety Clow,120.79,2,3-2-0,Win,4-2-0,Mike,hahBEEEEEEHHbut,106.92,6,1-4-0,1-5-0
+2012,6,Matt,Mongorians,114.94,4,4-1-0,Loss,4-2-0,Sam,Enemy at the Gates,130.03,1,4-1-0,5-1-0
+2012,6,Matthew,Turf Muncher,73.71,12,1-4-0,Loss,1-5-0,Kameron,Drunken Monkeys,89.19,9,1-4-0,2-4-0
+2012,6,Aaron,I Cursed AJ Crane,79.92,11,5-0-0,Loss,5-1-0,dan,DR Philthy,120.53,3,1-4-0,2-4-0
+2012,7,AJ,Hunting Horwitz,116.64,2,2-4-0,Win,3-4-0,nathan,ol-erth murph slayers,88.16,8,4-2-0,4-3-0
+2012,7,Jason,Clickety Clow,69.65,11,4-2-0,Loss,4-3-0,Colin,Im a scientist,98.44,6,3-3-0,4-3-0
+2012,7,Matt,Mongorians,119.0,1,4-2-0,Win,5-2-0,Rob,Senor Manberto,69.45,12,3-3-0,3-4-0
+2012,7,Matthew,Turf Muncher,86.89,9,1-5-0,Win,2-5-0,Mike,hahBEEEEEEHHbut,83.22,10,1-5-0,1-6-0
+2012,7,Aaron,I Cursed AJ Crane,105.18,5,5-1-0,Loss,5-2-0,Sam,Enemy at the Gates,116.14,3,5-1-0,6-1-0
+2012,7,dan,DR Philthy,105.3,4,2-4-0,Win,3-4-0,Kameron,Drunken Monkeys,96.35,7,2-4-0,2-5-0
+2012,7,nathan,ol-erth murph slayers,88.16,8,4-2-0,Loss,4-3-0,AJ,Hunting Horwitz,116.64,2,2-4-0,3-4-0
+2012,7,Colin,Im a scientist,98.44,6,3-3-0,Win,4-3-0,Jason,Clickety Clow,69.65,11,4-2-0,4-3-0
+2012,7,Rob,Senor Manberto,69.45,12,3-3-0,Loss,3-4-0,Matt,Mongorians,119.0,1,4-2-0,5-2-0
+2012,7,Mike,hahBEEEEEEHHbut,83.22,10,1-5-0,Loss,1-6-0,Matthew,Turf Muncher,86.89,9,1-5-0,2-5-0
+2012,7,Sam,Enemy at the Gates,116.14,3,5-1-0,Win,6-1-0,Aaron,I Cursed AJ Crane,105.18,5,5-1-0,5-2-0
+2012,7,Kameron,Drunken Monkeys,96.35,7,2-4-0,Loss,2-5-0,dan,DR Philthy,105.3,4,2-4-0,3-4-0
+2012,8,Jason,Clickety Clow,90.45,9,4-3-0,Loss,4-4-0,AJ,Hunting Horwitz,95.08,6,3-4-0,4-4-0
+2012,8,nathan,ol-erth murph slayers,106.36,2,4-3-0,Loss,4-4-0,Matt,Mongorians,107.94,1,5-2-0,6-2-0
+2012,8,Colin,Im a scientist,95.85,5,4-3-0,Win,5-3-0,Matthew,Turf Muncher,77.58,12,2-5-0,2-6-0
+2012,8,Rob,Senor Manberto,85.66,10,3-4-0,Win,4-4-0,Aaron,I Cursed AJ Crane,80.78,11,5-2-0,5-3-0
+2012,8,Mike,hahBEEEEEEHHbut,93.51,8,1-6-0,Loss,1-7-0,dan,DR Philthy,93.63,7,3-4-0,4-4-0
+2012,8,Sam,Enemy at the Gates,98.58,4,6-1-0,Loss,6-2-0,Kameron,Drunken Monkeys,102.35,3,2-5-0,3-5-0
+2012,8,AJ,Hunting Horwitz,95.08,6,3-4-0,Win,4-4-0,Jason,Clickety Clow,90.45,9,4-3-0,4-4-0
+2012,8,Matt,Mongorians,107.94,1,5-2-0,Win,6-2-0,nathan,ol-erth murph slayers,106.36,2,4-3-0,4-4-0
+2012,8,Matthew,Turf Muncher,77.58,12,2-5-0,Loss,2-6-0,Colin,Im a scientist,95.85,5,4-3-0,5-3-0
+2012,8,Aaron,I Cursed AJ Crane,80.78,11,5-2-0,Loss,5-3-0,Rob,Senor Manberto,85.66,10,3-4-0,4-4-0
+2012,8,dan,DR Philthy,93.63,7,3-4-0,Win,4-4-0,Mike,hahBEEEEEEHHbut,93.51,8,1-6-0,1-7-0
+2012,8,Kameron,Drunken Monkeys,102.35,3,2-5-0,Win,3-5-0,Sam,Enemy at the Gates,98.58,4,6-1-0,6-2-0
+2012,9,AJ,Hunting Horwitz,132.7,1,4-4-0,Win,5-4-0,Matt,Mongorians,117.41,4,6-2-0,6-3-0
+2012,9,Matthew,Turf Muncher,84.5,10,2-6-0,Win,3-6-0,Jason,Clickety Clow,59.84,12,4-4-0,4-5-0
+2012,9,Aaron,I Cursed AJ Crane,113.7,5,5-3-0,Win,6-3-0,nathan,ol-erth murph slayers,107.78,6,4-4-0,4-5-0
+2012,9,dan,DR Philthy,81.44,11,4-4-0,Loss,4-5-0,Colin,Im a scientist,129.99,2,5-3-0,6-3-0
+2012,9,Kameron,Drunken Monkeys,107.06,7,3-5-0,Win,4-5-0,Rob,Senor Manberto,101.64,9,4-4-0,4-5-0
+2012,9,Sam,Enemy at the Gates,120.15,3,6-2-0,Win,7-2-0,Mike,hahBEEEEEEHHbut,103.12,8,1-7-0,1-8-0
+2012,9,Matt,Mongorians,117.41,4,6-2-0,Loss,6-3-0,AJ,Hunting Horwitz,132.7,1,4-4-0,5-4-0
+2012,9,Jason,Clickety Clow,59.84,12,4-4-0,Loss,4-5-0,Matthew,Turf Muncher,84.5,10,2-6-0,3-6-0
+2012,9,nathan,ol-erth murph slayers,107.78,6,4-4-0,Loss,4-5-0,Aaron,I Cursed AJ Crane,113.7,5,5-3-0,6-3-0
+2012,9,Colin,Im a scientist,129.99,2,5-3-0,Win,6-3-0,dan,DR Philthy,81.44,11,4-4-0,4-5-0
+2012,9,Rob,Senor Manberto,101.64,9,4-4-0,Loss,4-5-0,Kameron,Drunken Monkeys,107.06,7,3-5-0,4-5-0
+2012,9,Mike,hahBEEEEEEHHbut,103.12,8,1-7-0,Loss,1-8-0,Sam,Enemy at the Gates,120.15,3,6-2-0,7-2-0
+2012,10,Matthew,Turf Muncher,119.68,2,3-6-0,Win,4-6-0,AJ,Hunting Horwitz,99.28,4,5-4-0,5-5-0
+2012,10,Matt,Mongorians,95.6,7,6-3-0,Win,7-3-0,Aaron,I Cursed AJ Crane,75.3,12,6-3-0,6-4-0
+2012,10,Jason,Clickety Clow,93.66,8,4-5-0,Loss,4-6-0,dan,DR Philthy,97.24,6,4-5-0,5-5-0
+2012,10,nathan,ol-erth murph slayers,98.78,5,4-5-0,Win,5-5-0,Kameron,Drunken Monkeys,83.76,10,4-5-0,4-6-0
+2012,10,Colin,Im a scientist,103.02,3,6-3-0,Loss,6-4-0,Sam,Enemy at the Gates,138.04,1,7-2-0,8-2-0
+2012,10,Rob,Senor Manberto,83.04,11,4-5-0,Loss,4-6-0,Mike,hahBEEEEEEHHbut,84.71,9,1-8-0,2-8-0
+2012,10,AJ,Hunting Horwitz,99.28,4,5-4-0,Loss,5-5-0,Matthew,Turf Muncher,119.68,2,3-6-0,4-6-0
+2012,10,Aaron,I Cursed AJ Crane,75.3,12,6-3-0,Loss,6-4-0,Matt,Mongorians,95.6,7,6-3-0,7-3-0
+2012,10,dan,DR Philthy,97.24,6,4-5-0,Win,5-5-0,Jason,Clickety Clow,93.66,8,4-5-0,4-6-0
+2012,10,Kameron,Drunken Monkeys,83.76,10,4-5-0,Loss,4-6-0,nathan,ol-erth murph slayers,98.78,5,4-5-0,5-5-0
+2012,10,Sam,Enemy at the Gates,138.04,1,7-2-0,Win,8-2-0,Colin,Im a scientist,103.02,3,6-3-0,6-4-0
+2012,10,Mike,hahBEEEEEEHHbut,84.71,9,1-8-0,Win,2-8-0,Rob,Senor Manberto,83.04,11,4-5-0,4-6-0
+2012,11,AJ,Hunting Horwitz,78.26,9,5-5-0,Loss,5-6-0,Aaron,I Cursed AJ Crane,104.62,3,6-4-0,7-4-0
+2012,11,dan,DR Philthy,87.83,7,5-5-0,Loss,5-6-0,Matthew,Turf Muncher,134.37,2,4-6-0,5-6-0
+2012,11,Kameron,Drunken Monkeys,94.28,5,4-6-0,Loss,4-7-0,Matt,Mongorians,139.6,1,7-3-0,8-3-0
+2012,11,Sam,Enemy at the Gates,84.77,8,8-2-0,Win,9-2-0,Jason,Clickety Clow,34.4,12,4-6-0,4-7-0
+2012,11,Mike,hahBEEEEEEHHbut,61.74,11,2-8-0,Loss,2-9-0,nathan,ol-erth murph slayers,101.14,4,5-5-0,6-5-0
+2012,11,Rob,Senor Manberto,94.08,6,4-6-0,Win,5-6-0,Colin,Im a scientist,75.26,10,6-4-0,6-5-0
+2012,11,Aaron,I Cursed AJ Crane,104.62,3,6-4-0,Win,7-4-0,AJ,Hunting Horwitz,78.26,9,5-5-0,5-6-0
+2012,11,Matthew,Turf Muncher,134.37,2,4-6-0,Win,5-6-0,dan,DR Philthy,87.83,7,5-5-0,5-6-0
+2012,11,Matt,Mongorians,139.6,1,7-3-0,Win,8-3-0,Kameron,Drunken Monkeys,94.28,5,4-6-0,4-7-0
+2012,11,Jason,Clickety Clow,34.4,12,4-6-0,Loss,4-7-0,Sam,Enemy at the Gates,84.77,8,8-2-0,9-2-0
+2012,11,nathan,ol-erth murph slayers,101.14,4,5-5-0,Win,6-5-0,Mike,hahBEEEEEEHHbut,61.74,11,2-8-0,2-9-0
+2012,11,Colin,Im a scientist,75.26,10,6-4-0,Loss,6-5-0,Rob,Senor Manberto,94.08,6,4-6-0,5-6-0
+2012,12,dan,DR Philthy,92.07,9,5-6-0,Win,6-6-0,AJ,Hunting Horwitz,86.8,10,5-6-0,5-7-0
+2012,12,Aaron,I Cursed AJ Crane,127.0,3,7-4-0,Win,8-4-0,Kameron,Drunken Monkeys,105.44,5,4-7-0,4-8-0
+2012,12,Matthew,Turf Muncher,143.19,1,5-6-0,Win,6-6-0,Sam,Enemy at the Gates,101.45,7,9-2-0,9-3-0
+2012,12,Matt,Mongorians,109.5,4,8-3-0,Win,9-3-0,Mike,hahBEEEEEEHHbut,64.99,12,2-9-0,2-10-0
+2012,12,Jason,Clickety Clow,81.3,11,4-7-0,Loss,4-8-0,Rob,Senor Manberto,97.24,8,5-6-0,6-6-0
+2012,12,nathan,ol-erth murph slayers,135.02,2,6-5-0,Win,7-5-0,Colin,Im a scientist,103.68,6,6-5-0,6-6-0
+2012,12,AJ,Hunting Horwitz,86.8,10,5-6-0,Loss,5-7-0,dan,DR Philthy,92.07,9,5-6-0,6-6-0
+2012,12,Kameron,Drunken Monkeys,105.44,5,4-7-0,Loss,4-8-0,Aaron,I Cursed AJ Crane,127.0,3,7-4-0,8-4-0
+2012,12,Sam,Enemy at the Gates,101.45,7,9-2-0,Loss,9-3-0,Matthew,Turf Muncher,143.19,1,5-6-0,6-6-0
+2012,12,Mike,hahBEEEEEEHHbut,64.99,12,2-9-0,Loss,2-10-0,Matt,Mongorians,109.5,4,8-3-0,9-3-0
+2012,12,Rob,Senor Manberto,97.24,8,5-6-0,Win,6-6-0,Jason,Clickety Clow,81.3,11,4-7-0,4-8-0
+2012,12,Colin,Im a scientist,103.68,6,6-5-0,Loss,6-6-0,nathan,ol-erth murph slayers,135.02,2,6-5-0,7-5-0
+2012,13,AJ,Hunting Horwitz,133.14,2,5-7-0,Loss,5-8-0,Kameron,Drunken Monkeys,148.32,1,4-8-0,5-8-0
+2012,13,Sam,Enemy at the Gates,100.27,7,9-3-0,Win,10-3-0,dan,DR Philthy,92.11,8,6-6-0,6-7-0
+2012,13,Mike,hahBEEEEEEHHbut,62.94,12,2-10-0,Loss,2-11-0,Aaron,I Cursed AJ Crane,128.5,3,8-4-0,9-4-0
+2012,13,Rob,Senor Manberto,109.38,6,6-6-0,Loss,6-7-0,Matthew,Turf Muncher,114.05,5,6-6-0,7-6-0
+2012,13,Colin,Im a scientist,64.64,11,6-6-0,Loss,6-7-0,Matt,Mongorians,120.84,4,9-3-0,10-3-0
+2012,13,nathan,ol-erth murph slayers,90.22,9,7-5-0,Win,8-5-0,Jason,Clickety Clow,65.4,10,4-8-0,4-9-0
+2012,13,Kameron,Drunken Monkeys,148.32,1,4-8-0,Win,5-8-0,AJ,Hunting Horwitz,133.14,2,5-7-0,5-8-0
+2012,13,dan,DR Philthy,92.11,8,6-6-0,Loss,6-7-0,Sam,Enemy at the Gates,100.27,7,9-3-0,10-3-0
+2012,13,Aaron,I Cursed AJ Crane,128.5,3,8-4-0,Win,9-4-0,Mike,hahBEEEEEEHHbut,62.94,12,2-10-0,2-11-0
+2012,13,Matthew,Turf Muncher,114.05,5,6-6-0,Win,7-6-0,Rob,Senor Manberto,109.38,6,6-6-0,6-7-0
+2012,13,Matt,Mongorians,120.84,4,9-3-0,Win,10-3-0,Colin,Im a scientist,64.64,11,6-6-0,6-7-0
+2012,13,Jason,Clickety Clow,65.4,10,4-8-0,Loss,4-9-0,nathan,ol-erth murph slayers,90.22,9,7-5-0,8-5-0
+2012,14,Sam,Enemy at the Gates,97.41,7,10-3-0,Loss,10-4-0,AJ,Hunting Horwitz,112.07,4,5-8-0,6-8-0
+2012,14,Kameron,Drunken Monkeys,76.92,10,5-8-0,Win,6-8-0,Mike,hahBEEEEEEHHbut,68.55,12,2-11-0,2-12-0
+2012,14,dan,DR Philthy,83.86,9,6-7-0,Loss,6-8-0,Rob,Senor Manberto,165.68,1,6-7-0,7-7-0
+2012,14,Aaron,I Cursed AJ Crane,108.36,5,9-4-0,Win,10-4-0,Colin,Im a scientist,95.86,8,6-7-0,6-8-0
+2012,14,Matthew,Turf Muncher,74.48,11,7-6-0,Loss,7-7-0,nathan,ol-erth murph slayers,106.34,6,8-5-0,9-5-0
+2012,14,Matt,Mongorians,129.14,2,10-3-0,Win,11-3-0,Jason,Clickety Clow,124.4,3,4-9-0,4-10-0
+2012,14,AJ,Hunting Horwitz,112.07,4,5-8-0,Win,6-8-0,Sam,Enemy at the Gates,97.41,7,10-3-0,10-4-0
+2012,14,Mike,hahBEEEEEEHHbut,68.55,12,2-11-0,Loss,2-12-0,Kameron,Drunken Monkeys,76.92,10,5-8-0,6-8-0
+2012,14,Rob,Senor Manberto,165.68,1,6-7-0,Win,7-7-0,dan,DR Philthy,83.86,9,6-7-0,6-8-0
+2012,14,Colin,Im a scientist,95.86,8,6-7-0,Loss,6-8-0,Aaron,I Cursed AJ Crane,108.36,5,9-4-0,10-4-0
+2012,14,nathan,ol-erth murph slayers,106.34,6,8-5-0,Win,9-5-0,Matthew,Turf Muncher,74.48,11,7-6-0,7-7-0
+2012,14,Jason,Clickety Clow,124.4,3,4-9-0,Loss,4-10-0,Matt,Mongorians,129.14,2,10-3-0,11-3-0
+2012,15,Jason,Clickety Clow,136.66,1,4-10-0,Win,4-10-0,AJ,Hunting Horwitz,90.24,7,6-8-0,6-8-0
+2012,15,Mike,hahBEEEEEEHHbut,96.51,6,2-12-0,Win,2-12-0,Kameron,Drunken Monkeys,84.24,8,6-8-0,6-8-0
+2012,15,Aaron,I Cursed AJ Crane,121.64,2,10-4-0,Win,10-4-0,Rob,Senor Manberto,101.41,4,7-7-0,7-7-0
+2012,15,Matthew,Turf Muncher,97.56,5,7-7-0,Loss,7-7-0,nathan,ol-erth murph slayers,121.32,3,9-5-0,9-5-0
+2012,15,AJ,Hunting Horwitz,90.24,7,6-8-0,Loss,6-8-0,Jason,Clickety Clow,136.66,1,4-10-0,4-10-0
+2012,15,Kameron,Drunken Monkeys,84.24,8,6-8-0,Loss,6-8-0,Mike,hahBEEEEEEHHbut,96.51,6,2-12-0,2-12-0
+2012,15,Rob,Senor Manberto,101.41,4,7-7-0,Loss,7-7-0,Aaron,I Cursed AJ Crane,121.64,2,10-4-0,10-4-0
+2012,15,nathan,ol-erth murph slayers,121.32,3,9-5-0,Win,9-5-0,Matthew,Turf Muncher,97.56,5,7-7-0,7-7-0
+2012,16,Mike,hahBEEEEEEHHbut,82.13,7,2-12-0,Loss,2-12-0,dan,DR Philthy,118.83,4,6-8-0,6-8-0
+2012,16,Aaron,I Cursed AJ Crane,84.84,6,10-4-0,Loss,10-4-0,Sam,Enemy at the Gates,103.66,5,10-4-0,10-4-0
+2012,16,Jason,Clickety Clow,139.53,1,4-10-0,Win,4-10-0,Colin,Im a scientist,125.34,2,6-8-0,6-8-0
+2012,16,Matt,Mongorians,119.52,3,11-3-0,Win,11-3-0,nathan,ol-erth murph slayers,68.68,8,9-5-0,9-5-0
+2012,16,dan,DR Philthy,118.83,4,6-8-0,Win,6-8-0,Mike,hahBEEEEEEHHbut,82.13,7,2-12-0,2-12-0
+2012,16,Sam,Enemy at the Gates,103.66,5,10-4-0,Win,10-4-0,Aaron,I Cursed AJ Crane,84.84,6,10-4-0,10-4-0
+2012,16,Colin,Im a scientist,125.34,2,6-8-0,Loss,6-8-0,Jason,Clickety Clow,139.53,1,4-10-0,4-10-0
+2012,16,nathan,ol-erth murph slayers,68.68,8,9-5-0,Loss,9-5-0,Matt,Mongorians,119.52,3,11-3-0,11-3-0
+2013,1,AJ,Hunting Horwitz,84.52,11,0-0-0,Loss,0-1-0,dan,DR Philthy,154.65,1,0-0-0,1-0-0
+2013,1,Kameron,Drunken Monkeys,113.52,4,0-0-0,Loss,0-1-0,Aaron,I Cursed AJ Crane,140.59,2,0-0-0,1-0-0
+2013,1,Sam,Gnarly Bush,104.62,6,0-0-0,Win,1-0-0,Matthew,Turf Muncher,101.48,7,0-0-0,0-1-0
+2013,1,Mike,Donkey Punch,97.88,8,0-0-0,Loss,0-1-0,Matt,Mongorians,132.08,3,0-0-0,1-0-0
+2013,1,Rob,Senor Manberto,96.9,9,0-0-0,Win,1-0-0,Brian,DoyouseewhathappensLarry,93.16,10,0-0-0,0-1-0
+2013,1,Colin,Im a scientist,81.26,12,0-0-0,Loss,0-1-0,Mike,MrPigSkinner,109.5,5,0-0-0,1-0-0
+2013,1,dan,DR Philthy,154.65,1,0-0-0,Win,1-0-0,AJ,Hunting Horwitz,84.52,11,0-0-0,0-1-0
+2013,1,Aaron,I Cursed AJ Crane,140.59,2,0-0-0,Win,1-0-0,Kameron,Drunken Monkeys,113.52,4,0-0-0,0-1-0
+2013,1,Matthew,Turf Muncher,101.48,7,0-0-0,Loss,0-1-0,Sam,Gnarly Bush,104.62,6,0-0-0,1-0-0
+2013,1,Matt,Mongorians,132.08,3,0-0-0,Win,1-0-0,Mike,Donkey Punch,97.88,8,0-0-0,0-1-0
+2013,1,Brian,DoyouseewhathappensLarry,93.16,10,0-0-0,Loss,0-1-0,Rob,Senor Manberto,96.9,9,0-0-0,1-0-0
+2013,1,Mike,MrPigSkinner,109.5,5,0-0-0,Win,1-0-0,Colin,Im a scientist,81.26,12,0-0-0,0-1-0
+2013,2,Kameron,Drunken Monkeys,95.14,9,0-1-0,Loss,0-2-0,AJ,Hunting Horwitz,127.3,3,0-1-0,1-1-0
+2013,2,dan,DR Philthy,111.68,6,1-0-0,Win,2-0-0,Sam,Gnarly Bush,86.9,11,1-0-0,1-1-0
+2013,2,Aaron,I Cursed AJ Crane,103.19,7,1-0-0,Win,2-0-0,Mike,Donkey Punch,73.68,12,0-1-0,0-2-0
+2013,2,Matthew,Turf Muncher,89.38,10,0-1-0,Loss,0-2-0,Rob,Senor Manberto,100.98,8,1-0-0,2-0-0
+2013,2,Matt,Mongorians,127.22,4,1-0-0,Loss,1-1-0,Colin,Im a scientist,134.8,1,0-1-0,1-1-0
+2013,2,Brian,DoyouseewhathappensLarry,131.93,2,0-1-0,Win,1-1-0,Mike,MrPigSkinner,120.83,5,1-0-0,1-1-0
+2013,2,AJ,Hunting Horwitz,127.3,3,0-1-0,Win,1-1-0,Kameron,Drunken Monkeys,95.14,9,0-1-0,0-2-0
+2013,2,Sam,Gnarly Bush,86.9,11,1-0-0,Loss,1-1-0,dan,DR Philthy,111.68,6,1-0-0,2-0-0
+2013,2,Mike,Donkey Punch,73.68,12,0-1-0,Loss,0-2-0,Aaron,I Cursed AJ Crane,103.19,7,1-0-0,2-0-0
+2013,2,Rob,Senor Manberto,100.98,8,1-0-0,Win,2-0-0,Matthew,Turf Muncher,89.38,10,0-1-0,0-2-0
+2013,2,Colin,Im a scientist,134.8,1,0-1-0,Win,1-1-0,Matt,Mongorians,127.22,4,1-0-0,1-1-0
+2013,2,Mike,MrPigSkinner,120.83,5,1-0-0,Loss,1-1-0,Brian,DoyouseewhathappensLarry,131.93,2,0-1-0,1-1-0
+2013,3,AJ,Hunting Horwitz,101.96,3,1-1-0,Win,2-1-0,Sam,Gnarly Bush,82.33,10,1-1-0,1-2-0
+2013,3,Mike,Donkey Punch,114.18,2,0-2-0,Win,1-2-0,Kameron,Drunken Monkeys,94.06,7,0-2-0,0-3-0
+2013,3,Rob,Senor Manberto,99.32,5,2-0-0,Win,3-0-0,dan,DR Philthy,88.66,9,2-0-0,2-1-0
+2013,3,Colin,Im a scientist,145.24,1,1-1-0,Win,2-1-0,Aaron,I Cursed AJ Crane,79.04,12,2-0-0,2-1-0
+2013,3,Mike,MrPigSkinner,100.42,4,1-1-0,Win,2-1-0,Matthew,Turf Muncher,80.1,11,0-2-0,0-3-0
+2013,3,Brian,DoyouseewhathappensLarry,94.64,6,1-1-0,Win,2-1-0,Matt,Mongorians,89.1,8,1-1-0,1-2-0
+2013,3,Sam,Gnarly Bush,82.33,10,1-1-0,Loss,1-2-0,AJ,Hunting Horwitz,101.96,3,1-1-0,2-1-0
+2013,3,Kameron,Drunken Monkeys,94.06,7,0-2-0,Loss,0-3-0,Mike,Donkey Punch,114.18,2,0-2-0,1-2-0
+2013,3,dan,DR Philthy,88.66,9,2-0-0,Loss,2-1-0,Rob,Senor Manberto,99.32,5,2-0-0,3-0-0
+2013,3,Aaron,I Cursed AJ Crane,79.04,12,2-0-0,Loss,2-1-0,Colin,Im a scientist,145.24,1,1-1-0,2-1-0
+2013,3,Matthew,Turf Muncher,80.1,11,0-2-0,Loss,0-3-0,Mike,MrPigSkinner,100.42,4,1-1-0,2-1-0
+2013,3,Matt,Mongorians,89.1,8,1-1-0,Loss,1-2-0,Brian,DoyouseewhathappensLarry,94.64,6,1-1-0,2-1-0
+2013,4,Mike,Donkey Punch,111.52,6,1-2-0,Win,2-2-0,AJ,Hunting Horwitz,102.45,9,2-1-0,2-2-0
+2013,4,Sam,Gnarly Bush,140.54,1,1-2-0,Win,2-2-0,Rob,Senor Manberto,97.22,11,3-0-0,3-1-0
+2013,4,Kameron,Drunken Monkeys,109.08,7,0-3-0,Win,1-3-0,Colin,Im a scientist,99.38,10,2-1-0,2-2-0
+2013,4,dan,DR Philthy,123.78,4,2-1-0,Loss,2-2-0,Mike,MrPigSkinner,128.44,3,2-1-0,3-1-0
+2013,4,Aaron,I Cursed AJ Crane,78.02,12,2-1-0,Loss,2-2-0,Brian,DoyouseewhathappensLarry,136.91,2,2-1-0,3-1-0
+2013,4,Matthew,Turf Muncher,119.78,5,0-3-0,Win,1-3-0,Matt,Mongorians,106.08,8,1-2-0,1-3-0
+2013,4,AJ,Hunting Horwitz,102.45,9,2-1-0,Loss,2-2-0,Mike,Donkey Punch,111.52,6,1-2-0,2-2-0
+2013,4,Rob,Senor Manberto,97.22,11,3-0-0,Loss,3-1-0,Sam,Gnarly Bush,140.54,1,1-2-0,2-2-0
+2013,4,Colin,Im a scientist,99.38,10,2-1-0,Loss,2-2-0,Kameron,Drunken Monkeys,109.08,7,0-3-0,1-3-0
+2013,4,Mike,MrPigSkinner,128.44,3,2-1-0,Win,3-1-0,dan,DR Philthy,123.78,4,2-1-0,2-2-0
+2013,4,Brian,DoyouseewhathappensLarry,136.91,2,2-1-0,Win,3-1-0,Aaron,I Cursed AJ Crane,78.02,12,2-1-0,2-2-0
+2013,4,Matt,Mongorians,106.08,8,1-2-0,Loss,1-3-0,Matthew,Turf Muncher,119.78,5,0-3-0,1-3-0
+2013,5,AJ,Hunting Horwitz,112.93,4,2-2-0,Win,3-2-0,Rob,Senor Manberto,101.44,6,3-1-0,3-2-0
+2013,5,Colin,Im a scientist,67.46,12,2-2-0,Loss,2-3-0,Mike,Donkey Punch,102.32,5,2-2-0,3-2-0
+2013,5,Mike,MrPigSkinner,98.19,8,3-1-0,Loss,3-2-0,Sam,Gnarly Bush,98.58,7,2-2-0,3-2-0
+2013,5,Brian,DoyouseewhathappensLarry,138.63,2,3-1-0,Win,4-1-0,Kameron,Drunken Monkeys,119.06,3,1-3-0,1-4-0
+2013,5,Matt,Mongorians,88.68,10,1-3-0,Loss,1-4-0,dan,DR Philthy,143.16,1,2-2-0,3-2-0
+2013,5,Matthew,Turf Muncher,95.82,9,1-3-0,Win,2-3-0,Aaron,I Cursed AJ Crane,80.67,11,2-2-0,2-3-0
+2013,5,Rob,Senor Manberto,101.44,6,3-1-0,Loss,3-2-0,AJ,Hunting Horwitz,112.93,4,2-2-0,3-2-0
+2013,5,Mike,Donkey Punch,102.32,5,2-2-0,Win,3-2-0,Colin,Im a scientist,67.46,12,2-2-0,2-3-0
+2013,5,Sam,Gnarly Bush,98.58,7,2-2-0,Win,3-2-0,Mike,MrPigSkinner,98.19,8,3-1-0,3-2-0
+2013,5,Kameron,Drunken Monkeys,119.06,3,1-3-0,Loss,1-4-0,Brian,DoyouseewhathappensLarry,138.63,2,3-1-0,4-1-0
+2013,5,dan,DR Philthy,143.16,1,2-2-0,Win,3-2-0,Matt,Mongorians,88.68,10,1-3-0,1-4-0
+2013,5,Aaron,I Cursed AJ Crane,80.67,11,2-2-0,Loss,2-3-0,Matthew,Turf Muncher,95.82,9,1-3-0,2-3-0
+2013,6,Colin,Im a scientist,92.17,5,2-3-0,Win,3-3-0,AJ,Hunting Horwitz,90.2,7,3-2-0,3-3-0
+2013,6,Rob,Senor Manberto,91.78,6,3-2-0,Win,4-2-0,Mike,MrPigSkinner,87.13,9,3-2-0,3-3-0
+2013,6,Mike,Donkey Punch,107.54,3,3-2-0,Win,4-2-0,Brian,DoyouseewhathappensLarry,101.98,4,4-1-0,4-2-0
+2013,6,Sam,Gnarly Bush,108.7,2,3-2-0,Win,4-2-0,Matt,Mongorians,85.72,10,1-4-0,1-5-0
+2013,6,Kameron,Drunken Monkeys,74.98,11,1-4-0,Loss,1-5-0,Matthew,Turf Muncher,87.14,8,2-3-0,3-3-0
+2013,6,dan,DR Philthy,136.5,1,3-2-0,Win,4-2-0,Aaron,I Cursed AJ Crane,65.3,12,2-3-0,2-4-0
+2013,6,AJ,Hunting Horwitz,90.2,7,3-2-0,Loss,3-3-0,Colin,Im a scientist,92.17,5,2-3-0,3-3-0
+2013,6,Mike,MrPigSkinner,87.13,9,3-2-0,Loss,3-3-0,Rob,Senor Manberto,91.78,6,3-2-0,4-2-0
+2013,6,Brian,DoyouseewhathappensLarry,101.98,4,4-1-0,Loss,4-2-0,Mike,Donkey Punch,107.54,3,3-2-0,4-2-0
+2013,6,Matt,Mongorians,85.72,10,1-4-0,Loss,1-5-0,Sam,Gnarly Bush,108.7,2,3-2-0,4-2-0
+2013,6,Matthew,Turf Muncher,87.14,8,2-3-0,Win,3-3-0,Kameron,Drunken Monkeys,74.98,11,1-4-0,1-5-0
+2013,6,Aaron,I Cursed AJ Crane,65.3,12,2-3-0,Loss,2-4-0,dan,DR Philthy,136.5,1,3-2-0,4-2-0
+2013,7,AJ,Hunting Horwitz,109.57,3,3-3-0,Win,4-3-0,Mike,MrPigSkinner,105.56,5,3-3-0,3-4-0
+2013,7,Brian,DoyouseewhathappensLarry,110.28,2,4-2-0,Win,5-2-0,Colin,Im a scientist,108.13,4,3-3-0,3-4-0
+2013,7,Matt,Mongorians,72.88,12,1-5-0,Loss,1-6-0,Rob,Senor Manberto,75.73,11,4-2-0,5-2-0
+2013,7,Matthew,Turf Muncher,104.86,6,3-3-0,Win,4-3-0,Mike,Donkey Punch,77.8,10,4-2-0,4-3-0
+2013,7,Aaron,I Cursed AJ Crane,87.12,9,2-4-0,Loss,2-5-0,Sam,Gnarly Bush,88.05,8,4-2-0,5-2-0
+2013,7,dan,DR Philthy,97.74,7,4-2-0,Loss,4-3-0,Kameron,Drunken Monkeys,117.12,1,1-5-0,2-5-0
+2013,7,Mike,MrPigSkinner,105.56,5,3-3-0,Loss,3-4-0,AJ,Hunting Horwitz,109.57,3,3-3-0,4-3-0
+2013,7,Colin,Im a scientist,108.13,4,3-3-0,Loss,3-4-0,Brian,DoyouseewhathappensLarry,110.28,2,4-2-0,5-2-0
+2013,7,Rob,Senor Manberto,75.73,11,4-2-0,Win,5-2-0,Matt,Mongorians,72.88,12,1-5-0,1-6-0
+2013,7,Mike,Donkey Punch,77.8,10,4-2-0,Loss,4-3-0,Matthew,Turf Muncher,104.86,6,3-3-0,4-3-0
+2013,7,Sam,Gnarly Bush,88.05,8,4-2-0,Win,5-2-0,Aaron,I Cursed AJ Crane,87.12,9,2-4-0,2-5-0
+2013,7,Kameron,Drunken Monkeys,117.12,1,1-5-0,Win,2-5-0,dan,DR Philthy,97.74,7,4-2-0,4-3-0
+2013,8,Brian,DoyouseewhathappensLarry,103.54,6,5-2-0,Win,6-2-0,AJ,Hunting Horwitz,72.27,9,4-3-0,4-4-0
+2013,8,Mike,MrPigSkinner,90.27,8,3-4-0,Win,4-4-0,Matt,Mongorians,68.62,11,1-6-0,1-7-0
+2013,8,Colin,Im a scientist,133.48,2,3-4-0,Win,4-4-0,Matthew,Turf Muncher,116.56,5,4-3-0,4-4-0
+2013,8,Rob,Senor Manberto,94.26,7,5-2-0,Win,6-2-0,Aaron,I Cursed AJ Crane,57.6,12,2-5-0,2-6-0
+2013,8,Mike,Donkey Punch,119.81,4,4-3-0,Loss,4-4-0,dan,DR Philthy,140.76,1,4-3-0,5-3-0
+2013,8,Sam,Gnarly Bush,69.94,10,5-2-0,Loss,5-3-0,Kameron,Drunken Monkeys,128.0,3,2-5-0,3-5-0
+2013,8,AJ,Hunting Horwitz,72.27,9,4-3-0,Loss,4-4-0,Brian,DoyouseewhathappensLarry,103.54,6,5-2-0,6-2-0
+2013,8,Matt,Mongorians,68.62,11,1-6-0,Loss,1-7-0,Mike,MrPigSkinner,90.27,8,3-4-0,4-4-0
+2013,8,Matthew,Turf Muncher,116.56,5,4-3-0,Loss,4-4-0,Colin,Im a scientist,133.48,2,3-4-0,4-4-0
+2013,8,Aaron,I Cursed AJ Crane,57.6,12,2-5-0,Loss,2-6-0,Rob,Senor Manberto,94.26,7,5-2-0,6-2-0
+2013,8,dan,DR Philthy,140.76,1,4-3-0,Win,5-3-0,Mike,Donkey Punch,119.81,4,4-3-0,4-4-0
+2013,8,Kameron,Drunken Monkeys,128.0,3,2-5-0,Win,3-5-0,Sam,Gnarly Bush,69.94,10,5-2-0,5-3-0
+2013,9,AJ,Hunting Horwitz,75.58,11,4-4-0,Win,5-4-0,Matt,Mongorians,33.4,12,1-7-0,1-8-0
+2013,9,Matthew,Turf Muncher,107.52,7,4-4-0,Win,5-4-0,Brian,DoyouseewhathappensLarry,76.42,10,6-2-0,6-3-0
+2013,9,Aaron,I Cursed AJ Crane,108.3,6,2-6-0,Loss,2-7-0,Mike,MrPigSkinner,115.28,4,4-4-0,5-4-0
+2013,9,dan,DR Philthy,95.63,8,5-3-0,Loss,5-4-0,Colin,Im a scientist,114.94,5,4-4-0,5-4-0
+2013,9,Kameron,Drunken Monkeys,141.24,2,3-5-0,Win,4-5-0,Rob,Senor Manberto,92.88,9,6-2-0,6-3-0
+2013,9,Sam,Gnarly Bush,149.61,1,5-3-0,Win,6-3-0,Mike,Donkey Punch,128.38,3,4-4-0,4-5-0
+2013,9,Matt,Mongorians,33.4,12,1-7-0,Loss,1-8-0,AJ,Hunting Horwitz,75.58,11,4-4-0,5-4-0
+2013,9,Brian,DoyouseewhathappensLarry,76.42,10,6-2-0,Loss,6-3-0,Matthew,Turf Muncher,107.52,7,4-4-0,5-4-0
+2013,9,Mike,MrPigSkinner,115.28,4,4-4-0,Win,5-4-0,Aaron,I Cursed AJ Crane,108.3,6,2-6-0,2-7-0
+2013,9,Colin,Im a scientist,114.94,5,4-4-0,Win,5-4-0,dan,DR Philthy,95.63,8,5-3-0,5-4-0
+2013,9,Rob,Senor Manberto,92.88,9,6-2-0,Loss,6-3-0,Kameron,Drunken Monkeys,141.24,2,3-5-0,4-5-0
+2013,9,Mike,Donkey Punch,128.38,3,4-4-0,Loss,4-5-0,Sam,Gnarly Bush,149.61,1,5-3-0,6-3-0
+2013,10,Matthew,Turf Muncher,66.28,12,5-4-0,Loss,5-5-0,AJ,Hunting Horwitz,120.12,3,5-4-0,6-4-0
+2013,10,Matt,Mongorians,101.06,5,1-8-0,Win,2-8-0,Aaron,I Cursed AJ Crane,84.4,8,2-7-0,2-8-0
+2013,10,Brian,DoyouseewhathappensLarry,88.86,7,6-3-0,Win,7-3-0,dan,DR Philthy,72.1,11,5-4-0,5-5-0
+2013,10,Mike,MrPigSkinner,114.05,4,5-4-0,Win,6-4-0,Kameron,Drunken Monkeys,92.12,6,4-5-0,4-6-0
+2013,10,Colin,Im a scientist,129.87,2,5-4-0,Win,6-4-0,Sam,Gnarly Bush,84.06,9,6-3-0,6-4-0
+2013,10,Rob,Senor Manberto,81.42,10,6-3-0,Loss,6-4-0,Mike,Donkey Punch,135.08,1,4-5-0,5-5-0
+2013,10,AJ,Hunting Horwitz,120.12,3,5-4-0,Win,6-4-0,Matthew,Turf Muncher,66.28,12,5-4-0,5-5-0
+2013,10,Aaron,I Cursed AJ Crane,84.4,8,2-7-0,Loss,2-8-0,Matt,Mongorians,101.06,5,1-8-0,2-8-0
+2013,10,dan,DR Philthy,72.1,11,5-4-0,Loss,5-5-0,Brian,DoyouseewhathappensLarry,88.86,7,6-3-0,7-3-0
+2013,10,Kameron,Drunken Monkeys,92.12,6,4-5-0,Loss,4-6-0,Mike,MrPigSkinner,114.05,4,5-4-0,6-4-0
+2013,10,Sam,Gnarly Bush,84.06,9,6-3-0,Loss,6-4-0,Colin,Im a scientist,129.87,2,5-4-0,6-4-0
+2013,10,Mike,Donkey Punch,135.08,1,4-5-0,Win,5-5-0,Rob,Senor Manberto,81.42,10,6-3-0,6-4-0
+2013,11,AJ,Hunting Horwitz,108.17,4,6-4-0,Win,7-4-0,Aaron,I Cursed AJ Crane,82.26,11,2-8-0,2-9-0
+2013,11,dan,DR Philthy,84.02,10,5-5-0,Loss,5-6-0,Matthew,Turf Muncher,93.51,9,5-5-0,6-5-0
+2013,11,Kameron,Drunken Monkeys,106.95,5,4-6-0,Loss,4-7-0,Matt,Mongorians,113.48,3,2-8-0,3-8-0
+2013,11,Sam,Gnarly Bush,63.87,12,6-4-0,Loss,6-5-0,Brian,DoyouseewhathappensLarry,100.36,7,7-3-0,8-3-0
+2013,11,Mike,Donkey Punch,97.0,8,5-5-0,Loss,5-6-0,Mike,MrPigSkinner,144.36,1,6-4-0,7-4-0
+2013,11,Rob,Senor Manberto,101.47,6,6-4-0,Loss,6-5-0,Colin,Im a scientist,134.79,2,6-4-0,7-4-0
+2013,11,Aaron,I Cursed AJ Crane,82.26,11,2-8-0,Loss,2-9-0,AJ,Hunting Horwitz,108.17,4,6-4-0,7-4-0
+2013,11,Matthew,Turf Muncher,93.51,9,5-5-0,Win,6-5-0,dan,DR Philthy,84.02,10,5-5-0,5-6-0
+2013,11,Matt,Mongorians,113.48,3,2-8-0,Win,3-8-0,Kameron,Drunken Monkeys,106.95,5,4-6-0,4-7-0
+2013,11,Brian,DoyouseewhathappensLarry,100.36,7,7-3-0,Win,8-3-0,Sam,Gnarly Bush,63.87,12,6-4-0,6-5-0
+2013,11,Mike,MrPigSkinner,144.36,1,6-4-0,Win,7-4-0,Mike,Donkey Punch,97.0,8,5-5-0,5-6-0
+2013,11,Colin,Im a scientist,134.79,2,6-4-0,Win,7-4-0,Rob,Senor Manberto,101.47,6,6-4-0,6-5-0
+2013,12,dan,DR Philthy,70.07,11,5-6-0,Loss,5-7-0,AJ,Hunting Horwitz,102.62,6,7-4-0,8-4-0
+2013,12,Aaron,I Cursed AJ Crane,67.86,12,2-9-0,Loss,2-10-0,Kameron,Drunken Monkeys,116.92,4,4-7-0,5-7-0
+2013,12,Matthew,Turf Muncher,125.4,3,6-5-0,Win,7-5-0,Sam,Gnarly Bush,70.76,10,6-5-0,6-6-0
+2013,12,Matt,Mongorians,97.08,7,3-8-0,Loss,3-9-0,Mike,Donkey Punch,131.12,1,5-6-0,6-6-0
+2013,12,Brian,DoyouseewhathappensLarry,72.55,9,8-3-0,Loss,8-4-0,Rob,Senor Manberto,130.61,2,6-5-0,7-5-0
+2013,12,Mike,MrPigSkinner,110.39,5,7-4-0,Win,8-4-0,Colin,Im a scientist,92.09,8,7-4-0,7-5-0
+2013,12,AJ,Hunting Horwitz,102.62,6,7-4-0,Win,8-4-0,dan,DR Philthy,70.07,11,5-6-0,5-7-0
+2013,12,Kameron,Drunken Monkeys,116.92,4,4-7-0,Win,5-7-0,Aaron,I Cursed AJ Crane,67.86,12,2-9-0,2-10-0
+2013,12,Sam,Gnarly Bush,70.76,10,6-5-0,Loss,6-6-0,Matthew,Turf Muncher,125.4,3,6-5-0,7-5-0
+2013,12,Mike,Donkey Punch,131.12,1,5-6-0,Win,6-6-0,Matt,Mongorians,97.08,7,3-8-0,3-9-0
+2013,12,Rob,Senor Manberto,130.61,2,6-5-0,Win,7-5-0,Brian,DoyouseewhathappensLarry,72.55,9,8-3-0,8-4-0
+2013,12,Colin,Im a scientist,92.09,8,7-4-0,Loss,7-5-0,Mike,MrPigSkinner,110.39,5,7-4-0,8-4-0
+2013,13,AJ,Hunting Horwitz,122.68,3,8-4-0,Win,9-4-0,Kameron,Drunken Monkeys,109.12,6,5-7-0,5-8-0
+2013,13,Sam,Gnarly Bush,157.44,1,6-6-0,Win,7-6-0,dan,DR Philthy,101.45,8,5-7-0,5-8-0
+2013,13,Mike,Donkey Punch,81.58,12,6-6-0,Loss,6-7-0,Aaron,I Cursed AJ Crane,104.9,7,2-10-0,3-10-0
+2013,13,Rob,Senor Manberto,96.18,10,7-5-0,Loss,7-6-0,Matthew,Turf Muncher,115.8,5,7-5-0,8-5-0
+2013,13,Colin,Im a scientist,147.73,2,7-5-0,Win,8-5-0,Matt,Mongorians,97.2,9,3-9-0,3-10-0
+2013,13,Mike,MrPigSkinner,118.99,4,8-4-0,Win,9-4-0,Brian,DoyouseewhathappensLarry,87.83,11,8-4-0,8-5-0
+2013,13,Kameron,Drunken Monkeys,109.12,6,5-7-0,Loss,5-8-0,AJ,Hunting Horwitz,122.68,3,8-4-0,9-4-0
+2013,13,dan,DR Philthy,101.45,8,5-7-0,Loss,5-8-0,Sam,Gnarly Bush,157.44,1,6-6-0,7-6-0
+2013,13,Aaron,I Cursed AJ Crane,104.9,7,2-10-0,Win,3-10-0,Mike,Donkey Punch,81.58,12,6-6-0,6-7-0
+2013,13,Matthew,Turf Muncher,115.8,5,7-5-0,Win,8-5-0,Rob,Senor Manberto,96.18,10,7-5-0,7-6-0
+2013,13,Matt,Mongorians,97.2,9,3-9-0,Loss,3-10-0,Colin,Im a scientist,147.73,2,7-5-0,8-5-0
+2013,13,Brian,DoyouseewhathappensLarry,87.83,11,8-4-0,Loss,8-5-0,Mike,MrPigSkinner,118.99,4,8-4-0,9-4-0
+2013,14,Aaron,I Cursed AJ Crane,82.86,8,3-10-0,Loss,3-10-0,dan,DR Philthy,88.81,7,5-8-0,5-8-0
+2013,14,Matt,Mongorians,106.74,3,3-10-0,Win,3-10-0,Kameron,Drunken Monkeys,99.08,6,5-8-0,5-8-0
+2013,14,Colin,Im a scientist,99.76,5,8-5-0,Loss,8-5-0,Sam,Gnarly Bush,105.88,4,7-6-0,7-6-0
+2013,14,Matthew,Turf Muncher,122.36,2,8-5-0,Loss,8-5-0,Brian,DoyouseewhathappensLarry,131.6,1,8-5-0,8-5-0
+2013,14,dan,DR Philthy,88.81,7,5-8-0,Win,5-8-0,Aaron,I Cursed AJ Crane,82.86,8,3-10-0,3-10-0
+2013,14,Kameron,Drunken Monkeys,99.08,6,5-8-0,Loss,5-8-0,Matt,Mongorians,106.74,3,3-10-0,3-10-0
+2013,14,Sam,Gnarly Bush,105.88,4,7-6-0,Win,7-6-0,Colin,Im a scientist,99.76,5,8-5-0,8-5-0
+2013,14,Brian,DoyouseewhathappensLarry,131.6,1,8-5-0,Win,8-5-0,Matthew,Turf Muncher,122.36,2,8-5-0,8-5-0
+2013,15,Sam,Gnarly Bush,120.63,4,7-6-0,Win,7-6-0,AJ,Hunting Horwitz,115.42,6,9-4-0,9-4-0
+2013,15,Mike,Donkey Punch,136.89,2,6-7-0,Win,6-7-0,dan,DR Philthy,100.03,7,5-8-0,5-8-0
+2013,15,Matt,Mongorians,87.3,8,3-10-0,Loss,3-10-0,Rob,Senor Manberto,149.07,1,7-6-0,7-6-0
+2013,15,Brian,DoyouseewhathappensLarry,131.0,3,8-5-0,Win,8-5-0,Mike,MrPigSkinner,117.52,5,9-4-0,9-4-0
+2013,15,AJ,Hunting Horwitz,115.42,6,9-4-0,Loss,9-4-0,Sam,Gnarly Bush,120.63,4,7-6-0,7-6-0
+2013,15,dan,DR Philthy,100.03,7,5-8-0,Loss,5-8-0,Mike,Donkey Punch,136.89,2,6-7-0,6-7-0
+2013,15,Rob,Senor Manberto,149.07,1,7-6-0,Win,7-6-0,Matt,Mongorians,87.3,8,3-10-0,3-10-0
+2013,15,Mike,MrPigSkinner,117.52,5,9-4-0,Loss,9-4-0,Brian,DoyouseewhathappensLarry,131.0,3,8-5-0,8-5-0
+2013,16,Mike,MrPigSkinner,94.0,7,9-4-0,Loss,9-4-0,AJ,Hunting Horwitz,116.9,3,9-4-0,9-4-0
+2013,16,Matt,Mongorians,42.75,12,3-10-0,Loss,3-10-0,dan,DR Philthy,104.1,4,5-8-0,5-8-0
+2013,16,Aaron,I Cursed AJ Crane,79.14,9,3-10-0,Loss,3-10-0,Kameron,Drunken Monkeys,89.14,8,5-8-0,5-8-0
+2013,16,Brian,DoyouseewhathappensLarry,147.01,1,8-5-0,Win,8-5-0,Sam,Gnarly Bush,98.78,6,7-6-0,7-6-0
+2013,16,Rob,Senor Manberto,118.91,2,7-6-0,Win,7-6-0,Mike,Donkey Punch,102.47,5,6-7-0,6-7-0
+2013,16,Matthew,Turf Muncher,74.92,11,8-5-0,Loss,8-5-0,Colin,Im a scientist,78.17,10,8-5-0,8-5-0
+2013,16,AJ,Hunting Horwitz,116.9,3,9-4-0,Win,9-4-0,Mike,MrPigSkinner,94.0,7,9-4-0,9-4-0
+2013,16,dan,DR Philthy,104.1,4,5-8-0,Win,5-8-0,Matt,Mongorians,42.75,12,3-10-0,3-10-0
+2013,16,Kameron,Drunken Monkeys,89.14,8,5-8-0,Win,5-8-0,Aaron,I Cursed AJ Crane,79.14,9,3-10-0,3-10-0
+2013,16,Sam,Gnarly Bush,98.78,6,7-6-0,Loss,7-6-0,Brian,DoyouseewhathappensLarry,147.01,1,8-5-0,8-5-0
+2013,16,Mike,Donkey Punch,102.47,5,6-7-0,Loss,6-7-0,Rob,Senor Manberto,118.91,2,7-6-0,7-6-0
+2013,16,Colin,Im a scientist,78.17,10,8-5-0,Win,8-5-0,Matthew,Turf Muncher,74.92,11,8-5-0,8-5-0
+2014,1,AJ,Dick Flickers,149.49,2,0-0-0,Win,1-0-0,dan,DR Philthy,74.66,10,0-0-0,0-1-0
+2014,1,Kameron,Drunken Monkeys,73.91,11,0-0-0,Loss,0-1-0,Aaron,1 Horse Sized Duck,94.84,7,0-0-0,1-0-0
+2014,1,Sam,Team A-Murray-ca World Police,117.04,5,0-0-0,Loss,0-1-0,Matthew,Turf Muncher,151.72,1,0-0-0,1-0-0
+2014,1,Mike,Donkey Punch,65.16,12,0-0-0,Loss,0-1-0,Matt,Mongorians,125.1,3,0-0-0,1-0-0
+2014,1,Rob,senor manberto,88.67,8,0-0-0,Loss,0-1-0,Brian,DoyouseewhathappensLarry,124.24,4,0-0-0,1-0-0
+2014,1,Colin,Im a scientist,77.04,9,0-0-0,Loss,0-1-0,Mike,MrPigSkinner,100.52,6,0-0-0,1-0-0
+2014,1,dan,DR Philthy,74.66,10,0-0-0,Loss,0-1-0,AJ,Dick Flickers,149.49,2,0-0-0,1-0-0
+2014,1,Aaron,1 Horse Sized Duck,94.84,7,0-0-0,Win,1-0-0,Kameron,Drunken Monkeys,73.91,11,0-0-0,0-1-0
+2014,1,Matthew,Turf Muncher,151.72,1,0-0-0,Win,1-0-0,Sam,Team A-Murray-ca World Police,117.04,5,0-0-0,0-1-0
+2014,1,Matt,Mongorians,125.1,3,0-0-0,Win,1-0-0,Mike,Donkey Punch,65.16,12,0-0-0,0-1-0
+2014,1,Brian,DoyouseewhathappensLarry,124.24,4,0-0-0,Win,1-0-0,Rob,senor manberto,88.67,8,0-0-0,0-1-0
+2014,1,Mike,MrPigSkinner,100.52,6,0-0-0,Win,1-0-0,Colin,Im a scientist,77.04,9,0-0-0,0-1-0
+2014,2,Kameron,Drunken Monkeys,93.34,7,0-1-0,Loss,0-2-0,AJ,Dick Flickers,133.91,1,1-0-0,2-0-0
+2014,2,dan,DR Philthy,71.28,12,0-1-0,Loss,0-2-0,Sam,Team A-Murray-ca World Police,98.58,6,0-1-0,1-1-0
+2014,2,Aaron,1 Horse Sized Duck,100.32,5,1-0-0,Win,2-0-0,Mike,Donkey Punch,72.66,11,0-1-0,0-2-0
+2014,2,Matthew,Turf Muncher,91.04,9,1-0-0,Loss,1-1-0,Rob,senor manberto,122.01,2,0-1-0,1-1-0
+2014,2,Matt,Mongorians,107.38,4,1-0-0,Loss,1-1-0,Colin,Im a scientist,109.04,3,0-1-0,1-1-0
+2014,2,Brian,DoyouseewhathappensLarry,92.44,8,1-0-0,Win,2-0-0,Mike,MrPigSkinner,76.68,10,1-0-0,1-1-0
+2014,2,AJ,Dick Flickers,133.91,1,1-0-0,Win,2-0-0,Kameron,Drunken Monkeys,93.34,7,0-1-0,0-2-0
+2014,2,Sam,Team A-Murray-ca World Police,98.58,6,0-1-0,Win,1-1-0,dan,DR Philthy,71.28,12,0-1-0,0-2-0
+2014,2,Mike,Donkey Punch,72.66,11,0-1-0,Loss,0-2-0,Aaron,1 Horse Sized Duck,100.32,5,1-0-0,2-0-0
+2014,2,Rob,senor manberto,122.01,2,0-1-0,Win,1-1-0,Matthew,Turf Muncher,91.04,9,1-0-0,1-1-0
+2014,2,Colin,Im a scientist,109.04,3,0-1-0,Win,1-1-0,Matt,Mongorians,107.38,4,1-0-0,1-1-0
+2014,2,Mike,MrPigSkinner,76.68,10,1-0-0,Loss,1-1-0,Brian,DoyouseewhathappensLarry,92.44,8,1-0-0,2-0-0
+2014,3,AJ,Dick Flickers,106.75,4,2-0-0,Loss,2-1-0,Sam,Team A-Murray-ca World Police,123.4,2,1-1-0,2-1-0
+2014,3,Mike,Donkey Punch,71.96,10,0-2-0,Win,1-2-0,Kameron,Drunken Monkeys,56.9,12,0-2-0,0-3-0
+2014,3,Rob,senor manberto,97.73,5,1-1-0,Win,2-1-0,dan,DR Philthy,64.6,11,0-2-0,0-3-0
+2014,3,Colin,Im a scientist,85.18,7,1-1-0,Win,2-1-0,Aaron,1 Horse Sized Duck,77.8,8,2-0-0,2-1-0
+2014,3,Mike,MrPigSkinner,115.02,3,1-1-0,Win,2-1-0,Matthew,Turf Muncher,90.84,6,1-1-0,1-2-0
+2014,3,Brian,DoyouseewhathappensLarry,75.34,9,2-0-0,Loss,2-1-0,Matt,Mongorians,132.7,1,1-1-0,2-1-0
+2014,3,Sam,Team A-Murray-ca World Police,123.4,2,1-1-0,Win,2-1-0,AJ,Dick Flickers,106.75,4,2-0-0,2-1-0
+2014,3,Kameron,Drunken Monkeys,56.9,12,0-2-0,Loss,0-3-0,Mike,Donkey Punch,71.96,10,0-2-0,1-2-0
+2014,3,dan,DR Philthy,64.6,11,0-2-0,Loss,0-3-0,Rob,senor manberto,97.73,5,1-1-0,2-1-0
+2014,3,Aaron,1 Horse Sized Duck,77.8,8,2-0-0,Loss,2-1-0,Colin,Im a scientist,85.18,7,1-1-0,2-1-0
+2014,3,Matthew,Turf Muncher,90.84,6,1-1-0,Loss,1-2-0,Mike,MrPigSkinner,115.02,3,1-1-0,2-1-0
+2014,3,Matt,Mongorians,132.7,1,1-1-0,Win,2-1-0,Brian,DoyouseewhathappensLarry,75.34,9,2-0-0,2-1-0
+2014,4,Mike,Donkey Punch,119.18,3,1-2-0,Win,2-2-0,AJ,Dick Flickers,94.98,7,2-1-0,2-2-0
+2014,4,Sam,Team A-Murray-ca World Police,123.34,1,2-1-0,Win,3-1-0,Rob,senor manberto,107.66,5,2-1-0,2-2-0
+2014,4,Kameron,Drunken Monkeys,89.37,10,0-3-0,Win,1-3-0,Colin,Im a scientist,78.88,11,2-1-0,2-2-0
+2014,4,dan,DR Philthy,93.92,8,0-3-0,Loss,0-4-0,Mike,MrPigSkinner,101.8,6,2-1-0,3-1-0
+2014,4,Aaron,1 Horse Sized Duck,54.52,12,2-1-0,Loss,2-2-0,Brian,DoyouseewhathappensLarry,122.82,2,2-1-0,3-1-0
+2014,4,Matthew,Turf Muncher,90.75,9,1-2-0,Loss,1-3-0,Matt,Mongorians,111.72,4,2-1-0,3-1-0
+2014,4,AJ,Dick Flickers,94.98,7,2-1-0,Loss,2-2-0,Mike,Donkey Punch,119.18,3,1-2-0,2-2-0
+2014,4,Rob,senor manberto,107.66,5,2-1-0,Loss,2-2-0,Sam,Team A-Murray-ca World Police,123.34,1,2-1-0,3-1-0
+2014,4,Colin,Im a scientist,78.88,11,2-1-0,Loss,2-2-0,Kameron,Drunken Monkeys,89.37,10,0-3-0,1-3-0
+2014,4,Mike,MrPigSkinner,101.8,6,2-1-0,Win,3-1-0,dan,DR Philthy,93.92,8,0-3-0,0-4-0
+2014,4,Brian,DoyouseewhathappensLarry,122.82,2,2-1-0,Win,3-1-0,Aaron,1 Horse Sized Duck,54.52,12,2-1-0,2-2-0
+2014,4,Matt,Mongorians,111.72,4,2-1-0,Win,3-1-0,Matthew,Turf Muncher,90.75,9,1-2-0,1-3-0
+2014,5,AJ,Dick Flickers,122.37,3,2-2-0,Win,3-2-0,Rob,senor manberto,54.63,12,2-2-0,2-3-0
+2014,5,Colin,Im a scientist,107.16,4,2-2-0,Win,3-2-0,Mike,Donkey Punch,99.62,7,2-2-0,2-3-0
+2014,5,Mike,MrPigSkinner,98.24,8,3-1-0,Loss,3-2-0,Sam,Team A-Murray-ca World Police,126.24,2,3-1-0,4-1-0
+2014,5,Brian,DoyouseewhathappensLarry,104.14,5,3-1-0,Win,4-1-0,Kameron,Drunken Monkeys,93.05,9,1-3-0,1-4-0
+2014,5,Matt,Mongorians,154.38,1,3-1-0,Win,4-1-0,dan,DR Philthy,103.26,6,0-4-0,0-5-0
+2014,5,Matthew,Turf Muncher,81.98,10,1-3-0,Win,2-3-0,Aaron,1 Horse Sized Duck,78.34,11,2-2-0,2-3-0
+2014,5,Rob,senor manberto,54.63,12,2-2-0,Loss,2-3-0,AJ,Dick Flickers,122.37,3,2-2-0,3-2-0
+2014,5,Mike,Donkey Punch,99.62,7,2-2-0,Loss,2-3-0,Colin,Im a scientist,107.16,4,2-2-0,3-2-0
+2014,5,Sam,Team A-Murray-ca World Police,126.24,2,3-1-0,Win,4-1-0,Mike,MrPigSkinner,98.24,8,3-1-0,3-2-0
+2014,5,Kameron,Drunken Monkeys,93.05,9,1-3-0,Loss,1-4-0,Brian,DoyouseewhathappensLarry,104.14,5,3-1-0,4-1-0
+2014,5,dan,DR Philthy,103.26,6,0-4-0,Loss,0-5-0,Matt,Mongorians,154.38,1,3-1-0,4-1-0
+2014,5,Aaron,1 Horse Sized Duck,78.34,11,2-2-0,Loss,2-3-0,Matthew,Turf Muncher,81.98,10,1-3-0,2-3-0
+2014,6,Colin,Im a scientist,101.3,7,3-2-0,Loss,3-3-0,AJ,Dick Flickers,101.66,6,3-2-0,4-2-0
+2014,6,Rob,senor manberto,109.44,4,2-3-0,Loss,2-4-0,Mike,MrPigSkinner,124.52,3,3-2-0,4-2-0
+2014,6,Mike,Donkey Punch,130.16,2,2-3-0,Win,3-3-0,Brian,DoyouseewhathappensLarry,105.2,5,4-1-0,4-2-0
+2014,6,Sam,Team A-Murray-ca World Police,99.84,8,4-1-0,Loss,4-2-0,Matt,Mongorians,170.7,1,4-1-0,5-1-0
+2014,6,Kameron,Drunken Monkeys,71.3,12,1-4-0,Loss,1-5-0,Matthew,Turf Muncher,89.82,10,2-3-0,3-3-0
+2014,6,dan,DR Philthy,94.68,9,0-5-0,Win,1-5-0,Aaron,1 Horse Sized Duck,81.62,11,2-3-0,2-4-0
+2014,6,AJ,Dick Flickers,101.66,6,3-2-0,Win,4-2-0,Colin,Im a scientist,101.3,7,3-2-0,3-3-0
+2014,6,Mike,MrPigSkinner,124.52,3,3-2-0,Win,4-2-0,Rob,senor manberto,109.44,4,2-3-0,2-4-0
+2014,6,Brian,DoyouseewhathappensLarry,105.2,5,4-1-0,Loss,4-2-0,Mike,Donkey Punch,130.16,2,2-3-0,3-3-0
+2014,6,Matt,Mongorians,170.7,1,4-1-0,Win,5-1-0,Sam,Team A-Murray-ca World Police,99.84,8,4-1-0,4-2-0
+2014,6,Matthew,Turf Muncher,89.82,10,2-3-0,Win,3-3-0,Kameron,Drunken Monkeys,71.3,12,1-4-0,1-5-0
+2014,6,Aaron,1 Horse Sized Duck,81.62,11,2-3-0,Loss,2-4-0,dan,DR Philthy,94.68,9,0-5-0,1-5-0
+2014,7,AJ,Dick Flickers,100.2,3,4-2-0,Win,5-2-0,Mike,MrPigSkinner,89.88,8,4-2-0,4-3-0
+2014,7,Brian,DoyouseewhathappensLarry,99.16,4,4-2-0,Win,5-2-0,Colin,Im a scientist,92.39,7,3-3-0,3-4-0
+2014,7,Matt,Mongorians,100.96,2,5-1-0,Win,6-1-0,Rob,senor manberto,71.64,11,2-4-0,2-5-0
+2014,7,Matthew,Turf Muncher,71.9,10,3-3-0,Loss,3-4-0,Mike,Donkey Punch,96.34,6,3-3-0,4-3-0
+2014,7,Aaron,1 Horse Sized Duck,71.02,12,2-4-0,Loss,2-5-0,Sam,Team A-Murray-ca World Police,99.1,5,4-2-0,5-2-0
+2014,7,dan,DR Philthy,87.65,9,1-5-0,Loss,1-6-0,Kameron,Drunken Monkeys,123.52,1,1-5-0,2-5-0
+2014,7,Mike,MrPigSkinner,89.88,8,4-2-0,Loss,4-3-0,AJ,Dick Flickers,100.2,3,4-2-0,5-2-0
+2014,7,Colin,Im a scientist,92.39,7,3-3-0,Loss,3-4-0,Brian,DoyouseewhathappensLarry,99.16,4,4-2-0,5-2-0
+2014,7,Rob,senor manberto,71.64,11,2-4-0,Loss,2-5-0,Matt,Mongorians,100.96,2,5-1-0,6-1-0
+2014,7,Mike,Donkey Punch,96.34,6,3-3-0,Win,4-3-0,Matthew,Turf Muncher,71.9,10,3-3-0,3-4-0
+2014,7,Sam,Team A-Murray-ca World Police,99.1,5,4-2-0,Win,5-2-0,Aaron,1 Horse Sized Duck,71.02,12,2-4-0,2-5-0
+2014,7,Kameron,Drunken Monkeys,123.52,1,1-5-0,Win,2-5-0,dan,DR Philthy,87.65,9,1-5-0,1-6-0
+2014,8,Brian,DoyouseewhathappensLarry,152.1,1,5-2-0,Win,6-2-0,AJ,Dick Flickers,142.29,2,5-2-0,5-3-0
+2014,8,Mike,MrPigSkinner,92.94,8,4-3-0,Loss,4-4-0,Matt,Mongorians,96.6,7,6-1-0,7-1-0
+2014,8,Colin,Im a scientist,91.46,10,3-4-0,Loss,3-5-0,Matthew,Turf Muncher,137.65,3,3-4-0,4-4-0
+2014,8,Rob,senor manberto,92.47,9,2-5-0,Win,3-5-0,Aaron,1 Horse Sized Duck,72.94,12,2-5-0,2-6-0
+2014,8,Mike,Donkey Punch,121.16,5,4-3-0,Win,5-3-0,dan,DR Philthy,90.94,11,1-6-0,1-7-0
+2014,8,Sam,Team A-Murray-ca World Police,110.26,6,5-2-0,Loss,5-3-0,Kameron,Drunken Monkeys,133.34,4,2-5-0,3-5-0
+2014,8,AJ,Dick Flickers,142.29,2,5-2-0,Loss,5-3-0,Brian,DoyouseewhathappensLarry,152.1,1,5-2-0,6-2-0
+2014,8,Matt,Mongorians,96.6,7,6-1-0,Win,7-1-0,Mike,MrPigSkinner,92.94,8,4-3-0,4-4-0
+2014,8,Matthew,Turf Muncher,137.65,3,3-4-0,Win,4-4-0,Colin,Im a scientist,91.46,10,3-4-0,3-5-0
+2014,8,Aaron,1 Horse Sized Duck,72.94,12,2-5-0,Loss,2-6-0,Rob,senor manberto,92.47,9,2-5-0,3-5-0
+2014,8,dan,DR Philthy,90.94,11,1-6-0,Loss,1-7-0,Mike,Donkey Punch,121.16,5,4-3-0,5-3-0
+2014,8,Kameron,Drunken Monkeys,133.34,4,2-5-0,Win,3-5-0,Sam,Team A-Murray-ca World Police,110.26,6,5-2-0,5-3-0
+2014,9,AJ,Dick Flickers,131.39,1,5-3-0,Win,6-3-0,Matt,Mongorians,85.16,11,7-1-0,7-2-0
+2014,9,Matthew,Turf Muncher,74.29,12,4-4-0,Loss,4-5-0,Brian,DoyouseewhathappensLarry,130.16,2,6-2-0,7-2-0
+2014,9,Aaron,1 Horse Sized Duck,88.88,9,2-6-0,Loss,2-7-0,Mike,MrPigSkinner,96.38,7,4-4-0,5-4-0
+2014,9,dan,DR Philthy,88.91,8,1-7-0,Loss,1-8-0,Colin,Im a scientist,111.21,3,3-5-0,4-5-0
+2014,9,Kameron,Drunken Monkeys,106.46,4,3-5-0,Win,4-5-0,Rob,senor manberto,102.42,5,3-5-0,3-6-0
+2014,9,Sam,Team A-Murray-ca World Police,96.76,6,5-3-0,Win,6-3-0,Mike,Donkey Punch,86.39,10,5-3-0,5-4-0
+2014,9,Matt,Mongorians,85.16,11,7-1-0,Loss,7-2-0,AJ,Dick Flickers,131.39,1,5-3-0,6-3-0
+2014,9,Brian,DoyouseewhathappensLarry,130.16,2,6-2-0,Win,7-2-0,Matthew,Turf Muncher,74.29,12,4-4-0,4-5-0
+2014,9,Mike,MrPigSkinner,96.38,7,4-4-0,Win,5-4-0,Aaron,1 Horse Sized Duck,88.88,9,2-6-0,2-7-0
+2014,9,Colin,Im a scientist,111.21,3,3-5-0,Win,4-5-0,dan,DR Philthy,88.91,8,1-7-0,1-8-0
+2014,9,Rob,senor manberto,102.42,5,3-5-0,Loss,3-6-0,Kameron,Drunken Monkeys,106.46,4,3-5-0,4-5-0
+2014,9,Mike,Donkey Punch,86.39,10,5-3-0,Loss,5-4-0,Sam,Team A-Murray-ca World Police,96.76,6,5-3-0,6-3-0
+2014,10,Matthew,Turf Muncher,127.46,2,4-5-0,Loss,4-6-0,AJ,Dick Flickers,182.27,1,6-3-0,7-3-0
+2014,10,Matt,Mongorians,108.62,6,7-2-0,Win,8-2-0,Aaron,1 Horse Sized Duck,87.68,10,2-7-0,2-8-0
+2014,10,Brian,DoyouseewhathappensLarry,68.3,12,7-2-0,Loss,7-3-0,dan,DR Philthy,97.54,7,1-8-0,2-8-0
+2014,10,Mike,MrPigSkinner,71.02,11,5-4-0,Loss,5-5-0,Kameron,Drunken Monkeys,109.32,5,4-5-0,5-5-0
+2014,10,Colin,Im a scientist,109.68,4,4-5-0,Loss,4-6-0,Sam,Team A-Murray-ca World Police,126.18,3,6-3-0,7-3-0
+2014,10,Rob,senor manberto,89.83,9,3-6-0,Loss,3-7-0,Mike,Donkey Punch,90.97,8,5-4-0,6-4-0
+2014,10,AJ,Dick Flickers,182.27,1,6-3-0,Win,7-3-0,Matthew,Turf Muncher,127.46,2,4-5-0,4-6-0
+2014,10,Aaron,1 Horse Sized Duck,87.68,10,2-7-0,Loss,2-8-0,Matt,Mongorians,108.62,6,7-2-0,8-2-0
+2014,10,dan,DR Philthy,97.54,7,1-8-0,Win,2-8-0,Brian,DoyouseewhathappensLarry,68.3,12,7-2-0,7-3-0
+2014,10,Kameron,Drunken Monkeys,109.32,5,4-5-0,Win,5-5-0,Mike,MrPigSkinner,71.02,11,5-4-0,5-5-0
+2014,10,Sam,Team A-Murray-ca World Police,126.18,3,6-3-0,Win,7-3-0,Colin,Im a scientist,109.68,4,4-5-0,4-6-0
+2014,10,Mike,Donkey Punch,90.97,8,5-4-0,Win,6-4-0,Rob,senor manberto,89.83,9,3-6-0,3-7-0
+2014,11,AJ,Dick Flickers,111.94,4,7-3-0,Win,8-3-0,Aaron,1 Horse Sized Duck,69.7,10,2-8-0,2-9-0
+2014,11,dan,DR Philthy,50.79,12,2-8-0,Loss,2-9-0,Matthew,Turf Muncher,96.72,5,4-6-0,5-6-0
+2014,11,Kameron,Drunken Monkeys,95.8,6,5-5-0,Win,6-5-0,Matt,Mongorians,63.92,11,8-2-0,8-3-0
+2014,11,Sam,Team A-Murray-ca World Police,95.32,7,7-3-0,Win,8-3-0,Brian,DoyouseewhathappensLarry,85.92,8,7-3-0,7-4-0
+2014,11,Mike,Donkey Punch,131.71,1,6-4-0,Win,7-4-0,Mike,MrPigSkinner,117.3,2,5-5-0,5-6-0
+2014,11,Rob,senor manberto,116.48,3,3-7-0,Win,4-7-0,Colin,Im a scientist,77.38,9,4-6-0,4-7-0
+2014,11,Aaron,1 Horse Sized Duck,69.7,10,2-8-0,Loss,2-9-0,AJ,Dick Flickers,111.94,4,7-3-0,8-3-0
+2014,11,Matthew,Turf Muncher,96.72,5,4-6-0,Win,5-6-0,dan,DR Philthy,50.79,12,2-8-0,2-9-0
+2014,11,Matt,Mongorians,63.92,11,8-2-0,Loss,8-3-0,Kameron,Drunken Monkeys,95.8,6,5-5-0,6-5-0
+2014,11,Brian,DoyouseewhathappensLarry,85.92,8,7-3-0,Loss,7-4-0,Sam,Team A-Murray-ca World Police,95.32,7,7-3-0,8-3-0
+2014,11,Mike,MrPigSkinner,117.3,2,5-5-0,Loss,5-6-0,Mike,Donkey Punch,131.71,1,6-4-0,7-4-0
+2014,11,Colin,Im a scientist,77.38,9,4-6-0,Loss,4-7-0,Rob,senor manberto,116.48,3,3-7-0,4-7-0
+2014,12,dan,DR Philthy,129.62,2,2-9-0,Win,3-9-0,AJ,Dick Flickers,120.29,4,8-3-0,8-4-0
+2014,12,Aaron,1 Horse Sized Duck,92.72,8,2-9-0,Loss,2-10-0,Kameron,Drunken Monkeys,143.75,1,6-5-0,7-5-0
+2014,12,Matthew,Turf Muncher,85.14,10,5-6-0,Win,6-6-0,Sam,Team A-Murray-ca World Police,83.5,11,8-3-0,8-4-0
+2014,12,Matt,Mongorians,102.72,5,8-3-0,Win,9-3-0,Mike,Donkey Punch,96.16,7,7-4-0,7-5-0
+2014,12,Brian,DoyouseewhathappensLarry,122.26,3,7-4-0,Win,8-4-0,Rob,senor manberto,79.92,12,4-7-0,4-8-0
+2014,12,Mike,MrPigSkinner,101.8,6,5-6-0,Win,6-6-0,Colin,Im a scientist,91.7,9,4-7-0,4-8-0
+2014,12,AJ,Dick Flickers,120.29,4,8-3-0,Loss,8-4-0,dan,DR Philthy,129.62,2,2-9-0,3-9-0
+2014,12,Kameron,Drunken Monkeys,143.75,1,6-5-0,Win,7-5-0,Aaron,1 Horse Sized Duck,92.72,8,2-9-0,2-10-0
+2014,12,Sam,Team A-Murray-ca World Police,83.5,11,8-3-0,Loss,8-4-0,Matthew,Turf Muncher,85.14,10,5-6-0,6-6-0
+2014,12,Mike,Donkey Punch,96.16,7,7-4-0,Loss,7-5-0,Matt,Mongorians,102.72,5,8-3-0,9-3-0
+2014,12,Rob,senor manberto,79.92,12,4-7-0,Loss,4-8-0,Brian,DoyouseewhathappensLarry,122.26,3,7-4-0,8-4-0
+2014,12,Colin,Im a scientist,91.7,9,4-7-0,Loss,4-8-0,Mike,MrPigSkinner,101.8,6,5-6-0,6-6-0
+2014,13,AJ,Dick Flickers,113.25,5,8-4-0,Win,9-4-0,Kameron,Drunken Monkeys,96.58,9,7-5-0,7-6-0
+2014,13,Sam,Team A-Murray-ca World Police,108.4,6,8-4-0,Win,9-4-0,dan,DR Philthy,67.53,12,3-9-0,3-10-0
+2014,13,Mike,Donkey Punch,127.97,3,7-5-0,Win,8-5-0,Aaron,1 Horse Sized Duck,68.2,11,2-10-0,2-11-0
+2014,13,Rob,senor manberto,159.0,1,4-8-0,Win,5-8-0,Matthew,Turf Muncher,95.79,10,6-6-0,6-7-0
+2014,13,Colin,Im a scientist,106.76,8,4-8-0,Loss,4-9-0,Matt,Mongorians,126.8,4,9-3-0,10-3-0
+2014,13,Mike,MrPigSkinner,128.0,2,6-6-0,Win,7-6-0,Brian,DoyouseewhathappensLarry,108.34,7,8-4-0,8-5-0
+2014,13,Kameron,Drunken Monkeys,96.58,9,7-5-0,Loss,7-6-0,AJ,Dick Flickers,113.25,5,8-4-0,9-4-0
+2014,13,dan,DR Philthy,67.53,12,3-9-0,Loss,3-10-0,Sam,Team A-Murray-ca World Police,108.4,6,8-4-0,9-4-0
+2014,13,Aaron,1 Horse Sized Duck,68.2,11,2-10-0,Loss,2-11-0,Mike,Donkey Punch,127.97,3,7-5-0,8-5-0
+2014,13,Matthew,Turf Muncher,95.79,10,6-6-0,Loss,6-7-0,Rob,senor manberto,159.0,1,4-8-0,5-8-0
+2014,13,Matt,Mongorians,126.8,4,9-3-0,Win,10-3-0,Colin,Im a scientist,106.76,8,4-8-0,4-9-0
+2014,13,Brian,DoyouseewhathappensLarry,108.34,7,8-4-0,Loss,8-5-0,Mike,MrPigSkinner,128.0,2,6-6-0,7-6-0
+2014,14,Colin,Im a scientist,95.2,6,4-9-0,Win,4-9-0,dan,DR Philthy,86.29,7,3-10-0,3-10-0
+2014,14,Mike,MrPigSkinner,124.3,4,7-6-0,Loss,7-6-0,Sam,Team A-Murray-ca World Police,133.72,2,9-4-0,9-4-0
+2014,14,Brian,DoyouseewhathappensLarry,101.94,5,8-5-0,Loss,8-5-0,Mike,Donkey Punch,131.25,3,8-5-0,8-5-0
+2014,14,Aaron,1 Horse Sized Duck,40.78,8,2-11-0,Loss,2-11-0,Rob,senor manberto,136.09,1,5-8-0,5-8-0
+2014,14,dan,DR Philthy,86.29,7,3-10-0,Loss,3-10-0,Colin,Im a scientist,95.2,6,4-9-0,4-9-0
+2014,14,Sam,Team A-Murray-ca World Police,133.72,2,9-4-0,Win,9-4-0,Mike,MrPigSkinner,124.3,4,7-6-0,7-6-0
+2014,14,Mike,Donkey Punch,131.25,3,8-5-0,Win,8-5-0,Brian,DoyouseewhathappensLarry,101.94,5,8-5-0,8-5-0
+2014,14,Rob,senor manberto,136.09,1,5-8-0,Win,5-8-0,Aaron,1 Horse Sized Duck,40.78,8,2-11-0,2-11-0
+2014,15,Sam,Team A-Murray-ca World Police,84.02,6,9-4-0,Loss,9-4-0,AJ,Dick Flickers,84.4,5,9-4-0,9-4-0
+2014,15,Colin,Im a scientist,92.13,4,4-9-0,Loss,4-9-0,Kameron,Drunken Monkeys,147.0,1,7-6-0,7-6-0
+2014,15,Matt,Mongorians,100.38,2,10-3-0,Win,10-3-0,Mike,Donkey Punch,79.08,8,8-5-0,8-5-0
+2014,15,Matthew,Turf Muncher,83.91,7,6-7-0,Loss,6-7-0,Rob,senor manberto,97.61,3,5-8-0,5-8-0
+2014,15,AJ,Dick Flickers,84.4,5,9-4-0,Win,9-4-0,Sam,Team A-Murray-ca World Police,84.02,6,9-4-0,9-4-0
+2014,15,Kameron,Drunken Monkeys,147.0,1,7-6-0,Win,7-6-0,Colin,Im a scientist,92.13,4,4-9-0,4-9-0
+2014,15,Mike,Donkey Punch,79.08,8,8-5-0,Loss,8-5-0,Matt,Mongorians,100.38,2,10-3-0,10-3-0
+2014,15,Rob,senor manberto,97.61,3,5-8-0,Win,5-8-0,Matthew,Turf Muncher,83.91,7,6-7-0,6-7-0
+2014,16,Matt,Mongorians,89.36,10,10-3-0,Loss,10-3-0,AJ,Dick Flickers,118.56,2,9-4-0,9-4-0
+2014,16,Aaron,1 Horse Sized Duck,93.34,7,2-11-0,Win,2-11-0,dan,DR Philthy,55.54,12,3-10-0,3-10-0
+2014,16,Rob,senor manberto,91.6,8,5-8-0,Loss,5-8-0,Kameron,Drunken Monkeys,119.54,1,7-6-0,7-6-0
+2014,16,Mike,Donkey Punch,101.35,4,8-5-0,Loss,8-5-0,Sam,Team A-Murray-ca World Police,109.36,3,9-4-0,9-4-0
+2014,16,Matthew,Turf Muncher,90.27,9,6-7-0,Loss,6-7-0,Colin,Im a scientist,96.05,6,4-9-0,4-9-0
+2014,16,Brian,DoyouseewhathappensLarry,96.32,5,8-5-0,Win,8-5-0,Mike,MrPigSkinner,60.82,11,7-6-0,7-6-0
+2014,16,AJ,Dick Flickers,118.56,2,9-4-0,Win,9-4-0,Matt,Mongorians,89.36,10,10-3-0,10-3-0
+2014,16,dan,DR Philthy,55.54,12,3-10-0,Loss,3-10-0,Aaron,1 Horse Sized Duck,93.34,7,2-11-0,2-11-0
+2014,16,Kameron,Drunken Monkeys,119.54,1,7-6-0,Win,7-6-0,Rob,senor manberto,91.6,8,5-8-0,5-8-0
+2014,16,Sam,Team A-Murray-ca World Police,109.36,3,9-4-0,Win,9-4-0,Mike,Donkey Punch,101.35,4,8-5-0,8-5-0
+2014,16,Colin,Im a scientist,96.05,6,4-9-0,Win,4-9-0,Matthew,Turf Muncher,90.27,9,6-7-0,6-7-0
+2014,16,Mike,MrPigSkinner,60.82,11,7-6-0,Loss,7-6-0,Brian,DoyouseewhathappensLarry,96.32,5,8-5-0,8-5-0
+2015,1,Mike,Foosball Is The DEVIL,110.42,3,0-0-0,Win,1-0-0,Colin,Im a scientist,98.16,6,0-0-0,0-1-0
+2015,1,Matt,Mongorians,89.2,10,0-0-0,Loss,0-1-0,Brian,DoyouseewhathappensLarry,95.97,7,0-0-0,1-0-0
+2015,1,Rob,senor manberto,131.93,2,0-0-0,Win,1-0-0,Sam,ZJ Anderson,69.04,12,0-0-0,0-1-0
+2015,1,AJ,Digbick McCocknballs III,93.59,8,0-0-0,Win,1-0-0,dan,DR Philthy,92.34,9,0-0-0,0-1-0
+2015,1,Kameron,Drunken Monkeys,132.94,1,0-0-0,Win,1-0-0,Mike,MrPigSkinner,101.8,5,0-0-0,0-1-0
+2015,1,Matthew,Turf Muncher,107.57,4,0-0-0,Win,1-0-0,Aaron,Doomsday,79.02,11,0-0-0,0-1-0
+2015,1,Colin,Im a scientist,98.16,6,0-0-0,Loss,0-1-0,Mike,Foosball Is The DEVIL,110.42,3,0-0-0,1-0-0
+2015,1,Brian,DoyouseewhathappensLarry,95.97,7,0-0-0,Win,1-0-0,Matt,Mongorians,89.2,10,0-0-0,0-1-0
+2015,1,Sam,ZJ Anderson,69.04,12,0-0-0,Loss,0-1-0,Rob,senor manberto,131.93,2,0-0-0,1-0-0
+2015,1,dan,DR Philthy,92.34,9,0-0-0,Loss,0-1-0,AJ,Digbick McCocknballs III,93.59,8,0-0-0,1-0-0
+2015,1,Mike,MrPigSkinner,101.8,5,0-0-0,Loss,0-1-0,Kameron,Drunken Monkeys,132.94,1,0-0-0,1-0-0
+2015,1,Aaron,Doomsday,79.02,11,0-0-0,Loss,0-1-0,Matthew,Turf Muncher,107.57,4,0-0-0,1-0-0
+2015,2,Matt,Mongorians,90.34,9,0-1-0,Loss,0-2-0,Colin,Im a scientist,116.76,2,0-1-0,1-1-0
+2015,2,Brian,DoyouseewhathappensLarry,122.63,1,1-0-0,Win,2-0-0,dan,DR Philthy,92.07,8,0-1-0,0-2-0
+2015,2,Mike,MrPigSkinner,89.7,10,0-1-0,Loss,0-2-0,Aaron,Doomsday,92.72,7,0-1-0,1-1-0
+2015,2,Mike,Foosball Is The DEVIL,100.44,4,1-0-0,Win,2-0-0,AJ,Digbick McCocknballs III,88.53,11,1-0-0,1-1-0
+2015,2,Sam,ZJ Anderson,86.14,12,0-1-0,Loss,0-2-0,Kameron,Drunken Monkeys,99.13,5,1-0-0,2-0-0
+2015,2,Rob,senor manberto,93.47,6,1-0-0,Loss,1-1-0,Matthew,Turf Muncher,107.13,3,1-0-0,2-0-0
+2015,2,Colin,Im a scientist,116.76,2,0-1-0,Win,1-1-0,Matt,Mongorians,90.34,9,0-1-0,0-2-0
+2015,2,dan,DR Philthy,92.07,8,0-1-0,Loss,0-2-0,Brian,DoyouseewhathappensLarry,122.63,1,1-0-0,2-0-0
+2015,2,Aaron,Doomsday,92.72,7,0-1-0,Win,1-1-0,Mike,MrPigSkinner,89.7,10,0-1-0,0-2-0
+2015,2,AJ,Digbick McCocknballs III,88.53,11,1-0-0,Loss,1-1-0,Mike,Foosball Is The DEVIL,100.44,4,1-0-0,2-0-0
+2015,2,Kameron,Drunken Monkeys,99.13,5,1-0-0,Win,2-0-0,Sam,ZJ Anderson,86.14,12,0-1-0,0-2-0
+2015,2,Matthew,Turf Muncher,107.13,3,1-0-0,Win,2-0-0,Rob,senor manberto,93.47,6,1-0-0,1-1-0
+2015,3,dan,DR Philthy,102.6,8,0-2-0,Loss,0-3-0,Mike,Foosball Is The DEVIL,132.22,3,2-0-0,3-0-0
+2015,3,AJ,Digbick McCocknballs III,88.0,10,1-1-0,Win,2-1-0,Matt,Mongorians,76.63,12,0-2-0,0-3-0
+2015,3,Sam,ZJ Anderson,89.62,9,0-2-0,Loss,0-3-0,Brian,DoyouseewhathappensLarry,105.88,7,2-0-0,3-0-0
+2015,3,Aaron,Doomsday,108.3,6,1-1-0,Loss,1-2-0,Colin,Im a scientist,151.92,1,1-1-0,2-1-0
+2015,3,Kameron,Drunken Monkeys,121.28,5,2-0-0,Win,3-0-0,Matthew,Turf Muncher,85.55,11,2-0-0,2-1-0
+2015,3,Rob,senor manberto,123.34,4,1-1-0,Loss,1-2-0,Mike,MrPigSkinner,132.74,2,0-2-0,1-2-0
+2015,3,Mike,Foosball Is The DEVIL,132.22,3,2-0-0,Win,3-0-0,dan,DR Philthy,102.6,8,0-2-0,0-3-0
+2015,3,Matt,Mongorians,76.63,12,0-2-0,Loss,0-3-0,AJ,Digbick McCocknballs III,88.0,10,1-1-0,2-1-0
+2015,3,Brian,DoyouseewhathappensLarry,105.88,7,2-0-0,Win,3-0-0,Sam,ZJ Anderson,89.62,9,0-2-0,0-3-0
+2015,3,Colin,Im a scientist,151.92,1,1-1-0,Win,2-1-0,Aaron,Doomsday,108.3,6,1-1-0,1-2-0
+2015,3,Matthew,Turf Muncher,85.55,11,2-0-0,Loss,2-1-0,Kameron,Drunken Monkeys,121.28,5,2-0-0,3-0-0
+2015,3,Mike,MrPigSkinner,132.74,2,0-2-0,Win,1-2-0,Rob,senor manberto,123.34,4,1-1-0,1-2-0
+2015,4,Kameron,Drunken Monkeys,76.22,11,3-0-0,Loss,3-1-0,Aaron,Doomsday,81.34,9,1-2-0,2-2-0
+2015,4,Mike,Foosball Is The DEVIL,100.96,3,3-0-0,Win,4-0-0,Mike,MrPigSkinner,93.85,5,1-2-0,1-3-0
+2015,4,Colin,Im a scientist,77.66,10,2-1-0,Win,3-1-0,Brian,DoyouseewhathappensLarry,72.82,12,3-0-0,3-1-0
+2015,4,dan,DR Philthy,86.12,7,0-3-0,Loss,0-4-0,Rob,senor manberto,97.35,4,1-2-0,2-2-0
+2015,4,AJ,Digbick McCocknballs III,111.54,1,2-1-0,Win,3-1-0,Matthew,Turf Muncher,81.6,8,2-1-0,2-2-0
+2015,4,Matt,Mongorians,92.45,6,0-3-0,Loss,0-4-0,Sam,ZJ Anderson,106.01,2,0-3-0,1-3-0
+2015,4,Aaron,Doomsday,81.34,9,1-2-0,Win,2-2-0,Kameron,Drunken Monkeys,76.22,11,3-0-0,3-1-0
+2015,4,Mike,MrPigSkinner,93.85,5,1-2-0,Loss,1-3-0,Mike,Foosball Is The DEVIL,100.96,3,3-0-0,4-0-0
+2015,4,Brian,DoyouseewhathappensLarry,72.82,12,3-0-0,Loss,3-1-0,Colin,Im a scientist,77.66,10,2-1-0,3-1-0
+2015,4,Rob,senor manberto,97.35,4,1-2-0,Win,2-2-0,dan,DR Philthy,86.12,7,0-3-0,0-4-0
+2015,4,Matthew,Turf Muncher,81.6,8,2-1-0,Loss,2-2-0,AJ,Digbick McCocknballs III,111.54,1,2-1-0,3-1-0
+2015,4,Sam,ZJ Anderson,106.01,2,0-3-0,Win,1-3-0,Matt,Mongorians,92.45,6,0-3-0,0-4-0
+2015,5,AJ,Digbick McCocknballs III,115.22,3,3-1-0,Win,4-1-0,Aaron,Doomsday,67.36,11,2-2-0,2-3-0
+2015,5,Mike,MrPigSkinner,83.24,8,1-3-0,Win,2-3-0,Matt,Mongorians,64.07,12,0-4-0,0-5-0
+2015,5,Colin,Im a scientist,103.04,5,3-1-0,Win,4-1-0,Kameron,Drunken Monkeys,87.78,7,3-1-0,3-2-0
+2015,5,dan,DR Philthy,80.59,9,0-4-0,Loss,0-5-0,Sam,ZJ Anderson,154.24,1,1-3-0,2-3-0
+2015,5,Matthew,Turf Muncher,117.32,2,2-2-0,Win,3-2-0,Mike,Foosball Is The DEVIL,79.7,10,4-0-0,4-1-0
+2015,5,Brian,DoyouseewhathappensLarry,114.51,4,3-1-0,Win,4-1-0,Rob,senor manberto,100.1,6,2-2-0,2-3-0
+2015,5,Aaron,Doomsday,67.36,11,2-2-0,Loss,2-3-0,AJ,Digbick McCocknballs III,115.22,3,3-1-0,4-1-0
+2015,5,Matt,Mongorians,64.07,12,0-4-0,Loss,0-5-0,Mike,MrPigSkinner,83.24,8,1-3-0,2-3-0
+2015,5,Kameron,Drunken Monkeys,87.78,7,3-1-0,Loss,3-2-0,Colin,Im a scientist,103.04,5,3-1-0,4-1-0
+2015,5,Sam,ZJ Anderson,154.24,1,1-3-0,Win,2-3-0,dan,DR Philthy,80.59,9,0-4-0,0-5-0
+2015,5,Mike,Foosball Is The DEVIL,79.7,10,4-0-0,Loss,4-1-0,Matthew,Turf Muncher,117.32,2,2-2-0,3-2-0
+2015,5,Rob,senor manberto,100.1,6,2-2-0,Loss,2-3-0,Brian,DoyouseewhathappensLarry,114.51,4,3-1-0,4-1-0
+2015,6,AJ,Digbick McCocknballs III,140.88,1,4-1-0,Win,5-1-0,Brian,DoyouseewhathappensLarry,94.48,7,4-1-0,4-2-0
+2015,6,Matt,Mongorians,83.1,9,0-5-0,Loss,0-6-0,Mike,Foosball Is The DEVIL,85.28,8,4-1-0,5-1-0
+2015,6,Mike,MrPigSkinner,134.84,3,2-3-0,Win,3-3-0,Sam,ZJ Anderson,114.62,4,2-3-0,2-4-0
+2015,6,Kameron,Drunken Monkeys,81.47,10,3-2-0,Loss,3-3-0,Rob,senor manberto,137.72,2,2-3-0,3-3-0
+2015,6,Aaron,Doomsday,108.5,6,2-3-0,Win,3-3-0,dan,DR Philthy,73.14,12,0-5-0,0-6-0
+2015,6,Matthew,Turf Muncher,108.74,5,3-2-0,Win,4-2-0,Colin,Im a scientist,79.5,11,4-1-0,4-2-0
+2015,6,Brian,DoyouseewhathappensLarry,94.48,7,4-1-0,Loss,4-2-0,AJ,Digbick McCocknballs III,140.88,1,4-1-0,5-1-0
+2015,6,Mike,Foosball Is The DEVIL,85.28,8,4-1-0,Win,5-1-0,Matt,Mongorians,83.1,9,0-5-0,0-6-0
+2015,6,Sam,ZJ Anderson,114.62,4,2-3-0,Loss,2-4-0,Mike,MrPigSkinner,134.84,3,2-3-0,3-3-0
+2015,6,Rob,senor manberto,137.72,2,2-3-0,Win,3-3-0,Kameron,Drunken Monkeys,81.47,10,3-2-0,3-3-0
+2015,6,dan,DR Philthy,73.14,12,0-5-0,Loss,0-6-0,Aaron,Doomsday,108.5,6,2-3-0,3-3-0
+2015,6,Colin,Im a scientist,79.5,11,4-1-0,Loss,4-2-0,Matthew,Turf Muncher,108.74,5,3-2-0,4-2-0
+2015,7,Rob,senor manberto,87.74,9,3-3-0,Loss,3-4-0,Mike,Foosball Is The DEVIL,128.7,3,5-1-0,6-1-0
+2015,7,Aaron,Doomsday,88.64,8,3-3-0,Loss,3-4-0,Brian,DoyouseewhathappensLarry,96.07,7,4-2-0,5-2-0
+2015,7,Mike,MrPigSkinner,97.4,6,3-3-0,Loss,3-4-0,Matthew,Turf Muncher,143.15,1,4-2-0,5-2-0
+2015,7,Matt,Mongorians,59.63,12,0-6-0,Loss,0-7-0,dan,DR Philthy,72.8,11,0-6-0,1-6-0
+2015,7,Sam,ZJ Anderson,131.86,2,2-4-0,Win,3-4-0,Colin,Im a scientist,87.34,10,4-2-0,4-3-0
+2015,7,AJ,Digbick McCocknballs III,107.75,5,5-1-0,Loss,5-2-0,Kameron,Drunken Monkeys,111.51,4,3-3-0,4-3-0
+2015,7,Mike,Foosball Is The DEVIL,128.7,3,5-1-0,Win,6-1-0,Rob,senor manberto,87.74,9,3-3-0,3-4-0
+2015,7,Brian,DoyouseewhathappensLarry,96.07,7,4-2-0,Win,5-2-0,Aaron,Doomsday,88.64,8,3-3-0,3-4-0
+2015,7,Matthew,Turf Muncher,143.15,1,4-2-0,Win,5-2-0,Mike,MrPigSkinner,97.4,6,3-3-0,3-4-0
+2015,7,dan,DR Philthy,72.8,11,0-6-0,Win,1-6-0,Matt,Mongorians,59.63,12,0-6-0,0-7-0
+2015,7,Colin,Im a scientist,87.34,10,4-2-0,Loss,4-3-0,Sam,ZJ Anderson,131.86,2,2-4-0,3-4-0
+2015,7,Kameron,Drunken Monkeys,111.51,4,3-3-0,Win,4-3-0,AJ,Digbick McCocknballs III,107.75,5,5-1-0,5-2-0
+2015,8,Colin,Im a scientist,103.58,6,4-3-0,Win,5-3-0,AJ,Digbick McCocknballs III,72.24,12,5-2-0,5-3-0
+2015,8,Brian,DoyouseewhathappensLarry,115.72,2,5-2-0,Win,6-2-0,Matthew,Turf Muncher,77.51,10,5-2-0,5-3-0
+2015,8,Mike,MrPigSkinner,102.36,7,3-4-0,Win,4-4-0,dan,DR Philthy,85.02,9,1-6-0,1-7-0
+2015,8,Matt,Mongorians,106.32,5,0-7-0,Loss,0-8-0,Rob,senor manberto,114.04,3,3-4-0,4-4-0
+2015,8,Aaron,Doomsday,127.98,1,3-4-0,Win,4-4-0,Sam,ZJ Anderson,73.34,11,3-4-0,3-5-0
+2015,8,Kameron,Drunken Monkeys,113.83,4,4-3-0,Win,5-3-0,Mike,Foosball Is The DEVIL,85.44,8,6-1-0,6-2-0
+2015,8,AJ,Digbick McCocknballs III,72.24,12,5-2-0,Loss,5-3-0,Colin,Im a scientist,103.58,6,4-3-0,5-3-0
+2015,8,Matthew,Turf Muncher,77.51,10,5-2-0,Loss,5-3-0,Brian,DoyouseewhathappensLarry,115.72,2,5-2-0,6-2-0
+2015,8,dan,DR Philthy,85.02,9,1-6-0,Loss,1-7-0,Mike,MrPigSkinner,102.36,7,3-4-0,4-4-0
+2015,8,Rob,senor manberto,114.04,3,3-4-0,Win,4-4-0,Matt,Mongorians,106.32,5,0-7-0,0-8-0
+2015,8,Sam,ZJ Anderson,73.34,11,3-4-0,Loss,3-5-0,Aaron,Doomsday,127.98,1,3-4-0,4-4-0
+2015,8,Mike,Foosball Is The DEVIL,85.44,8,6-1-0,Loss,6-2-0,Kameron,Drunken Monkeys,113.83,4,4-3-0,5-3-0
+2015,9,Kameron,Drunken Monkeys,122.0,3,5-3-0,Win,6-3-0,dan,DR Philthy,84.95,11,1-7-0,1-8-0
+2015,9,Mike,Foosball Is The DEVIL,121.36,4,6-2-0,Loss,6-3-0,Brian,DoyouseewhathappensLarry,148.91,1,6-2-0,7-2-0
+2015,9,Colin,Im a scientist,112.16,7,5-3-0,Loss,5-4-0,Mike,MrPigSkinner,117.58,5,4-4-0,5-4-0
+2015,9,Sam,ZJ Anderson,133.46,2,3-5-0,Win,4-5-0,Matthew,Turf Muncher,103.75,8,5-3-0,5-4-0
+2015,9,Aaron,Doomsday,89.02,10,4-4-0,Win,5-4-0,Matt,Mongorians,54.4,12,0-8-0,0-9-0
+2015,9,Rob,senor manberto,117.4,6,4-4-0,Win,5-4-0,AJ,Digbick McCocknballs III,102.48,9,5-3-0,5-4-0
+2015,9,dan,DR Philthy,84.95,11,1-7-0,Loss,1-8-0,Kameron,Drunken Monkeys,122.0,3,5-3-0,6-3-0
+2015,9,Brian,DoyouseewhathappensLarry,148.91,1,6-2-0,Win,7-2-0,Mike,Foosball Is The DEVIL,121.36,4,6-2-0,6-3-0
+2015,9,Mike,MrPigSkinner,117.58,5,4-4-0,Win,5-4-0,Colin,Im a scientist,112.16,7,5-3-0,5-4-0
+2015,9,Matthew,Turf Muncher,103.75,8,5-3-0,Loss,5-4-0,Sam,ZJ Anderson,133.46,2,3-5-0,4-5-0
+2015,9,Matt,Mongorians,54.4,12,0-8-0,Loss,0-9-0,Aaron,Doomsday,89.02,10,4-4-0,5-4-0
+2015,9,AJ,Digbick McCocknballs III,102.48,9,5-3-0,Loss,5-4-0,Rob,senor manberto,117.4,6,4-4-0,5-4-0
+2015,10,Kameron,Drunken Monkeys,100.89,4,6-3-0,Win,7-3-0,Brian,DoyouseewhathappensLarry,98.58,5,7-2-0,7-3-0
+2015,10,Mike,MrPigSkinner,104.86,2,5-4-0,Win,6-4-0,AJ,Digbick McCocknballs III,73.03,11,5-4-0,5-5-0
+2015,10,Sam,ZJ Anderson,89.58,8,4-5-0,Loss,4-6-0,Mike,Foosball Is The DEVIL,128.36,1,6-3-0,7-3-0
+2015,10,Colin,Im a scientist,82.22,10,5-4-0,Win,6-4-0,dan,DR Philthy,61.48,12,1-8-0,1-9-0
+2015,10,Rob,senor manberto,104.7,3,5-4-0,Win,6-4-0,Aaron,Doomsday,91.64,7,5-4-0,5-5-0
+2015,10,Matt,Mongorians,95.22,6,0-9-0,Win,1-9-0,Matthew,Turf Muncher,83.86,9,5-4-0,5-5-0
+2015,10,Brian,DoyouseewhathappensLarry,98.58,5,7-2-0,Loss,7-3-0,Kameron,Drunken Monkeys,100.89,4,6-3-0,7-3-0
+2015,10,AJ,Digbick McCocknballs III,73.03,11,5-4-0,Loss,5-5-0,Mike,MrPigSkinner,104.86,2,5-4-0,6-4-0
+2015,10,Mike,Foosball Is The DEVIL,128.36,1,6-3-0,Win,7-3-0,Sam,ZJ Anderson,89.58,8,4-5-0,4-6-0
+2015,10,dan,DR Philthy,61.48,12,1-8-0,Loss,1-9-0,Colin,Im a scientist,82.22,10,5-4-0,6-4-0
+2015,10,Aaron,Doomsday,91.64,7,5-4-0,Loss,5-5-0,Rob,senor manberto,104.7,3,5-4-0,6-4-0
+2015,10,Matthew,Turf Muncher,83.86,9,5-4-0,Loss,5-5-0,Matt,Mongorians,95.22,6,0-9-0,1-9-0
+2015,11,Brian,DoyouseewhathappensLarry,45.56,12,7-3-0,Loss,7-4-0,Mike,MrPigSkinner,108.85,2,6-4-0,7-4-0
+2015,11,dan,DR Philthy,55.61,11,1-9-0,Loss,1-10-0,Matthew,Turf Muncher,70.12,8,5-5-0,6-5-0
+2015,11,Kameron,Drunken Monkeys,72.41,7,7-3-0,Loss,7-4-0,Matt,Mongorians,96.08,5,1-9-0,2-9-0
+2015,11,Colin,Im a scientist,91.25,6,6-4-0,Loss,6-5-0,Rob,senor manberto,99.52,3,6-4-0,7-4-0
+2015,11,Sam,ZJ Anderson,114.8,1,4-6-0,Win,5-6-0,AJ,Digbick McCocknballs III,67.6,9,5-5-0,5-6-0
+2015,11,Aaron,Doomsday,98.0,4,5-5-0,Win,6-5-0,Mike,Foosball Is The DEVIL,63.88,10,7-3-0,7-4-0
+2015,11,Mike,MrPigSkinner,108.85,2,6-4-0,Win,7-4-0,Brian,DoyouseewhathappensLarry,45.56,12,7-3-0,7-4-0
+2015,11,Matthew,Turf Muncher,70.12,8,5-5-0,Win,6-5-0,dan,DR Philthy,55.61,11,1-9-0,1-10-0
+2015,11,Matt,Mongorians,96.08,5,1-9-0,Win,2-9-0,Kameron,Drunken Monkeys,72.41,7,7-3-0,7-4-0
+2015,11,Rob,senor manberto,99.52,3,6-4-0,Win,7-4-0,Colin,Im a scientist,91.25,6,6-4-0,6-5-0
+2015,11,AJ,Digbick McCocknballs III,67.6,9,5-5-0,Loss,5-6-0,Sam,ZJ Anderson,114.8,1,4-6-0,5-6-0
+2015,11,Mike,Foosball Is The DEVIL,63.88,10,7-3-0,Loss,7-4-0,Aaron,Doomsday,98.0,4,5-5-0,6-5-0
+2015,12,Mike,Foosball Is The DEVIL,99.87,5,7-4-0,Loss,7-5-0,Brian,DoyouseewhathappensLarry,112.37,3,7-4-0,8-4-0
+2015,12,dan,DR Philthy,85.79,11,1-10-0,Loss,1-11-0,Rob,senor manberto,94.13,8,7-4-0,8-4-0
+2015,12,Mike,MrPigSkinner,99.34,6,7-4-0,Loss,7-5-0,Matt,Mongorians,125.36,2,2-9-0,3-9-0
+2015,12,AJ,Digbick McCocknballs III,89.4,9,5-6-0,Win,6-6-0,Kameron,Drunken Monkeys,72.24,12,7-4-0,7-5-0
+2015,12,Colin,Im a scientist,89.28,10,6-5-0,Loss,6-6-0,Aaron,Doomsday,126.2,1,6-5-0,7-5-0
+2015,12,Matthew,Turf Muncher,105.44,4,6-5-0,Win,7-5-0,Sam,ZJ Anderson,96.22,7,5-6-0,5-7-0
+2015,12,Brian,DoyouseewhathappensLarry,112.37,3,7-4-0,Win,8-4-0,Mike,Foosball Is The DEVIL,99.87,5,7-4-0,7-5-0
+2015,12,Rob,senor manberto,94.13,8,7-4-0,Win,8-4-0,dan,DR Philthy,85.79,11,1-10-0,1-11-0
+2015,12,Matt,Mongorians,125.36,2,2-9-0,Win,3-9-0,Mike,MrPigSkinner,99.34,6,7-4-0,7-5-0
+2015,12,Kameron,Drunken Monkeys,72.24,12,7-4-0,Loss,7-5-0,AJ,Digbick McCocknballs III,89.4,9,5-6-0,6-6-0
+2015,12,Aaron,Doomsday,126.2,1,6-5-0,Win,7-5-0,Colin,Im a scientist,89.28,10,6-5-0,6-6-0
+2015,12,Sam,ZJ Anderson,96.22,7,5-6-0,Loss,5-7-0,Matthew,Turf Muncher,105.44,4,6-5-0,7-5-0
+2015,13,AJ,Digbick McCocknballs III,106.9,5,6-6-0,Win,7-6-0,Aaron,Doomsday,71.08,11,7-5-0,7-6-0
+2015,13,Mike,Foosball Is The DEVIL,92.48,9,7-5-0,Loss,7-6-0,Matt,Mongorians,97.88,8,3-9-0,4-9-0
+2015,13,Brian,DoyouseewhathappensLarry,101.62,7,8-4-0,Loss,8-5-0,Colin,Im a scientist,140.42,2,6-6-0,7-6-0
+2015,13,Rob,senor manberto,106.45,6,8-4-0,Loss,8-5-0,Kameron,Drunken Monkeys,123.56,3,7-5-0,8-5-0
+2015,13,Matthew,Turf Muncher,63.26,12,7-5-0,Loss,7-6-0,Sam,ZJ Anderson,154.2,1,5-7-0,6-7-0
+2015,13,Mike,MrPigSkinner,119.74,4,7-5-0,Win,8-5-0,dan,DR Philthy,87.67,10,1-11-0,1-12-0
+2015,13,Aaron,Doomsday,71.08,11,7-5-0,Loss,7-6-0,AJ,Digbick McCocknballs III,106.9,5,6-6-0,7-6-0
+2015,13,Matt,Mongorians,97.88,8,3-9-0,Win,4-9-0,Mike,Foosball Is The DEVIL,92.48,9,7-5-0,7-6-0
+2015,13,Colin,Im a scientist,140.42,2,6-6-0,Win,7-6-0,Brian,DoyouseewhathappensLarry,101.62,7,8-4-0,8-5-0
+2015,13,Kameron,Drunken Monkeys,123.56,3,7-5-0,Win,8-5-0,Rob,senor manberto,106.45,6,8-4-0,8-5-0
+2015,13,Sam,ZJ Anderson,154.2,1,5-7-0,Win,6-7-0,Matthew,Turf Muncher,63.26,12,7-5-0,7-6-0
+2015,13,dan,DR Philthy,87.67,10,1-11-0,Loss,1-12-0,Mike,MrPigSkinner,119.74,4,7-5-0,8-5-0
+2015,14,Aaron,Doomsday,152.68,1,7-6-0,Win,7-6-0,dan,DR Philthy,76.47,7,1-12-0,1-12-0
+2015,14,Colin,Im a scientist,106.32,3,7-6-0,Win,7-6-0,Kameron,Drunken Monkeys,103.6,4,8-5-0,8-5-0
+2015,14,Matt,Mongorians,100.53,5,4-9-0,Win,4-9-0,Sam,ZJ Anderson,62.46,8,6-7-0,6-7-0
+2015,14,Brian,DoyouseewhathappensLarry,99.61,6,8-5-0,Loss,8-5-0,Mike,Foosball Is The DEVIL,116.84,2,7-6-0,7-6-0
+2015,14,dan,DR Philthy,76.47,7,1-12-0,Loss,1-12-0,Aaron,Doomsday,152.68,1,7-6-0,7-6-0
+2015,14,Kameron,Drunken Monkeys,103.6,4,8-5-0,Loss,8-5-0,Colin,Im a scientist,106.32,3,7-6-0,7-6-0
+2015,14,Sam,ZJ Anderson,62.46,8,6-7-0,Loss,6-7-0,Matt,Mongorians,100.53,5,4-9-0,4-9-0
+2015,14,Mike,Foosball Is The DEVIL,116.84,2,7-6-0,Win,7-6-0,Brian,DoyouseewhathappensLarry,99.61,6,8-5-0,8-5-0
+2015,15,Matt,Mongorians,103.78,5,4-9-0,Win,4-9-0,AJ,Digbick McCocknballs III,103.63,6,7-6-0,7-6-0
+2015,15,Mike,MrPigSkinner,106.56,4,8-5-0,Loss,8-5-0,Mike,Foosball Is The DEVIL,112.18,3,7-6-0,7-6-0
+2015,15,Colin,Im a scientist,122.39,2,7-6-0,Loss,7-6-0,Rob,senor manberto,125.64,1,8-5-0,8-5-0
+2015,15,Aaron,Doomsday,86.9,8,7-6-0,Loss,7-6-0,Matthew,Turf Muncher,91.87,7,7-6-0,7-6-0
+2015,15,AJ,Digbick McCocknballs III,103.63,6,7-6-0,Loss,7-6-0,Matt,Mongorians,103.78,5,4-9-0,4-9-0
+2015,15,Mike,Foosball Is The DEVIL,112.18,3,7-6-0,Win,7-6-0,Mike,MrPigSkinner,106.56,4,8-5-0,8-5-0
+2015,15,Rob,senor manberto,125.64,1,8-5-0,Win,8-5-0,Colin,Im a scientist,122.39,2,7-6-0,7-6-0
+2015,15,Matthew,Turf Muncher,91.87,7,7-6-0,Win,7-6-0,Aaron,Doomsday,86.9,8,7-6-0,7-6-0
+2015,16,Aaron,Doomsday,76.06,10,7-6-0,Loss,7-6-0,AJ,Digbick McCocknballs III,87.94,6,7-6-0,7-6-0
+2015,16,Sam,ZJ Anderson,53.4,12,6-7-0,Loss,6-7-0,dan,DR Philthy,65.08,11,1-12-0,1-12-0
+2015,16,Brian,DoyouseewhathappensLarry,99.7,5,8-5-0,Loss,8-5-0,Kameron,Drunken Monkeys,121.54,3,8-5-0,8-5-0
+2015,16,Rob,senor manberto,104.18,4,8-5-0,Loss,8-5-0,Mike,Foosball Is The DEVIL,137.54,2,7-6-0,7-6-0
+2015,16,Mike,MrPigSkinner,84.6,7,8-5-0,Loss,8-5-0,Colin,Im a scientist,138.76,1,7-6-0,7-6-0
+2015,16,Matthew,Turf Muncher,78.5,9,7-6-0,Loss,7-6-0,Matt,Mongorians,82.79,8,4-9-0,4-9-0
+2015,16,AJ,Digbick McCocknballs III,87.94,6,7-6-0,Win,7-6-0,Aaron,Doomsday,76.06,10,7-6-0,7-6-0
+2015,16,dan,DR Philthy,65.08,11,1-12-0,Win,1-12-0,Sam,ZJ Anderson,53.4,12,6-7-0,6-7-0
+2015,16,Kameron,Drunken Monkeys,121.54,3,8-5-0,Win,8-5-0,Brian,DoyouseewhathappensLarry,99.7,5,8-5-0,8-5-0
+2015,16,Mike,Foosball Is The DEVIL,137.54,2,7-6-0,Win,7-6-0,Rob,senor manberto,104.18,4,8-5-0,8-5-0
+2015,16,Colin,Im a scientist,138.76,1,7-6-0,Win,7-6-0,Mike,MrPigSkinner,84.6,7,8-5-0,8-5-0
+2015,16,Matt,Mongorians,82.79,8,4-9-0,Win,4-9-0,Matthew,Turf Muncher,78.5,9,7-6-0,7-6-0
+2016,1,AJ,Allah Bout Dem Benjamins,87.02,9,0-0-0,Loss,0-1-0,dan,DR Philthy,91.66,8,0-0-0,1-0-0
+2016,1,Kameron,Drunken Monkeys,116.8,4,0-0-0,Win,1-0-0,Aaron,I Cursed AJ Crane,105.39,6,0-0-0,0-1-0
+2016,1,Matthew,Turf Muncher,78.66,11,0-0-0,Loss,0-1-0,Mike,Mr Pig Skinner,84.94,10,0-0-0,1-0-0
+2016,1,Mike,Wall Or Nothin,135.72,2,0-0-0,Win,1-0-0,Matt,Mongorians,50.5,12,0-0-0,0-1-0
+2016,1,Rob,Buildin 'Merica,141.3,1,0-0-0,Win,1-0-0,Brian,DaHazzelhoffs,102.06,7,0-0-0,0-1-0
+2016,1,Colin,Im a scientist,105.94,5,0-0-0,Loss,0-1-0,Sam,Bell Peppers,132.7,3,0-0-0,1-0-0
+2016,1,dan,DR Philthy,91.66,8,0-0-0,Win,1-0-0,AJ,Allah Bout Dem Benjamins,87.02,9,0-0-0,0-1-0
+2016,1,Aaron,I Cursed AJ Crane,105.39,6,0-0-0,Loss,0-1-0,Kameron,Drunken Monkeys,116.8,4,0-0-0,1-0-0
+2016,1,Mike,Mr Pig Skinner,84.94,10,0-0-0,Win,1-0-0,Matthew,Turf Muncher,78.66,11,0-0-0,0-1-0
+2016,1,Matt,Mongorians,50.5,12,0-0-0,Loss,0-1-0,Mike,Wall Or Nothin,135.72,2,0-0-0,1-0-0
+2016,1,Brian,DaHazzelhoffs,102.06,7,0-0-0,Loss,0-1-0,Rob,Buildin 'Merica,141.3,1,0-0-0,1-0-0
+2016,1,Sam,Bell Peppers,132.7,3,0-0-0,Win,1-0-0,Colin,Im a scientist,105.94,5,0-0-0,0-1-0
+2016,2,Kameron,Drunken Monkeys,93.98,8,1-0-0,Loss,1-1-0,AJ,Allah Bout Dem Benjamins,105.5,5,0-1-0,1-1-0
+2016,2,dan,DR Philthy,113.45,3,1-0-0,Loss,1-1-0,Matthew,Turf Muncher,126.76,1,0-1-0,1-1-0
+2016,2,Aaron,I Cursed AJ Crane,94.66,7,0-1-0,Win,1-1-0,Mike,Wall Or Nothin,90.12,10,1-0-0,1-1-0
+2016,2,Mike,Mr Pig Skinner,102.66,6,1-0-0,Win,2-0-0,Rob,Buildin 'Merica,58.8,12,1-0-0,1-1-0
+2016,2,Matt,Mongorians,83.21,11,0-1-0,Loss,0-2-0,Colin,Im a scientist,107.88,4,0-1-0,1-1-0
+2016,2,Brian,DaHazzelhoffs,92.12,9,0-1-0,Loss,0-2-0,Sam,Bell Peppers,117.56,2,1-0-0,2-0-0
+2016,2,AJ,Allah Bout Dem Benjamins,105.5,5,0-1-0,Win,1-1-0,Kameron,Drunken Monkeys,93.98,8,1-0-0,1-1-0
+2016,2,Matthew,Turf Muncher,126.76,1,0-1-0,Win,1-1-0,dan,DR Philthy,113.45,3,1-0-0,1-1-0
+2016,2,Mike,Wall Or Nothin,90.12,10,1-0-0,Loss,1-1-0,Aaron,I Cursed AJ Crane,94.66,7,0-1-0,1-1-0
+2016,2,Rob,Buildin 'Merica,58.8,12,1-0-0,Loss,1-1-0,Mike,Mr Pig Skinner,102.66,6,1-0-0,2-0-0
+2016,2,Colin,Im a scientist,107.88,4,0-1-0,Win,1-1-0,Matt,Mongorians,83.21,11,0-1-0,0-2-0
+2016,2,Sam,Bell Peppers,117.56,2,1-0-0,Win,2-0-0,Brian,DaHazzelhoffs,92.12,9,0-1-0,0-2-0
+2016,3,AJ,Allah Bout Dem Benjamins,122.14,5,1-1-0,Win,2-1-0,Matthew,Turf Muncher,93.24,8,1-1-0,1-2-0
+2016,3,Mike,Wall Or Nothin,124.14,3,1-1-0,Loss,1-2-0,Kameron,Drunken Monkeys,159.14,1,1-1-0,2-1-0
+2016,3,Rob,Buildin 'Merica,138.63,2,1-1-0,Win,2-1-0,dan,DR Philthy,81.91,10,1-1-0,1-2-0
+2016,3,Colin,Im a scientist,122.26,4,1-1-0,Win,2-1-0,Aaron,I Cursed AJ Crane,98.49,7,1-1-0,1-2-0
+2016,3,Sam,Bell Peppers,71.26,11,2-0-0,Loss,2-1-0,Mike,Mr Pig Skinner,100.58,6,2-0-0,3-0-0
+2016,3,Brian,DaHazzelhoffs,83.9,9,0-2-0,Win,1-2-0,Matt,Mongorians,61.3,12,0-2-0,0-3-0
+2016,3,Matthew,Turf Muncher,93.24,8,1-1-0,Loss,1-2-0,AJ,Allah Bout Dem Benjamins,122.14,5,1-1-0,2-1-0
+2016,3,Kameron,Drunken Monkeys,159.14,1,1-1-0,Win,2-1-0,Mike,Wall Or Nothin,124.14,3,1-1-0,1-2-0
+2016,3,dan,DR Philthy,81.91,10,1-1-0,Loss,1-2-0,Rob,Buildin 'Merica,138.63,2,1-1-0,2-1-0
+2016,3,Aaron,I Cursed AJ Crane,98.49,7,1-1-0,Loss,1-2-0,Colin,Im a scientist,122.26,4,1-1-0,2-1-0
+2016,3,Mike,Mr Pig Skinner,100.58,6,2-0-0,Win,3-0-0,Sam,Bell Peppers,71.26,11,2-0-0,2-1-0
+2016,3,Matt,Mongorians,61.3,12,0-2-0,Loss,0-3-0,Brian,DaHazzelhoffs,83.9,9,0-2-0,1-2-0
+2016,4,Mike,Wall Or Nothin,95.95,6,1-2-0,Loss,1-3-0,AJ,Allah Bout Dem Benjamins,96.24,5,2-1-0,3-1-0
+2016,4,Matthew,Turf Muncher,121.79,2,1-2-0,Win,2-2-0,Rob,Buildin 'Merica,87.55,10,2-1-0,2-2-0
+2016,4,Kameron,Drunken Monkeys,87.86,9,2-1-0,Loss,2-2-0,Colin,Im a scientist,99.14,4,2-1-0,3-1-0
+2016,4,dan,DR Philthy,110.63,3,1-2-0,Win,2-2-0,Sam,Bell Peppers,88.68,8,2-1-0,2-2-0
+2016,4,Aaron,I Cursed AJ Crane,132.46,1,1-2-0,Win,2-2-0,Brian,DaHazzelhoffs,65.62,12,1-2-0,1-3-0
+2016,4,Mike,Mr Pig Skinner,68.02,11,3-0-0,Loss,3-1-0,Matt,Mongorians,95.21,7,0-3-0,1-3-0
+2016,4,AJ,Allah Bout Dem Benjamins,96.24,5,2-1-0,Win,3-1-0,Mike,Wall Or Nothin,95.95,6,1-2-0,1-3-0
+2016,4,Rob,Buildin 'Merica,87.55,10,2-1-0,Loss,2-2-0,Matthew,Turf Muncher,121.79,2,1-2-0,2-2-0
+2016,4,Colin,Im a scientist,99.14,4,2-1-0,Win,3-1-0,Kameron,Drunken Monkeys,87.86,9,2-1-0,2-2-0
+2016,4,Sam,Bell Peppers,88.68,8,2-1-0,Loss,2-2-0,dan,DR Philthy,110.63,3,1-2-0,2-2-0
+2016,4,Brian,DaHazzelhoffs,65.62,12,1-2-0,Loss,1-3-0,Aaron,I Cursed AJ Crane,132.46,1,1-2-0,2-2-0
+2016,4,Matt,Mongorians,95.21,7,0-3-0,Win,1-3-0,Mike,Mr Pig Skinner,68.02,11,3-0-0,3-1-0
+2016,5,AJ,Allah Bout Dem Benjamins,113.56,4,3-1-0,Win,4-1-0,Rob,Buildin 'Merica,109.9,5,2-2-0,2-3-0
+2016,5,Colin,Im a scientist,108.36,6,3-1-0,Loss,3-2-0,Mike,Wall Or Nothin,135.82,1,1-3-0,2-3-0
+2016,5,Sam,Bell Peppers,80.08,10,2-2-0,Loss,2-3-0,Matthew,Turf Muncher,117.13,3,2-2-0,3-2-0
+2016,5,Brian,DaHazzelhoffs,73.96,11,1-3-0,Loss,1-4-0,Kameron,Drunken Monkeys,133.18,2,2-2-0,3-2-0
+2016,5,Matt,Mongorians,98.14,7,1-3-0,Win,2-3-0,dan,DR Philthy,71.9,12,2-2-0,2-3-0
+2016,5,Mike,Mr Pig Skinner,85.9,9,3-1-0,Loss,3-2-0,Aaron,I Cursed AJ Crane,86.66,8,2-2-0,3-2-0
+2016,5,Rob,Buildin 'Merica,109.9,5,2-2-0,Loss,2-3-0,AJ,Allah Bout Dem Benjamins,113.56,4,3-1-0,4-1-0
+2016,5,Mike,Wall Or Nothin,135.82,1,1-3-0,Win,2-3-0,Colin,Im a scientist,108.36,6,3-1-0,3-2-0
+2016,5,Matthew,Turf Muncher,117.13,3,2-2-0,Win,3-2-0,Sam,Bell Peppers,80.08,10,2-2-0,2-3-0
+2016,5,Kameron,Drunken Monkeys,133.18,2,2-2-0,Win,3-2-0,Brian,DaHazzelhoffs,73.96,11,1-3-0,1-4-0
+2016,5,dan,DR Philthy,71.9,12,2-2-0,Loss,2-3-0,Matt,Mongorians,98.14,7,1-3-0,2-3-0
+2016,5,Aaron,I Cursed AJ Crane,86.66,8,2-2-0,Win,3-2-0,Mike,Mr Pig Skinner,85.9,9,3-1-0,3-2-0
+2016,6,Colin,Im a scientist,113.09,4,3-2-0,Win,4-2-0,AJ,Allah Bout Dem Benjamins,71.2,12,4-1-0,4-2-0
+2016,6,Rob,Buildin 'Merica,107.0,6,2-3-0,Win,3-3-0,Sam,Bell Peppers,86.24,8,2-3-0,2-4-0
+2016,6,Mike,Wall Or Nothin,107.34,5,2-3-0,Win,3-3-0,Brian,DaHazzelhoffs,75.76,10,1-4-0,1-5-0
+2016,6,Matthew,Turf Muncher,73.62,11,3-2-0,Loss,3-3-0,Matt,Mongorians,133.01,2,2-3-0,3-3-0
+2016,6,Kameron,Drunken Monkeys,126.11,3,3-2-0,Win,4-2-0,Mike,Mr Pig Skinner,81.76,9,3-2-0,3-3-0
+2016,6,dan,DR Philthy,90.91,7,2-3-0,Loss,2-4-0,Aaron,I Cursed AJ Crane,135.33,1,3-2-0,4-2-0
+2016,6,AJ,Allah Bout Dem Benjamins,71.2,12,4-1-0,Loss,4-2-0,Colin,Im a scientist,113.09,4,3-2-0,4-2-0
+2016,6,Sam,Bell Peppers,86.24,8,2-3-0,Loss,2-4-0,Rob,Buildin 'Merica,107.0,6,2-3-0,3-3-0
+2016,6,Brian,DaHazzelhoffs,75.76,10,1-4-0,Loss,1-5-0,Mike,Wall Or Nothin,107.34,5,2-3-0,3-3-0
+2016,6,Matt,Mongorians,133.01,2,2-3-0,Win,3-3-0,Matthew,Turf Muncher,73.62,11,3-2-0,3-3-0
+2016,6,Mike,Mr Pig Skinner,81.76,9,3-2-0,Loss,3-3-0,Kameron,Drunken Monkeys,126.11,3,3-2-0,4-2-0
+2016,6,Aaron,I Cursed AJ Crane,135.33,1,3-2-0,Win,4-2-0,dan,DR Philthy,90.91,7,2-3-0,2-4-0
+2016,7,AJ,Allah Bout Dem Benjamins,91.2,7,4-2-0,Win,5-2-0,Sam,Bell Peppers,85.67,9,2-4-0,2-5-0
+2016,7,Brian,DaHazzelhoffs,58.54,12,1-5-0,Loss,1-6-0,Colin,Im a scientist,101.94,6,4-2-0,5-2-0
+2016,7,Matt,Mongorians,75.98,11,3-3-0,Loss,3-4-0,Rob,Buildin 'Merica,82.44,10,3-3-0,4-3-0
+2016,7,Mike,Mr Pig Skinner,104.92,5,3-3-0,Loss,3-4-0,Mike,Wall Or Nothin,107.08,4,3-3-0,4-3-0
+2016,7,Aaron,I Cursed AJ Crane,137.09,1,4-2-0,Win,5-2-0,Matthew,Turf Muncher,130.02,2,3-3-0,3-4-0
+2016,7,dan,DR Philthy,89.88,8,2-4-0,Loss,2-5-0,Kameron,Drunken Monkeys,127.12,3,4-2-0,5-2-0
+2016,7,Sam,Bell Peppers,85.67,9,2-4-0,Loss,2-5-0,AJ,Allah Bout Dem Benjamins,91.2,7,4-2-0,5-2-0
+2016,7,Colin,Im a scientist,101.94,6,4-2-0,Win,5-2-0,Brian,DaHazzelhoffs,58.54,12,1-5-0,1-6-0
+2016,7,Rob,Buildin 'Merica,82.44,10,3-3-0,Win,4-3-0,Matt,Mongorians,75.98,11,3-3-0,3-4-0
+2016,7,Mike,Wall Or Nothin,107.08,4,3-3-0,Win,4-3-0,Mike,Mr Pig Skinner,104.92,5,3-3-0,3-4-0
+2016,7,Matthew,Turf Muncher,130.02,2,3-3-0,Loss,3-4-0,Aaron,I Cursed AJ Crane,137.09,1,4-2-0,5-2-0
+2016,7,Kameron,Drunken Monkeys,127.12,3,4-2-0,Win,5-2-0,dan,DR Philthy,89.88,8,2-4-0,2-5-0
+2016,8,Brian,DaHazzelhoffs,84.64,10,1-6-0,Loss,1-7-0,AJ,Allah Bout Dem Benjamins,112.02,2,5-2-0,6-2-0
+2016,8,Sam,Bell Peppers,102.15,7,2-5-0,Loss,2-6-0,Matt,Mongorians,115.63,1,3-4-0,4-4-0
+2016,8,Colin,Im a scientist,95.65,8,5-2-0,Win,6-2-0,Mike,Mr Pig Skinner,84.12,11,3-4-0,3-5-0
+2016,8,Rob,Buildin 'Merica,109.0,4,4-3-0,Win,5-3-0,Aaron,I Cursed AJ Crane,80.6,12,5-2-0,5-3-0
+2016,8,Mike,Wall Or Nothin,103.2,6,4-3-0,Loss,4-4-0,dan,DR Philthy,111.63,3,2-5-0,3-5-0
+2016,8,Matthew,Turf Muncher,106.02,5,3-4-0,Win,4-4-0,Kameron,Drunken Monkeys,94.53,9,5-2-0,5-3-0
+2016,8,AJ,Allah Bout Dem Benjamins,112.02,2,5-2-0,Win,6-2-0,Brian,DaHazzelhoffs,84.64,10,1-6-0,1-7-0
+2016,8,Matt,Mongorians,115.63,1,3-4-0,Win,4-4-0,Sam,Bell Peppers,102.15,7,2-5-0,2-6-0
+2016,8,Mike,Mr Pig Skinner,84.12,11,3-4-0,Loss,3-5-0,Colin,Im a scientist,95.65,8,5-2-0,6-2-0
+2016,8,Aaron,I Cursed AJ Crane,80.6,12,5-2-0,Loss,5-3-0,Rob,Buildin 'Merica,109.0,4,4-3-0,5-3-0
+2016,8,dan,DR Philthy,111.63,3,2-5-0,Win,3-5-0,Mike,Wall Or Nothin,103.2,6,4-3-0,4-4-0
+2016,8,Kameron,Drunken Monkeys,94.53,9,5-2-0,Loss,5-3-0,Matthew,Turf Muncher,106.02,5,3-4-0,4-4-0
+2016,9,AJ,Allah Bout Dem Benjamins,81.7,10,6-2-0,Win,7-2-0,Matt,Mongorians,51.6,12,4-4-0,4-5-0
+2016,9,Mike,Mr Pig Skinner,98.86,7,3-5-0,Loss,3-6-0,Brian,DaHazzelhoffs,112.38,5,1-7-0,2-7-0
+2016,9,Aaron,I Cursed AJ Crane,119.64,3,5-3-0,Win,6-3-0,Sam,Bell Peppers,91.18,8,2-6-0,2-7-0
+2016,9,dan,DR Philthy,112.6,4,3-5-0,Win,4-5-0,Colin,Im a scientist,87.03,9,6-2-0,6-3-0
+2016,9,Kameron,Drunken Monkeys,121.17,2,5-3-0,Win,6-3-0,Rob,Buildin 'Merica,78.43,11,5-3-0,5-4-0
+2016,9,Matthew,Turf Muncher,150.26,1,4-4-0,Win,5-4-0,Mike,Wall Or Nothin,107.25,6,4-4-0,4-5-0
+2016,9,Matt,Mongorians,51.6,12,4-4-0,Loss,4-5-0,AJ,Allah Bout Dem Benjamins,81.7,10,6-2-0,7-2-0
+2016,9,Brian,DaHazzelhoffs,112.38,5,1-7-0,Win,2-7-0,Mike,Mr Pig Skinner,98.86,7,3-5-0,3-6-0
+2016,9,Sam,Bell Peppers,91.18,8,2-6-0,Loss,2-7-0,Aaron,I Cursed AJ Crane,119.64,3,5-3-0,6-3-0
+2016,9,Colin,Im a scientist,87.03,9,6-2-0,Loss,6-3-0,dan,DR Philthy,112.6,4,3-5-0,4-5-0
+2016,9,Rob,Buildin 'Merica,78.43,11,5-3-0,Loss,5-4-0,Kameron,Drunken Monkeys,121.17,2,5-3-0,6-3-0
+2016,9,Mike,Wall Or Nothin,107.25,6,4-4-0,Loss,4-5-0,Matthew,Turf Muncher,150.26,1,4-4-0,5-4-0
+2016,10,Mike,Mr Pig Skinner,102.82,6,3-6-0,Loss,3-7-0,AJ,Allah Bout Dem Benjamins,104.14,5,7-2-0,8-2-0
+2016,10,Matt,Mongorians,102.64,7,4-5-0,Win,5-5-0,Aaron,I Cursed AJ Crane,101.28,9,6-3-0,6-4-0
+2016,10,Brian,DaHazzelhoffs,96.44,11,2-7-0,Loss,2-8-0,dan,DR Philthy,101.3,8,4-5-0,5-5-0
+2016,10,Sam,Bell Peppers,128.79,1,2-7-0,Win,3-7-0,Kameron,Drunken Monkeys,111.43,4,6-3-0,6-4-0
+2016,10,Colin,Im a scientist,99.51,10,6-3-0,Loss,6-4-0,Matthew,Turf Muncher,122.48,2,5-4-0,6-4-0
+2016,10,Rob,Buildin 'Merica,69.06,12,5-4-0,Loss,5-5-0,Mike,Wall Or Nothin,118.82,3,4-5-0,5-5-0
+2016,10,AJ,Allah Bout Dem Benjamins,104.14,5,7-2-0,Win,8-2-0,Mike,Mr Pig Skinner,102.82,6,3-6-0,3-7-0
+2016,10,Aaron,I Cursed AJ Crane,101.28,9,6-3-0,Loss,6-4-0,Matt,Mongorians,102.64,7,4-5-0,5-5-0
+2016,10,dan,DR Philthy,101.3,8,4-5-0,Win,5-5-0,Brian,DaHazzelhoffs,96.44,11,2-7-0,2-8-0
+2016,10,Kameron,Drunken Monkeys,111.43,4,6-3-0,Loss,6-4-0,Sam,Bell Peppers,128.79,1,2-7-0,3-7-0
+2016,10,Matthew,Turf Muncher,122.48,2,5-4-0,Win,6-4-0,Colin,Im a scientist,99.51,10,6-3-0,6-4-0
+2016,10,Mike,Wall Or Nothin,118.82,3,4-5-0,Win,5-5-0,Rob,Buildin 'Merica,69.06,12,5-4-0,5-5-0
+2016,11,AJ,Allah Bout Dem Benjamins,85.0,11,8-2-0,Loss,8-3-0,Aaron,I Cursed AJ Crane,104.01,4,6-4-0,7-4-0
+2016,11,dan,DR Philthy,89.11,10,5-5-0,Loss,5-6-0,Mike,Mr Pig Skinner,89.85,9,3-7-0,4-7-0
+2016,11,Kameron,Drunken Monkeys,101.08,5,6-4-0,Win,7-4-0,Matt,Mongorians,90.3,8,5-5-0,5-6-0
+2016,11,Matthew,Turf Muncher,68.1,12,6-4-0,Loss,6-5-0,Brian,DaHazzelhoffs,115.64,1,2-8-0,3-8-0
+2016,11,Mike,Wall Or Nothin,106.87,2,5-5-0,Win,6-5-0,Sam,Bell Peppers,98.47,6,3-7-0,3-8-0
+2016,11,Rob,Buildin 'Merica,105.02,3,5-5-0,Win,6-5-0,Colin,Im a scientist,91.14,7,6-4-0,6-5-0
+2016,11,Aaron,I Cursed AJ Crane,104.01,4,6-4-0,Win,7-4-0,AJ,Allah Bout Dem Benjamins,85.0,11,8-2-0,8-3-0
+2016,11,Mike,Mr Pig Skinner,89.85,9,3-7-0,Win,4-7-0,dan,DR Philthy,89.11,10,5-5-0,5-6-0
+2016,11,Matt,Mongorians,90.3,8,5-5-0,Loss,5-6-0,Kameron,Drunken Monkeys,101.08,5,6-4-0,7-4-0
+2016,11,Brian,DaHazzelhoffs,115.64,1,2-8-0,Win,3-8-0,Matthew,Turf Muncher,68.1,12,6-4-0,6-5-0
+2016,11,Sam,Bell Peppers,98.47,6,3-7-0,Loss,3-8-0,Mike,Wall Or Nothin,106.87,2,5-5-0,6-5-0
+2016,11,Colin,Im a scientist,91.14,7,6-4-0,Loss,6-5-0,Rob,Buildin 'Merica,105.02,3,5-5-0,6-5-0
+2016,12,dan,DR Philthy,116.1,3,5-6-0,Loss,5-7-0,AJ,Allah Bout Dem Benjamins,121.0,1,8-3-0,9-3-0
+2016,12,Aaron,I Cursed AJ Crane,72.61,12,7-4-0,Loss,7-5-0,Kameron,Drunken Monkeys,120.19,2,7-4-0,8-4-0
+2016,12,Mike,Mr Pig Skinner,77.84,11,4-7-0,Loss,4-8-0,Matthew,Turf Muncher,94.76,8,6-5-0,7-5-0
+2016,12,Matt,Mongorians,85.47,10,5-6-0,Loss,5-7-0,Mike,Wall Or Nothin,113.3,4,6-5-0,7-5-0
+2016,12,Brian,DaHazzelhoffs,110.72,5,3-8-0,Win,4-8-0,Rob,Buildin 'Merica,96.18,7,6-5-0,6-6-0
+2016,12,Sam,Bell Peppers,105.7,6,3-8-0,Win,4-8-0,Colin,Im a scientist,88.84,9,6-5-0,6-6-0
+2016,12,AJ,Allah Bout Dem Benjamins,121.0,1,8-3-0,Win,9-3-0,dan,DR Philthy,116.1,3,5-6-0,5-7-0
+2016,12,Kameron,Drunken Monkeys,120.19,2,7-4-0,Win,8-4-0,Aaron,I Cursed AJ Crane,72.61,12,7-4-0,7-5-0
+2016,12,Matthew,Turf Muncher,94.76,8,6-5-0,Win,7-5-0,Mike,Mr Pig Skinner,77.84,11,4-7-0,4-8-0
+2016,12,Mike,Wall Or Nothin,113.3,4,6-5-0,Win,7-5-0,Matt,Mongorians,85.47,10,5-6-0,5-7-0
+2016,12,Rob,Buildin 'Merica,96.18,7,6-5-0,Loss,6-6-0,Brian,DaHazzelhoffs,110.72,5,3-8-0,4-8-0
+2016,12,Colin,Im a scientist,88.84,9,6-5-0,Loss,6-6-0,Sam,Bell Peppers,105.7,6,3-8-0,4-8-0
+2016,13,AJ,Allah Bout Dem Benjamins,111.5,3,9-3-0,Loss,9-4-0,Kameron,Drunken Monkeys,113.52,2,8-4-0,9-4-0
+2016,13,Matthew,Turf Muncher,101.44,5,7-5-0,Win,8-5-0,dan,DR Philthy,70.34,11,5-7-0,5-8-0
+2016,13,Mike,Wall Or Nothin,94.27,7,7-5-0,Loss,7-6-0,Aaron,I Cursed AJ Crane,99.5,6,7-5-0,8-5-0
+2016,13,Rob,Buildin 'Merica,116.27,1,6-6-0,Win,7-6-0,Mike,Mr Pig Skinner,64.96,12,4-8-0,4-9-0
+2016,13,Colin,Im a scientist,106.64,4,6-6-0,Win,7-6-0,Matt,Mongorians,86.36,8,5-7-0,5-8-0
+2016,13,Sam,Bell Peppers,73.96,10,4-8-0,Loss,4-9-0,Brian,DaHazzelhoffs,79.86,9,4-8-0,5-8-0
+2016,13,Kameron,Drunken Monkeys,113.52,2,8-4-0,Win,9-4-0,AJ,Allah Bout Dem Benjamins,111.5,3,9-3-0,9-4-0
+2016,13,dan,DR Philthy,70.34,11,5-7-0,Loss,5-8-0,Matthew,Turf Muncher,101.44,5,7-5-0,8-5-0
+2016,13,Aaron,I Cursed AJ Crane,99.5,6,7-5-0,Win,8-5-0,Mike,Wall Or Nothin,94.27,7,7-5-0,7-6-0
+2016,13,Mike,Mr Pig Skinner,64.96,12,4-8-0,Loss,4-9-0,Rob,Buildin 'Merica,116.27,1,6-6-0,7-6-0
+2016,13,Matt,Mongorians,86.36,8,5-7-0,Loss,5-8-0,Colin,Im a scientist,106.64,4,6-6-0,7-6-0
+2016,13,Brian,DaHazzelhoffs,79.86,9,4-8-0,Win,5-8-0,Sam,Bell Peppers,73.96,10,4-8-0,4-9-0
+2016,14,Colin,Im a scientist,86.52,4,7-6-0,Win,7-6-0,Matthew,Turf Muncher,58.96,8,8-5-0,8-5-0
+2016,14,Aaron,I Cursed AJ Crane,96.33,3,8-5-0,Win,8-5-0,Mike,Wall Or Nothin,67.25,6,7-6-0,7-6-0
+2016,14,Matt,Mongorians,62.81,7,5-8-0,Loss,5-8-0,Sam,Bell Peppers,119.27,1,4-9-0,4-9-0
+2016,14,Mike,Mr Pig Skinner,69.87,5,4-9-0,Loss,4-9-0,Brian,DaHazzelhoffs,114.61,2,5-8-0,5-8-0
+2016,14,Matthew,Turf Muncher,58.96,8,8-5-0,Loss,8-5-0,Colin,Im a scientist,86.52,4,7-6-0,7-6-0
+2016,14,Mike,Wall Or Nothin,67.25,6,7-6-0,Loss,7-6-0,Aaron,I Cursed AJ Crane,96.33,3,8-5-0,8-5-0
+2016,14,Sam,Bell Peppers,119.27,1,4-9-0,Win,4-9-0,Matt,Mongorians,62.81,7,5-8-0,5-8-0
+2016,14,Brian,DaHazzelhoffs,114.61,2,5-8-0,Win,5-8-0,Mike,Mr Pig Skinner,69.87,5,4-9-0,4-9-0
+2016,15,Colin,Im a scientist,76.36,7,7-6-0,Loss,7-6-0,AJ,Allah Bout Dem Benjamins,130.52,1,9-4-0,9-4-0
+2016,15,Brian,DaHazzelhoffs,76.51,6,5-8-0,Win,5-8-0,dan,DR Philthy,60.07,8,5-8-0,5-8-0
+2016,15,Aaron,I Cursed AJ Crane,111.86,2,8-5-0,Win,8-5-0,Kameron,Drunken Monkeys,92.5,4,9-4-0,9-4-0
+2016,15,Sam,Bell Peppers,101.06,3,4-9-0,Win,4-9-0,Rob,Buildin 'Merica,90.32,5,7-6-0,7-6-0
+2016,15,AJ,Allah Bout Dem Benjamins,130.52,1,9-4-0,Win,9-4-0,Colin,Im a scientist,76.36,7,7-6-0,7-6-0
+2016,15,dan,DR Philthy,60.07,8,5-8-0,Loss,5-8-0,Brian,DaHazzelhoffs,76.51,6,5-8-0,5-8-0
+2016,15,Kameron,Drunken Monkeys,92.5,4,9-4-0,Loss,9-4-0,Aaron,I Cursed AJ Crane,111.86,2,8-5-0,8-5-0
+2016,15,Rob,Buildin 'Merica,90.32,5,7-6-0,Loss,7-6-0,Sam,Bell Peppers,101.06,3,4-9-0,4-9-0
+2016,16,Aaron,I Cursed AJ Crane,92.28,9,8-5-0,Loss,8-5-0,AJ,Allah Bout Dem Benjamins,107.38,5,9-4-0,9-4-0
+2016,16,Rob,Buildin 'Merica,95.5,8,7-6-0,Win,7-6-0,dan,DR Philthy,80.83,10,5-8-0,5-8-0
+2016,16,Colin,Im a scientist,166.56,1,7-6-0,Win,7-6-0,Kameron,Drunken Monkeys,134.12,2,9-4-0,9-4-0
+2016,16,Mike,Wall Or Nothin,73.56,11,7-6-0,Loss,7-6-0,Matthew,Turf Muncher,109.8,4,8-5-0,8-5-0
+2016,16,Brian,DaHazzelhoffs,103.38,6,5-8-0,Win,5-8-0,Sam,Bell Peppers,101.81,7,4-9-0,4-9-0
+2016,16,Mike,Mr Pig Skinner,48.76,12,4-9-0,Loss,4-9-0,Matt,Mongorians,120.53,3,5-8-0,5-8-0
+2016,16,AJ,Allah Bout Dem Benjamins,107.38,5,9-4-0,Win,9-4-0,Aaron,I Cursed AJ Crane,92.28,9,8-5-0,8-5-0
+2016,16,dan,DR Philthy,80.83,10,5-8-0,Loss,5-8-0,Rob,Buildin 'Merica,95.5,8,7-6-0,7-6-0
+2016,16,Kameron,Drunken Monkeys,134.12,2,9-4-0,Loss,9-4-0,Colin,Im a scientist,166.56,1,7-6-0,7-6-0
+2016,16,Matthew,Turf Muncher,109.8,4,8-5-0,Win,8-5-0,Mike,Wall Or Nothin,73.56,11,7-6-0,7-6-0
+2016,16,Sam,Bell Peppers,101.81,7,4-9-0,Loss,4-9-0,Brian,DaHazzelhoffs,103.38,6,5-8-0,5-8-0
+2016,16,Matt,Mongorians,120.53,3,5-8-0,Win,5-8-0,Mike,Mr Pig Skinner,48.76,12,4-9-0,4-9-0
+2017,1,AJ,Sir Schlongdongler,90.92,5,0-0-0,Loss,0-1-0,dan,DR Philthy,97.4,3,0-0-0,1-0-0
+2017,1,Kameron,Drunken Monkeys,138.94,1,0-0-0,Win,1-0-0,Alex,2Gurleys1Kupp,96.28,4,0-0-0,0-1-0
+2017,1,Matthew,Turf Muncher,77.58,9,0-0-0,Win,1-0-0,Aaron,How do I even have 1 win,71.02,10,0-0-0,0-1-0
+2017,1,Mike,Wall or Nothin,78.14,8,0-0-0,Loss,0-1-0,Mike,Mr Pig Skinner,90.41,6,0-0-0,1-0-0
+2017,1,Rob,Buildin 'Merica,63.54,12,0-0-0,Loss,0-1-0,Brian,DaHazzelhoffs,80.04,7,0-0-0,1-0-0
+2017,1,Colin,Im a scientist,67.36,11,0-0-0,Loss,0-1-0,Sam,He Wore the Brown Pants,111.34,2,0-0-0,1-0-0
+2017,1,dan,DR Philthy,97.4,3,0-0-0,Win,1-0-0,AJ,Sir Schlongdongler,90.92,5,0-0-0,0-1-0
+2017,1,Alex,2Gurleys1Kupp,96.28,4,0-0-0,Loss,0-1-0,Kameron,Drunken Monkeys,138.94,1,0-0-0,1-0-0
+2017,1,Aaron,How do I even have 1 win,71.02,10,0-0-0,Loss,0-1-0,Matthew,Turf Muncher,77.58,9,0-0-0,1-0-0
+2017,1,Mike,Mr Pig Skinner,90.41,6,0-0-0,Win,1-0-0,Mike,Wall or Nothin,78.14,8,0-0-0,0-1-0
+2017,1,Brian,DaHazzelhoffs,80.04,7,0-0-0,Win,1-0-0,Rob,Buildin 'Merica,63.54,12,0-0-0,0-1-0
+2017,1,Sam,He Wore the Brown Pants,111.34,2,0-0-0,Win,1-0-0,Colin,Im a scientist,67.36,11,0-0-0,0-1-0
+2017,2,Kameron,Drunken Monkeys,98.22,4,1-0-0,Loss,1-1-0,AJ,Sir Schlongdongler,106.72,3,0-1-0,1-1-0
+2017,2,dan,DR Philthy,88.86,7,1-0-0,Win,2-0-0,Matthew,Turf Muncher,73.5,11,1-0-0,1-1-0
+2017,2,Alex,2Gurleys1Kupp,117.75,2,0-1-0,Win,1-1-0,Mike,Wall or Nothin,87.68,8,0-1-0,0-2-0
+2017,2,Aaron,How do I even have 1 win,94.62,5,0-1-0,Loss,0-2-0,Rob,Buildin 'Merica,125.01,1,0-1-0,1-1-0
+2017,2,Mike,Mr Pig Skinner,87.23,10,1-0-0,Win,2-0-0,Colin,Im a scientist,54.7,12,0-1-0,0-2-0
+2017,2,Brian,DaHazzelhoffs,87.42,9,1-0-0,Loss,1-1-0,Sam,He Wore the Brown Pants,90.86,6,1-0-0,2-0-0
+2017,2,AJ,Sir Schlongdongler,106.72,3,0-1-0,Win,1-1-0,Kameron,Drunken Monkeys,98.22,4,1-0-0,1-1-0
+2017,2,Matthew,Turf Muncher,73.5,11,1-0-0,Loss,1-1-0,dan,DR Philthy,88.86,7,1-0-0,2-0-0
+2017,2,Mike,Wall or Nothin,87.68,8,0-1-0,Loss,0-2-0,Alex,2Gurleys1Kupp,117.75,2,0-1-0,1-1-0
+2017,2,Rob,Buildin 'Merica,125.01,1,0-1-0,Win,1-1-0,Aaron,How do I even have 1 win,94.62,5,0-1-0,0-2-0
+2017,2,Colin,Im a scientist,54.7,12,0-1-0,Loss,0-2-0,Mike,Mr Pig Skinner,87.23,10,1-0-0,2-0-0
+2017,2,Sam,He Wore the Brown Pants,90.86,6,1-0-0,Win,2-0-0,Brian,DaHazzelhoffs,87.42,9,1-0-0,1-1-0
+2017,3,AJ,Sir Schlongdongler,90.72,6,1-1-0,Win,2-1-0,Matthew,Turf Muncher,72.12,12,1-1-0,1-2-0
+2017,3,Mike,Wall or Nothin,84.96,9,0-2-0,Loss,0-3-0,Kameron,Drunken Monkeys,117.68,2,1-1-0,2-1-0
+2017,3,Rob,Buildin 'Merica,95.6,5,1-1-0,Win,2-1-0,dan,DR Philthy,85.4,8,2-0-0,2-1-0
+2017,3,Colin,Im a scientist,81.43,10,0-2-0,Loss,0-3-0,Alex,2Gurleys1Kupp,142.02,1,1-1-0,2-1-0
+2017,3,Sam,He Wore the Brown Pants,99.02,4,2-0-0,Loss,2-1-0,Aaron,How do I even have 1 win,111.92,3,0-2-0,1-2-0
+2017,3,Brian,DaHazzelhoffs,74.82,11,1-1-0,Loss,1-2-0,Mike,Mr Pig Skinner,90.17,7,2-0-0,3-0-0
+2017,3,Matthew,Turf Muncher,72.12,12,1-1-0,Loss,1-2-0,AJ,Sir Schlongdongler,90.72,6,1-1-0,2-1-0
+2017,3,Kameron,Drunken Monkeys,117.68,2,1-1-0,Win,2-1-0,Mike,Wall or Nothin,84.96,9,0-2-0,0-3-0
+2017,3,dan,DR Philthy,85.4,8,2-0-0,Loss,2-1-0,Rob,Buildin 'Merica,95.6,5,1-1-0,2-1-0
+2017,3,Alex,2Gurleys1Kupp,142.02,1,1-1-0,Win,2-1-0,Colin,Im a scientist,81.43,10,0-2-0,0-3-0
+2017,3,Aaron,How do I even have 1 win,111.92,3,0-2-0,Win,1-2-0,Sam,He Wore the Brown Pants,99.02,4,2-0-0,2-1-0
+2017,3,Mike,Mr Pig Skinner,90.17,7,2-0-0,Win,3-0-0,Brian,DaHazzelhoffs,74.82,11,1-1-0,1-2-0
+2017,4,Mike,Wall or Nothin,63.28,12,0-3-0,Loss,0-4-0,AJ,Sir Schlongdongler,101.35,6,2-1-0,3-1-0
+2017,4,Matthew,Turf Muncher,84.15,10,1-2-0,Loss,1-3-0,Rob,Buildin 'Merica,117.52,3,2-1-0,3-1-0
+2017,4,Kameron,Drunken Monkeys,111.74,4,2-1-0,Win,3-1-0,Colin,Im a scientist,101.48,5,0-3-0,0-4-0
+2017,4,dan,DR Philthy,133.94,1,2-1-0,Win,3-1-0,Sam,He Wore the Brown Pants,124.28,2,2-1-0,2-2-0
+2017,4,Alex,2Gurleys1Kupp,85.18,9,2-1-0,Loss,2-2-0,Brian,DaHazzelhoffs,87.36,8,1-2-0,2-2-0
+2017,4,Aaron,How do I even have 1 win,76.4,11,1-2-0,Loss,1-3-0,Mike,Mr Pig Skinner,91.44,7,3-0-0,4-0-0
+2017,4,AJ,Sir Schlongdongler,101.35,6,2-1-0,Win,3-1-0,Mike,Wall or Nothin,63.28,12,0-3-0,0-4-0
+2017,4,Rob,Buildin 'Merica,117.52,3,2-1-0,Win,3-1-0,Matthew,Turf Muncher,84.15,10,1-2-0,1-3-0
+2017,4,Colin,Im a scientist,101.48,5,0-3-0,Loss,0-4-0,Kameron,Drunken Monkeys,111.74,4,2-1-0,3-1-0
+2017,4,Sam,He Wore the Brown Pants,124.28,2,2-1-0,Loss,2-2-0,dan,DR Philthy,133.94,1,2-1-0,3-1-0
+2017,4,Brian,DaHazzelhoffs,87.36,8,1-2-0,Win,2-2-0,Alex,2Gurleys1Kupp,85.18,9,2-1-0,2-2-0
+2017,4,Mike,Mr Pig Skinner,91.44,7,3-0-0,Win,4-0-0,Aaron,How do I even have 1 win,76.4,11,1-2-0,1-3-0
+2017,5,AJ,Sir Schlongdongler,91.84,8,3-1-0,Win,4-1-0,Rob,Buildin 'Merica,89.46,9,3-1-0,3-2-0
+2017,5,Colin,Im a scientist,72.34,11,0-4-0,Loss,0-5-0,Mike,Wall or Nothin,115.86,2,0-4-0,1-4-0
+2017,5,Sam,He Wore the Brown Pants,116.36,1,2-2-0,Win,3-2-0,Matthew,Turf Muncher,93.11,7,1-3-0,1-4-0
+2017,5,Brian,DaHazzelhoffs,102.77,3,2-2-0,Win,3-2-0,Kameron,Drunken Monkeys,94.9,4,3-1-0,3-2-0
+2017,5,Mike,Mr Pig Skinner,94.24,5,4-0-0,Win,5-0-0,dan,DR Philthy,93.38,6,3-1-0,3-2-0
+2017,5,Aaron,How do I even have 1 win,70.25,12,1-3-0,Loss,1-4-0,Alex,2Gurleys1Kupp,83.55,10,2-2-0,3-2-0
+2017,5,Rob,Buildin 'Merica,89.46,9,3-1-0,Loss,3-2-0,AJ,Sir Schlongdongler,91.84,8,3-1-0,4-1-0
+2017,5,Mike,Wall or Nothin,115.86,2,0-4-0,Win,1-4-0,Colin,Im a scientist,72.34,11,0-4-0,0-5-0
+2017,5,Matthew,Turf Muncher,93.11,7,1-3-0,Loss,1-4-0,Sam,He Wore the Brown Pants,116.36,1,2-2-0,3-2-0
+2017,5,Kameron,Drunken Monkeys,94.9,4,3-1-0,Loss,3-2-0,Brian,DaHazzelhoffs,102.77,3,2-2-0,3-2-0
+2017,5,dan,DR Philthy,93.38,6,3-1-0,Loss,3-2-0,Mike,Mr Pig Skinner,94.24,5,4-0-0,5-0-0
+2017,5,Alex,2Gurleys1Kupp,83.55,10,2-2-0,Win,3-2-0,Aaron,How do I even have 1 win,70.25,12,1-3-0,1-4-0
+2017,6,Colin,Im a scientist,88.58,7,0-5-0,Win,1-5-0,AJ,Sir Schlongdongler,86.59,8,4-1-0,4-2-0
+2017,6,Rob,Buildin 'Merica,111.74,3,3-2-0,Loss,3-3-0,Sam,He Wore the Brown Pants,130.24,2,3-2-0,4-2-0
+2017,6,Mike,Wall or Nothin,106.31,4,1-4-0,Win,2-4-0,Brian,DaHazzelhoffs,54.72,12,3-2-0,3-3-0
+2017,6,Matthew,Turf Muncher,105.23,5,1-4-0,Win,2-4-0,Mike,Mr Pig Skinner,85.38,9,5-0-0,5-1-0
+2017,6,Kameron,Drunken Monkeys,149.86,1,3-2-0,Win,4-2-0,Aaron,How do I even have 1 win,55.39,11,1-4-0,1-5-0
+2017,6,dan,DR Philthy,103.5,6,3-2-0,Win,4-2-0,Alex,2Gurleys1Kupp,77.08,10,3-2-0,3-3-0
+2017,6,AJ,Sir Schlongdongler,86.59,8,4-1-0,Loss,4-2-0,Colin,Im a scientist,88.58,7,0-5-0,1-5-0
+2017,6,Sam,He Wore the Brown Pants,130.24,2,3-2-0,Win,4-2-0,Rob,Buildin 'Merica,111.74,3,3-2-0,3-3-0
+2017,6,Brian,DaHazzelhoffs,54.72,12,3-2-0,Loss,3-3-0,Mike,Wall or Nothin,106.31,4,1-4-0,2-4-0
+2017,6,Mike,Mr Pig Skinner,85.38,9,5-0-0,Loss,5-1-0,Matthew,Turf Muncher,105.23,5,1-4-0,2-4-0
+2017,6,Aaron,How do I even have 1 win,55.39,11,1-4-0,Loss,1-5-0,Kameron,Drunken Monkeys,149.86,1,3-2-0,4-2-0
+2017,6,Alex,2Gurleys1Kupp,77.08,10,3-2-0,Loss,3-3-0,dan,DR Philthy,103.5,6,3-2-0,4-2-0
+2017,7,AJ,Sir Schlongdongler,101.06,4,4-2-0,Win,5-2-0,Sam,He Wore the Brown Pants,90.49,7,4-2-0,4-3-0
+2017,7,Brian,DaHazzelhoffs,56.7,12,3-3-0,Loss,3-4-0,Colin,Im a scientist,129.82,1,1-5-0,2-5-0
+2017,7,Mike,Mr Pig Skinner,104.26,3,5-1-0,Win,6-1-0,Rob,Buildin 'Merica,85.84,9,3-3-0,3-4-0
+2017,7,Aaron,How do I even have 1 win,92.19,6,1-5-0,Win,2-5-0,Mike,Wall or Nothin,75.65,10,2-4-0,2-5-0
+2017,7,Alex,2Gurleys1Kupp,94.86,5,3-3-0,Win,4-3-0,Matthew,Turf Muncher,67.71,11,2-4-0,2-5-0
+2017,7,dan,DR Philthy,107.69,2,4-2-0,Win,5-2-0,Kameron,Drunken Monkeys,87.14,8,4-2-0,4-3-0
+2017,7,Sam,He Wore the Brown Pants,90.49,7,4-2-0,Loss,4-3-0,AJ,Sir Schlongdongler,101.06,4,4-2-0,5-2-0
+2017,7,Colin,Im a scientist,129.82,1,1-5-0,Win,2-5-0,Brian,DaHazzelhoffs,56.7,12,3-3-0,3-4-0
+2017,7,Rob,Buildin 'Merica,85.84,9,3-3-0,Loss,3-4-0,Mike,Mr Pig Skinner,104.26,3,5-1-0,6-1-0
+2017,7,Mike,Wall or Nothin,75.65,10,2-4-0,Loss,2-5-0,Aaron,How do I even have 1 win,92.19,6,1-5-0,2-5-0
+2017,7,Matthew,Turf Muncher,67.71,11,2-4-0,Loss,2-5-0,Alex,2Gurleys1Kupp,94.86,5,3-3-0,4-3-0
+2017,7,Kameron,Drunken Monkeys,87.14,8,4-2-0,Loss,4-3-0,dan,DR Philthy,107.69,2,4-2-0,5-2-0
+2017,8,Brian,DaHazzelhoffs,92.72,9,3-4-0,Win,4-4-0,AJ,Sir Schlongdongler,79.52,12,5-2-0,5-3-0
+2017,8,Sam,He Wore the Brown Pants,83.9,10,4-3-0,Loss,4-4-0,Mike,Mr Pig Skinner,113.95,4,6-1-0,7-1-0
+2017,8,Colin,Im a scientist,111.7,5,2-5-0,Win,3-5-0,Aaron,How do I even have 1 win,104.18,7,2-5-0,2-6-0
+2017,8,Rob,Buildin 'Merica,82.98,11,3-4-0,Loss,3-5-0,Alex,2Gurleys1Kupp,105.29,6,4-3-0,5-3-0
+2017,8,Mike,Wall or Nothin,118.04,3,2-5-0,Loss,2-6-0,dan,DR Philthy,144.89,1,5-2-0,6-2-0
+2017,8,Matthew,Turf Muncher,121.88,2,2-5-0,Win,3-5-0,Kameron,Drunken Monkeys,95.96,8,4-3-0,4-4-0
+2017,8,AJ,Sir Schlongdongler,79.52,12,5-2-0,Loss,5-3-0,Brian,DaHazzelhoffs,92.72,9,3-4-0,4-4-0
+2017,8,Mike,Mr Pig Skinner,113.95,4,6-1-0,Win,7-1-0,Sam,He Wore the Brown Pants,83.9,10,4-3-0,4-4-0
+2017,8,Aaron,How do I even have 1 win,104.18,7,2-5-0,Loss,2-6-0,Colin,Im a scientist,111.7,5,2-5-0,3-5-0
+2017,8,Alex,2Gurleys1Kupp,105.29,6,4-3-0,Win,5-3-0,Rob,Buildin 'Merica,82.98,11,3-4-0,3-5-0
+2017,8,dan,DR Philthy,144.89,1,5-2-0,Win,6-2-0,Mike,Wall or Nothin,118.04,3,2-5-0,2-6-0
+2017,8,Kameron,Drunken Monkeys,95.96,8,4-3-0,Loss,4-4-0,Matthew,Turf Muncher,121.88,2,2-5-0,3-5-0
+2017,9,AJ,Sir Schlongdongler,94.06,5,5-3-0,Loss,5-4-0,Mike,Mr Pig Skinner,107.62,3,7-1-0,8-1-0
+2017,9,Aaron,How do I even have 1 win,106.21,4,2-6-0,Win,3-6-0,Brian,DaHazzelhoffs,71.24,10,4-4-0,4-5-0
+2017,9,Alex,2Gurleys1Kupp,76.54,9,5-3-0,Win,6-3-0,Sam,He Wore the Brown Pants,70.58,11,4-4-0,4-5-0
+2017,9,dan,DR Philthy,88.45,8,6-2-0,Loss,6-3-0,Colin,Im a scientist,110.8,2,3-5-0,4-5-0
+2017,9,Kameron,Drunken Monkeys,69.98,12,4-4-0,Loss,4-5-0,Rob,Buildin 'Merica,90.72,7,3-5-0,4-5-0
+2017,9,Matthew,Turf Muncher,93.99,6,3-5-0,Loss,3-6-0,Mike,Wall or Nothin,123.76,1,2-6-0,3-6-0
+2017,9,Mike,Mr Pig Skinner,107.62,3,7-1-0,Win,8-1-0,AJ,Sir Schlongdongler,94.06,5,5-3-0,5-4-0
+2017,9,Brian,DaHazzelhoffs,71.24,10,4-4-0,Loss,4-5-0,Aaron,How do I even have 1 win,106.21,4,2-6-0,3-6-0
+2017,9,Sam,He Wore the Brown Pants,70.58,11,4-4-0,Loss,4-5-0,Alex,2Gurleys1Kupp,76.54,9,5-3-0,6-3-0
+2017,9,Colin,Im a scientist,110.8,2,3-5-0,Win,4-5-0,dan,DR Philthy,88.45,8,6-2-0,6-3-0
+2017,9,Rob,Buildin 'Merica,90.72,7,3-5-0,Win,4-5-0,Kameron,Drunken Monkeys,69.98,12,4-4-0,4-5-0
+2017,9,Mike,Wall or Nothin,123.76,1,2-6-0,Win,3-6-0,Matthew,Turf Muncher,93.99,6,3-5-0,3-6-0
+2017,10,Aaron,How do I even have 1 win,82.22,8,3-6-0,Win,4-6-0,AJ,Sir Schlongdongler,66.61,11,5-4-0,5-5-0
+2017,10,Mike,Mr Pig Skinner,109.06,2,8-1-0,Win,9-1-0,Alex,2Gurleys1Kupp,82.08,9,6-3-0,6-4-0
+2017,10,Brian,DaHazzelhoffs,92.4,5,4-5-0,Loss,4-6-0,dan,DR Philthy,96.05,3,6-3-0,7-3-0
+2017,10,Sam,He Wore the Brown Pants,92.83,4,4-5-0,Loss,4-6-0,Kameron,Drunken Monkeys,125.76,1,4-5-0,5-5-0
+2017,10,Colin,Im a scientist,66.44,12,4-5-0,Loss,4-6-0,Matthew,Turf Muncher,89.65,6,3-6-0,4-6-0
+2017,10,Rob,Buildin 'Merica,82.66,7,4-5-0,Win,5-5-0,Mike,Wall or Nothin,82.03,10,3-6-0,3-7-0
+2017,10,AJ,Sir Schlongdongler,66.61,11,5-4-0,Loss,5-5-0,Aaron,How do I even have 1 win,82.22,8,3-6-0,4-6-0
+2017,10,Alex,2Gurleys1Kupp,82.08,9,6-3-0,Loss,6-4-0,Mike,Mr Pig Skinner,109.06,2,8-1-0,9-1-0
+2017,10,dan,DR Philthy,96.05,3,6-3-0,Win,7-3-0,Brian,DaHazzelhoffs,92.4,5,4-5-0,4-6-0
+2017,10,Kameron,Drunken Monkeys,125.76,1,4-5-0,Win,5-5-0,Sam,He Wore the Brown Pants,92.83,4,4-5-0,4-6-0
+2017,10,Matthew,Turf Muncher,89.65,6,3-6-0,Win,4-6-0,Colin,Im a scientist,66.44,12,4-5-0,4-6-0
+2017,10,Mike,Wall or Nothin,82.03,10,3-6-0,Loss,3-7-0,Rob,Buildin 'Merica,82.66,7,4-5-0,5-5-0
+2017,11,AJ,Sir Schlongdongler,109.93,6,5-5-0,Loss,5-6-0,Alex,2Gurleys1Kupp,114.6,4,6-4-0,7-4-0
+2017,11,dan,DR Philthy,145.58,2,7-3-0,Loss,7-4-0,Aaron,How do I even have 1 win,147.45,1,4-6-0,5-6-0
+2017,11,Kameron,Drunken Monkeys,114.28,5,5-5-0,Win,6-5-0,Mike,Mr Pig Skinner,79.74,10,9-1-0,9-2-0
+2017,11,Matthew,Turf Muncher,73.1,11,4-6-0,Loss,4-7-0,Brian,DaHazzelhoffs,105.26,7,4-6-0,5-6-0
+2017,11,Mike,Wall or Nothin,103.92,8,3-7-0,Loss,3-8-0,Sam,He Wore the Brown Pants,126.03,3,4-6-0,5-6-0
+2017,11,Rob,Buildin 'Merica,68.4,12,5-5-0,Loss,5-6-0,Colin,Im a scientist,103.06,9,4-6-0,5-6-0
+2017,11,Alex,2Gurleys1Kupp,114.6,4,6-4-0,Win,7-4-0,AJ,Sir Schlongdongler,109.93,6,5-5-0,5-6-0
+2017,11,Aaron,How do I even have 1 win,147.45,1,4-6-0,Win,5-6-0,dan,DR Philthy,145.58,2,7-3-0,7-4-0
+2017,11,Mike,Mr Pig Skinner,79.74,10,9-1-0,Loss,9-2-0,Kameron,Drunken Monkeys,114.28,5,5-5-0,6-5-0
+2017,11,Brian,DaHazzelhoffs,105.26,7,4-6-0,Win,5-6-0,Matthew,Turf Muncher,73.1,11,4-6-0,4-7-0
+2017,11,Sam,He Wore the Brown Pants,126.03,3,4-6-0,Win,5-6-0,Mike,Wall or Nothin,103.92,8,3-7-0,3-8-0
+2017,11,Colin,Im a scientist,103.06,9,4-6-0,Win,5-6-0,Rob,Buildin 'Merica,68.4,12,5-5-0,5-6-0
+2017,12,dan,DR Philthy,95.58,7,7-4-0,Win,8-4-0,AJ,Sir Schlongdongler,65.39,12,5-6-0,5-7-0
+2017,12,Alex,2Gurleys1Kupp,104.38,6,7-4-0,Win,8-4-0,Kameron,Drunken Monkeys,68.62,10,6-5-0,6-6-0
+2017,12,Aaron,How do I even have 1 win,115.36,5,5-6-0,Win,6-6-0,Matthew,Turf Muncher,66.99,11,4-7-0,4-8-0
+2017,12,Mike,Mr Pig Skinner,76.86,9,9-2-0,Loss,9-3-0,Mike,Wall or Nothin,115.81,4,3-8-0,4-8-0
+2017,12,Brian,DaHazzelhoffs,131.13,2,5-6-0,Win,6-6-0,Rob,Buildin 'Merica,115.96,3,5-6-0,5-7-0
+2017,12,Sam,He Wore the Brown Pants,164.08,1,5-6-0,Win,6-6-0,Colin,Im a scientist,83.67,8,5-6-0,5-7-0
+2017,12,AJ,Sir Schlongdongler,65.39,12,5-6-0,Loss,5-7-0,dan,DR Philthy,95.58,7,7-4-0,8-4-0
+2017,12,Kameron,Drunken Monkeys,68.62,10,6-5-0,Loss,6-6-0,Alex,2Gurleys1Kupp,104.38,6,7-4-0,8-4-0
+2017,12,Matthew,Turf Muncher,66.99,11,4-7-0,Loss,4-8-0,Aaron,How do I even have 1 win,115.36,5,5-6-0,6-6-0
+2017,12,Mike,Wall or Nothin,115.81,4,3-8-0,Win,4-8-0,Mike,Mr Pig Skinner,76.86,9,9-2-0,9-3-0
+2017,12,Rob,Buildin 'Merica,115.96,3,5-6-0,Loss,5-7-0,Brian,DaHazzelhoffs,131.13,2,5-6-0,6-6-0
+2017,12,Colin,Im a scientist,83.67,8,5-6-0,Loss,5-7-0,Sam,He Wore the Brown Pants,164.08,1,5-6-0,6-6-0
+2017,13,AJ,Sir Schlongdongler,92.25,8,5-7-0,Win,6-7-0,Kameron,Drunken Monkeys,88.82,9,6-6-0,6-7-0
+2017,13,Matthew,Turf Muncher,52.97,12,4-8-0,Loss,4-9-0,dan,DR Philthy,93.76,7,8-4-0,9-4-0
+2017,13,Mike,Wall or Nothin,101.72,6,4-8-0,Loss,4-9-0,Alex,2Gurleys1Kupp,120.95,3,8-4-0,9-4-0
+2017,13,Rob,Buildin 'Merica,122.56,2,5-7-0,Win,6-7-0,Aaron,How do I even have 1 win,85.08,10,6-6-0,6-7-0
+2017,13,Colin,Im a scientist,61.0,11,5-7-0,Loss,5-8-0,Mike,Mr Pig Skinner,136.8,1,9-3-0,10-3-0
+2017,13,Sam,He Wore the Brown Pants,120.18,4,6-6-0,Win,7-6-0,Brian,DaHazzelhoffs,118.96,5,6-6-0,6-7-0
+2017,13,Kameron,Drunken Monkeys,88.82,9,6-6-0,Loss,6-7-0,AJ,Sir Schlongdongler,92.25,8,5-7-0,6-7-0
+2017,13,dan,DR Philthy,93.76,7,8-4-0,Win,9-4-0,Matthew,Turf Muncher,52.97,12,4-8-0,4-9-0
+2017,13,Alex,2Gurleys1Kupp,120.95,3,8-4-0,Win,9-4-0,Mike,Wall or Nothin,101.72,6,4-8-0,4-9-0
+2017,13,Aaron,How do I even have 1 win,85.08,10,6-6-0,Loss,6-7-0,Rob,Buildin 'Merica,122.56,2,5-7-0,6-7-0
+2017,13,Mike,Mr Pig Skinner,136.8,1,9-3-0,Win,10-3-0,Colin,Im a scientist,61.0,11,5-7-0,5-8-0
+2017,13,Brian,DaHazzelhoffs,118.96,5,6-6-0,Loss,6-7-0,Sam,He Wore the Brown Pants,120.18,4,6-6-0,7-6-0
+2017,14,Sam,He Wore the Brown Pants,76.8,7,7-6-0,Loss,7-6-0,Kameron,Drunken Monkeys,102.18,2,6-7-0,6-7-0
+2017,14,Brian,DaHazzelhoffs,137.94,1,6-7-0,Win,6-7-0,Matthew,Turf Muncher,80.0,6,4-9-0,4-9-0
+2017,14,Colin,Im a scientist,74.7,8,5-8-0,Loss,5-8-0,Mike,Wall or Nothin,91.74,5,4-9-0,4-9-0
+2017,14,Alex,2Gurleys1Kupp,96.32,4,9-4-0,Loss,9-4-0,Rob,Buildin 'Merica,100.52,3,6-7-0,6-7-0
+2017,14,Kameron,Drunken Monkeys,102.18,2,6-7-0,Win,6-7-0,Sam,He Wore the Brown Pants,76.8,7,7-6-0,7-6-0
+2017,14,Matthew,Turf Muncher,80.0,6,4-9-0,Loss,4-9-0,Brian,DaHazzelhoffs,137.94,1,6-7-0,6-7-0
+2017,14,Mike,Wall or Nothin,91.74,5,4-9-0,Win,4-9-0,Colin,Im a scientist,74.7,8,5-8-0,5-8-0
+2017,14,Rob,Buildin 'Merica,100.52,3,6-7-0,Win,6-7-0,Alex,2Gurleys1Kupp,96.32,4,9-4-0,9-4-0
+2017,15,Brian,DaHazzelhoffs,67.1,7,6-7-0,Loss,6-7-0,AJ,Sir Schlongdongler,89.25,6,6-7-0,6-7-0
+2017,15,Rob,Buildin 'Merica,109.54,3,6-7-0,Win,6-7-0,dan,DR Philthy,92.58,4,9-4-0,9-4-0
+2017,15,Mike,Mr Pig Skinner,127.8,2,10-3-0,Loss,10-3-0,Kameron,Drunken Monkeys,167.58,1,6-7-0,6-7-0
+2017,15,Aaron,How do I even have 1 win,56.78,8,6-7-0,Loss,6-7-0,Mike,Wall or Nothin,89.73,5,4-9-0,4-9-0
+2017,15,AJ,Sir Schlongdongler,89.25,6,6-7-0,Win,6-7-0,Brian,DaHazzelhoffs,67.1,7,6-7-0,6-7-0
+2017,15,dan,DR Philthy,92.58,4,9-4-0,Loss,9-4-0,Rob,Buildin 'Merica,109.54,3,6-7-0,6-7-0
+2017,15,Kameron,Drunken Monkeys,167.58,1,6-7-0,Win,6-7-0,Mike,Mr Pig Skinner,127.8,2,10-3-0,10-3-0
+2017,15,Mike,Wall or Nothin,89.73,5,4-9-0,Win,4-9-0,Aaron,How do I even have 1 win,56.78,8,6-7-0,6-7-0
+2017,16,Mike,Wall or Nothin,73.03,9,4-9-0,Win,4-9-0,AJ,Sir Schlongdongler,65.94,10,6-7-0,6-7-0
+2017,16,Mike,Mr Pig Skinner,144.88,1,10-3-0,Win,10-3-0,dan,DR Philthy,121.26,2,9-4-0,9-4-0
+2017,16,Rob,Buildin 'Merica,105.46,4,6-7-0,Loss,6-7-0,Kameron,Drunken Monkeys,117.0,3,6-7-0,6-7-0
+2017,16,Colin,Im a scientist,53.44,12,5-8-0,Loss,5-8-0,Matthew,Turf Muncher,58.9,11,4-9-0,4-9-0
+2017,16,Alex,2Gurleys1Kupp,79.18,7,9-4-0,Loss,9-4-0,Sam,He Wore the Brown Pants,100.36,6,7-6-0,7-6-0
+2017,16,Aaron,How do I even have 1 win,100.69,5,6-7-0,Win,6-7-0,Brian,DaHazzelhoffs,74.24,8,6-7-0,6-7-0
+2017,16,AJ,Sir Schlongdongler,65.94,10,6-7-0,Loss,6-7-0,Mike,Wall or Nothin,73.03,9,4-9-0,4-9-0
+2017,16,dan,DR Philthy,121.26,2,9-4-0,Loss,9-4-0,Mike,Mr Pig Skinner,144.88,1,10-3-0,10-3-0
+2017,16,Kameron,Drunken Monkeys,117.0,3,6-7-0,Win,6-7-0,Rob,Buildin 'Merica,105.46,4,6-7-0,6-7-0
+2017,16,Matthew,Turf Muncher,58.9,11,4-9-0,Win,4-9-0,Colin,Im a scientist,53.44,12,5-8-0,5-8-0
+2017,16,Sam,He Wore the Brown Pants,100.36,6,7-6-0,Win,7-6-0,Alex,2Gurleys1Kupp,79.18,7,9-4-0,9-4-0
+2017,16,Brian,DaHazzelhoffs,74.24,8,6-7-0,Loss,6-7-0,Aaron,How do I even have 1 win,100.69,5,6-7-0,6-7-0
+2018,1,AJ,Saquon Deez Nuts,109.76,4,0-0-0,Win,1-0-0,dan,DR Philthy,85.37,11,0-0-0,0-1-0
+2018,1,Kameron,Drunken Monkeys,122.66,2,0-0-0,Win,1-0-0,Alex,Mariota Kart,104.54,6,0-0-0,0-1-0
+2018,1,Matthew,Turf Muncher,87.72,9,0-0-0,Loss,0-1-0,Aaron,No Curses Only Blessings,90.16,8,0-0-0,1-0-0
+2018,1,Mike,I Shit In Your Mouth,105.34,5,0-0-0,Win,1-0-0,Mike,Mr Pig Skinner,80.7,12,0-0-0,0-1-0
+2018,1,Rob,Shakin Bacon,115.64,3,0-0-0,Win,1-0-0,Brian,DaHazzelhoffs,103.18,7,0-0-0,0-1-0
+2018,1,Colin,Im a scientist,143.45,1,0-0-0,Win,1-0-0,Sam,Downtown Brown,86.74,10,0-0-0,0-1-0
+2018,1,dan,DR Philthy,85.37,11,0-0-0,Loss,0-1-0,AJ,Saquon Deez Nuts,109.76,4,0-0-0,1-0-0
+2018,1,Alex,Mariota Kart,104.54,6,0-0-0,Loss,0-1-0,Kameron,Drunken Monkeys,122.66,2,0-0-0,1-0-0
+2018,1,Aaron,No Curses Only Blessings,90.16,8,0-0-0,Win,1-0-0,Matthew,Turf Muncher,87.72,9,0-0-0,0-1-0
+2018,1,Mike,Mr Pig Skinner,80.7,12,0-0-0,Loss,0-1-0,Mike,I Shit In Your Mouth,105.34,5,0-0-0,1-0-0
+2018,1,Brian,DaHazzelhoffs,103.18,7,0-0-0,Loss,0-1-0,Rob,Shakin Bacon,115.64,3,0-0-0,1-0-0
+2018,1,Sam,Downtown Brown,86.74,10,0-0-0,Loss,0-1-0,Colin,Im a scientist,143.45,1,0-0-0,1-0-0
+2018,2,Kameron,Drunken Monkeys,97.62,7,1-0-0,Loss,1-1-0,AJ,Saquon Deez Nuts,131.3,1,1-0-0,2-0-0
+2018,2,dan,DR Philthy,55.67,12,0-1-0,Loss,0-2-0,Matthew,Turf Muncher,94.66,8,0-1-0,1-1-0
+2018,2,Alex,Mariota Kart,120.74,3,0-1-0,Win,1-1-0,Mike,I Shit In Your Mouth,108.5,4,1-0-0,1-1-0
+2018,2,Aaron,No Curses Only Blessings,77.36,11,1-0-0,Loss,1-1-0,Rob,Shakin Bacon,105.0,5,1-0-0,2-0-0
+2018,2,Mike,Mr Pig Skinner,127.88,2,0-1-0,Win,1-1-0,Colin,Im a scientist,79.04,10,1-0-0,1-1-0
+2018,2,Brian,DaHazzelhoffs,92.86,9,0-1-0,Loss,0-2-0,Sam,Downtown Brown,99.75,6,0-1-0,1-1-0
+2018,2,AJ,Saquon Deez Nuts,131.3,1,1-0-0,Win,2-0-0,Kameron,Drunken Monkeys,97.62,7,1-0-0,1-1-0
+2018,2,Matthew,Turf Muncher,94.66,8,0-1-0,Win,1-1-0,dan,DR Philthy,55.67,12,0-1-0,0-2-0
+2018,2,Mike,I Shit In Your Mouth,108.5,4,1-0-0,Loss,1-1-0,Alex,Mariota Kart,120.74,3,0-1-0,1-1-0
+2018,2,Rob,Shakin Bacon,105.0,5,1-0-0,Win,2-0-0,Aaron,No Curses Only Blessings,77.36,11,1-0-0,1-1-0
+2018,2,Colin,Im a scientist,79.04,10,1-0-0,Loss,1-1-0,Mike,Mr Pig Skinner,127.88,2,0-1-0,1-1-0
+2018,2,Sam,Downtown Brown,99.75,6,0-1-0,Win,1-1-0,Brian,DaHazzelhoffs,92.86,9,0-1-0,0-2-0
+2018,3,AJ,Saquon Deez Nuts,111.41,4,2-0-0,Loss,2-1-0,Matthew,Turf Muncher,122.43,1,1-1-0,2-1-0
+2018,3,Mike,I Shit In Your Mouth,97.1,8,1-1-0,Loss,1-2-0,Kameron,Drunken Monkeys,115.64,2,1-1-0,2-1-0
+2018,3,Rob,Shakin Bacon,106.8,6,2-0-0,Win,3-0-0,dan,DR Philthy,59.77,12,0-2-0,0-3-0
+2018,3,Colin,Im a scientist,107.61,5,1-1-0,Loss,1-2-0,Alex,Mariota Kart,115.46,3,1-1-0,2-1-0
+2018,3,Sam,Downtown Brown,71.44,11,1-1-0,Loss,1-2-0,Aaron,No Curses Only Blessings,98.76,7,1-1-0,2-1-0
+2018,3,Brian,DaHazzelhoffs,95.49,9,0-2-0,Win,1-2-0,Mike,Mr Pig Skinner,90.62,10,1-1-0,1-2-0
+2018,3,Matthew,Turf Muncher,122.43,1,1-1-0,Win,2-1-0,AJ,Saquon Deez Nuts,111.41,4,2-0-0,2-1-0
+2018,3,Kameron,Drunken Monkeys,115.64,2,1-1-0,Win,2-1-0,Mike,I Shit In Your Mouth,97.1,8,1-1-0,1-2-0
+2018,3,dan,DR Philthy,59.77,12,0-2-0,Loss,0-3-0,Rob,Shakin Bacon,106.8,6,2-0-0,3-0-0
+2018,3,Alex,Mariota Kart,115.46,3,1-1-0,Win,2-1-0,Colin,Im a scientist,107.61,5,1-1-0,1-2-0
+2018,3,Aaron,No Curses Only Blessings,98.76,7,1-1-0,Win,2-1-0,Sam,Downtown Brown,71.44,11,1-1-0,1-2-0
+2018,3,Mike,Mr Pig Skinner,90.62,10,1-1-0,Loss,1-2-0,Brian,DaHazzelhoffs,95.49,9,0-2-0,1-2-0
+2018,4,Mike,I Shit In Your Mouth,120.0,5,1-2-0,Loss,1-3-0,AJ,Saquon Deez Nuts,159.48,1,2-1-0,3-1-0
+2018,4,Matthew,Turf Muncher,113.2,8,2-1-0,Loss,2-2-0,Rob,Shakin Bacon,132.93,3,3-0-0,4-0-0
+2018,4,Kameron,Drunken Monkeys,82.91,10,2-1-0,Win,3-1-0,Colin,Im a scientist,77.38,12,1-2-0,1-3-0
+2018,4,dan,DR Philthy,119.32,6,0-3-0,Win,1-3-0,Sam,Downtown Brown,80.48,11,1-2-0,1-3-0
+2018,4,Alex,Mariota Kart,128.36,4,2-1-0,Win,3-1-0,Brian,DaHazzelhoffs,115.06,7,1-2-0,1-3-0
+2018,4,Aaron,No Curses Only Blessings,107.86,9,2-1-0,Loss,2-2-0,Mike,Mr Pig Skinner,145.76,2,1-2-0,2-2-0
+2018,4,AJ,Saquon Deez Nuts,159.48,1,2-1-0,Win,3-1-0,Mike,I Shit In Your Mouth,120.0,5,1-2-0,1-3-0
+2018,4,Rob,Shakin Bacon,132.93,3,3-0-0,Win,4-0-0,Matthew,Turf Muncher,113.2,8,2-1-0,2-2-0
+2018,4,Colin,Im a scientist,77.38,12,1-2-0,Loss,1-3-0,Kameron,Drunken Monkeys,82.91,10,2-1-0,3-1-0
+2018,4,Sam,Downtown Brown,80.48,11,1-2-0,Loss,1-3-0,dan,DR Philthy,119.32,6,0-3-0,1-3-0
+2018,4,Brian,DaHazzelhoffs,115.06,7,1-2-0,Loss,1-3-0,Alex,Mariota Kart,128.36,4,2-1-0,3-1-0
+2018,4,Mike,Mr Pig Skinner,145.76,2,1-2-0,Win,2-2-0,Aaron,No Curses Only Blessings,107.86,9,2-1-0,2-2-0
+2018,5,AJ,Saquon Deez Nuts,78.27,11,3-1-0,Loss,3-2-0,Rob,Shakin Bacon,85.1,10,4-0-0,5-0-0
+2018,5,Colin,Im a scientist,128.15,4,1-3-0,Loss,1-4-0,Mike,I Shit In Your Mouth,151.83,1,1-3-0,2-3-0
+2018,5,Sam,Downtown Brown,108.35,7,1-3-0,Loss,1-4-0,Matthew,Turf Muncher,112.24,5,2-2-0,3-2-0
+2018,5,Brian,DaHazzelhoffs,73.04,12,1-3-0,Loss,1-4-0,Kameron,Drunken Monkeys,134.12,3,3-1-0,4-1-0
+2018,5,Mike,Mr Pig Skinner,137.8,2,2-2-0,Win,3-2-0,dan,DR Philthy,110.68,6,1-3-0,1-4-0
+2018,5,Aaron,No Curses Only Blessings,98.11,8,2-2-0,Win,3-2-0,Alex,Mariota Kart,90.94,9,3-1-0,3-2-0
+2018,5,Rob,Shakin Bacon,85.1,10,4-0-0,Win,5-0-0,AJ,Saquon Deez Nuts,78.27,11,3-1-0,3-2-0
+2018,5,Mike,I Shit In Your Mouth,151.83,1,1-3-0,Win,2-3-0,Colin,Im a scientist,128.15,4,1-3-0,1-4-0
+2018,5,Matthew,Turf Muncher,112.24,5,2-2-0,Win,3-2-0,Sam,Downtown Brown,108.35,7,1-3-0,1-4-0
+2018,5,Kameron,Drunken Monkeys,134.12,3,3-1-0,Win,4-1-0,Brian,DaHazzelhoffs,73.04,12,1-3-0,1-4-0
+2018,5,dan,DR Philthy,110.68,6,1-3-0,Loss,1-4-0,Mike,Mr Pig Skinner,137.8,2,2-2-0,3-2-0
+2018,5,Alex,Mariota Kart,90.94,9,3-1-0,Loss,3-2-0,Aaron,No Curses Only Blessings,98.11,8,2-2-0,3-2-0
+2018,6,Colin,Im a scientist,151.48,1,1-4-0,Win,2-4-0,AJ,Saquon Deez Nuts,95.62,11,3-2-0,3-3-0
+2018,6,Rob,Shakin Bacon,138.7,2,5-0-0,Win,6-0-0,Sam,Downtown Brown,114.16,5,1-4-0,1-5-0
+2018,6,Mike,I Shit In Your Mouth,96.18,10,2-3-0,Loss,2-4-0,Brian,DaHazzelhoffs,125.3,3,1-4-0,2-4-0
+2018,6,Matthew,Turf Muncher,107.34,6,3-2-0,Win,4-2-0,Mike,Mr Pig Skinner,100.76,9,3-2-0,3-3-0
+2018,6,Kameron,Drunken Monkeys,114.66,4,4-1-0,Win,5-1-0,Aaron,No Curses Only Blessings,94.14,12,3-2-0,3-3-0
+2018,6,dan,DR Philthy,104.5,7,1-4-0,Win,2-4-0,Alex,Mariota Kart,104.28,8,3-2-0,3-3-0
+2018,6,AJ,Saquon Deez Nuts,95.62,11,3-2-0,Loss,3-3-0,Colin,Im a scientist,151.48,1,1-4-0,2-4-0
+2018,6,Sam,Downtown Brown,114.16,5,1-4-0,Loss,1-5-0,Rob,Shakin Bacon,138.7,2,5-0-0,6-0-0
+2018,6,Brian,DaHazzelhoffs,125.3,3,1-4-0,Win,2-4-0,Mike,I Shit In Your Mouth,96.18,10,2-3-0,2-4-0
+2018,6,Mike,Mr Pig Skinner,100.76,9,3-2-0,Loss,3-3-0,Matthew,Turf Muncher,107.34,6,3-2-0,4-2-0
+2018,6,Aaron,No Curses Only Blessings,94.14,12,3-2-0,Loss,3-3-0,Kameron,Drunken Monkeys,114.66,4,4-1-0,5-1-0
+2018,6,Alex,Mariota Kart,104.28,8,3-2-0,Loss,3-3-0,dan,DR Philthy,104.5,7,1-4-0,2-4-0
+2018,7,AJ,Saquon Deez Nuts,104.64,6,3-3-0,Win,4-3-0,Sam,Downtown Brown,62.94,12,1-5-0,1-6-0
+2018,7,Brian,DaHazzelhoffs,128.48,2,2-4-0,Win,3-4-0,Colin,Im a scientist,107.92,4,2-4-0,2-5-0
+2018,7,Mike,Mr Pig Skinner,102.7,7,3-3-0,Win,4-3-0,Rob,Shakin Bacon,64.66,11,6-0-0,6-1-0
+2018,7,Aaron,No Curses Only Blessings,133.26,1,3-3-0,Win,4-3-0,Mike,I Shit In Your Mouth,106.16,5,2-4-0,2-5-0
+2018,7,Alex,Mariota Kart,125.22,3,3-3-0,Win,4-3-0,Matthew,Turf Muncher,95.88,8,4-2-0,4-3-0
+2018,7,dan,DR Philthy,89.42,10,2-4-0,Loss,2-5-0,Kameron,Drunken Monkeys,92.29,9,5-1-0,6-1-0
+2018,7,Sam,Downtown Brown,62.94,12,1-5-0,Loss,1-6-0,AJ,Saquon Deez Nuts,104.64,6,3-3-0,4-3-0
+2018,7,Colin,Im a scientist,107.92,4,2-4-0,Loss,2-5-0,Brian,DaHazzelhoffs,128.48,2,2-4-0,3-4-0
+2018,7,Rob,Shakin Bacon,64.66,11,6-0-0,Loss,6-1-0,Mike,Mr Pig Skinner,102.7,7,3-3-0,4-3-0
+2018,7,Mike,I Shit In Your Mouth,106.16,5,2-4-0,Loss,2-5-0,Aaron,No Curses Only Blessings,133.26,1,3-3-0,4-3-0
+2018,7,Matthew,Turf Muncher,95.88,8,4-2-0,Loss,4-3-0,Alex,Mariota Kart,125.22,3,3-3-0,4-3-0
+2018,7,Kameron,Drunken Monkeys,92.29,9,5-1-0,Win,6-1-0,dan,DR Philthy,89.42,10,2-4-0,2-5-0
+2018,8,Brian,DaHazzelhoffs,89.26,11,3-4-0,Loss,3-5-0,AJ,Saquon Deez Nuts,127.36,1,4-3-0,5-3-0
+2018,8,Sam,Downtown Brown,107.42,7,1-6-0,Loss,1-7-0,Mike,Mr Pig Skinner,119.28,4,4-3-0,5-3-0
+2018,8,Colin,Im a scientist,108.9,6,2-5-0,Win,3-5-0,Aaron,No Curses Only Blessings,90.16,9,4-3-0,4-4-0
+2018,8,Rob,Shakin Bacon,92.76,8,6-1-0,Loss,6-2-0,Alex,Mariota Kart,127.02,2,4-3-0,5-3-0
+2018,8,Mike,I Shit In Your Mouth,122.75,3,2-5-0,Win,3-5-0,dan,DR Philthy,61.27,12,2-5-0,2-6-0
+2018,8,Matthew,Turf Muncher,115.7,5,4-3-0,Win,5-3-0,Kameron,Drunken Monkeys,90.0,10,6-1-0,6-2-0
+2018,8,AJ,Saquon Deez Nuts,127.36,1,4-3-0,Win,5-3-0,Brian,DaHazzelhoffs,89.26,11,3-4-0,3-5-0
+2018,8,Mike,Mr Pig Skinner,119.28,4,4-3-0,Win,5-3-0,Sam,Downtown Brown,107.42,7,1-6-0,1-7-0
+2018,8,Aaron,No Curses Only Blessings,90.16,9,4-3-0,Loss,4-4-0,Colin,Im a scientist,108.9,6,2-5-0,3-5-0
+2018,8,Alex,Mariota Kart,127.02,2,4-3-0,Win,5-3-0,Rob,Shakin Bacon,92.76,8,6-1-0,6-2-0
+2018,8,dan,DR Philthy,61.27,12,2-5-0,Loss,2-6-0,Mike,I Shit In Your Mouth,122.75,3,2-5-0,3-5-0
+2018,8,Kameron,Drunken Monkeys,90.0,10,6-1-0,Loss,6-2-0,Matthew,Turf Muncher,115.7,5,4-3-0,5-3-0
+2018,9,AJ,Saquon Deez Nuts,138.74,1,5-3-0,Win,6-3-0,Mike,Mr Pig Skinner,84.3,10,5-3-0,5-4-0
+2018,9,Aaron,No Curses Only Blessings,88.14,9,4-4-0,Loss,4-5-0,Brian,DaHazzelhoffs,98.96,7,3-5-0,4-5-0
+2018,9,Alex,Mariota Kart,122.3,2,5-3-0,Win,6-3-0,Sam,Downtown Brown,102.92,5,1-7-0,1-8-0
+2018,9,dan,DR Philthy,70.53,12,2-6-0,Loss,2-7-0,Colin,Im a scientist,71.0,11,3-5-0,4-5-0
+2018,9,Kameron,Drunken Monkeys,115.84,3,6-2-0,Win,7-2-0,Rob,Shakin Bacon,105.98,4,6-2-0,6-3-0
+2018,9,Matthew,Turf Muncher,99.64,6,5-3-0,Win,6-3-0,Mike,I Shit In Your Mouth,93.15,8,3-5-0,3-6-0
+2018,9,Mike,Mr Pig Skinner,84.3,10,5-3-0,Loss,5-4-0,AJ,Saquon Deez Nuts,138.74,1,5-3-0,6-3-0
+2018,9,Brian,DaHazzelhoffs,98.96,7,3-5-0,Win,4-5-0,Aaron,No Curses Only Blessings,88.14,9,4-4-0,4-5-0
+2018,9,Sam,Downtown Brown,102.92,5,1-7-0,Loss,1-8-0,Alex,Mariota Kart,122.3,2,5-3-0,6-3-0
+2018,9,Colin,Im a scientist,71.0,11,3-5-0,Win,4-5-0,dan,DR Philthy,70.53,12,2-6-0,2-7-0
+2018,9,Rob,Shakin Bacon,105.98,4,6-2-0,Loss,6-3-0,Kameron,Drunken Monkeys,115.84,3,6-2-0,7-2-0
+2018,9,Mike,I Shit In Your Mouth,93.15,8,3-5-0,Loss,3-6-0,Matthew,Turf Muncher,99.64,6,5-3-0,6-3-0
+2018,10,Aaron,No Curses Only Blessings,88.8,10,4-5-0,Loss,4-6-0,AJ,Saquon Deez Nuts,110.67,4,6-3-0,7-3-0
+2018,10,Mike,Mr Pig Skinner,157.42,2,5-4-0,Win,6-4-0,Alex,Mariota Kart,95.66,7,6-3-0,6-4-0
+2018,10,Brian,DaHazzelhoffs,76.86,11,4-5-0,Loss,4-6-0,dan,DR Philthy,92.19,9,2-7-0,3-7-0
+2018,10,Sam,Downtown Brown,105.74,5,1-8-0,Loss,1-9-0,Kameron,Drunken Monkeys,163.6,1,7-2-0,8-2-0
+2018,10,Colin,Im a scientist,143.7,3,4-5-0,Win,5-5-0,Matthew,Turf Muncher,73.45,12,6-3-0,6-4-0
+2018,10,Rob,Shakin Bacon,95.92,6,6-3-0,Win,7-3-0,Mike,I Shit In Your Mouth,94.72,8,3-6-0,3-7-0
+2018,10,AJ,Saquon Deez Nuts,110.67,4,6-3-0,Win,7-3-0,Aaron,No Curses Only Blessings,88.8,10,4-5-0,4-6-0
+2018,10,Alex,Mariota Kart,95.66,7,6-3-0,Loss,6-4-0,Mike,Mr Pig Skinner,157.42,2,5-4-0,6-4-0
+2018,10,dan,DR Philthy,92.19,9,2-7-0,Win,3-7-0,Brian,DaHazzelhoffs,76.86,11,4-5-0,4-6-0
+2018,10,Kameron,Drunken Monkeys,163.6,1,7-2-0,Win,8-2-0,Sam,Downtown Brown,105.74,5,1-8-0,1-9-0
+2018,10,Matthew,Turf Muncher,73.45,12,6-3-0,Loss,6-4-0,Colin,Im a scientist,143.7,3,4-5-0,5-5-0
+2018,10,Mike,I Shit In Your Mouth,94.72,8,3-6-0,Loss,3-7-0,Rob,Shakin Bacon,95.92,6,6-3-0,7-3-0
+2018,11,AJ,Saquon Deez Nuts,113.45,4,7-3-0,Loss,7-4-0,Alex,Mariota Kart,121.72,3,6-4-0,7-4-0
+2018,11,dan,DR Philthy,93.75,9,3-7-0,Win,4-7-0,Aaron,No Curses Only Blessings,77.78,12,4-6-0,4-7-0
+2018,11,Kameron,Drunken Monkeys,137.52,2,8-2-0,Win,9-2-0,Mike,Mr Pig Skinner,112.26,5,6-4-0,6-5-0
+2018,11,Matthew,Turf Muncher,89.82,10,6-4-0,Win,7-4-0,Brian,DaHazzelhoffs,84.14,11,4-6-0,4-7-0
+2018,11,Mike,I Shit In Your Mouth,109.05,7,3-7-0,Win,4-7-0,Sam,Downtown Brown,95.94,8,1-9-0,1-10-0
+2018,11,Rob,Shakin Bacon,109.64,6,7-3-0,Loss,7-4-0,Colin,Im a scientist,152.67,1,5-5-0,6-5-0
+2018,11,Alex,Mariota Kart,121.72,3,6-4-0,Win,7-4-0,AJ,Saquon Deez Nuts,113.45,4,7-3-0,7-4-0
+2018,11,Aaron,No Curses Only Blessings,77.78,12,4-6-0,Loss,4-7-0,dan,DR Philthy,93.75,9,3-7-0,4-7-0
+2018,11,Mike,Mr Pig Skinner,112.26,5,6-4-0,Loss,6-5-0,Kameron,Drunken Monkeys,137.52,2,8-2-0,9-2-0
+2018,11,Brian,DaHazzelhoffs,84.14,11,4-6-0,Loss,4-7-0,Matthew,Turf Muncher,89.82,10,6-4-0,7-4-0
+2018,11,Sam,Downtown Brown,95.94,8,1-9-0,Loss,1-10-0,Mike,I Shit In Your Mouth,109.05,7,3-7-0,4-7-0
+2018,11,Colin,Im a scientist,152.67,1,5-5-0,Win,6-5-0,Rob,Shakin Bacon,109.64,6,7-3-0,7-4-0
+2018,12,dan,DR Philthy,103.12,9,4-7-0,Loss,4-8-0,AJ,Saquon Deez Nuts,127.32,2,7-4-0,8-4-0
+2018,12,Alex,Mariota Kart,121.88,3,7-4-0,Win,8-4-0,Kameron,Drunken Monkeys,108.94,7,9-2-0,9-3-0
+2018,12,Aaron,No Curses Only Blessings,105.09,8,4-7-0,Win,5-7-0,Matthew,Turf Muncher,26.9,12,7-4-0,7-5-0
+2018,12,Mike,Mr Pig Skinner,177.48,1,6-5-0,Win,7-5-0,Mike,I Shit In Your Mouth,119.9,5,4-7-0,4-8-0
+2018,12,Brian,DaHazzelhoffs,69.52,11,4-7-0,Loss,4-8-0,Rob,Shakin Bacon,119.18,6,7-4-0,8-4-0
+2018,12,Sam,Downtown Brown,100.94,10,1-10-0,Loss,1-11-0,Colin,Im a scientist,121.06,4,6-5-0,7-5-0
+2018,12,AJ,Saquon Deez Nuts,127.32,2,7-4-0,Win,8-4-0,dan,DR Philthy,103.12,9,4-7-0,4-8-0
+2018,12,Kameron,Drunken Monkeys,108.94,7,9-2-0,Loss,9-3-0,Alex,Mariota Kart,121.88,3,7-4-0,8-4-0
+2018,12,Matthew,Turf Muncher,26.9,12,7-4-0,Loss,7-5-0,Aaron,No Curses Only Blessings,105.09,8,4-7-0,5-7-0
+2018,12,Mike,I Shit In Your Mouth,119.9,5,4-7-0,Loss,4-8-0,Mike,Mr Pig Skinner,177.48,1,6-5-0,7-5-0
+2018,12,Rob,Shakin Bacon,119.18,6,7-4-0,Win,8-4-0,Brian,DaHazzelhoffs,69.52,11,4-7-0,4-8-0
+2018,12,Colin,Im a scientist,121.06,4,6-5-0,Win,7-5-0,Sam,Downtown Brown,100.94,10,1-10-0,1-11-0
+2018,13,AJ,Saquon Deez Nuts,114.61,2,8-4-0,Win,9-4-0,Kameron,Drunken Monkeys,103.28,5,9-3-0,9-4-0
+2018,13,Matthew,Turf Muncher,89.28,8,7-5-0,Win,8-5-0,dan,DR Philthy,46.72,12,4-8-0,4-9-0
+2018,13,Mike,I Shit In Your Mouth,111.99,3,4-8-0,Win,5-8-0,Alex,Mariota Kart,99.7,6,8-4-0,8-5-0
+2018,13,Rob,Shakin Bacon,55.64,11,8-4-0,Loss,8-5-0,Aaron,No Curses Only Blessings,67.28,9,5-7-0,6-7-0
+2018,13,Colin,Im a scientist,94.4,7,7-5-0,Loss,7-6-0,Mike,Mr Pig Skinner,111.94,4,7-5-0,8-5-0
+2018,13,Sam,Downtown Brown,115.64,1,1-11-0,Win,2-11-0,Brian,DaHazzelhoffs,56.94,10,4-8-0,4-9-0
+2018,13,Kameron,Drunken Monkeys,103.28,5,9-3-0,Loss,9-4-0,AJ,Saquon Deez Nuts,114.61,2,8-4-0,9-4-0
+2018,13,dan,DR Philthy,46.72,12,4-8-0,Loss,4-9-0,Matthew,Turf Muncher,89.28,8,7-5-0,8-5-0
+2018,13,Alex,Mariota Kart,99.7,6,8-4-0,Loss,8-5-0,Mike,I Shit In Your Mouth,111.99,3,4-8-0,5-8-0
+2018,13,Aaron,No Curses Only Blessings,67.28,9,5-7-0,Win,6-7-0,Rob,Shakin Bacon,55.64,11,8-4-0,8-5-0
+2018,13,Mike,Mr Pig Skinner,111.94,4,7-5-0,Win,8-5-0,Colin,Im a scientist,94.4,7,7-5-0,7-6-0
+2018,13,Brian,DaHazzelhoffs,56.94,10,4-8-0,Loss,4-9-0,Sam,Downtown Brown,115.64,1,1-11-0,2-11-0
+2018,14,Brian,DaHazzelhoffs,82.12,7,4-9-0,Loss,4-9-0,dan,DR Philthy,98.07,3,4-9-0,4-9-0
+2018,14,Mike,Mr Pig Skinner,127.68,1,8-5-0,Win,8-5-0,Matthew,Turf Muncher,77.58,8,8-5-0,8-5-0
+2018,14,Sam,Downtown Brown,93.36,6,2-11-0,Loss,2-11-0,Mike,I Shit In Your Mouth,96.71,5,5-8-0,5-8-0
+2018,14,Alex,Mariota Kart,96.98,4,8-5-0,Loss,8-5-0,Rob,Shakin Bacon,108.08,2,8-5-0,8-5-0
+2018,14,dan,DR Philthy,98.07,3,4-9-0,Win,4-9-0,Brian,DaHazzelhoffs,82.12,7,4-9-0,4-9-0
+2018,14,Matthew,Turf Muncher,77.58,8,8-5-0,Loss,8-5-0,Mike,Mr Pig Skinner,127.68,1,8-5-0,8-5-0
+2018,14,Mike,I Shit In Your Mouth,96.71,5,5-8-0,Win,5-8-0,Sam,Downtown Brown,93.36,6,2-11-0,2-11-0
+2018,14,Rob,Shakin Bacon,108.08,2,8-5-0,Win,8-5-0,Alex,Mariota Kart,96.98,4,8-5-0,8-5-0
+2018,15,Rob,Shakin Bacon,100.84,3,8-5-0,Win,8-5-0,AJ,Saquon Deez Nuts,100.36,4,9-4-0,9-4-0
+2018,15,Colin,Im a scientist,99.28,5,7-6-0,Loss,7-6-0,dan,DR Philthy,101.06,2,4-9-0,4-9-0
+2018,15,Mike,Mr Pig Skinner,87.3,7,8-5-0,Loss,8-5-0,Kameron,Drunken Monkeys,89.92,6,9-4-0,9-4-0
+2018,15,Aaron,No Curses Only Blessings,73.08,8,6-7-0,Loss,6-7-0,Mike,I Shit In Your Mouth,120.79,1,5-8-0,5-8-0
+2018,15,AJ,Saquon Deez Nuts,100.36,4,9-4-0,Loss,9-4-0,Rob,Shakin Bacon,100.84,3,8-5-0,8-5-0
+2018,15,dan,DR Philthy,101.06,2,4-9-0,Win,4-9-0,Colin,Im a scientist,99.28,5,7-6-0,7-6-0
+2018,15,Kameron,Drunken Monkeys,89.92,6,9-4-0,Win,9-4-0,Mike,Mr Pig Skinner,87.3,7,8-5-0,8-5-0
+2018,15,Mike,I Shit In Your Mouth,120.79,1,5-8-0,Win,5-8-0,Aaron,No Curses Only Blessings,73.08,8,6-7-0,6-7-0
+2018,16,Mike,Mr Pig Skinner,108.9,4,8-5-0,Win,8-5-0,AJ,Saquon Deez Nuts,91.59,9,9-4-0,9-4-0
+2018,16,Mike,I Shit In Your Mouth,91.16,10,5-8-0,Loss,5-8-0,dan,DR Philthy,97.25,8,4-9-0,4-9-0
+2018,16,Rob,Shakin Bacon,100.86,6,8-5-0,Loss,8-5-0,Kameron,Drunken Monkeys,128.24,1,9-4-0,9-4-0
+2018,16,Alex,Mariota Kart,122.72,2,8-5-0,Win,8-5-0,Matthew,Turf Muncher,106.56,5,8-5-0,8-5-0
+2018,16,Aaron,No Curses Only Blessings,81.78,11,6-7-0,Loss,6-7-0,Colin,Im a scientist,118.94,3,7-6-0,7-6-0
+2018,16,Brian,DaHazzelhoffs,43.84,12,4-9-0,Loss,4-9-0,Sam,Downtown Brown,99.46,7,2-11-0,2-11-0
+2018,16,AJ,Saquon Deez Nuts,91.59,9,9-4-0,Loss,9-4-0,Mike,Mr Pig Skinner,108.9,4,8-5-0,8-5-0
+2018,16,dan,DR Philthy,97.25,8,4-9-0,Win,4-9-0,Mike,I Shit In Your Mouth,91.16,10,5-8-0,5-8-0
+2018,16,Kameron,Drunken Monkeys,128.24,1,9-4-0,Win,9-4-0,Rob,Shakin Bacon,100.86,6,8-5-0,8-5-0
+2018,16,Matthew,Turf Muncher,106.56,5,8-5-0,Loss,8-5-0,Alex,Mariota Kart,122.72,2,8-5-0,8-5-0
+2018,16,Colin,Im a scientist,118.94,3,7-6-0,Win,7-6-0,Aaron,No Curses Only Blessings,81.78,11,6-7-0,6-7-0
+2018,16,Sam,Downtown Brown,99.46,7,2-11-0,Win,2-11-0,Brian,DaHazzelhoffs,43.84,12,4-9-0,4-9-0
