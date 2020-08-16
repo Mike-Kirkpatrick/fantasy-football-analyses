@@ -11,7 +11,6 @@ chdir('/home/mike/fantasy-football-analyses')
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
 
 osDf = pd.read_csv('data/raw_data_owner_season.csv')
 oswDf = pd.read_csv('data/raw_data_owner_season_week.csv')
@@ -29,7 +28,7 @@ oswpDf = pd.read_csv('data/raw_data_owner_season_week_player.csv')
 #     ADD COACH     #
 #~~~~~~~~~~~~~~~~~~~#
 def assignCoach(row):
-    '''Aj is an ass and has a space after his name'''
+    '''Aj has a space after is name like an ass'''
     teamOwner = row['teamOwner']
     teamName = row['teamName']
     coach = ''
@@ -73,54 +72,6 @@ def assignCoach(row):
 osDf['coach'] = osDf.apply(assignCoach, axis=1)
 oswDf['coach'] = oswDf.apply(assignCoach, axis=1)
 oswpDf['coach'] = oswpDf.apply(assignCoach, axis=1)
-
-
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-#     ADD OPPONENT COACH     #
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-def assignCoachOpponent(row):
-    '''Aj is an ass and has a space after his name'''
-    teamOwner = row['teamOwnerOpponent']
-    teamName = row['teamNameOpponent']
-    coach = ''
-    if teamOwner == 'AJ ':
-        coach = 'Aj Crane'
-    if teamOwner == 'AJ':
-        coach = 'Aj Crane'
-    if teamOwner == 'Aaron':
-        coach = 'Aaron Horwitz'
-    if teamOwner == 'Alex':
-        coach = 'Alex Price'
-    if teamOwner == 'Brian':
-        coach = 'Brian Hazel'
-    if teamOwner == 'Colin':
-        coach = 'Colin Rehbein'
-    if teamOwner == 'Jason':
-        coach = 'Jason Murphy'
-    if teamOwner == 'Kameron':
-        coach = 'Kameron Burt'
-    if teamOwner == 'Matt':
-        coach = 'Matt Smith'
-    if teamOwner == 'Matthew':
-        coach = 'Matt Cisneros'
-    if teamOwner == 'Mike':
-        if teamName == 'Mr Pig Skinner':
-            coach = 'Mike Thomas'
-        elif teamName == 'MrPigSkinner':
-            coach = 'Mike Thomas'
-        else:
-            coach = 'Mike Kirkpatrick'
-    if teamOwner == 'Rob':
-        coach = 'Rob Manbert'
-    if teamOwner == 'Sam':
-        coach = 'Sam Courtney'
-    if teamOwner == 'dan':
-        coach = 'Dan Tarin'
-    if teamOwner == 'nathan':
-        coach = 'Nathan Radolf'
-    return coach
-
-oswDf['coachOpponent'] = oswDf.apply(assignCoachOpponent, axis=1)
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
@@ -262,55 +213,6 @@ def poorCoaching(row):
 oswpDf['poorCoaching'] = oswpDf.apply(poorCoaching, axis=1)
 
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-#     ADD ACTIVE COACH INDICATOR     #
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-def activeCoach(df):
-    maxSeason = df.season.max()
-    activeCoachList = df[df.season == maxSeason].coach.unique()
-    def activeCoachIndicator(row):
-        if row['coach'] in activeCoachList:
-            isActiveCoach = 1
-        else:
-            isActiveCoach = 0
-        return isActiveCoach
-    df['isActiveCoach'] = df.apply(activeCoachIndicator, axis=1)
-    return df
-
-osDf = activeCoach(osDf)
-oswDf = activeCoach(oswDf)
-oswpDf = activeCoach(oswpDf)
-
-
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-#     ADD ACTIVE OPPENENT COACH INDICATOR     #
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-def activeCoachOpponent(df):
-    maxSeason = df.season.max()
-    activeCoachList = df[df.season == maxSeason].coach.unique()
-    def activeCoachIndicator(row):
-        if row['coachOpponent'] in activeCoachList:
-            isActiveCoach = 1
-        else:
-            isActiveCoach = 0
-        return isActiveCoach
-    df['isActiveCoachOpponent'] = df.apply(activeCoachIndicator, axis=1)
-    return df
-
-oswDf = activeCoachOpponent(oswDf)
-
-
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-#     ADD WIN INDICATOR     #
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-def winner(row):
-    if row['teamMatchupResult'] == 'Win':
-        return 1
-    else:
-        return 0
-
-oswDf['isWin'] = oswDf.apply(winner, axis=1)
-
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #~~~~~~~~~~                         ~~~~~~~~~~#
@@ -330,16 +232,6 @@ def plotSeasonsParticipated(df):
     
 plotSeasonsParticipated(osDf)
 
-
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-#~~~~~~~~~~                                           ~~~~~~~~~~#
-#           FILTER DATA TO ONLY INCLUDE ACTIVE COACHES          #
-#~~~~~~~~~~                                           ~~~~~~~~~~#
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-
-# THIS MIGHT NOT WORK BECAUSE I NEED OLD PLAYERS FOR OTHER STATISCS
-#df = osDf
-#df = df[df.isActiveCoach==1]
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #     Playoff Appearances     #
@@ -787,50 +679,6 @@ def plotRegSeasonBenchComposition(df, isLastFiveSeasons):
     
 plotRegSeasonBenchComposition(oswpDf, False)
 plotRegSeasonBenchComposition(oswpDf, True)
-
-
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-#     Matchup Rivalries     #
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-df = oswDf
-
-
-df = df[df['isActiveCoach'] == 1]
-df = df[df['isActiveCoachOpponent'] == 1]
-df = df[['coach', 'coachOpponent', 'isWin']]
-
-test = df.groupby(['coach', 'coachOpponent']).mean()*100
-
-measureLabel = 'isWin'
-pd.DataFrame(df.groupby(['coach', 'coachOpponent', measureLabel]).avg(), columns=['numerator']).reset_index()
-
-test = df.groupby(['coach', 'coachOpponent']).mean()*100
-
-
-
-
-
-
-# For Matchup Frequencies
-# Need unique pairs
-test = df.groupby(['coach', 'coachOpponent']).count()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

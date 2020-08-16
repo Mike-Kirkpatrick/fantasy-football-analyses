@@ -1,11 +1,7 @@
-# Fantasy Football Analyses 2011-2019
+# Fantasy Football Analyses 2011-2018
 
 ### Brief Introduction
-We've been playing fantasy football together for a while so it's time to examine our data longitudinally. Now, I know that words are hard, so I've used as few as possible. Charts, charts and more charts.
-
-**Differences From Last Report:** I only included people that are currently active in the league. See the archived original report for statistics for innactive people.
-
-I used python to web-scrape all of the data from our league's history. If you'd like to recreate these analyses for another NFL Fantasy Football league, you could recycle my code easily. 
+We've been playing fantasy football together for a while so it's time to examine our data longitudinally. I used python to web-scrape all of the data from our league's history. If you'd like to recreate these analyses for another NFL Fantasy Football league, you could recycle my code easily. Now, I know that words are hard, so I've used as few as possible. Charts, charts and more charts. I consider this report as the first of many. I have a bunch of ideas to dig into our gameplay (or lack thereof) that I didn't have time to include this time around. If you have any ideas, let me know! 
 
 
 ## Coaches
