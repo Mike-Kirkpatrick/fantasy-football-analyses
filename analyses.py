@@ -793,18 +793,27 @@ plotRegSeasonBenchComposition(oswpDf, True)
 #     Matchup Rivalries     #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 df = oswDf
-
-
+df = df[df['isRegSeason'] == 1]
 df = df[df['isActiveCoach'] == 1]
 df = df[df['isActiveCoachOpponent'] == 1]
-df = df[['coach', 'coachOpponent', 'isWin']]
+df = df[['coach', 'coachOpponent', measureLabel]]
 
-test = df.groupby(['coach', 'coachOpponent']).mean()*100
 
+pltTitle = 'Regular Season Matchup Rivalries Percent Win'
+pltFile = 'plots/reg_season_matchup_rivalies_percent.png'
 measureLabel = 'isWin'
-pd.DataFrame(df.groupby(['coach', 'coachOpponent', measureLabel]).avg(), columns=['numerator']).reset_index()
 
 test = df.groupby(['coach', 'coachOpponent']).mean()*100
+test = test.round(0)
+test = test.reset_index(level=['coach', 'coachOpponent'])
+test = test.pivot(index='coach', columns='coachOpponent', values=measureLabel)
+
+plt.title(pltTitle)
+ax = sns.heatmap(test, cmap="RdYlGn", annot=True, fmt='g')
+bottom, top = ax.get_ylim()
+ax.set_ylim(bottom + 0.5, top - 0.5)
+plt.savefig(pltFile, dpi=200, bbox_inches='tight')
+
 
 
 
@@ -813,7 +822,26 @@ test = df.groupby(['coach', 'coachOpponent']).mean()*100
 
 # For Matchup Frequencies
 # Need unique pairs
+pltTitle = 'Regular Season Matchup Rivalries Count Matchup'
+pltXLabel = 'Number of times you played other coaches'
+pltFile = 'plots/reg_season_matchup_rivalies_count.png'
+measureLabel = 'isWin'
+#df = df[df['isRegSeason'] == 1]
+#df = df[df['isActiveCoach'] == 1]
+#df = df[df['isActiveCoachOpponent'] == 1]
+#df = df[['coach', 'coachOpponent', measureLabel]]
+
 test = df.groupby(['coach', 'coachOpponent']).count()
+test = test.round(0)
+test = test.reset_index(level=['coach', 'coachOpponent'])
+test = test.pivot(index='coach', columns='coachOpponent', values=measureLabel)
+
+plt.title(pltTitle)
+ax = sns.heatmap(test, cmap="RdYlGn", annot=True, fmt='g')
+bottom, top = ax.get_ylim()
+ax.set_ylim(bottom + 0.5, top - 0.5)
+plt.savefig(pltFile, dpi=200, bbox_inches='tight')
+
 
 
 
