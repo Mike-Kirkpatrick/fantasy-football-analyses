@@ -744,7 +744,7 @@ plotRegSeasonBenchComposition(oswpDf)
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #     Matchup Win Percentage     #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-def regSeasonMatchupWinPercentage(df):
+def plotRegSeasonMatchupWinPercentage(df):
     pltTitle = 'Regular Season Matchup Win Percentage'
     pltFile = 'plots/reg_season_matchup_win_percent.png'
     measureLabel = 'isWin'
@@ -761,7 +761,7 @@ def regSeasonMatchupWinPercentage(df):
     ax.set_ylim(bottom + 0.5, top - 0.5)
     plt.savefig(pltFile, dpi=200, bbox_inches='tight')
 
-regSeasonMatchupWinPercentage(oswDf)
+plotRegSeasonMatchupWinPercentage(oswDf)
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
@@ -820,6 +820,51 @@ newLabels = []
 for label in labels:
     newLabel = label +' '+ str(int(temp[measureLabel][label]*10)/10) + '%'
     newLabels.append(newLabel)
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#     Player Retention     #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~#
+def plotPlayerRetention(df):
+    df = df[df.isActiveCoach==1]
+    df = df[['season', 'week', 'coach', 'playerNameAndInfo']]
+    # Get max weeks for each season
+    weeksDf = df[['season','week']]
+    weeksDf = weeksDf.groupby(['season']).max()
+    weeksDf = weeksDf.reset_index(level=['season'])
+    # Join dataframes to see how much has changed
+    startDf = df[df.week==1].rename(columns={"week": "weekStart"})
+    endDf = pd.merge(df, weeksDf, how='inner', on=['season','week'])
+    endDf = endDf.rename(columns={"week": "weekEnd"})
+    changeDf = pd.merge(startDf, endDf, how='left', on=['season','coach','playerNameAndInfo'])
+    changeDf = changeDf.fillna(0)
+    def addSameIndicator(row):
+        if row['weekEnd'] != 0:
+            return 1
+        else:
+            return 0
+    changeDf['playerRetained'] = changeDf.apply(addSameIndicator, axis=1)
+    # Plot
+    pltTitle = 'Player Retention Percentage'
+    pltXLabel = 'Percentage of players that you kept the entire season'
+    pltFile = 'plots/player_retention.png'
+    measureLabel = 'playerRetained'
+    temp = pd.DataFrame(changeDf.groupby('coach')[measureLabel].mean()*100)
+    temp = temp.sort_values(by=[measureLabel])
+    labels = list(temp.index.values) 
+    y_pos = np.arange(len(temp))
+    newLabels = []
+    for label in labels:
+        newLabel = label +' '+ str(int(temp[measureLabel][label]*10)/10) + '%'
+        newLabels.append(newLabel)
+    plt.barh(y_pos, temp[measureLabel])
+    plt.yticks(y_pos, newLabels)
+    plt.title(pltTitle)
+    plt.xlabel(pltXLabel)
+    plt.savefig(pltFile, dpi=200, bbox_inches='tight')
+
+plotPlayerRetention(oswpDf)
+
 
 
 
