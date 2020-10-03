@@ -767,7 +767,7 @@ plotRegSeasonMatchupWinPercentage(oswDf)
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #     Matchup Play Frequency     #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-def regSeasonMatchupCompeteFrequency(df):
+def plotRegSeasonMatchupCompeteFrequency(df):
     pltTitle = 'Regular Season Matchup Compete Frequency'
     pltFile = 'plots/reg_season_matchup_compete_freq.png'
     measureLabel = 'isWin'
@@ -783,43 +783,33 @@ def regSeasonMatchupCompeteFrequency(df):
     ax.set_ylim(bottom + 0.5, top - 0.5)
     plt.savefig(pltFile, dpi=200, bbox_inches='tight')
 
-regSeasonMatchupCompeteFrequency(oswDf)
+plotRegSeasonMatchupCompeteFrequency(oswDf)
 
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-#     Regular Season Rank By Season     #
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-df = osDf
-df = df[df['isActiveCoach'] == 1]
-measureLabel = 'teamRankRegSeason'
-measureLabel = 'teamFinalStanding'
-oldLabels = np.arange(-1,-13,-1)
-newLabels = np.arange(1,13,1)
-df[measureLabel] = df[measureLabel]*-1
-pivDf = df.pivot(index='season', columns='coach', values=measureLabel)
-subsetDf = pivDf[pivDf.columns[0:3]]
-subsetDf = pivDf[pivDf.columns[3:6]]
-subsetDf = pivDf[pivDf.columns[6:9]]
-subsetDf = pivDf[pivDf.columns[9:12]]
-plt.plot(subsetDf)
-plt.yticks(ticks=oldLabels, labels=newLabels)
-plt.legend(subsetDf.columns)
+#~~~~~~~~~~~~~~~~~~~~~~~~#
+#     Rank By Season     #
+#~~~~~~~~~~~~~~~~~~~~~~~~#
+def plotRankBySeason(df, start, end, grpNbr):
+    df = df[df['isActiveCoach'] == 1]
+    measureLabel = 'teamRankRegSeason'
+    measureLabel = 'teamFinalStanding'
+    df[measureLabel] = df[measureLabel]*-1
+    pivDf = df.pivot(index='season', columns='coach', values=measureLabel)
+    oldLabels = np.arange(-1,-13,-1)
+    newLabels = np.arange(1,13,1)
+    pltTitle = 'Rank By Season'
+    pltFile = f'plots/rank_by_season{grpNbr}.png'
+    subsetDf = pivDf[pivDf.columns[start:end]]
+    plt.plot(subsetDf)
+    plt.title(pltTitle)
+    plt.yticks(ticks=oldLabels, labels=newLabels)
+    plt.legend(subsetDf.columns)
+    plt.savefig(pltFile, dpi=200, bbox_inches='tight')
 
-
-plt.plot(temp[temp.columns[3:6]])
-plt.plot(temp[temp.columns[6:9]])
-plt.plot(temp[temp.columns[9:12]])
-plt.legend()
-plt.plot()
-
-
-
-
-y_pos = np.arange(len(temp))
-newLabels = []
-for label in labels:
-    newLabel = label +' '+ str(int(temp[measureLabel][label]*10)/10) + '%'
-    newLabels.append(newLabel)
+plotRankBySeason(osDf, 0, 3, 0)
+plotRankBySeason(osDf, 3, 6, 1)
+plotRankBySeason(osDf, 6, 9, 2)
+plotRankBySeason(osDf, 9, 12, 3)
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~#
