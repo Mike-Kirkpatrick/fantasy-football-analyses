@@ -804,6 +804,8 @@ def plotRankBySeason(df, start, end, grpNbr):
     plt.title(pltTitle)
     plt.yticks(ticks=oldLabels, labels=newLabels)
     plt.legend(subsetDf.columns)
+    plt.xlabel('Season')
+    plt.ylabel('Rank')
     plt.savefig(pltFile, dpi=200, bbox_inches='tight')
 
 plotRankBySeason(osDf, 0, 3, 0)

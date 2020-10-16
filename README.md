@@ -46,14 +46,15 @@ Statistics for stuff that happens during the regular season.
 This one is as straightforward as it gets. How often do you win? Hopefully you find your name at the top of this chart. Or, at the very least, have a winning record overall (i.e., > 50%).
 ![Alt text](./plots/reg_season_win_pct.png?raw=true)
 
-# ADD INTERPRETATION
-Matchup Rivalries
-Interpretation...
+### Matchup Rivalries
+How often to you beat the other coaches during the regular season? Here's a heatmap of just that. Find your name on the left and see where it intersects with the people on the bottom. That is how often (%) you've beat that person. Green is good and red is bad. The second plot shows how many times you've played that person.
+
+For example, I have beat Aaron only 14% of the time and we've played each other 14 times. Incredibly, Mike Thomas has beat Danny 100% of the time and they've played each other 9 times! Another thing we learn here is THE NEED TO ALWAYS SHUFFLE THE MATCHUP ORDER AJ!!! We've only had 9 seasons and AJ and Kameron have played each other 18 times during the regular season.
 ![Alt text](./plots/reg_season_matchup_win_percent.png?raw=true)
 ![Alt text](./plots/reg_season_matchup_compete_freq.png?raw=true)
 
 ### End of Season Rank
-For these charts, you want to see low numbers next to your name. There's a pretty wide spread across all coaches. 
+For these charts, you want to see low numbers next to your name. There's a pretty wide spread across all coaches. Mike Thomas consistently finishes well, but has never gotten 1st place. Always a bridesmaid and never a bride :)
 ![Alt text](./plots/reg_season_rank.png?raw=true)
 
 ### Average Points Against
@@ -61,7 +62,7 @@ These are the points that are scored against you. Looking at all seasons, it's p
 ![Alt text](./plots/reg_season_avg_points_against.png?raw=true)
 
 ### Average Points For
-These are the points that you score each week. The distribution is a little more spread out than Points Against. Kameron proudly sits atop the list.
+These are the points that you score each week. The distribution is a little more spread out than Points Against. Kameron proudly sits atop the list and Matt wallows in shame at the bottom.
 ![Alt text](./plots/reg_season_avg_points_for.png?raw=true)
 
 ### Average Weekly Rank
@@ -69,15 +70,15 @@ Each week, there are 12 teams that play in 6 matchups. Instead of looking at the
 ![Alt text](./plots/reg_season_avg_weekly_rank.png?raw=true)
 
 ### Bullshit Wins
-Bullshit wins are an extension of weekly rank. A bullshit win occurs when someone wins their weekly matchup but their weekly score was rank 7 or worse. That means that the person won despite have a lower score than half of the league. This is considered bullshit because, had you played almost anyone else that week, you would have lost. The percentage of bullshit wins is calculated by taking the number of wins that are bullshit divided by your total number of wins. Danny tops the chart with 40% of his wins being bullshit.
+Bullshit wins are an extension of weekly rank. A bullshit win occurs when someone wins their weekly matchup but their weekly score was ranked 7 or worse. That means that the person won despite having a lower score than half of the league. This is considered bullshit because, had you played almost anyone else that week, you would have lost. The percentage of bullshit wins is calculated by taking the number of wins that are bullshit divided by your total number of wins. Danny tops the chart with 40% of his wins being bullshit.
 ![Alt text](./plots/reg_season_bullshit_wins.png?raw=true)
 
 ### Shitty Losses
-Shitty losses are the exact opposite of bullshit wins. A shitty loss occurs when you lose but had a weekly rank of 6 or better. For example, you got the 3rd highest points this week but you played the person who got the 2nd highest points. Had you played almost anyone else, you would have won. It's a shitty loss. To calculate this, I took the number of losses divided by your total number of losses. Rob tops the chart with over a third of his losses being shitty.
+Shitty losses are the exact opposite of bullshit wins. A shitty loss occurs when you lose but had a weekly rank of 6 or better. For example, you got the 2nd highest points this week but you played the person who got the 1st highest points. Had you played anyone else, you would have won. It's a shitty loss. To calculate this, I took the number of losses divided by your total number of losses. Rob tops the chart with over a third of his losses being shitty.
 ![Alt text](./plots/reg_season_shitty_losses.png?raw=true)
 
 ### Poor Coaching
-I wanted to get a measure of coaches giving up, being lazy and basically just not caring. Think of starting someone on IR, starting someone that's on bye or forgetting to roster a position entirely. Unfortunately, NFL FF doesn't save all of the player history. So, I had to settle for analyzing how often you rostered a position that got 0 or fewer points. Matt Smith tops the charts across all seasons and for the last 5 seasons. Matt Cicneros is also consistenly high. On the other end of the spectrum, Alex and Rob do a consistently good job at setting their lineup.
+I wanted to get a measure of coaches giving up, being lazy and basically just not caring. Think of starting someone on IR, starting someone that's on bye or forgetting to roster a position entirely. Unfortunately, NFL FF doesn't save all of the player history, so I had to settle for analyzing how often you rostered a position that got 0 or fewer points. Our fabulous Commisioner tops the chart (shame!). On the other end of the spectrum, Alex and Rob do a consistently good job at setting their lineup.
 ![Alt text](./plots/reg_season_poor_coaching.png?raw=true)
 
 ### Bench Composition
@@ -101,7 +102,7 @@ Kameron has won thrice. AJ has won twice. Brian, Sam, Aaron and myself have won 
 ![Alt text](./plots/playoff_champion.png?raw=true)
 
 ### Rank by Season
-With the next four plots, we're looking at your rank (y-axis) at the end of each season (x-axis). For 11 of us, there's no real pattern. It's a jumbled mess. One season you're good - the next you suck. However, for Kameron, there is a clear rise to power. He has improved his ranking every season since 2012, culminating with 3 successive championships.
+With the next four plots, we're looking at your rank (y-axis) at the end of each season (x-axis). For 11 of us, there's no real pattern. It's just a jumbled mess. One season you're good - the next you suck. However, for Kameron, there is a clear rise to power. He has improved his ranking every season since 2012, culminating with 3 successive championships. We hate you Kameron #AnyoneButBurt2020
 ![Alt text](./plots/rank_by_season0.png?raw=true)
 ![Alt text](./plots/rank_by_season1.png?raw=true)
 ![Alt text](./plots/rank_by_season2.png?raw=true)
