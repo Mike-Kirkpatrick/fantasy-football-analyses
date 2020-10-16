@@ -49,7 +49,7 @@ This one is as straightforward as it gets. How often do you win? Hopefully you f
 ### Matchup Rivalries
 How often to you beat the other coaches during the regular season? Here's a heatmap of just that. Find your name on the left and see where it intersects with the people on the bottom. That is how often (%) you've beat that person. Green is good and red is bad. The second plot shows how many times you've played that person.
 
-For example, I have beat Aaron only 14% of the time and we've played each other 14 times. Incredibly, Mike Thomas has beat Danny 100% of the time and they've played each other 9 times! Another thing we learn here is THE NEED TO ALWAYS SHUFFLE THE MATCHUP ORDER AJ!!! We've only had 9 seasons and AJ and Kameron have played each other 18 times during the regular season.
+For example, I have beat Aaron only 14% of the time and we've played each other 14 times. Incredibly, Mike Thomas has beat Danny 100% of the time and they've played each other 9 times! Another thing we learn here is THE NEED TO ALWAYS SHUFFLE THE MATCHUP ORDER, AJ!!! We've only had 9 seasons and AJ and Kameron have played each other 18 times during the regular season.
 ![Alt text](./plots/reg_season_matchup_win_percent.png?raw=true)
 ![Alt text](./plots/reg_season_matchup_compete_freq.png?raw=true)
 
@@ -62,7 +62,7 @@ These are the points that are scored against you. Looking at all seasons, it's p
 ![Alt text](./plots/reg_season_avg_points_against.png?raw=true)
 
 ### Average Points For
-These are the points that you score each week. The distribution is a little more spread out than Points Against. Kameron proudly sits atop the list and Matt wallows in shame at the bottom.
+These are the points that you score each week. The distribution is a little more spread out than Points Against. Kameron proudly sits atop the list while Matt wallows in shame at the bottom.
 ![Alt text](./plots/reg_season_avg_points_for.png?raw=true)
 
 ### Average Weekly Rank
@@ -102,7 +102,7 @@ Kameron has won thrice. AJ has won twice. Brian, Sam, Aaron and myself have won 
 ![Alt text](./plots/playoff_champion.png?raw=true)
 
 ### Rank by Season
-With the next four plots, we're looking at your rank (y-axis) at the end of each season (x-axis). For 11 of us, there's no real pattern. It's just a jumbled mess. One season you're good - the next you suck. However, for Kameron, there is a clear rise to power. He has improved his ranking every season since 2012, culminating with 3 successive championships. We hate you Kameron #AnyoneButBurt2020
+With the next four plots, we're looking at your rank at the end of each season. For 11 of us, there's no real pattern. It's just a jumbled mess. One season you're good - the next you suck. However, for Kameron, there is a clear rise to power. He has improved his ranking every season since 2012, culminating with 3 successive championships. We hate you, Kameron. #AnyoneButBurt2020
 ![Alt text](./plots/rank_by_season0.png?raw=true)
 ![Alt text](./plots/rank_by_season1.png?raw=true)
 ![Alt text](./plots/rank_by_season2.png?raw=true)
