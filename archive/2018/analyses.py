@@ -11,7 +11,6 @@ chdir('/home/mike/fantasy-football-analyses')
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
 
 osDf = pd.read_csv('data/raw_data_owner_season.csv')
 oswDf = pd.read_csv('data/raw_data_owner_season_week.csv')
@@ -29,7 +28,7 @@ oswpDf = pd.read_csv('data/raw_data_owner_season_week_player.csv')
 #     ADD COACH     #
 #~~~~~~~~~~~~~~~~~~~#
 def assignCoach(row):
-    '''Aj is an ass and has a space after his name'''
+    '''Aj has a space after is name like an ass'''
     teamOwner = row['teamOwner']
     teamName = row['teamName']
     coach = ''
@@ -73,54 +72,6 @@ def assignCoach(row):
 osDf['coach'] = osDf.apply(assignCoach, axis=1)
 oswDf['coach'] = oswDf.apply(assignCoach, axis=1)
 oswpDf['coach'] = oswpDf.apply(assignCoach, axis=1)
-
-
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-#     ADD OPPONENT COACH     #
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-def assignCoachOpponent(row):
-    '''Aj is an ass and has a space after his name'''
-    teamOwner = row['teamOwnerOpponent']
-    teamName = row['teamNameOpponent']
-    coach = ''
-    if teamOwner == 'AJ ':
-        coach = 'Aj Crane'
-    if teamOwner == 'AJ':
-        coach = 'Aj Crane'
-    if teamOwner == 'Aaron':
-        coach = 'Aaron Horwitz'
-    if teamOwner == 'Alex':
-        coach = 'Alex Price'
-    if teamOwner == 'Brian':
-        coach = 'Brian Hazel'
-    if teamOwner == 'Colin':
-        coach = 'Colin Rehbein'
-    if teamOwner == 'Jason':
-        coach = 'Jason Murphy'
-    if teamOwner == 'Kameron':
-        coach = 'Kameron Burt'
-    if teamOwner == 'Matt':
-        coach = 'Matt Smith'
-    if teamOwner == 'Matthew':
-        coach = 'Matt Cisneros'
-    if teamOwner == 'Mike':
-        if teamName == 'Mr Pig Skinner':
-            coach = 'Mike Thomas'
-        elif teamName == 'MrPigSkinner':
-            coach = 'Mike Thomas'
-        else:
-            coach = 'Mike Kirkpatrick'
-    if teamOwner == 'Rob':
-        coach = 'Rob Manbert'
-    if teamOwner == 'Sam':
-        coach = 'Sam Courtney'
-    if teamOwner == 'dan':
-        coach = 'Dan Tarin'
-    if teamOwner == 'nathan':
-        coach = 'Nathan Radolf'
-    return coach
-
-oswDf['coachOpponent'] = oswDf.apply(assignCoachOpponent, axis=1)
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
@@ -175,6 +126,34 @@ def playerPosition(row):
     return playerPosition
 
 oswpDf['playerPosition'] = oswpDf.apply(playerPosition, axis=1)
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#     ADD LAST 5 SEASONS INDICATOR     #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+def lastFiveSeasons(df):
+    maxSeason = df.season.max()
+    minSeason = maxSeason - 5
+    def lastFiveIndicator(row):
+        if row['season'] > minSeason:
+            isLastFiveSeason = 1
+        else:
+            isLastFiveSeason = 0
+        return isLastFiveSeason
+    
+    df['isLastFiveSeason'] = df.apply(lastFiveIndicator, axis=1)
+    return df
+
+osDf = lastFiveSeasons(osDf)
+oswDf = lastFiveSeasons(oswDf)
+oswpDf = lastFiveSeasons(oswpDf)
+
+def ifIsLastFiveSeasons(df, pltTitle, pltXLabel, pltFile):
+    df = df[df.isLastFiveSeason == 1]
+    pltTitle = pltTitle + ' Last 5 Seasons'
+    pltXLabel = pltXLabel + ' last 5 seasons'
+    pltFile = pltFile.replace('.png','') + '_last5seasons.png'
+    return df, pltTitle, pltXLabel, pltFile
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
@@ -234,55 +213,6 @@ def poorCoaching(row):
 oswpDf['poorCoaching'] = oswpDf.apply(poorCoaching, axis=1)
 
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-#     ADD ACTIVE COACH INDICATOR     #
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-def activeCoach(df):
-    maxSeason = df.season.max()
-    activeCoachList = df[df.season == maxSeason].coach.unique()
-    def activeCoachIndicator(row):
-        if row['coach'] in activeCoachList:
-            isActiveCoach = 1
-        else:
-            isActiveCoach = 0
-        return isActiveCoach
-    df['isActiveCoach'] = df.apply(activeCoachIndicator, axis=1)
-    return df
-
-osDf = activeCoach(osDf)
-oswDf = activeCoach(oswDf)
-oswpDf = activeCoach(oswpDf)
-
-
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-#     ADD ACTIVE OPPENENT COACH INDICATOR     #
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-def activeCoachOpponent(df):
-    maxSeason = df.season.max()
-    activeCoachList = df[df.season == maxSeason].coach.unique()
-    def activeCoachIndicator(row):
-        if row['coachOpponent'] in activeCoachList:
-            isActiveCoach = 1
-        else:
-            isActiveCoach = 0
-        return isActiveCoach
-    df['isActiveCoachOpponent'] = df.apply(activeCoachIndicator, axis=1)
-    return df
-
-oswDf = activeCoachOpponent(oswDf)
-
-
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-#     ADD WIN INDICATOR     #
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-def winner(row):
-    if row['teamMatchupResult'] == 'Win':
-        return 1
-    else:
-        return 0
-
-oswDf['isWin'] = oswDf.apply(winner, axis=1)
-
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #~~~~~~~~~~                         ~~~~~~~~~~#
@@ -307,7 +237,6 @@ plotSeasonsParticipated(osDf)
 #     Playoff Appearances     #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 def plotPlayoffAppearances(df):
-    df = df[df.isActiveCoach ==1]
     def playoffAppearance(row):
         rank = row['teamRankRegSeason']
         if rank <= 6:
@@ -338,7 +267,6 @@ plotPlayoffAppearances(osDf)
 #     Playoff Champions     #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 def plotPlayoffChampions(df):
-    df = df[df.isActiveCoach ==1]
     def playoffChampion(row):
         rank = row['teamFinalStanding']
         if rank == 1:
@@ -369,7 +297,6 @@ plotPlayoffChampions(osDf)
 #     Playoff Medalist     #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~#
 def plotPlayoffMedalist(df):
-    df = df[df.isActiveCoach ==1]
     def fn(row):
         rank = row['teamFinalStanding']
         if rank <= 3:
@@ -400,7 +327,6 @@ plotPlayoffMedalist(osDf)
 #     Regular Season Trades     #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 def plotRegSeasonAvgTrades(df):
-    df = df[df.isActiveCoach ==1]
     measureLabel = 'teamTrades'
     temp = pd.DataFrame(df.groupby('coach')[measureLabel].mean())
     temp = temp.sort_values(by=[measureLabel])
@@ -423,11 +349,12 @@ plotRegSeasonAvgTrades(osDf)
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #     Regular Season Transactions     #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-def plotRegSeasonAvgTransactions(df):
-    df = df[df.isActiveCoach ==1]
+def plotRegSeasonAvgTransactions(df, isLastFiveSeasons):
     pltTitle = 'Regular Season Transactions'
     pltXLabel = 'Average number of transactions (pickups) during regular season'
     pltFile = 'plots/reg_season_transactions.png'
+    if isLastFiveSeasons == True:
+        df, pltTitle, pltXLabel, pltFile = ifIsLastFiveSeasons(df, pltTitle, pltXLabel, pltFile)
     measureLabel = 'teamTransactions'
     temp = pd.DataFrame(df.groupby('coach')[measureLabel].mean())
     temp = temp.sort_values(by=[measureLabel])
@@ -444,17 +371,19 @@ def plotRegSeasonAvgTransactions(df):
     plt.xlabel(pltXLabel)
     plt.savefig(pltFile, dpi=200, bbox_inches='tight')
 
-plotRegSeasonAvgTransactions(osDf)
+plotRegSeasonAvgTransactions(osDf, False)
+plotRegSeasonAvgTransactions(osDf, True)
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #     Regular Season Win Percentage     #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-def plotRegSeasonWinPct(df):
-    df = df[df.isActiveCoach ==1]
+def plotRegSeasonWinPct(df, isLastFiveSeasons):
     pltTitle = 'Regular Season Win Percentage'
     pltXLabel = 'Percent of regular season matchups that are wins'
     pltFile = 'plots/reg_season_win_pct.png'
+    if isLastFiveSeasons == True:
+        df, pltTitle, pltXLabel, pltFile = ifIsLastFiveSeasons(df, pltTitle, pltXLabel, pltFile)
     measureLabel = 'teamWinPctRegSeason'
     temp = pd.DataFrame(df.groupby('coach')[measureLabel].mean()*100)
     temp = temp.sort_values(by=[measureLabel])
@@ -471,26 +400,27 @@ def plotRegSeasonWinPct(df):
     plt.xlabel(pltXLabel)
     plt.savefig(pltFile, dpi=200, bbox_inches='tight')
 
-plotRegSeasonWinPct(osDf)
+plotRegSeasonWinPct(osDf, False)
+plotRegSeasonWinPct(osDf, True)
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #     Regular Season Avg Points For     #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-def plotRegSeasonAvgPointsFor(df):
+def plotRegSeasonAvgPointsFor(df, isLastFiveSeasons):
     pltTitle = 'Regular Season Average Points'
     pltXLabel = 'Average points scored in regular season weekly matchups'
     pltFile = 'plots/reg_season_avg_points_for.png'
+    if isLastFiveSeasons == True:
+        df, pltTitle, pltXLabel, pltFile = ifIsLastFiveSeasons(df, pltTitle, pltXLabel, pltFile)
     measureLabel = 'teamWeekTotal'
-    temp = df.groupby(['coach','isActiveCoach'])[measureLabel].mean()
-    temp = temp.reset_index(level=['coach', 'isActiveCoach'])
-    temp = temp[temp.isActiveCoach==1]
+    temp = pd.DataFrame(df.groupby('coach')[measureLabel].mean())
     temp = temp.sort_values(by=[measureLabel])
-    labels = list(temp.coach.values) 
+    labels = list(temp.index.values) 
     y_pos = np.arange(len(temp))
     newLabels = []
     for label in labels:
-        newLabel = label +' '+ str(int(temp[temp.coach==label][measureLabel]))
+        newLabel = label +' '+ str(int(temp[measureLabel][label]))
         newLabels.append(newLabel)
         
     plt.barh(y_pos, temp[measureLabel])
@@ -499,26 +429,27 @@ def plotRegSeasonAvgPointsFor(df):
     plt.xlabel(pltXLabel)
     plt.savefig(pltFile, dpi=200, bbox_inches='tight')
 
-plotRegSeasonAvgPointsFor(oswDf)
-    
+plotRegSeasonAvgPointsFor(oswDf, False)
+plotRegSeasonAvgPointsFor(oswDf, True)
+
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #     Regular Season Avg Points Against     #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-def plotRegSeasonAvgPointsAgainst(df):
+def plotRegSeasonAvgPointsAgainst(df, isLastFiveSeasons):
     pltTitle = 'Regular Season Average Points Against'
     pltXLabel = 'Average points against in regular season weekly matchups'
     pltFile = 'plots/reg_season_avg_points_against.png'
+    if isLastFiveSeasons == True:
+        df, pltTitle, pltXLabel, pltFile = ifIsLastFiveSeasons(df, pltTitle, pltXLabel, pltFile)
     measureLabel = 'teamWeekTotalOpponent'
-    temp = df.groupby(['coach','isActiveCoach'])[measureLabel].mean()
-    temp = temp.reset_index(level=['coach', 'isActiveCoach'])
-    temp = temp[temp.isActiveCoach==1]
+    temp = pd.DataFrame(df.groupby('coach')[measureLabel].mean())
     temp = temp.sort_values(by=[measureLabel])
-    labels = list(temp.coach.values) 
+    labels = list(temp.index.values) 
     y_pos = np.arange(len(temp))
     newLabels = []
     for label in labels:
-        newLabel = label +' '+ str(int(temp[temp.coach==label][measureLabel]))
+        newLabel = label +' '+ str(int(temp[measureLabel][label]))
         newLabels.append(newLabel)
         
     plt.barh(y_pos, temp[measureLabel])
@@ -527,26 +458,27 @@ def plotRegSeasonAvgPointsAgainst(df):
     plt.xlabel(pltXLabel)
     plt.savefig(pltFile, dpi=200, bbox_inches='tight')
 
-plotRegSeasonAvgPointsAgainst(oswDf)
+plotRegSeasonAvgPointsAgainst(oswDf, False)
+plotRegSeasonAvgPointsAgainst(oswDf, True)
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #     Regular Season Avg Weekly Rank     #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-def plotRegSeasonAvgWeeklyRank(df):
+def plotRegSeasonAvgWeeklyRank(df, isLastFiveSeasons):
     pltTitle = 'Regular Season Average Weekly Rank'
     pltXLabel = 'Average weekly points rank in regular season matchups'
     pltFile = 'plots/reg_season_avg_weekly_rank.png'
+    if isLastFiveSeasons == True:
+        df, pltTitle, pltXLabel, pltFile = ifIsLastFiveSeasons(df, pltTitle, pltXLabel, pltFile)
     measureLabel = 'teamWeekRank'
-    temp = df.groupby(['coach','isActiveCoach'])[measureLabel].mean()
-    temp = temp.reset_index(level=['coach', 'isActiveCoach'])
-    temp = temp[temp.isActiveCoach==1]
+    temp = pd.DataFrame(df.groupby('coach')[measureLabel].mean())
     temp = temp.sort_values(by=[measureLabel], ascending=False)
-    labels = list(temp.coach.values) 
+    labels = list(temp.index.values) 
     y_pos = np.arange(len(temp))
     newLabels = []
     for label in labels:
-        newLabel = label +' '+ str(int(temp[temp.coach==label][measureLabel]*10)/10)
+        newLabel = label +' '+ str(int(temp[measureLabel][label]*10)/10)
         newLabels.append(newLabel)
         
     plt.barh(y_pos, temp[measureLabel])
@@ -555,14 +487,14 @@ def plotRegSeasonAvgWeeklyRank(df):
     plt.xlabel(pltXLabel)
     plt.savefig(pltFile, dpi=200, bbox_inches='tight')
 
-plotRegSeasonAvgWeeklyRank(oswDf)
+plotRegSeasonAvgWeeklyRank(oswDf, False)
+plotRegSeasonAvgWeeklyRank(oswDf, True)
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~#
 #     Highest Score     #
 #~~~~~~~~~~~~~~~~~~~~~~~#
-def plotMaxPoints(df):
-    df = df[df.isActiveCoach ==1]
+def plotRegSeasonMaxPoints(df):
     measureLabel = 'teamWeekTotal'
     temp = pd.DataFrame(df.groupby('coach')[measureLabel].max())
     temp = temp.sort_values(by=[measureLabel])
@@ -578,14 +510,13 @@ def plotMaxPoints(df):
     plt.xlabel('Most points ever scored')
     plt.savefig('plots/reg_season_max_points.png', dpi=200, bbox_inches='tight')
 
-plotMaxPoints(oswDf)
+plotRegSeasonMaxPoints(oswDf)
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #     Regular Season Lowest Score     #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 def plotRegSeasonMinPoints(df):
-    df = df[df.isActiveCoach ==1]
     df = df[df.isRegSeason == 1]
     measureLabel = 'teamWeekTotal'
     temp = pd.DataFrame(df.groupby('coach')[measureLabel].min())
@@ -608,11 +539,12 @@ plotRegSeasonMinPoints(oswDf)
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #     Regular Season Ranking     #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-def plotRegSeasonRanking(df):
-    df = df[df.isActiveCoach ==1]
+def plotRegSeasonRanking(df, isLastFiveSeasons):
     pltTitle = 'Regular Season Average Ranking'
     pltXLabel = 'Average ranking at the end of the regular season'
     pltFile = 'plots/reg_season_rank.png'
+    if isLastFiveSeasons == True:
+        df, pltTitle, pltXLabel, pltFile = ifIsLastFiveSeasons(df, pltTitle, pltXLabel, pltFile)
     measureLabel = 'teamRankRegSeason'
     temp = pd.DataFrame(df.groupby('coach')[measureLabel].mean())
     temp = temp.sort_values(by=[measureLabel], ascending=False)
@@ -629,26 +561,27 @@ def plotRegSeasonRanking(df):
     plt.xlabel(pltXLabel)
     plt.savefig(pltFile, dpi=200, bbox_inches='tight')
     
-plotRegSeasonRanking(osDf)
+plotRegSeasonRanking(osDf, False)
+plotRegSeasonRanking(osDf, True)
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~#
 #     Bullshit Wins     #
 #~~~~~~~~~~~~~~~~~~~~~~~#    
-def plotRegSeasonBullshitWins(df):
+def plotRegSeasonBullshitWins(df, isLastFiveSeasons):
     pltTitle = 'Regular Season Bullshit Wins'
     pltXLabel = 'Percent of regular season wins that are bullshit'
     pltFile = 'plots/reg_season_bullshit_wins.png'
+    if isLastFiveSeasons == True:
+        df, pltTitle, pltXLabel, pltFile = ifIsLastFiveSeasons(df, pltTitle, pltXLabel, pltFile)
     measureLabel = 'bullshitWin'
-    temp = df.groupby(['coach','isActiveCoach'])[measureLabel].mean()
-    temp = temp.reset_index(level=['coach', 'isActiveCoach'])
-    temp = temp[temp.isActiveCoach==1]
+    temp = pd.DataFrame(df.groupby('coach')[measureLabel].mean())
     temp = temp.sort_values(by=[measureLabel])
-    labels = list(temp.coach.values)
+    labels = list(temp.index.values) 
     y_pos = np.arange(len(temp))
     newLabels = []
     for label in labels:
-        newLabel = label +' '+ str(int(temp[temp.coach==label][measureLabel]*10)/10) + '%'
+        newLabel = label +' '+ str(int(temp[measureLabel][label]*10)/10) + '%'
         newLabels.append(newLabel)
     plt.barh(y_pos, temp[measureLabel])
     plt.yticks(y_pos, newLabels)
@@ -656,26 +589,27 @@ def plotRegSeasonBullshitWins(df):
     plt.xlabel(pltXLabel)
     plt.savefig(pltFile, dpi=200, bbox_inches='tight')
 
-plotRegSeasonBullshitWins(oswDf)
+plotRegSeasonBullshitWins(oswDf, False)
+plotRegSeasonBullshitWins(oswDf, True)
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~#
 #     Shitty Losses     #
 #~~~~~~~~~~~~~~~~~~~~~~~#
-def plotRegSeasonShittyLosses(df):
+def plotRegSeasonShittyLosses(df, isLastFiveSeasons):
     pltTitle = 'Regular Season Shitty Losses'
     pltXLabel = 'Percent of regular season losses that are shitty'
     pltFile = 'plots/reg_season_shitty_losses.png'
+    if isLastFiveSeasons == True:
+        df, pltTitle, pltXLabel, pltFile = ifIsLastFiveSeasons(df, pltTitle, pltXLabel, pltFile)
     measureLabel = 'shittyLoss'
-    temp = df.groupby(['coach','isActiveCoach'])[measureLabel].mean()
-    temp = temp.reset_index(level=['coach', 'isActiveCoach'])
-    temp = temp[temp.isActiveCoach==1]
+    temp = pd.DataFrame(df.groupby('coach')[measureLabel].mean())
     temp = temp.sort_values(by=[measureLabel])
-    labels = list(temp.coach.values)
+    labels = list(temp.index.values) 
     y_pos = np.arange(len(temp))
     newLabels = []
     for label in labels:
-        newLabel = label +' '+ str(int(temp[temp.coach==label][measureLabel]*10)/10) + '%'
+        newLabel = label +' '+ str(int(temp[measureLabel][label]*10)/10) + '%'
         newLabels.append(newLabel)
     plt.barh(y_pos, temp[measureLabel])
     plt.yticks(y_pos, newLabels)
@@ -683,17 +617,19 @@ def plotRegSeasonShittyLosses(df):
     plt.xlabel(pltXLabel)
     plt.savefig(pltFile, dpi=200, bbox_inches='tight')
 
-plotRegSeasonShittyLosses(oswDf)
+plotRegSeasonShittyLosses(oswDf, False)
+plotRegSeasonShittyLosses(oswDf, True)
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~#
 #     Poor Coaching     #
 #~~~~~~~~~~~~~~~~~~~~~~~#
-def plotRegSeasonPoorCoaching(df):
-    df = df[df.isActiveCoach==1]
+def plotRegSeasonPoorCoaching(df, isLastFiveSeasons):
     pltTitle = 'Regular Season Poor Coaching Percentage'
     pltXLabel = 'Percent of regular season players played that got less than 0 points'
     pltFile = 'plots/reg_season_poor_coaching.png'
+    if isLastFiveSeasons == True:
+        df, pltTitle, pltXLabel, pltFile = ifIsLastFiveSeasons(df, pltTitle, pltXLabel, pltFile)
     measureLabel = 'poorCoaching'
     temp = pd.DataFrame(df.groupby('coach')[measureLabel].mean()*100)
     temp = temp.sort_values(by=[measureLabel])
@@ -710,17 +646,20 @@ def plotRegSeasonPoorCoaching(df):
     plt.xlabel(pltXLabel)
     plt.savefig(pltFile, dpi=200, bbox_inches='tight')
 
-plotRegSeasonPoorCoaching(oswpDf)
+plotRegSeasonPoorCoaching(oswpDf, False)
+plotRegSeasonPoorCoaching(oswpDf, True)
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #     Bench Composition     #
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-def plotRegSeasonBenchComposition(df):
-    df = df[df.isActiveCoach==1]
+def plotRegSeasonBenchComposition(df, isLastFiveSeasons):
     pltTitle = 'Regular Season Bench Composition'
     pltXLabel = 'Percentage breakdown of positions on your bench'
     pltFile = 'plots/reg_season_bench_composition.png'
+    if isLastFiveSeasons == True:
+        df, pltTitle, pltXLabel, pltFile = ifIsLastFiveSeasons(df, pltTitle, pltXLabel, pltFile)
+    
     df = df[df.playerRosterPosition == 'BN']
     df = df[df.isRegSeason == 1]
     measureLabel = 'playerPosition'
@@ -738,129 +677,8 @@ def plotRegSeasonBenchComposition(df):
     plt.xlabel(pltXLabel)
     plt.savefig(pltFile, dpi=200, bbox_inches='tight')
     
-plotRegSeasonBenchComposition(oswpDf)
-
-
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-#     Matchup Win Percentage     #
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-def plotRegSeasonMatchupWinPercentage(df):
-    pltTitle = 'Regular Season Matchup Win Percentage'
-    pltFile = 'plots/reg_season_matchup_win_percent.png'
-    measureLabel = 'isWin'
-    df = df[df['isRegSeason'] == 1]
-    df = df[df['isActiveCoach'] == 1]
-    df = df[df['isActiveCoachOpponent'] == 1]
-    temp = df.groupby(['coach', 'coachOpponent']).mean()*100
-    temp = temp.round(0)
-    temp = temp.reset_index(level=['coach', 'coachOpponent'])
-    temp = temp.pivot(index='coach', columns='coachOpponent', values=measureLabel)
-    plt.title(pltTitle)
-    ax = sns.heatmap(temp, cmap="RdYlGn", annot=True, fmt='g')
-    bottom, top = ax.get_ylim()
-    ax.set_ylim(bottom + 0.5, top - 0.5)
-    plt.savefig(pltFile, dpi=200, bbox_inches='tight')
-
-plotRegSeasonMatchupWinPercentage(oswDf)
-
-
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-#     Matchup Play Frequency     #
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-def plotRegSeasonMatchupCompeteFrequency(df):
-    pltTitle = 'Regular Season Matchup Compete Frequency'
-    pltFile = 'plots/reg_season_matchup_compete_freq.png'
-    measureLabel = 'isWin'
-    df = df[df['isRegSeason'] == 1]
-    df = df[df['isActiveCoach'] == 1]
-    df = df[df['isActiveCoachOpponent'] == 1]
-    temp = df.groupby(['coach', 'coachOpponent']).count()
-    temp = temp.reset_index(level=['coach', 'coachOpponent'])
-    temp = temp.pivot(index='coach', columns='coachOpponent', values=measureLabel)
-    plt.title(pltTitle)
-    ax = sns.heatmap(temp, cmap="RdYlGn", annot=True, fmt='g')
-    bottom, top = ax.get_ylim()
-    ax.set_ylim(bottom + 0.5, top - 0.5)
-    plt.savefig(pltFile, dpi=200, bbox_inches='tight')
-
-plotRegSeasonMatchupCompeteFrequency(oswDf)
-
-
-#~~~~~~~~~~~~~~~~~~~~~~~~#
-#     Rank By Season     #
-#~~~~~~~~~~~~~~~~~~~~~~~~#
-def plotRankBySeason(df, start, end, grpNbr):
-    df = df[df['isActiveCoach'] == 1]
-    measureLabel = 'teamRankRegSeason'
-    measureLabel = 'teamFinalStanding'
-    df[measureLabel] = df[measureLabel]*-1
-    pivDf = df.pivot(index='season', columns='coach', values=measureLabel)
-    oldLabels = np.arange(-1,-13,-1)
-    newLabels = np.arange(1,13,1)
-    pltTitle = 'Rank By Season'
-    pltFile = f'plots/rank_by_season{grpNbr}.png'
-    subsetDf = pivDf[pivDf.columns[start:end]]
-    plt.plot(subsetDf)
-    plt.title(pltTitle)
-    plt.yticks(ticks=oldLabels, labels=newLabels)
-    plt.legend(subsetDf.columns)
-    plt.xlabel('Season')
-    plt.ylabel('Rank')
-    plt.savefig(pltFile, dpi=200, bbox_inches='tight')
-
-plotRankBySeason(osDf, 0, 3, 0)
-plotRankBySeason(osDf, 3, 6, 1)
-plotRankBySeason(osDf, 6, 9, 2)
-plotRankBySeason(osDf, 9, 12, 3)
-
-
-#~~~~~~~~~~~~~~~~~~~~~~~~~~#
-#     Player Retention     #
-#~~~~~~~~~~~~~~~~~~~~~~~~~~#
-def plotPlayerRetention(df):
-    df = df[df.isActiveCoach==1]
-    df = df[['season', 'week', 'coach', 'playerNameAndInfo']]
-    # Get max weeks for each season
-    weeksDf = df[['season','week']]
-    weeksDf = weeksDf.groupby(['season']).max()
-    weeksDf = weeksDf.reset_index(level=['season'])
-    # Join dataframes to see how much has changed
-    startDf = df[df.week==1].rename(columns={"week": "weekStart"})
-    endDf = pd.merge(df, weeksDf, how='inner', on=['season','week'])
-    endDf = endDf.rename(columns={"week": "weekEnd"})
-    changeDf = pd.merge(startDf, endDf, how='left', on=['season','coach','playerNameAndInfo'])
-    changeDf = changeDf.fillna(0)
-    def addSameIndicator(row):
-        if row['weekEnd'] != 0:
-            return 1
-        else:
-            return 0
-    changeDf['playerRetained'] = changeDf.apply(addSameIndicator, axis=1)
-    # Plot
-    pltTitle = 'Player Retention Percentage'
-    pltXLabel = 'Percentage of players that you kept the entire season'
-    pltFile = 'plots/player_retention.png'
-    measureLabel = 'playerRetained'
-    temp = pd.DataFrame(changeDf.groupby('coach')[measureLabel].mean()*100)
-    temp = temp.sort_values(by=[measureLabel])
-    labels = list(temp.index.values) 
-    y_pos = np.arange(len(temp))
-    newLabels = []
-    for label in labels:
-        newLabel = label +' '+ str(int(temp[measureLabel][label]*10)/10) + '%'
-        newLabels.append(newLabel)
-    plt.barh(y_pos, temp[measureLabel])
-    plt.yticks(y_pos, newLabels)
-    plt.title(pltTitle)
-    plt.xlabel(pltXLabel)
-    plt.savefig(pltFile, dpi=200, bbox_inches='tight')
-
-plotPlayerRetention(oswpDf)
-
-
-
-
-
+plotRegSeasonBenchComposition(oswpDf, False)
+plotRegSeasonBenchComposition(oswpDf, True)
 
 
 
