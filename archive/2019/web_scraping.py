@@ -76,10 +76,6 @@ seasonsWeeksTeamIds = {
 	2019:{
        'Weeks': standardWeeks,
        'TeamIds': teamIdsNo10
-	},
-	2020:{
-       'Weeks': standardWeeks,
-       'TeamIds': teamIdsNo10
 	}
 }
 
