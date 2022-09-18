@@ -49,7 +49,7 @@ def assignCoach(row):
         coach = 'Jason Murphy'
     if teamOwner == 'Kameron':
         coach = 'Kameron Burt'
-    if teamOwner == 'Matt' or teamOwner == 'Matt Smith':
+    if teamOwner == 'Matt':
         coach = 'Matt Smith'
     if teamOwner == 'Matthew':
         coach = 'Matt Cisneros'
@@ -99,7 +99,7 @@ def assignCoachOpponent(row):
         coach = 'Jason Murphy'
     if teamOwner == 'Kameron':
         coach = 'Kameron Burt'
-    if teamOwner == 'Matt' or teamOwner == 'Matt Smith':
+    if teamOwner == 'Matt':
         coach = 'Matt Smith'
     if teamOwner == 'Matthew':
         coach = 'Matt Cisneros'

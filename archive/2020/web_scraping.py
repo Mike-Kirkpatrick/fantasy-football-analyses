@@ -33,64 +33,57 @@ def getWebpageData(url):
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 # We create a dictionary with all the season, weeks and teamIds.
 # Our weeks and teamIds have changed over the seasons.
-# Some seasons have 16 weeks and some have 17.
+# In season 2011, we had 17 weeks.
 # Starting in season 2017, we swapped out teamId=10 for teamId=13
-# In 2021, Matt Smith came back as teamId=14
 
-sixteenWeeks = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
-seventeenWeeks = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]
+standardWeeks = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
 standardTeamIds = [1,2,3,4,5,6,7,8,9,10,11,12]
 teamIdsNo10 = [1,2,3,4,5,6,7,8,9,11,12,13]
-teamIds2021 = [1,2,3,4,5,6,7,8,9,11,13,14]
 
 seasonsWeeksTeamIds = {
 	2011:{
-       'Weeks': seventeenWeeks,
+       'Weeks': [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],
        'TeamIds': standardTeamIds
 	},
 	2012:{
-       'Weeks': seventeenWeeks,
+       'Weeks': standardWeeks,
        'TeamIds': standardTeamIds
 	},
 	2013:{
-       'Weeks': sixteenWeeks,
+       'Weeks': standardWeeks,
        'TeamIds': standardTeamIds
 	},
 	2014:{
-       'Weeks': sixteenWeeks,
+       'Weeks': standardWeeks,
        'TeamIds': standardTeamIds
 	},
 	2015:{
-       'Weeks': sixteenWeeks,
+       'Weeks': standardWeeks,
        'TeamIds': standardTeamIds
 	},
 	2016:{
-       'Weeks': sixteenWeeks,
+       'Weeks': standardWeeks,
        'TeamIds': standardTeamIds
 	},
 	2017:{
-       'Weeks': sixteenWeeks,
+       'Weeks': standardWeeks,
        'TeamIds': teamIdsNo10
 	},
 	2018:{
-       'Weeks': sixteenWeeks,
+       'Weeks': standardWeeks,
        'TeamIds': teamIdsNo10
 	},
 	2019:{
-       'Weeks': sixteenWeeks,
+       'Weeks': standardWeeks,
        'TeamIds': teamIdsNo10
 	},
 	2020:{
-       'Weeks': sixteenWeeks,
+       'Weeks': standardWeeks,
        'TeamIds': teamIdsNo10
-	},
-	2021:{
-       'Weeks': seventeenWeeks,
-       'TeamIds': teamIds2021
-	},
+	}
 }
 
-del sixteenWeeks, seventeenWeeks, standardTeamIds, teamIdsNo10
+del standardWeeks, standardTeamIds, teamIdsNo10
 
 #~~~~~~~~~~~~~~~~~~~~~#
 #     Team Owners     #
