@@ -854,5 +854,60 @@ def plotPlayerRetention(df):
 plotPlayerRetention(oswpDf)
 
 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#     Defensive Player Analyses     #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+def defensive_player_bar_std(df):
+    def player_roster_position(row):
+        '''
+        Code flex players in roster postition
+        '''
+        rawPlayerPostition = row['playerRosterPosition']
+        playerPosition = None
+        flex_positions = ['R/W/T', 'W/R']
+        if rawPlayerPostition in flex_positions:
+            playerPosition = 'Flex'
+        else:
+            playerPosition = rawPlayerPostition
+        return playerPosition
+    
+    # Filter data to population we care about
+    df = df[df.isRegSeason==1] # Only want weeks where all coaches are trying
+    df['playerRosterPosition'] = df.apply(player_roster_position, axis=1)
+    df = df[df.playerPosition!='Empty']
+    df = df[df.playerRosterPosition!='BN']
+    df = df[df.playerRosterPosition!='RES']
+    
+    # Sum stats by roster position (sum RB and WR)
+    df_sum = df.groupby(['coach', 'season', 'week', 'playerRosterPosition'])['playerPoints'].sum()
+    df_sum = df_sum.reset_index()
+    stats_df = df_sum.groupby('playerRosterPosition')['playerPoints'].describe()
+    stats_df['68%'] = df_sum.groupby('playerRosterPosition')['playerPoints'].quantile(0.68)
+    stats_df['95%'] = df_sum.groupby('playerRosterPosition')['playerPoints'].quantile(0.95)
+    stats_df['97.7%'] = df_sum.groupby('playerRosterPosition')['playerPoints'].quantile(0.977)
+    stats_df = stats_df.sort_values(by=['std'])
+    
+    # Plot elements
+    pltTitle = 'Roster position average total points and standard deviations'
+    pltXLabel = 'Average points scored by roster postion in regular season weekly matchups'
+    pltFile = 'plots/dp_bar_std.png'
+    labels = list(stats_df.index)
+    y_pos = np.arange(len(stats_df))
+    x_mean = stats_df['mean']
+    x_68 = stats_df['68%']
+    x_95 = stats_df['95%']
+    x_97 = stats_df['97.7%']
+    plt.barh(y_pos, x_mean)
+    plt.legend(['mean'])
+    plt.plot(x_68, y_pos, marker='D', linestyle='', color="b")
+    plt.plot(x_95, y_pos, marker='D', linestyle='', color="orange")
+    plt.plot(x_97, y_pos, marker='D', linestyle='', color="g")
+    plt.yticks(y_pos, labels)
+    plt.title(pltTitle)
+    plt.xlabel(pltXLabel)
+    plt.legend(['1 std (68th percentile)', '2 std (95th percentile)', '3 std (97.7th percentile)'])
+    plt.savefig(pltFile, dpi=200, bbox_inches='tight')
+
+defensive_player_bar_std(oswpDf)
 
 
