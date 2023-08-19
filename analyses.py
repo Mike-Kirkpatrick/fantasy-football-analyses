@@ -33,9 +33,7 @@ def assignCoach(row):
     teamOwner = row['teamOwner']
     teamName = row['teamName']
     coach = ''
-    if teamOwner == 'AJ ':
-        coach = 'Aj Crane'
-    if teamOwner == 'AJ':
+    if teamOwner == 'AJ ' or teamOwner == 'AJ':
         coach = 'Aj Crane'
     if teamOwner == 'Aaron':
         coach = 'Aaron Horwitz'
@@ -64,7 +62,7 @@ def assignCoach(row):
         coach = 'Rob Manbert'
     if teamOwner == 'Sam':
         coach = 'Sam Courtney'
-    if teamOwner == 'dan':
+    if teamOwner == 'dan' or teamOwner == 'Dan':
         coach = 'Dan Tarin'
     if teamOwner == 'nathan':
         coach = 'Nathan Radolf'
@@ -83,9 +81,7 @@ def assignCoachOpponent(row):
     teamOwner = row['teamOwnerOpponent']
     teamName = row['teamNameOpponent']
     coach = ''
-    if teamOwner == 'AJ ':
-        coach = 'Aj Crane'
-    if teamOwner == 'AJ':
+    if teamOwner == 'AJ ' or teamOwner == 'AJ':
         coach = 'Aj Crane'
     if teamOwner == 'Aaron':
         coach = 'Aaron Horwitz'
@@ -114,7 +110,7 @@ def assignCoachOpponent(row):
         coach = 'Rob Manbert'
     if teamOwner == 'Sam':
         coach = 'Sam Courtney'
-    if teamOwner == 'dan':
+    if teamOwner == 'dan' or teamOwner == 'Dan':
         coach = 'Dan Tarin'
     if teamOwner == 'nathan':
         coach = 'Nathan Radolf'
@@ -856,11 +852,6 @@ def plotPlayerRetention(df):
     plt.savefig(pltFile, dpi=200, bbox_inches='tight')
 
 plotPlayerRetention(oswpDf)
-
-
-
-
-
 
 
 
