@@ -88,6 +88,10 @@ seasonsWeeksTeamIds = {
        'Weeks': seventeenWeeks,
        'TeamIds': teamIds2021
 	},
+	2022:{
+       'Weeks': seventeenWeeks,
+       'TeamIds': teamIds2021
+	},
 }
 
 del sixteenWeeks, seventeenWeeks, standardTeamIds, teamIdsNo10
@@ -323,17 +327,24 @@ def gameCenter():
                 url = 'https://fantasy.nfl.com/league/392495/history/{}/teamgamecenter?teamId={}&week={}'.format(season,teamId,week)
                 soup = getWebpageData(url)
                 
-                teamOwner = []
-                data = soup.find_all('a', class_ = 'userName')
-                for datum in data:
-                    teamOwner.append(datum.text)
-                teamOwner = teamOwner[0]
-                
                 teamName = []
                 data = soup.find_all('a', class_ = 'teamName')
                 for datum in data:
                     teamName.append(datum.text)
                 teamName = teamName[0]
+                
+                # In between the 2022 and 2023 season the userName code
+                # stopped working. I inspected the webpage and can see that userName
+                # is there, but for some reason beautiful soup can't get it.
+                # Instead of searching thru nasty html, I'm just going to subset
+                # the ownerSeason DF to get Owner.
+                teamOwner = teamOwners[(teamOwners["teamName"]==teamName) & (teamOwners["season"]==season)]["teamOwner"].iloc[0]
+                # Old code
+                #teamOwner = []
+                #data = soup.find_all('a', class_ = 'userName')
+                #for datum in data:
+                #    teamOwner.append(datum.text)
+                #teamOwner = teamOwner[0]
                 
                 teamPoints = []
                 data = soup.find_all('span', class_ = 'teamTotal teamId-{}'.format(teamId))
