@@ -888,7 +888,7 @@ def defensive_player_bar_std(df):
     stats_df = stats_df.sort_values(by=['std'])
     
     # Plot elements
-    pltTitle = 'Roster position average total points and standard deviations'
+    pltTitle = 'Roster Position Average Total Points and Standard Deviations'
     pltXLabel = 'Average points scored by roster postion in regular season weekly matchups'
     pltFile = 'plots/dp_bar_std.png'
     labels = list(stats_df.index)
