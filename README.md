@@ -85,6 +85,10 @@ Bullshit wins are an extension of weekly rank. A bullshit win occurs when someon
 Shitty losses are the exact opposite of bullshit wins. A shitty loss occurs when you lose but had a weekly rank of 6 or better. For example, you got the 2nd highest points this week but you played the person who got the 1st highest points. Had you played anyone else, you would have won. It's a shitty loss. To calculate this, I took the number of losses divided by your total number of losses. Kam tops the chart with 40% of his losses being shitty.
 ![Alt text](./plots/reg_season_shitty_losses.png?raw=true)
 
+### Bullshit Wins by Shitty Losses
+asdf
+![Alt text](./plots/reg_season_bullshit_wins_by_shitty_losses.png?raw=true)
+
 ### Poor Coaching
 I wanted to get a measure of coaches giving up, being lazy and basically just not caring. Think of starting someone on IR, starting someone that's on bye or forgetting to roster a position entirely. Unfortunately, NFL FF doesn't save all of the player history, so I had to settle for analyzing how often you rostered a position that got 0 or fewer points. On average, Matt Smith is the worst coach whereas Alex is the best.
 ![Alt text](./plots/reg_season_poor_coaching.png?raw=true)

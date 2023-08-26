@@ -630,7 +630,7 @@ plotRegSeasonRanking(osDf)
 
 #~~~~~~~~~~~~~~~~~~~~~~~#
 #     Bullshit Wins     #
-#~~~~~~~~~~~~~~~~~~~~~~~#    
+#~~~~~~~~~~~~~~~~~~~~~~~#
 def plotRegSeasonBullshitWins(df):
     pltTitle = 'Regular Season Bullshit Wins'
     pltXLabel = 'Percent of regular season wins that are bullshit'
@@ -680,6 +680,29 @@ def plotRegSeasonShittyLosses(df):
     plt.savefig(pltFile, dpi=200, bbox_inches='tight')
 
 plotRegSeasonShittyLosses(oswDf)
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#     Bullshit Wins by Shitty Losses     #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+def plotRegSeasonShittyBullshit(df):
+    pltTitle = 'Regular Season Bullshit Wins by Shitty Losses'
+    pltFile = 'plots/reg_season_bullshit_wins_by_shitty_losses.png'
+    temp = df.groupby(['coach','isActiveCoach'])[['bullshitWin', 'shittyLoss']].mean()
+    temp = temp.reset_index(level=['coach', 'isActiveCoach'])
+    temp = temp[temp.isActiveCoach==1]
+    temp = temp.sort_values(by=['bullshitWin', 'shittyLoss'])
+    labels = list(temp.coach.values)
+    x = list(temp.bullshitWin.values)
+    y = list(temp.shittyLoss.values)
+    fig, ax = plt.subplots()
+    ax.scatter(x, y)
+    for i, txt in enumerate(labels):
+        ax.annotate(txt, (x[i], y[i]))
+    plt.title(pltTitle)
+    plt.xlabel('Bullshit Wins (higher bad)')
+    plt.ylabel('Shitty Losses (higher good)')
+    plt.savefig(pltFile, dpi=200, bbox_inches='tight')
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~#
