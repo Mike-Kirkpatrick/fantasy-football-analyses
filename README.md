@@ -86,7 +86,7 @@ Shitty losses are the exact opposite of bullshit wins. A shitty loss occurs when
 ![Alt text](./plots/reg_season_shitty_losses.png?raw=true)
 
 ### Bullshit Wins by Shitty Losses
-asdf
+This is a scatterplot of Bullshit Wins and Shitty Losses. If you find yourself in the top left, that means when you win, it is well earned. And when you lose, it's bad luck. If you find yourself in the bottom right, that means when you win, it's bullshit. And when you lose, it's well earned.
 ![Alt text](./plots/reg_season_bullshit_wins_by_shitty_losses.png?raw=true)
 
 ### Poor Coaching
