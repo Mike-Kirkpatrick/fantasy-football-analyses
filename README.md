@@ -1,4 +1,4 @@
-# Fantasy Football Analyses 2011-2020
+# Fantasy Football Analyses 2011-2022
 
 ### Brief Introduction
 We've been playing fantasy football together for a while so it's time to examine our data longitudinally. Now, I know that words are hard, so I've used as few as possible. Charts, charts and more charts.
@@ -14,12 +14,20 @@ I used python to web-scrape all of the data from our league's history. If you'd 
 Every season we've had 12 coaches. You get a dot for each season you've participated.
 ![Alt text](./plots/seasons_participated.png?raw=true)
 
+## Defensive Player Roster Position
+### Individual Defensive Player Is Stupid and You Are Too If You Like It
+This year I'm including a special section dedicated to the individual defensive player (DP) roster position. To examine the relevance of the DP position on our roster, I filtered the data to the regular season and included only players that were actually started for the week (no bench). This is important - we're only looking at the players that were actually started (arguably the top 12 players for that position for the week (top 24 for RB and WR)). For the given coach-season-week, I combined the points for the two running back roster spots together, and also did the same for wide receivers. I did this because I wanted to assess the value of each roster position. In line with this, I categorized the flex roster position as "flex" instead of bucketing those players into either RB, WR, or TE. I then calculated the mean and standard deviation/percentiles for each roster position across all our seasons. The results are in the plot below.
+
+As you can see in the chart, running backs, wide receivers and quarterbacks are by far the most important. Your two running backs combined will score, on average, around 23 points. On a slightly above average week (1 standard deviation/68th percentile), you'll get around 28 points. On a super good week (3 standard deviations/97.7th percentile), you'll ball out and get nearly 50 points. There is a huge amount of variability for these roster spots, which makes seeking out the best players for these positions of the utmost importance.
+
+Looking at the other positions (Flex, Def, TE, K, DP), they all have similar means. But what matters is how wide their standard deviations are. This relates to the variance you expect for that roster position. With the Flex, Def and TE spot, there's a ton of variability. The variability is what makes the roster position worthwhile. You want to get the good players for that position because they can significantly outscore your opponent (this is the reason why Travis Kelce is always drafted early). Looking at the DP position, on average you'll get around 8 points. On the most amazing week (97.7th percentile), you'll get around 15 points. What's the point (pun intended) of this? It doesn't matter which of the top 12 DP's you choose for a given week. They all do more or less the same. Now, I know what you're thinking... "Mike, what about the kicker? They're pretty similar to DP." You are correct! I think it's fine to have one useless, non-strategic position on our roster. But two is too many. Just like there's only room for one AJ in our group ;)
+![Alt text](./plots/dp_bar_std.png?raw=true)
 
 ## Regular Season and Playoffs
 Statistics for stuff that happens during the playoffs and the regular season.
 
 ### Max Points
-Aaron has the highest score of all time. Fun fact is that he got this score during the championship game in our first season.
+Aaron has the highest score of all time. Fun fact is that he got this score during the championship game in our first season. But Aaron is a quiter so we don't care about him anymore. Kameron has the highest points ever now. Congrats, Kam.
 ![Alt text](./plots/reg_season_max_points.png?raw=true)
 
 ### Min Points
@@ -31,15 +39,15 @@ Yeah, we don't trade...ever. Most people have never traded. We should become mor
 ![Alt text](./plots/reg_season_trades.png?raw=true)
 
 ### Player Retention
-Some of you are extremely loyal to your draft picks and some of you have an entirely new team by the end of the season. I compared which players you had during week one and which players you had in the championship week. If you had all the same players at the end of the season, you would have 100% player retention. On average, Danny keeps 59% of his players the entire season, whereas Alex keeps only 39%.
+Some of you are extremely loyal to your draft picks and some of you have an entirely new team by the end of the season. I compared which players you had during week one and which players you had in the championship week. If you had all the same players at the end of the season, you would have 100% player retention. On average, Matt Smith keeps 63% of his players the entire season, whereas Alex keeps only 38%.
 ![Alt text](./plots/player_retention.png?raw=true)
 
 ### Transactions
-Relatedly, we can look at the number of transactions. Alex basically has a new team every week. Given that there are 16 weeks in the regular season, Aaron and Danny change out less than one player per week.
+Relatedly, we can look at the number of transactions. Alex basically has a new team every week. Given that there are 16-17 weeks in the regular season, Matt Smith and Danny change out less than one player per week.
 ![Alt text](./plots/reg_season_transactions.png?raw=true)
 
 
-## Regular Season
+## Regular Season Only
 Statistics for stuff that happens during the regular season.
 
 ### Win Percentage
@@ -47,9 +55,9 @@ This one is as straightforward as it gets. How often do you win? Hopefully you f
 ![Alt text](./plots/reg_season_win_pct.png?raw=true)
 
 ### Matchup Rivalries
-How often to you beat the other coaches during the regular season? Here's a heatmap of just that. Find your name on the left and see where it intersects with the people on the bottom. That is how often (%) you've beat that person. Green is good and red is bad. The second plot shows how many times you've played that person.
+How often do you beat the other coaches during the regular season? Here's a heatmap of just that. Find your name on the left and see where it intersects with the people on the bottom. That is how often (%) you've beat that person. Green is good and red is bad. The second plot shows how many times you've played that person.
 
-For example, I have beat Aaron only 20% of the time and we've played each other 15 times. Incredibly, Mike Thomas has beat Danny 100% of the time and they've played each other 10 times! For 10 years, Mike Thomas has been whooping Danny's ass. Another thing we learn here is THE NEED TO ALWAYS SHUFFLE THE MATCHUP ORDER, AJ!!! We've only had 9 seasons and AJ and Kameron have played each other 19 times during the regular season.
+For example, I have beat Kameron only 14% of the time and we've played each other 14 times. Unfortunately, Danny has broken the losing streak to Mike Thomas. Cheers, Dan. Another thing we learn here is THE NEED TO ALWAYS SHUFFLE THE MATCHUP ORDER, AJ! We've had had 12 seasons and AJ has played Kameron/Danny 21 times during the regular season.
 ![Alt text](./plots/reg_season_matchup_win_percent.png?raw=true)
 ![Alt text](./plots/reg_season_matchup_compete_freq.png?raw=true)
 
@@ -62,7 +70,7 @@ These are the points that are scored against you. Looking at all seasons, it's p
 ![Alt text](./plots/reg_season_avg_points_against.png?raw=true)
 
 ### Average Points For
-These are the points that you score each week. The distribution is a little more spread out than Points Against. Kameron proudly sits atop the list while Aaron wallows in shame at the bottom.
+These are the points that you score each week. The distribution is a little more spread out than Points Against. Kameron proudly sits atop the list while Matt Cisneros wallows in shame at the bottom.
 ![Alt text](./plots/reg_season_avg_points_for.png?raw=true)
 
 ### Average Weekly Rank
@@ -74,35 +82,39 @@ Bullshit wins are an extension of weekly rank. A bullshit win occurs when someon
 ![Alt text](./plots/reg_season_bullshit_wins.png?raw=true)
 
 ### Shitty Losses
-Shitty losses are the exact opposite of bullshit wins. A shitty loss occurs when you lose but had a weekly rank of 6 or better. For example, you got the 2nd highest points this week but you played the person who got the 1st highest points. Had you played anyone else, you would have won. It's a shitty loss. To calculate this, I took the number of losses divided by your total number of losses. Kam tops the chart with 39% of his losses being shitty.
+Shitty losses are the exact opposite of bullshit wins. A shitty loss occurs when you lose but had a weekly rank of 6 or better. For example, you got the 2nd highest points this week but you played the person who got the 1st highest points. Had you played anyone else, you would have won. It's a shitty loss. To calculate this, I took the number of losses divided by your total number of losses. Kam tops the chart with 40% of his losses being shitty.
 ![Alt text](./plots/reg_season_shitty_losses.png?raw=true)
 
+### Bullshit Wins by Shitty Losses
+This is a scatterplot of Bullshit Wins and Shitty Losses. If you find yourself in the top left, that means when you win, it is well earned. And when you lose, it's bad luck. If you find yourself in the bottom right, that means when you win, it's bullshit. And when you lose, it's well earned.
+![Alt text](./plots/reg_season_bullshit_wins_by_shitty_losses.png?raw=true)
+
 ### Poor Coaching
-I wanted to get a measure of coaches giving up, being lazy and basically just not caring. Think of starting someone on IR, starting someone that's on bye or forgetting to roster a position entirely. Unfortunately, NFL FF doesn't save all of the player history, so I had to settle for analyzing how often you rostered a position that got 0 or fewer points. Our fabulous Commisioner tops the chart (shame!). On the other end of the spectrum, Alex and Mike Thomas do a consistently good job at setting their lineup.
+I wanted to get a measure of coaches giving up, being lazy and basically just not caring. Think of starting someone on IR, starting someone that's on bye or forgetting to roster a position entirely. Unfortunately, NFL FF doesn't save all of the player history, so I had to settle for analyzing how often you rostered a position that got 0 or fewer points. On average, Matt Smith is the worst coach whereas Alex is the best.
 ![Alt text](./plots/reg_season_poor_coaching.png?raw=true)
 
 ### Bench Composition
-I think there is a lot to unpack out of these last two plots, so I'll leave that to you.
+I think there is a lot to unpack out of this last plot, so I'll leave that to you.
 ![Alt text](./plots/reg_season_bench_composition.png?raw=true)
 
 
-## Playoffs
+## Playoffs Only
 Statistics for stuff that happens during the playoffs.
 
 ### Playoff Appearances
-Mike Thomas has made it to the playoffs 7 out of 9 times which is very impressive. Equally impressive is that, despite always making it to the playoffs, Mike has yet to bring home the trophy. Always a bridesmaid and never a bride :)
+Mike Thomas has made it to the playoffs 9 out of 11 times which is very impressive. Equally impressive is that, despite always making it to the playoffs, Mike has yet to bring home the trophy. The 2022 season was particularly painful, where he made it all the way to the Championship only to lose. Always a bridesmaid and never a bride :)
 ![Alt text](./plots/playoff_appearances.png?raw=true)
 
 ### Playoff Medalists
-Everyone that isn't named Matt has gotten 3rd or better at some point.
+Everyone except Matt Cisneros has gotten 3rd or better at some point.
 ![Alt text](./plots/playoff_medalist.png?raw=true)
 
 ### Playoff Champions
-Kameron has won Quarce. AJ has won twice. Brian, Sam, Aaron and myself have won once.
+Kameron has won Quarce. AJ has won twice. Brian, Matt, Sam, myself and now Rob have won once.
 ![Alt text](./plots/playoff_champion.png?raw=true)
 
 ### Rank by Season
-With the next four plots, we're looking at your rank at the end of each season. For 11 of us, there's no real pattern. It's just a jumbled mess. One season you're good - the next you suck. However, for Kameron, there is a clear rise to power. He has improved his ranking every season since 2012, culminating with 4 successive championships. We hate you, Kameron. #AnyoneButBurt2020 and #PleaseGodAnyoneButBurt2021
+With the next four plots, we're looking at your rank at the end of each season. For 11 of us, there's no real pattern. It's just a jumbled mess. One season you're good - the next you suck. However, for Kameron, there is a clear rise to power starting in 2012 and culminating with 4 successive championships from 2017 to 2020. We hate you, Kameron, and it has been wonderful watching you lose the last 2 years. Let's keep that going. #AnyoneButBurt
 ![Alt text](./plots/rank_by_season0.png?raw=true)
 ![Alt text](./plots/rank_by_season1.png?raw=true)
 ![Alt text](./plots/rank_by_season2.png?raw=true)

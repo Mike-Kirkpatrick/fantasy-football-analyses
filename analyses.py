@@ -33,9 +33,7 @@ def assignCoach(row):
     teamOwner = row['teamOwner']
     teamName = row['teamName']
     coach = ''
-    if teamOwner == 'AJ ':
-        coach = 'Aj Crane'
-    if teamOwner == 'AJ':
+    if teamOwner == 'AJ ' or teamOwner == 'AJ':
         coach = 'Aj Crane'
     if teamOwner == 'Aaron':
         coach = 'Aaron Horwitz'
@@ -49,7 +47,7 @@ def assignCoach(row):
         coach = 'Jason Murphy'
     if teamOwner == 'Kameron':
         coach = 'Kameron Burt'
-    if teamOwner == 'Matt':
+    if teamOwner == 'Matt' or teamOwner == 'Matt Smith':
         coach = 'Matt Smith'
     if teamOwner == 'Matthew':
         coach = 'Matt Cisneros'
@@ -64,7 +62,7 @@ def assignCoach(row):
         coach = 'Rob Manbert'
     if teamOwner == 'Sam':
         coach = 'Sam Courtney'
-    if teamOwner == 'dan':
+    if teamOwner == 'dan' or teamOwner == 'Dan':
         coach = 'Dan Tarin'
     if teamOwner == 'nathan':
         coach = 'Nathan Radolf'
@@ -83,9 +81,7 @@ def assignCoachOpponent(row):
     teamOwner = row['teamOwnerOpponent']
     teamName = row['teamNameOpponent']
     coach = ''
-    if teamOwner == 'AJ ':
-        coach = 'Aj Crane'
-    if teamOwner == 'AJ':
+    if teamOwner == 'AJ ' or teamOwner == 'AJ':
         coach = 'Aj Crane'
     if teamOwner == 'Aaron':
         coach = 'Aaron Horwitz'
@@ -99,7 +95,7 @@ def assignCoachOpponent(row):
         coach = 'Jason Murphy'
     if teamOwner == 'Kameron':
         coach = 'Kameron Burt'
-    if teamOwner == 'Matt':
+    if teamOwner == 'Matt' or teamOwner == 'Matt Smith':
         coach = 'Matt Smith'
     if teamOwner == 'Matthew':
         coach = 'Matt Cisneros'
@@ -114,7 +110,7 @@ def assignCoachOpponent(row):
         coach = 'Rob Manbert'
     if teamOwner == 'Sam':
         coach = 'Sam Courtney'
-    if teamOwner == 'dan':
+    if teamOwner == 'dan' or teamOwner == 'Dan':
         coach = 'Dan Tarin'
     if teamOwner == 'nathan':
         coach = 'Nathan Radolf'
@@ -282,6 +278,27 @@ def winner(row):
         return 0
 
 oswDf['isWin'] = oswDf.apply(winner, axis=1)
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#     ADD WIN INDICATOR     #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+def addRegSeasonCumulativePoints(df):
+    def isPointsForCumSum(row):
+        isRegSeason = row['isRegSeason']
+        teamWeekTotal = row['teamWeekTotal']
+        if isRegSeason == 1:
+            points = teamWeekTotal
+        else:
+            points = 0
+        return points
+    
+    df['pointsForCumSum'] = df.apply(isPointsForCumSum, axis=1)
+    df['regSeasonCumSumPoints'] = df.groupby(['season','coach'])['pointsForCumSum'].cumsum()
+    df = df.drop(['pointsForCumSum'], axis=1)
+    return df
+
+oswDf = addRegSeasonCumulativePoints(oswDf)
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
@@ -634,7 +651,7 @@ plotRegSeasonRanking(osDf)
 
 #~~~~~~~~~~~~~~~~~~~~~~~#
 #     Bullshit Wins     #
-#~~~~~~~~~~~~~~~~~~~~~~~#    
+#~~~~~~~~~~~~~~~~~~~~~~~#
 def plotRegSeasonBullshitWins(df):
     pltTitle = 'Regular Season Bullshit Wins'
     pltXLabel = 'Percent of regular season wins that are bullshit'
@@ -684,6 +701,31 @@ def plotRegSeasonShittyLosses(df):
     plt.savefig(pltFile, dpi=200, bbox_inches='tight')
 
 plotRegSeasonShittyLosses(oswDf)
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#     Bullshit Wins by Shitty Losses     #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+def plotRegSeasonShittyBullshit(df):
+    pltTitle = 'Regular Season Bullshit Wins by Shitty Losses'
+    pltFile = 'plots/reg_season_bullshit_wins_by_shitty_losses.png'
+    temp = df.groupby(['coach','isActiveCoach'])[['bullshitWin', 'shittyLoss']].mean()
+    temp = temp.reset_index(level=['coach', 'isActiveCoach'])
+    temp = temp[temp.isActiveCoach==1]
+    temp = temp.sort_values(by=['bullshitWin', 'shittyLoss'])
+    labels = list(temp.coach.values)
+    x = list(temp.bullshitWin.values)
+    y = list(temp.shittyLoss.values)
+    fig, ax = plt.subplots()
+    ax.scatter(x, y)
+    for i, txt in enumerate(labels):
+        ax.annotate(txt, (x[i], y[i]))
+    plt.title(pltTitle)
+    plt.xlabel('Bullshit Wins (higher bad)')
+    plt.ylabel('Shitty Losses (higher good)')
+    plt.savefig(pltFile, dpi=200, bbox_inches='tight')
+
+plotRegSeasonShittyBullshit(oswDf)
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~#
@@ -858,10 +900,315 @@ def plotPlayerRetention(df):
 plotPlayerRetention(oswpDf)
 
 
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#     Defensive Player Analyses     #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+def defensive_player_bar_std(df):
+    def player_roster_position(row):
+        '''
+        Code flex players in roster postition
+        '''
+        rawPlayerPostition = row['playerRosterPosition']
+        playerPosition = None
+        flex_positions = ['R/W/T', 'W/R']
+        if rawPlayerPostition in flex_positions:
+            playerPosition = 'Flex'
+        else:
+            playerPosition = rawPlayerPostition
+        return playerPosition
+    
+    # Filter data to population we care about
+    df = df[df.isRegSeason==1] # Only want weeks where all coaches are trying
+    df['playerRosterPosition'] = df.apply(player_roster_position, axis=1)
+    df = df[df.playerPosition!='Empty']
+    df = df[df.playerRosterPosition!='BN']
+    df = df[df.playerRosterPosition!='RES']
+    
+    # Sum stats by roster position (sum RB and WR)
+    df_sum = df.groupby(['coach', 'season', 'week', 'playerRosterPosition'])['playerPoints'].sum()
+    df_sum = df_sum.reset_index()
+    stats_df = df_sum.groupby('playerRosterPosition')['playerPoints'].describe()
+    stats_df['68%'] = df_sum.groupby('playerRosterPosition')['playerPoints'].quantile(0.68)
+    stats_df['95%'] = df_sum.groupby('playerRosterPosition')['playerPoints'].quantile(0.95)
+    stats_df['97.7%'] = df_sum.groupby('playerRosterPosition')['playerPoints'].quantile(0.977)
+    stats_df = stats_df.sort_values(by=['std'])
+    
+    # Plot elements
+    pltTitle = 'Roster Position Average Total Points and Standard Deviations'
+    pltXLabel = 'Average points scored by roster postion in regular season weekly matchups'
+    pltFile = 'plots/dp_bar_std.png'
+    labels = list(stats_df.index)
+    y_pos = np.arange(len(stats_df))
+    x_mean = stats_df['mean']
+    x_68 = stats_df['68%']
+    x_95 = stats_df['95%']
+    x_97 = stats_df['97.7%']
+    plt.barh(y_pos, x_mean)
+    plt.legend(['mean'])
+    plt.plot(x_68, y_pos, marker='D', linestyle='', color="b")
+    plt.plot(x_95, y_pos, marker='D', linestyle='', color="orange")
+    plt.plot(x_97, y_pos, marker='D', linestyle='', color="g")
+    plt.yticks(y_pos, labels)
+    plt.title(pltTitle)
+    plt.xlabel(pltXLabel)
+    plt.legend(['1 std (68th percentile)', '2 std (95th percentile)', '3 std (97.7th percentile)'])
+    plt.savefig(pltFile, dpi=200, bbox_inches='tight')
+
+defensive_player_bar_std(oswpDf)
 
 
 
 
 
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#     Last Season Trajectory     #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+# GIVING UP! I hate creating plots.
+# I've spent too much time on it.
+# Maybe I"ll try again next year.
+df = oswDf
+
+# Get Team Week Season Rank
+def getRegSeasonWins(row):
+    record = row['teamRecordPost']
+    regSeasonWins = int(record.split('-')[0])
+    return regSeasonWins
+
+df['regSeasonWins'] = df.apply(getRegSeasonWins, axis=1)
+
+df = df.sort_values(
+    by=['season','week','regSeasonWins', 'regSeasonCumSumPoints'],
+    ascending=[True, True, False, False]
+)
+df['teamWeekSeasonRank'] = df.groupby(['season','week']).cumcount()+1
+
+
+# Filter to last season
+max_season = osDf['season'].max()
+df = df[df['season'] == max_season]
+max_week = df['week'].max()
+
+# Put nan's for playoff weeks
+def nanPlayoffWeeks(row):
+    isRegSeason = row['isRegSeason']
+    week = row['week']
+    coach = row['coach']
+    rank = row['teamWeekSeasonRank']
+    if isRegSeason == 1:
+        rank = rank
+    if isRegSeason == 0 & week != max_week:
+        rank = np.nan
+    if week == max_week:
+        temp = osDf[osDf.coach == coach]
+        temp = temp[temp.season == max_season]
+        final_standing = temp.teamFinalStanding.values[0]
+        rank = final_standing
+    return rank
+
+measureLabel = 'teamWeekSeasonRank'
+df[measureLabel] = df.apply(nanPlayoffWeeks, axis=1)
+
+df[measureLabel] = df[measureLabel]*-1
+pivDf = df.pivot(index='week', columns='coach', values=measureLabel)
+plt.plot(pivDf)
+
+
+def plotRankBySeason(df, start, end, grpNbr):
+    df = osDf
+    start = 0
+    end = 3
+    df = df[df['isActiveCoach'] == 1]
+    measureLabel = 'teamRankRegSeason'
+    measureLabel = 'teamFinalStanding'
+    df[measureLabel] = df[measureLabel]*-1
+    pivDf = df.pivot(index='season', columns='coach', values=measureLabel)
+    oldLabels = np.arange(-1,-13,-1)
+    newLabels = np.arange(1,13,1)
+    pltTitle = 'Rank By Season'
+    pltFile = f'plots/rank_by_season{grpNbr}.png'
+    subsetDf = pivDf[pivDf.columns[start:end]]
+    plt.plot(subsetDf)
+    plt.title(pltTitle)
+    plt.yticks(ticks=oldLabels, labels=newLabels)
+    plt.legend(subsetDf.columns)
+    plt.xlabel('Season')
+    plt.ylabel('Rank')
+    plt.savefig(pltFile, dpi=200, bbox_inches='tight')
+
+
+
+
+
+
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#     Last Season Trajectory     #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+df = oswDf
+
+# Get Team Week Season Rank
+def getRegSeasonWins(row):
+    record = row['teamRecordPost']
+    regSeasonWins = int(record.split('-')[0])
+    return regSeasonWins
+
+df['regSeasonWins'] = df.apply(getRegSeasonWins, axis=1)
+
+df = df.sort_values(
+    by=['season','week','regSeasonWins', 'regSeasonCumSumPoints'],
+    ascending=[True, True, False, False]
+)
+df['teamWeekSeasonRank'] = df.groupby(['season','week']).cumcount()+1
+
+
+# Filter to last season
+max_season = osDf['season'].max()
+df = df[df['season'] == max_season]
+max_week = df['week'].max()
+
+# Put nan's for playoff weeks
+def nanPlayoffWeeks(row):
+    isRegSeason = row['isRegSeason']
+    week = row['week']
+    coach = row['coach']
+    rank = row['teamWeekSeasonRank']
+    if isRegSeason == 1:
+        rank = rank
+    if isRegSeason == 0 & week != max_week:
+        rank = np.nan
+    if week == max_week:
+        temp = osDf[osDf.coach == coach]
+        temp = temp[temp.season == max_season]
+        final_standing = temp.teamFinalStanding.values[0]
+        rank = final_standing
+    return rank
+
+df['teamWeekSeasonRank'] = df.apply(nanPlayoffWeeks, axis=1)
+
+
+# Get final standings
+measureLabel = 'teamWeekSeasonRank'
+final_standings_df = df[df['week'] == max_week]
+final_standings_df = final_standings_df.sort_values(by=[measureLabel])
+final_standings = list(final_standings_df.coach)
+
+# manipulate y labels
+df[measureLabel] = df[measureLabel]*-1
+YoldLabels = np.arange(-1,-13,-1)
+YnewLabels = final_standings # ADD NUMBER
+
+# manipulate x labels
+df['week'] = df['week']*-1
+XoldLabels = np.arange(-1,-max_week-1,-1)
+XnewLabels = np.arange(1,max_week+1,1)
+
+plt.yticks(ticks=YoldLabels, labels=final_standings)
+plt.xticks(ticks=XoldLabels, labels=XnewLabels)
+for coach in final_standings:
+    temp = df[df['coach'] == coach]
+    plt.plot(temp['week'], temp[measureLabel])
+    plt.yticks(ticks=YoldLabels, labels=final_standings)
+    plt.xticks(ticks=XoldLabels, labels=XnewLabels)
+plt.yticks(ticks=YoldLabels, labels=final_standings)
+plt.xticks(ticks=XoldLabels, labels=XnewLabels)
+
+
+
+
+for coach in final_standings:
+coach = 'Rob Manbert'
+temp = df[df['coach'] == coach]
+plt.plot(temp['week'], temp[measureLabel])
+plt.yticks(ticks=YoldLabels, labels=final_standings)
+plt.xticks(ticks=XoldLabels, labels=XnewLabels)
+
+week = list(temp['week'])
+rank = list(temp[measureLabel])
+plt.plot(week, rank)
+#~~~~~~~~~~~~~~~#
+
+
+
+plotRankBySeason(osDf, 0, 3, 0)
+plotRankBySeason(osDf, 3, 6, 1)
+plotRankBySeason(osDf, 6, 9, 2)
+plotRankBySeason(osDf, 9, 12, 3)
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#     SANDBOX Last Season Trajectory     #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+df = oswDf
+
+measureLabel = 'teamWeekRank'
+max_season = osDf['season'].max()
+df = df[df['season'] == max_season]
+df[measureLabel] = df[measureLabel]*-1
+oldLabels = np.arange(-1,-13,-1)
+newLabels = np.arange(1,13,1)
+max_week = df['week'].max()
+final_standing_df = df[df['week'] == max_week]
+final_standing_df[measureLabel] = final_standing_df[measureLabel]*-1
+final_standing_df = final_standing_df.sort_values(by=[measureLabel])
+final_standing = list(final_standing_df.coach)
+
+    
+coach = 'Mike Kirkpatrick'
+temp = df[df['coach'] == coach]
+plt.plot(temp['week'], temp[measureLabel])
+plt.yticks(ticks=oldLabels, labels=newLabels)  
+
+
+
+fig, ax1 = plt.subplots()
+ax2 = ax1.twinx()
+ax1.plot(temp['week'], temp[measureLabel])
+plt.yticks(ticks=oldLabels, labels=newLabels)
+ax2.plot(x, y2, 'b-')
+
+
+ax1.plot(x, y1, 'g-')
+ax2.plot(x, y2, 'b-')
+ax1.set_xlabel('X data')
+ax1.set_ylabel('Y1 data', color='g')
+ax2.set_ylabel('Y2 data', color='b')
+
+
+
+fig, ax1 = plt.subplots()
+ax2 = ax1.twinx()
+ax1.plot(x, y1, 'g-')
+ax2.plot(x, y2, 'b-')
+ax1.set_xlabel('X data')
+ax1.set_ylabel('Y1 data', color='g')
+ax2.set_ylabel('Y2 data', color='b')
+
+plt.show()
+
+
+newLabels = np.arange(1,13,1)
+pltTitle = 'Rank By Season'
+pltFile = f'plots/rank_by_season{grpNbr}.png'
+subsetDf = pivDf[pivDf.columns[start:end]]
+plt.plot(subsetDf)
+plt.title(pltTitle)
+plt.yticks(ticks=oldLabels, labels=newLabels)
+plt.legend(subsetDf.columns)
+plt.xlabel('Season')
+plt.ylabel('Rank')
+plt.savefig(pltFile, dpi=200, bbox_inches='tight')
+
+plotRankBySeason(osDf, 0, 3, 0)
+
+
+# THIS MIGHT WORK
+f = plt.figure()
+ax = f.add_subplot(111)
+ax.yaxis.tick_right()
+plt.plot([2,3,4,5])
+plt.yticks([5,6,7,8])
+plt.show()
 
 

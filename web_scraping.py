@@ -33,57 +33,68 @@ def getWebpageData(url):
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 # We create a dictionary with all the season, weeks and teamIds.
 # Our weeks and teamIds have changed over the seasons.
-# In season 2011, we had 17 weeks.
+# Some seasons have 16 weeks and some have 17.
 # Starting in season 2017, we swapped out teamId=10 for teamId=13
+# In 2021, Matt Smith came back as teamId=14
 
-standardWeeks = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+sixteenWeeks = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+seventeenWeeks = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]
 standardTeamIds = [1,2,3,4,5,6,7,8,9,10,11,12]
 teamIdsNo10 = [1,2,3,4,5,6,7,8,9,11,12,13]
+teamIds2021 = [1,2,3,4,5,6,7,8,9,11,13,14]
 
 seasonsWeeksTeamIds = {
 	2011:{
-       'Weeks': [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],
+       'Weeks': seventeenWeeks,
        'TeamIds': standardTeamIds
 	},
 	2012:{
-       'Weeks': standardWeeks,
+       'Weeks': seventeenWeeks,
        'TeamIds': standardTeamIds
 	},
 	2013:{
-       'Weeks': standardWeeks,
+       'Weeks': sixteenWeeks,
        'TeamIds': standardTeamIds
 	},
 	2014:{
-       'Weeks': standardWeeks,
+       'Weeks': sixteenWeeks,
        'TeamIds': standardTeamIds
 	},
 	2015:{
-       'Weeks': standardWeeks,
+       'Weeks': sixteenWeeks,
        'TeamIds': standardTeamIds
 	},
 	2016:{
-       'Weeks': standardWeeks,
+       'Weeks': sixteenWeeks,
        'TeamIds': standardTeamIds
 	},
 	2017:{
-       'Weeks': standardWeeks,
+       'Weeks': sixteenWeeks,
        'TeamIds': teamIdsNo10
 	},
 	2018:{
-       'Weeks': standardWeeks,
+       'Weeks': sixteenWeeks,
        'TeamIds': teamIdsNo10
 	},
 	2019:{
-       'Weeks': standardWeeks,
+       'Weeks': sixteenWeeks,
        'TeamIds': teamIdsNo10
 	},
 	2020:{
-       'Weeks': standardWeeks,
+       'Weeks': sixteenWeeks,
        'TeamIds': teamIdsNo10
-	}
+	},
+	2021:{
+       'Weeks': seventeenWeeks,
+       'TeamIds': teamIds2021
+	},
+	2022:{
+       'Weeks': seventeenWeeks,
+       'TeamIds': teamIds2021
+	},
 }
 
-del standardWeeks, standardTeamIds, teamIdsNo10
+del sixteenWeeks, seventeenWeeks, standardTeamIds, teamIdsNo10
 
 #~~~~~~~~~~~~~~~~~~~~~#
 #     Team Owners     #
@@ -316,17 +327,24 @@ def gameCenter():
                 url = 'https://fantasy.nfl.com/league/392495/history/{}/teamgamecenter?teamId={}&week={}'.format(season,teamId,week)
                 soup = getWebpageData(url)
                 
-                teamOwner = []
-                data = soup.find_all('a', class_ = 'userName')
-                for datum in data:
-                    teamOwner.append(datum.text)
-                teamOwner = teamOwner[0]
-                
                 teamName = []
                 data = soup.find_all('a', class_ = 'teamName')
                 for datum in data:
                     teamName.append(datum.text)
                 teamName = teamName[0]
+                
+                # In between the 2022 and 2023 season the userName code
+                # stopped working. I inspected the webpage and can see that userName
+                # is there, but for some reason beautiful soup can't get it.
+                # Instead of searching thru nasty html, I'm just going to subset
+                # the ownerSeason DF to get Owner.
+                teamOwner = teamOwners[(teamOwners["teamName"]==teamName) & (teamOwners["season"]==season)]["teamOwner"].iloc[0]
+                # Old code
+                #teamOwner = []
+                #data = soup.find_all('a', class_ = 'userName')
+                #for datum in data:
+                #    teamOwner.append(datum.text)
+                #teamOwner = teamOwner[0]
                 
                 teamPoints = []
                 data = soup.find_all('span', class_ = 'teamTotal teamId-{}'.format(teamId))
