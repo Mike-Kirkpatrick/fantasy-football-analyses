@@ -16,6 +16,8 @@ Every season we've had 12 coaches. You get a dot for each season you've particip
 
 ## Defensive Player Roster Position
 ### Individual Defensive Player Is Stupid and You Are Too If You Like It
+The people have spoken and IDP is gone! Woohoo! I'm including this section this year just one more time for fun and as reinforcement of the uselessness of IDP given that the results are unchanged.
+
 This year I'm including a special section dedicated to the individual defensive player (DP) roster position. To examine the relevance of the DP position on our roster, I filtered the data to the regular season and included only players that were actually started for the week (no bench). This is important - we're only looking at the players that were actually started (arguably the top 12 players for that position for the week (top 24 for RB and WR)). For the given coach-season-week, I combined the points for the two running back roster spots together, and also did the same for wide receivers. I did this because I wanted to assess the value of each roster position. In line with this, I categorized the flex roster position as "flex" instead of bucketing those players into either RB, WR, or TE. I then calculated the mean and standard deviation/percentiles for each roster position across all our seasons. The results are in the plot below.
 
 As you can see in the chart, running backs, wide receivers and quarterbacks are by far the most important. Your two running backs combined will score, on average, around 23 points. On a slightly above average week (1 standard deviation/68th percentile), you'll get around 28 points. On a super good week (3 standard deviations/97.7th percentile), you'll ball out and get nearly 50 points. There is a huge amount of variability for these roster spots, which makes seeking out the best players for these positions of the utmost importance.
@@ -27,7 +29,7 @@ Looking at the other positions (Flex, Def, TE, K, DP), they all have similar mea
 Statistics for stuff that happens during the playoffs and the regular season.
 
 ### Max Points
-Aaron has the highest score of all time. Fun fact is that he got this score during the championship game in our first season. But Aaron is a quiter so we don't care about him anymore. Kameron has the highest points ever now. Congrats, Kam.
+Aaron has the highest score of all time. Fun fact is that he got this score during the championship game in our first season. But Aaron is a quiter so we don't care about him anymore. Rob has the highest points ever now (as of the most recent season, too). Congrats, Rob.
 ![Alt text](./plots/reg_season_max_points.png?raw=true)
 
 ### Min Points
@@ -39,11 +41,11 @@ Yeah, we don't trade...ever. Most people have never traded. We should become mor
 ![Alt text](./plots/reg_season_trades.png?raw=true)
 
 ### Player Retention
-Some of you are extremely loyal to your draft picks and some of you have an entirely new team by the end of the season. I compared which players you had during week one and which players you had in the championship week. If you had all the same players at the end of the season, you would have 100% player retention. On average, Matt Smith keeps 63% of his players the entire season, whereas Alex keeps only 38%.
+Some of you are extremely loyal to your draft picks and some of you have an entirely new team by the end of the season. I compared which players you had during week one and which players you had in the championship week. If you had all the same players at the end of the season, you would have 100% player retention. On average, Matt Smith keeps 62% of his players the entire season, whereas Alex keeps only 38%.
 ![Alt text](./plots/player_retention.png?raw=true)
 
 ### Transactions
-Relatedly, we can look at the number of transactions. Alex basically has a new team every week. Given that there are 16-17 weeks in the regular season, Matt Smith and Danny change out less than one player per week.
+Relatedly, we can look at the number of transactions. Alex basically has a new team every week. Given that there are 16-17 weeks in the regular season, AJ, Colin and Danny change out less than one player per week (there are only so many Bills players that Colin can pick up each week).
 ![Alt text](./plots/reg_season_transactions.png?raw=true)
 
 
@@ -57,7 +59,7 @@ This one is as straightforward as it gets. How often do you win? Hopefully you f
 ### Matchup Rivalries
 How often do you beat the other coaches during the regular season? Here's a heatmap of just that. Find your name on the left and see where it intersects with the people on the bottom. That is how often (%) you've beat that person. Green is good and red is bad. The second plot shows how many times you've played that person.
 
-For example, I have beat Kameron only 14% of the time and we've played each other 14 times. Unfortunately, Danny has broken the losing streak to Mike Thomas. Cheers, Dan. Another thing we learn here is THE NEED TO ALWAYS SHUFFLE THE MATCHUP ORDER, AJ! We've had had 12 seasons and AJ has played Kameron/Danny 21 times during the regular season.
+For example, Sam has beat Kameron only 15% of the time and they've played each other 13 times. Unfortunately, Danny has broken the losing streak to Mike Thomas. Cheers, Dan. But on a good note, Alex is emerging as undefeated against Matt Smith and they're played each other 4 time sso far. Another thing we learn here is THE NEED TO ALWAYS SHUFFLE THE MATCHUP ORDER, AJ! We've had had 13 seasons and AJ has played Kameron 23 times during the regular season.
 ![Alt text](./plots/reg_season_matchup_win_percent.png?raw=true)
 ![Alt text](./plots/reg_season_matchup_compete_freq.png?raw=true)
 
@@ -78,11 +80,11 @@ Each week, there are 12 teams that play in 6 matchups. Instead of looking at the
 ![Alt text](./plots/reg_season_avg_weekly_rank.png?raw=true)
 
 ### Bullshit Wins
-Bullshit wins are an extension of weekly rank. A bullshit win occurs when someone wins their weekly matchup but their weekly score was ranked 7 or worse. That means that the person won despite having a lower score than half of the league. This is considered bullshit because, had you played almost anyone else that week, you would have lost. The percentage of bullshit wins is calculated by taking the number of wins that are bullshit divided by your total number of wins. Danny tops the chart with 39% of his wins being bullshit.
+Bullshit wins are an extension of weekly rank. A bullshit win occurs when someone wins their weekly matchup but their weekly score was ranked 7 or worse. That means that the person won despite having a lower score than half of the league. This is considered bullshit because, had you played almost anyone else that week, you would have lost. The percentage of bullshit wins is calculated by taking the number of wins that are bullshit divided by your total number of wins. Danny tops the chart with 37% of his wins being bullshit.
 ![Alt text](./plots/reg_season_bullshit_wins.png?raw=true)
 
 ### Shitty Losses
-Shitty losses are the exact opposite of bullshit wins. A shitty loss occurs when you lose but had a weekly rank of 6 or better. For example, you got the 2nd highest points this week but you played the person who got the 1st highest points. Had you played anyone else, you would have won. It's a shitty loss. To calculate this, I took the number of losses divided by your total number of losses. Kam tops the chart with 40% of his losses being shitty.
+Shitty losses are the exact opposite of bullshit wins. A shitty loss occurs when you lose but had a weekly rank of 6 or better. For example, you got the 2nd highest points this week but you played the person who got the 1st highest points. Had you played anyone else, you would have won. It's a shitty loss. To calculate this, I took the number of losses divided by your total number of losses. Kam tops the chart with 39% of his losses being shitty.
 ![Alt text](./plots/reg_season_shitty_losses.png?raw=true)
 
 ### Bullshit Wins by Shitty Losses
@@ -102,7 +104,7 @@ I think there is a lot to unpack out of this last plot, so I'll leave that to yo
 Statistics for stuff that happens during the playoffs.
 
 ### Playoff Appearances
-Mike Thomas has made it to the playoffs 9 out of 11 times which is very impressive. Equally impressive is that, despite always making it to the playoffs, Mike has yet to bring home the trophy. The 2022 season was particularly painful, where he made it all the way to the Championship only to lose. Always a bridesmaid and never a bride :)
+Mike Thomas has made it to the playoffs 9 out of 12 times which is very impressive. Equally impressive is that, despite always making it to the playoffs, Mike has yet to bring home the trophy. Always a bridesmaid and never a bride :)
 ![Alt text](./plots/playoff_appearances.png?raw=true)
 
 ### Playoff Medalists
@@ -110,11 +112,11 @@ Everyone except Matt Cisneros has gotten 3rd or better at some point.
 ![Alt text](./plots/playoff_medalist.png?raw=true)
 
 ### Playoff Champions
-Kameron has won Quarce. AJ has won twice. Brian, Matt, Sam, myself and now Rob have won once.
+Kameron has won Quarce. AJ and Rob has won twice (Rob being back to back for 2022 and 2023). Brian, Matt, Sam, and myself.
 ![Alt text](./plots/playoff_champion.png?raw=true)
 
 ### Rank by Season
-With the next four plots, we're looking at your rank at the end of each season. For 11 of us, there's no real pattern. It's just a jumbled mess. One season you're good - the next you suck. However, for Kameron, there is a clear rise to power starting in 2012 and culminating with 4 successive championships from 2017 to 2020. We hate you, Kameron, and it has been wonderful watching you lose the last 2 years. Let's keep that going. #AnyoneButBurt
+With the next four plots, we're looking at your rank at the end of each season. For 11 of us, there's no real pattern. It's just a jumbled mess. One season you're good - the next you suck. However, for Kameron, there is a clear rise to power starting in 2012 and culminating with 4 successive championships from 2017 to 2020. We hate you, Kameron, and it has been wonderful watching you lose the last 3 years. Let's keep that going. #AnyoneButBurt. Also, Rob, we're beginning to hate you too. Two wins in a row is too many. #AnyoneButBurtButAlsoMaybeNotManbertToo
 ![Alt text](./plots/rank_by_season0.png?raw=true)
 ![Alt text](./plots/rank_by_season1.png?raw=true)
 ![Alt text](./plots/rank_by_season2.png?raw=true)

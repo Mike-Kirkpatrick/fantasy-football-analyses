@@ -92,6 +92,10 @@ seasonsWeeksTeamIds = {
        'Weeks': seventeenWeeks,
        'TeamIds': teamIds2021
 	},
+	2023:{
+       'Weeks': seventeenWeeks,
+       'TeamIds': teamIds2021
+	},
 }
 
 del sixteenWeeks, seventeenWeeks, standardTeamIds, teamIdsNo10
