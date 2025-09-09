@@ -7,8 +7,8 @@ Created on Sun Oct 13 19:24:06 2019
 """
 
 # Set the working directory to wherever the repository was cloned to
-from os import chdir
-chdir('/home/mike/fantasy-football-analyses')
+# from os import chdir
+# chdir('/home/mike/fantasy-football-analyses')
 
 # Get leagueId
 # Login to your league via https://fantasy.nfl.com
@@ -26,7 +26,6 @@ def getWebpageData(url):
     r = requests.get(url)
     soup = BeautifulSoup(r.content, 'html.parser')
     return soup
-
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 #     Seasons-Weeks-TeamIds Dictionary     #
@@ -93,6 +92,10 @@ seasonsWeeksTeamIds = {
        'TeamIds': teamIds2021
 	},
 	2023:{
+       'Weeks': seventeenWeeks,
+       'TeamIds': teamIds2021
+	},
+	2024:{
        'Weeks': seventeenWeeks,
        'TeamIds': teamIds2021
 	},
