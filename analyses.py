@@ -6,8 +6,8 @@ Created on Sat Oct 26 22:30:03 2019
 @author: mike
 """
 
-from os import chdir
-chdir('/home/mike/fantasy-football-analyses')
+# from os import chdir
+# chdir('/home/mike/fantasy-football-analyses')
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
